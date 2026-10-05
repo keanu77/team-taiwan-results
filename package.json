@@ -13,7 +13,6 @@
     "build:site": "bash scripts/build-site.sh",
     "typecheck": "npm run event && tsc --noEmit",
     "lint": "next lint",
-    "pretest": "npm run event",
     "test": "sh scripts/run-tests.sh",
     "presync": "npm run event",
     "sync": "tsx scripts/sync.ts",

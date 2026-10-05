@@ -1,6 +1,6 @@
 import { inflateSync } from "node:zlib";
 import { compareSchedule } from "./highlights";
-import { isTpeUnit, normalizeResult, parseResultDate, parseSchedule, record, text, type ScheduleUnit } from "./model";
+import { isTpeUnit, normalizeResult, RESULTS_SOURCE, parseResultDate, parseSchedule, record, text, type ScheduleUnit } from "./model";
 import type { TpeResultUnit } from "./types";
 import { CONFIG } from "../../config";
 import { TEAM } from "./team";
@@ -55,7 +55,12 @@ export async function mapLimited<T, R>(items: T[], mapper: (item: T) => Promise<
   return output;
 }
 
-export async function fetchTpeDay(date: string, read: SourceReader = readBornan): Promise<TpeResultUnit[]> {
+/**
+ * previous：同一天上一份成功的場次。官方賽程列表與上一份都已是正式成績（OFFICIAL）時，
+ * 沿用上一份明細、不再請求 results/<code>；賽期後段每天可省下上千個請求。
+ */
+export async function fetchTpeDay(date: string, read: SourceReader = readBornan, previous: readonly TpeResultUnit[] = []): Promise<TpeResultUnit[]> {
+  const known = new Map(previous.map((unit) => [unit.id, unit]));
   if (!parseResultDate(date)) throw new Error("不支援的比賽日期");
   const index = parseSchedule(await read(`ALL/schedule/day/${date}`));
   const disciplines = [...new Set(index.map((u) => u.Disc))];
@@ -72,6 +77,8 @@ export async function fetchTpeDay(date: string, read: SourceReader = readBornan)
   const normalized = await mapLimited([...selected.values()], async (unit) => {
     const shouldRead = !["SCHEDULED", "CANCELLED", "CANCELED", "POSTPONED", "DELAYED"].includes(unit.Status);
     if (!shouldRead) return normalizeResult(unit);
+    const last = known.get(`${RESULTS_SOURCE}:${unit.Disc}:${unit.Key}`);
+    if (unit.Status === "OFFICIAL" && last?.status === "OFFICIAL" && last.detailAvailable) return last;
     const code = text(unit.ResCode) || unit.Key;
     const detail = await read(`${unit.Disc}/results/${code}`);
     if (detail === null) {

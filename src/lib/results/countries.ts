@@ -1,9 +1,10 @@
+import ROSTERS from "../../generated/rosters.json";
 import { isTeamLabel, TEAM } from "./team";
 // NOC codes and English names: official Asian Games NOC list.
 // https://www.ocagames.com/HZ_Info/AG2022-/en/results/all-sports/nocs-list.htm
 // Chinese labels are Traditional Chinese display names. The tracked team is shown by its code.
 // ART is listed by the 2026 official NOC page: https://results.asiangames2026.org/#/participants/orgs
-const COUNTRIES: Record<string, readonly [string, string]> = {
+const BUILT_IN: Record<string, readonly [string, string]> = {
   ART: ["亞洲難民代表隊", "Asian Refugee Team"],
   AFG: ["阿富汗", "Afghanistan"], BRN: ["巴林", "Bahrain"], BAN: ["孟加拉", "Bangladesh"],
   BHU: ["不丹", "Bhutan"], BRU: ["汶萊", "Brunei Darussalam"], CAM: ["柬埔寨", "Cambodia"],
@@ -22,6 +23,9 @@ const COUNTRIES: Record<string, readonly [string, string]> = {
   UAE: ["阿拉伯聯合大公國", "United Arab Emirates"], UZB: ["烏茲別克", "Uzbekistan"],
   VIE: ["越南", "Viet Nam"], YEM: ["葉門", "Yemen"],
 };
+
+// 內建表只有亞運代表隊；其他賽會可在 events/<代號>/rosters/countries.csv 補充或覆寫（code,chinese,english）
+const COUNTRIES: Record<string, readonly [string, string]> = { ...BUILT_IN, ...(ROSTERS.countries as Record<string, [string, string]>) };
 
 export function countryName(organisation: string): string {
   const code = organisation.trim().toUpperCase();

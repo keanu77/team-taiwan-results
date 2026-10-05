@@ -42,7 +42,7 @@ export function ResultRow({ unit, showSport = false, showDate = false }: { unit:
             <span className="grid min-w-0 gap-1">
               {visible.map((competitor, index) => (
                 <span key={`${competitor.id}-${index}`} className={`flex min-w-0 items-center gap-2 rounded-md px-2 py-2 text-sm ${competitor.organisation === TEAM ? "bg-blue-50 ring-1 ring-inset ring-blue-100" : "bg-slate-50"}`}>
-                  {competitor.organisation === TEAM && !isCountryTeamName(competitor.name, competitor.organisation) && <span className="w-7 shrink-0 text-[10px] font-bold text-blue-800">TPE</span>}
+                  {competitor.organisation === TEAM && !isCountryTeamName(competitor.name, competitor.organisation) && <span className="w-7 shrink-0 text-[10px] font-bold text-blue-800">{TEAM}</span>}
                   <span className="min-w-0 flex-1 [overflow-wrap:anywhere]">
                     {competitor.organisation !== TEAM && !isCountryTeamName(competitor.name, competitor.organisation) && <span className="mb-0.5 block text-[11px] font-medium text-gray-500">{countryName(competitor.organisation)}</span>}
                     <AthleteName competitor={competitor} discipline={unit.discipline} compact />

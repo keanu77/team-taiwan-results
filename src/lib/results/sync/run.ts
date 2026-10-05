@@ -2,7 +2,7 @@ import { CONFIG } from "../../../config";
 import { parseMedalStandings } from "../medals";
 import { RESULTS_INTERVAL_MS, RESULTS_MIN_DATE, RESULTS_RETRY_MS, resultDate, shiftResultDate } from "../model";
 import { parseTpeOrgMedals, type OfficialTpeMedal } from "../officialMedals";
-import { scheduledResultDates } from "../schedulePlan";
+import { FINAL_CORRECTION_DATE, scheduledResultDates } from "../schedulePlan";
 import { emptyMeta, isArchived, sourceCooldown, type DataIndex, type StoredDay, type SyncMeta } from "../snapshot";
 import { fetchTpeDay, readBornan, type SourceReader } from "../source";
 import { TEAM } from "../team";
@@ -23,13 +23,15 @@ export interface SyncOptions {
   /** 這一輪最多花多久，超過就停在下一個日期之前 */
   budgetMs?: number;
   read?: SourceReader;
-  fetchDay?: (date: string) => Promise<TpeResultUnit[]>;
+  /** previous：上一份成功的場次，已是正式成績的明細可以沿用、不必重抓 */
+  fetchDay?: (date: string, previous: readonly TpeResultUnit[]) => Promise<TpeResultUnit[]>;
   log?: (message: string) => void;
 }
 
 export interface SyncSummary {
   changed: boolean;
-  medals: "updated" | "skipped" | "failed";
+  /** pending：官方獎牌榜還沒公布（開賽前） */
+  medals: "updated" | "pending" | "skipped" | "failed";
   days: Record<string, "updated" | "failed">;
   reason?: string;
 }
@@ -37,7 +39,7 @@ export interface SyncSummary {
 const meta = (row: SyncMeta): SyncMeta => ({ lastSuccessAt: row.lastSuccessAt, lastAttemptAt: row.lastAttemptAt, lastError: row.lastError });
 const ms = (value: string | null) => (value ? Date.parse(value) : 0);
 
-async function syncMedals(store: FileStore, index: DataIndex, read: SourceReader, clock: () => Date, log: (m: string) => void): Promise<"updated" | "skipped" | "failed"> {
+async function syncMedals(store: FileStore, index: DataIndex, read: SourceReader, clock: () => Date, log: (m: string) => void): Promise<SyncSummary["medals"]> {
   const now = clock();
   const row = store.readMedals() ?? { ...emptyMeta(), standings: [], tpeMedals: [] };
   const due = now.getTime() + SCHEDULE_GRACE_MS;
@@ -46,8 +48,16 @@ async function syncMedals(store: FileStore, index: DataIndex, read: SourceReader
   if (row.lastAttemptAt && due - ms(row.lastAttemptAt) < RESULTS_RETRY_MS) return "skipped";
   const attemptAt = now.toISOString();
   try {
-    const standings = parseMedalStandings(await read("ALL/medals/standings"));
-    if (!standings.length) throw new Error("獎牌榜尚未完整");
+    const raw = await read("ALL/medals/standings");
+    // 開賽前官方獎牌榜是空的：這不是故障，記下嘗試時間就好，不要擋住賽程同步
+    if (Array.isArray(raw) && raw.length === 0) {
+      const pending = { ...row, lastAttemptAt: attemptAt, lastError: null };
+      store.writeMedals(pending);
+      index.medals = meta(pending);
+      log("[sync] 官方獎牌榜尚未公布");
+      return "pending";
+    }
+    const standings = parseMedalStandings(raw);
     // 本隊得牌名單是加值資料：讀不到就保留上次成功的名單，不影響獎牌榜本身。
     let tpeMedals: OfficialTpeMedal[] | null = null;
     try { tpeMedals = parseTpeOrgMedals(await read(`ALL/medals/org/${TEAM}`)); } catch { log(`[sync] ${TEAM} 得牌名單暫時讀不到，保留上一份`); }
@@ -65,12 +75,16 @@ async function syncMedals(store: FileStore, index: DataIndex, read: SourceReader
   }
 }
 
-async function syncDay(store: FileStore, index: DataIndex, date: string, fetchDay: (date: string) => Promise<TpeResultUnit[]>, clock: () => Date, log: (m: string) => void): Promise<"updated" | "failed"> {
+async function syncDay(store: FileStore, index: DataIndex, date: string, fetchDay: NonNullable<SyncOptions["fetchDay"]>, clock: () => Date, log: (m: string) => void): Promise<"updated" | "failed"> {
   const row: StoredDay = store.readDay(date) ?? { date, units: [], successCount: 0, ...emptyMeta() };
   const attemptAt = clock().toISOString();
   try {
-    const units = await fetchDay(date);
+    // 最終補正那一輪全部重讀；平常已是正式成績的場次沿用上一份明細，減少對官網的請求
+    const previous = resultDate(clock()) >= FINAL_CORRECTION_DATE ? [] : row.units;
+    const units = await fetchDay(date, previous);
     if (!Array.isArray(units) || new Set(units.map((u) => u.id)).size !== units.length) throw new Error("賽程快照格式不符");
+    // 原本有場次、這次突然全空，多半是官方資料暫時不完整；保留上一份，不要把頁面清空
+    if (!units.length && row.units.length) throw new Error(`官方回傳空白（上一份有 ${row.units.length} 個場次），保留上一份`);
     const saved: StoredDay = { ...row, units, lastSuccessAt: clock().toISOString(), lastAttemptAt: attemptAt, lastError: null, successCount: row.successCount + 1 };
     store.writeDay(saved);
     index.days[date] = meta(saved);
@@ -87,7 +101,7 @@ async function syncDay(store: FileStore, index: DataIndex, date: string, fetchDa
 }
 
 export async function runSync(options: SyncOptions): Promise<SyncSummary> {
-  const { store, now = () => new Date(), budgetMs = 20 * 60 * 1000, read = readBornan, fetchDay = (date: string) => fetchTpeDay(date, read), log = console.log } = options;
+  const { store, now = () => new Date(), budgetMs = 20 * 60 * 1000, read = readBornan, fetchDay = (date: string, previous: readonly TpeResultUnit[]) => fetchTpeDay(date, read, previous), log = console.log } = options;
   const started = now();
   const summary: SyncSummary = { changed: false, medals: "skipped", days: {} };
   if (CONFIG.source.type !== "bornan") return { ...summary, reason: "來源不是 bornan，改用手動成績 CSV" };
@@ -96,12 +110,8 @@ export async function runSync(options: SyncOptions): Promise<SyncSummary> {
   const index = store.readIndex();
   if (sourceCooldown(index) > started.getTime() + SCHEDULE_GRACE_MS) return { ...summary, reason: "上一輪來源失敗，冷卻中" };
 
+  // 獎牌榜失敗只影響獎牌榜（它自己依間隔重試），賽程照常同步；官網真的掛了，下面第一個日期也會失敗而停止
   summary.medals = await syncMedals(store, index, read, now, log);
-  if (summary.medals === "failed") {
-    // 一個來源失敗就整輪暫停，避免連續打官網
-    store.writeIndex({ ...index, generatedAt: now().toISOString() });
-    return { ...summary, changed: true, reason: "獎牌榜讀取失敗" };
-  }
 
   const rows = Object.entries(index.days).map(([date, m]) => ({
     date, lastSuccessAt: m.lastSuccessAt ? new Date(m.lastSuccessAt) : null, lastAttemptAt: m.lastAttemptAt ? new Date(m.lastAttemptAt) : null, lastError: m.lastError,

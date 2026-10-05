@@ -76,6 +76,26 @@ async function main() {
   assert.equal(units.length, 1, "deduplicate by discipline and key");
   assert.ok(calls.includes("KAB/schedule/daily/2026-09-23"), "nationality missing in all-day index must be resolved from sport");
   await assert.rejects(fetchTpeDay("2026-09-23", async (path) => path.startsWith("ALL/") ? [unit] : []));
+
+  // 已是正式成績的場次：上一份也是正式成績時沿用，不再請求明細
+  const official = { ...unit, Status: "OFFICIAL" };
+  const officialRead = (log: string[]) => async (path: string) => {
+    log.push(path);
+    if (path.startsWith("ALL/")) return [{ ...official, Home: undefined, Away: undefined, Orgs: undefined }];
+    if (path.includes("schedule/daily")) return [official];
+    return { Info: official, Competitors: [official.Home, official.Away] };
+  };
+  const firstCalls: string[] = [];
+  const firstPass = await fetchTpeDay("2026-09-23", officialRead(firstCalls));
+  assert.equal(firstPass[0].status, "OFFICIAL");
+  assert.ok(firstCalls.some((p) => p.includes("/results/")), "first pass reads the result detail");
+  const reuseCalls: string[] = [];
+  const reused = await fetchTpeDay("2026-09-23", officialRead(reuseCalls), firstPass);
+  assert.ok(!reuseCalls.some((p) => p.includes("/results/")), "an official result already saved is not requested again");
+  assert.deepEqual(reused, firstPass);
+  const liveCalls: string[] = [];
+  await fetchTpeDay("2026-09-23", officialRead(liveCalls), firstPass.map((u) => ({ ...u, status: "UNOFFICIAL" })));
+  assert.ok(liveCalls.some((p) => p.includes("/results/")), "a result that was not yet official is read again");
   const now = new Date("2026-09-23T01:00:00Z");
   assert.equal(syncDue("2026-09-23", null, null, now), true);
   assert.equal(syncDue("2026-09-23", null, new Date(now.getTime() - 1000), now), false);

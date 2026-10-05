@@ -19,8 +19,14 @@ async function main() {
     summary = await runSync({ store, budgetMs: Number(process.env.SYNC_BUDGET_MINUTES ?? 20) * 60_000 });
   }
   console.log(`[sync] ${EVENT_ID} ${JSON.stringify(summary)}`);
+  const failed = summary.medals === "failed" || Object.values(summary.days).includes("failed");
   // 給 workflow 判斷要不要 commit 與重新部署。多個賽事依序寫入，只寫 true；預設的 false 由 sync-all.sh 先寫
   if (process.env.GITHUB_OUTPUT && summary.changed) appendFileSync(process.env.GITHUB_OUTPUT, "changed=true\n");
+  // 已抓到的資料都存好了；官網失敗仍回傳非 0，讓 Actions 標紅，才不會默默停更
+  if (failed) {
+    console.error(`::warning title=${EVENT_ID} 同步失敗::${summary.reason ?? "官方來源暫時無法讀取"}；已保留上一份資料，下一輪會重試`);
+    process.exitCode = 1;
+  }
 }
 
 main().catch((error) => {

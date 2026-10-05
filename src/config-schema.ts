@@ -69,16 +69,18 @@ export function parseConfig(value: unknown, file = "competition.config.json"): C
   const aliases = Array.isArray(team.aliases) ? team.aliases.map((a, i) => str(a, `team.aliases[${i}]`)) : [];
   const source = (c.source ?? {}) as Record<string, unknown>;
   const code = str(source.code, "source.code");
-  if (!/^[A-Z0-9]{2,20}$/.test(code)) fail("source.code");
+  if (!/^[A-Z0-9]{2,20}$/.test(code)) fail("source.code（2–20 碼大寫英數字，例如 AG2026）");
   const parsedSource: CompetitionConfig["source"] =
     source.type === "bornan" ? { type: "bornan", code, apiBase: url(source.apiBase, "source.apiBase"), webUrl: url(source.webUrl, "source.webUrl") }
     : source.type === "manual" ? { type: "manual", code, webUrl: url(source.webUrl, "source.webUrl") }
     : fail("source.type（只支援 bornan 或 manual）");
   const interval = Number(c.syncIntervalMinutes);
-  if (!Number.isInteger(interval) || interval < 15 || interval > 24 * 60) fail("syncIntervalMinutes（15–1440 分鐘）");
-  const medals = (c.teamMedals ?? {}) as Record<string, unknown>;
-  const updatedAt = str(medals.updatedAt, "teamMedals.updatedAt");
-  if (!Number.isFinite(Date.parse(updatedAt))) fail("teamMedals.updatedAt");
+  // GitHub Actions 排程固定每 30 分鐘一輪，設得更短也不會更即時
+  if (!Number.isInteger(interval) || interval < 30 || interval > 24 * 60) fail("syncIntervalMinutes（30–1440 分鐘）");
+  // 選填：沒有代表團得牌明細時可以整段省略
+  const medals = (c.teamMedals ?? { source: "代表團公布的得牌明細", updatedAt: `${startDate}T00:00:00Z` }) as Record<string, unknown>;
+  const updatedAt = str(medals.updatedAt, "teamMedals.updatedAt（例如 2026-09-29T23:00:00+08:00）");
+  if (!Number.isFinite(Date.parse(updatedAt))) fail("teamMedals.updatedAt（例如 2026-09-29T23:00:00+08:00）");
   return {
     name: str(c.name, "name"),
     startDate,

@@ -3,6 +3,9 @@ set -eu
 
 # 專案刻意不引入額外 test runner；用既有 TypeScript 編譯器把輕量檢查
 # 連同被測模組編到隔離的暫存目錄，再交給 Node 執行。
+# 測試用固定的範例賽事（tests/fixtures/events），使用者刪改自己的 events/ 不會讓測試變紅
+EVENTS_DIR=tests/fixtures/events EVENT=ag2026 npx tsx scripts/prepare-event.ts
+
 TEST_BUILD_DIR="$(mktemp -d "${TMPDIR:-/tmp}/results-tests.XXXXXX")"
 trap 'rm -rf "$TEST_BUILD_DIR"' EXIT HUP INT TERM
 

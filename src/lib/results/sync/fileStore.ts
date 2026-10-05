@@ -35,7 +35,7 @@ export function fileStore(dir: string): FileStore {
       if (value === null) return { source: RESULTS_SOURCE, generatedAt: new Date(0).toISOString(), days: {}, medals: null };
       if (!isDataIndex(value)) throw new Error(`${indexPath} 格式不符`);
       // 換賽事後沿用舊資料會混在一起，直接擋下
-      if (value.source !== RESULTS_SOURCE) throw new Error(`${indexPath} 屬於賽事 ${value.source}，與設定的 ${RESULTS_SOURCE} 不同；請清空 data 分支`);
+      if (value.source !== RESULTS_SOURCE) throw new Error(`${indexPath} 屬於賽事 ${value.source}，與設定的 ${RESULTS_SOURCE} 不同；請改用新的賽事代號，或只刪除 data 分支裡的 ${dir}/ 資料夾（不要刪整個分支，其他賽事的資料也在裡面）`);
       return value;
     },
     writeIndex(index) { writeJson(indexPath, index); },

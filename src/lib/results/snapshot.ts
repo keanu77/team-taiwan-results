@@ -39,10 +39,13 @@ export const emptyMeta = (): SyncMeta => ({ lastSuccessAt: null, lastAttemptAt: 
 const time = (value: string | null) => (value ? Date.parse(value) : 0);
 const asDate = (value: string | null) => (value ? new Date(value) : null);
 
-/** 任一來源最近失敗過，所有官方請求一起暫停到這個時間點（毫秒） */
+/**
+ * 賽程最近抓失敗（多半是官網連不上或限流），所有官方請求一起暫停到這個時間點（毫秒）。
+ * 獎牌榜失敗只讓獎牌榜自己依間隔重試，不擋賽程。
+ */
 export function sourceCooldown(index: DataIndex | null): number {
   if (!index) return 0;
-  const metas = [...Object.values(index.days), ...(index.medals ? [index.medals] : [])];
+  const metas = Object.values(index.days);
   return Math.max(0, ...metas.filter((m) => m.lastError && m.lastAttemptAt).map((m) => time(m.lastAttemptAt) + RESULTS_RETRY_MS));
 }
 
@@ -53,7 +56,8 @@ export function isArchived(meta: SyncMeta | null | undefined, now: Date): boolea
 
 export function dayResponse(date: string, row: StoredDay | null, cooldown: number, now: Date): TpeResultsResponse {
   const nowMs = now.getTime();
-  const expiry = date === resultDate(now) ? RESULTS_INTERVAL_MS * 2 : 26 * 60 * 60 * 1000;
+  // 超過兩倍同步間隔沒更新才算延遲（當日 1 小時、前兩日 12 小時、更早 48 小時）
+  const expiry = resultSyncInterval(date, now) * 2;
   const archived = isArchived(row, now);
   // 手動成績沒有「排程」：有資料就是最新，不顯示延遲警告
   const manual = CONFIG.source.type === "manual";

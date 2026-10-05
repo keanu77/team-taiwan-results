@@ -1,10 +1,13 @@
 // 決定這次要處理哪個賽事：EVENT 環境變數，或 events/ 底下唯一（或第一個）資料夾。
+// EVENTS_DIR 可換掉 events/（測試用 tests/fixtures/events，不受使用者自己的賽事影響）。
 import { existsSync, readdirSync } from "node:fs";
 import { join } from "node:path";
 
 export const EVENT_ID = /^[a-z0-9][a-z0-9-]{1,39}$/;
 
-export function listEvents(root = "events"): string[] {
+export const EVENTS_ROOT = process.env.EVENTS_DIR ?? "events";
+
+export function listEvents(root = EVENTS_ROOT): string[] {
   if (!existsSync(root)) return [];
   return readdirSync(root, { withFileTypes: true })
     .filter((entry) => entry.isDirectory() && EVENT_ID.test(entry.name) && existsSync(join(root, entry.name, "competition.config.json")))
@@ -14,7 +17,7 @@ export function listEvents(root = "events"): string[] {
 
 export function currentEvent(): string {
   const events = listEvents();
-  if (!events.length) throw new Error("events/ 底下沒有任何賽事（需要 events/<代號>/competition.config.json）");
+  if (!events.length) throw new Error(`${EVENTS_ROOT}/ 底下沒有任何賽事（需要 ${EVENTS_ROOT}/<代號>/competition.config.json）`);
   const requested = process.env.EVENT?.trim();
   if (requested) {
     if (!events.includes(requested)) throw new Error(`找不到賽事 ${requested}；目前有：${events.join("、")}`);
@@ -23,4 +26,4 @@ export function currentEvent(): string {
   return events[0];
 }
 
-export const eventDir = (id: string) => join("events", id);
+export const eventDir = (id: string) => join(EVENTS_ROOT, id);

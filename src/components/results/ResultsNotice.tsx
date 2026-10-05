@@ -12,10 +12,10 @@ export function ResultsNotice({ data, loading, error, onRetry, refreshInSeconds 
 }) {
   const noSnapshot = data && !data.fetchedAt;
   return (
-    <div className="space-y-2 text-sm" aria-live="polite" aria-atomic="true">
+    <div className="space-y-2 text-sm">
       {error && <div role="alert" className="rounded-xl border border-red-200 bg-red-50 px-3 py-3 text-red-800"><p>{error}</p>{data?.fetchedAt && <p className="mt-1">以下保留上次成功讀取的資料。</p>}</div>}
       {loading && !data && <p className="py-3 text-gray-500" role="status">正在讀取 {TEAM} 賽程與賽果…</p>}
-      {noSnapshot && <div className="rounded-xl border border-amber-200 bg-amber-50 px-3 py-3 text-amber-900"><p className="font-medium">尚未取得此日期的賽程資料</p><p className="mt-1">{data.syncing ? "正在同步官方資料，稍後將自動更新。" : data.syncEnabled ? "資料將依排程更新；較遠日期於賽前一天開始同步。" : "目前同步已停用，尚無保存資料。"}</p></div>}
+      {noSnapshot && <div className="rounded-xl border border-amber-200 bg-amber-50 px-3 py-3 text-amber-900"><p className="font-medium">尚未取得此日期的賽程資料</p><p className="mt-1">{data.syncing ? "正在同步官方資料，稍後將自動更新。" : data.syncEnabled ? "資料將依排程更新；開幕前兩天開始同步。" : "目前同步已停用，尚無保存資料。"}</p></div>}
       {data?.stale && data.fetchedAt && <p className="rounded-xl border border-amber-200 bg-amber-50 px-3 py-3 text-amber-900">資料更新延遲，以下為最後成功同步的內容。</p>}
       {data?.warning && <p className="text-amber-900 [overflow-wrap:anywhere]">{displayTpe(data.warning)}</p>}
       {data?.fetchedAt && <div className="flex flex-wrap items-center gap-x-2 text-xs text-gray-500">

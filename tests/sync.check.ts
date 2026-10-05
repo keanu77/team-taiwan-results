@@ -20,13 +20,15 @@ assert.throws(() => csvRecords("a,b\n1,2", ["a", "c"], "x.csv"), /x\.csv 缺少�
 assert.deepEqual(parseCsv(toCsv(["n"], [["a,b"], ['q"']])), [["n"], ["a,b"], ['q"']]);
 
 // 設定檔驗證：錯的欄位直接指名
-const base = JSON.parse(readFileSync("events/ag2026/competition.config.json", "utf8"));
+const base = JSON.parse(readFileSync("tests/fixtures/events/ag2026/competition.config.json", "utf8"));
 assert.equal(parseConfig(base).team.noc, "TPE");
 assert.throws(() => parseConfig({ ...base, endDate: "2026-01-01" }), /endDate/);
 assert.throws(() => parseConfig({ ...base, timeZone: "Mars/Base" }), /timeZone/);
 assert.throws(() => parseConfig({ ...base, team: { ...base.team, noc: "TAIWAN" } }), /team\.noc/);
 assert.throws(() => parseConfig({ ...base, source: { ...base.source, type: "omega" } }), /source\.type/);
-assert.throws(() => parseConfig({ ...base, syncIntervalMinutes: 5 }), /syncIntervalMinutes/);
+assert.throws(() => parseConfig({ ...base, syncIntervalMinutes: 15 }), /syncIntervalMinutes/, "the Actions schedule runs every 30 minutes");
+const { teamMedals: _omitted, ...withoutMedals } = base;
+assert.equal(parseConfig(withoutMedals).teamMedals.updatedAt, `${base.startDate}T00:00:00Z`, "teamMedals is optional");
 assert.equal(parseConfig({ ...base, source: { type: "manual", code: "X2027", webUrl: "https://example.org/" } }).source.webUrl, "https://example.org");
 
 // 代表隊別名
@@ -36,6 +38,11 @@ assert.ok(isTeamLabel("中華臺北 2") && isTeamLabel("tpe") && !isTeamLabel("L
 // 主辦地時間 → UTC（Asia/Tokyo 無夏令時間）
 assert.equal(hostTimeToIso("2026-09-20", "09:30", "Asia/Tokyo"), "2026-09-20T00:30:00.000Z");
 assert.equal(hostTimeToIso("2026-07-01", "12:00", "Europe/Paris"), "2026-07-01T10:00:00.000Z");
+// 夏令時間切換當天（紐約 2026-03-08 02:00 跳到 03:00；11-01 01:00–02:00 重複一次）
+assert.equal(hostTimeToIso("2026-03-08", "03:30", "America/New_York"), "2026-03-08T07:30:00.000Z");
+assert.equal(hostTimeToIso("2026-03-08", "02:30", "America/New_York"), "2026-03-08T07:30:00.000Z", "a skipped wall time moves forward");
+assert.equal(hostTimeToIso("2026-03-08", "01:30", "America/New_York"), "2026-03-08T06:30:00.000Z");
+assert.equal(hostTimeToIso("2026-11-01", "01:30", "America/New_York"), "2026-11-01T05:30:00.000Z", "a repeated wall time takes the first occurrence");
 
 // 手動成績 CSV
 const manualCsv = [
@@ -51,7 +58,7 @@ assert.equal(final.discipline, "BDM");
 assert.equal(final.startsAt, "2026-09-20T01:00:00.000Z");
 assert.deepEqual(final.competitors.map((c) => [c.medal, c.outcome]), [["GOLD", "W"], ["SILVER", "L"]]);
 const skate = manual.get("2026-09-21")![0];
-assert.equal(skate.discipline, "M01", "unknown sports get their own group instead of merging");
+assert.equal(skate.discipline, "SPORT:滑板", "unknown sports get their own group, independent of row order");
 assert.equal(skate.timeNote, "時間待定");
 assert.throws(() => parseManualResults(manualCsv.replace("正式成績,CHOU", "好像贏了,CHOU")), /第 2 列：status 不認得/);
 assert.throws(() => parseManualResults(manualCsv.replace("2026-09-21", "2027-01-01")), /第 4 列：date/);
@@ -145,6 +152,38 @@ async function main() {
     assert.match(day.warning ?? "", /暫時無法完整更新/);
     assert.equal(medalResponse(store.readMedals(), clock).standings.length, 1);
     assert.equal(dayResponse("2026-09-25", null, 0, clock).fetchedAt, null);
+
+    // 原本有場次、這次官方回傳全空：保留上一份
+    clock = new Date(clock.getTime() + 40 * 60_000);
+    const emptied = await runSync({ store, now, read, fetchDay: async () => [], log });
+    assert.equal(emptied.days["2026-09-20"], "failed");
+    assert.equal(store.readDay("2026-09-20")!.units.length, 1, "a sudden empty day keeps its last good units");
+
+    // 平常把上一份場次交給 fetchDay 沿用；最終補正那一輪不沿用
+    const seen: number[] = [];
+    const finalStore = fileStore(tmp());
+    const spy = async (date: string, previous: readonly TpeResultUnit[]) => { seen.push(previous.length); return [unit(`AG2026:BDM:${date}`)]; };
+    await runSync({ store: finalStore, now: () => new Date("2026-09-20T03:00:00Z"), read, fetchDay: spy, log, budgetMs: 0 });
+    await runSync({ store: finalStore, now: () => new Date("2026-09-20T09:30:00Z"), read, fetchDay: spy, log, budgetMs: 0 });
+    assert.equal(seen.at(-1), 1, "during the event the previous units are passed for reuse");
+    seen.length = 0;
+    await runSync({ store: finalStore, now: () => new Date("2026-10-08T03:00:00Z"), read, fetchDay: spy, log, budgetMs: 60_000 });
+    assert.ok(seen.length > 0 && seen.every((n) => n === 0), "the final correction pass re-reads everything");
+
+    // 獎牌榜：開賽前是空的不算故障；獎牌榜壞掉也不擋賽程
+    const pendingStore = fileStore(tmp());
+    const emptyStandings = async (path: string) => (path === "ALL/medals/standings" ? [] : read(path));
+    const pending = await runSync({ store: pendingStore, now: () => new Date("2026-09-09T03:00:00Z"), read: emptyStandings, fetchDay, log, budgetMs: 0 });
+    assert.equal(pending.medals, "pending");
+    assert.ok(Object.values(pending.days).includes("updated"), "days still sync before the medal table exists");
+    assert.equal(pendingStore.readMedals()!.lastError, null);
+    const brokenMedals = async (path: string) => { if (path === "ALL/medals/standings") throw new Error("HTTP 500"); return read(path); };
+    const medalDown = await runSync({ store: fileStore(tmp()), now: () => new Date("2026-09-20T03:00:00Z"), read: brokenMedals, fetchDay, log, budgetMs: 0 });
+    assert.equal(medalDown.medals, "failed");
+    assert.equal(medalDown.days["2026-09-20"], "updated", "a broken medal table does not stop the schedule");
+
+    // 手動 CSV 只剩表頭：拒收，避免清空全部成績
+    assert.throws(() => parseManualResults(manualCsv.split("\n")[0]), /沒有任何成績列/);
 
     // 賽前兩天以前不抓
     const before = await runSync({ store: fileStore(tmp()), now: () => new Date("2026-08-01T00:00:00Z"), read, fetchDay, log });

@@ -9,7 +9,7 @@ import type { SyncSummary } from "./run";
 
 // 手動成績：官網不是 Bornan 系統時，把成績填進 events/<賽事>/results/manual.csv，每列是一場比賽裡的一位（或一隊）參賽者。
 
-export const MANUAL_COLUMNS = ["unit_id", "date", "time", "sport", "event", "phase", "venue", "status", "name", "organisation", "result", "rank", "medal", "outcome"] as const;
+export const MANUAL_COLUMNS = ["unit_id", "date", "time", "sport", "event", "phase", "venue", "status", "name", "organisation", "result", "rank", "medal", "outcome", "discipline"] as const;
 const REQUIRED = ["unit_id", "date", "sport", "event", "status", "name", "organisation"] as const;
 
 const STATUS_BY_LABEL: Record<string, string> = Object.fromEntries(Object.entries(STATUS_LABELS).map(([code, label]) => [label, code]));
@@ -17,15 +17,26 @@ const MEDALS: Record<string, string> = { 金: "GOLD", 金牌: "GOLD", GOLD: "GOL
 const OUTCOMES: Record<string, string> = { 勝: "W", W: "W", 負: "L", L: "L", 和: "D", D: "D", T: "D" };
 const DISCIPLINE_BY_SPORT: Record<string, string> = Object.fromEntries(Object.entries(SPORTS).map(([code, label]) => [label, code]));
 
-/** 主辦地當地時間 → UTC ISO 字串 */
+function offsetMs(instant: number, timeZone: string): number {
+  const parts = Object.fromEntries(new Intl.DateTimeFormat("en-US", { timeZone, hourCycle: "h23", year: "numeric", month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit" })
+    .formatToParts(instant).map((p) => [p.type, p.value]));
+  return Date.UTC(Number(parts.year), Number(parts.month) - 1, Number(parts.day), Number(parts.hour), Number(parts.minute)) - instant;
+}
+
+/**
+ * 主辦地當地時間 → UTC ISO 字串。
+ * 用「該瞬間的時差」再修正一次，夏令時間切換當天也正確；切換時跳過的時刻（例如 02:30）往後算。
+ */
 export function hostTimeToIso(date: string, time: string, timeZone = CONFIG.timeZone): string {
   const [y, mo, d] = date.split("-").map(Number);
   const [h, mi] = time.split(":").map(Number);
-  const guess = Date.UTC(y, mo - 1, d, h, mi);
-  const parts = Object.fromEntries(new Intl.DateTimeFormat("en-US", { timeZone, hourCycle: "h23", year: "numeric", month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit" })
-    .formatToParts(guess).map((p) => [p.type, p.value]));
-  const asUtc = Date.UTC(Number(parts.year), Number(parts.month) - 1, Number(parts.day), Number(parts.hour), Number(parts.minute));
-  return new Date(guess - (asUtc - guess)).toISOString();
+  const wall = Date.UTC(y, mo - 1, d, h, mi);
+  const first = wall - offsetMs(wall, timeZone);
+  const offset = offsetMs(first, timeZone);
+  const second = wall - offset;
+  // second 自洽（用它自己的時差換回來還是同一個當地時間）就採用；
+  // 不自洽代表這個當地時刻因夏令時間被跳過，改用 first（等於往後順延）
+  return new Date(offsetMs(second, timeZone) === offset ? second : first).toISOString();
 }
 
 function fail(line: number, message: string): never {
@@ -34,8 +45,9 @@ function fail(line: number, message: string): never {
 
 export function parseManualResults(text: string): Map<string, TpeResultUnit[]> {
   const records = csvRecords(text, REQUIRED, "results/manual.csv");
+  // 誤存成空白檔（只剩表頭）會把所有成績清掉；要清空請刪掉個別列，不要整份清空
+  if (!records.length) throw new Error("results/manual.csv 沒有任何成績列（只有表頭）。為避免誤存空白檔清掉所有成績，這裡會停下來；要下架整個賽事請刪除 events/<代號>/");
   const units = new Map<string, TpeResultUnit & { date: string }>();
-  const extraSports = new Map<string, string>();
   records.forEach((row, index) => {
     const line = index + 2;
     if (!/^[A-Za-z0-9._-]{1,80}$/.test(row.unit_id)) fail(line, "unit_id 只能用英數字、點、底線、減號");
@@ -49,8 +61,9 @@ export function parseManualResults(text: string): Map<string, TpeResultUnit[]> {
     if (outcome === undefined) fail(line, "outcome 只能填 勝／負／和");
     const organisation = row.organisation.toUpperCase();
     if (!/^[A-Z]{3}$/.test(organisation)) fail(line, "organisation 是三碼代表隊代碼，例如 TPE");
-    const discipline = DISCIPLINE_BY_SPORT[row.sport] ?? extraSports.get(row.sport) ?? `M${String(extraSports.size + 1).padStart(2, "0")}`;
-    if (!DISCIPLINE_BY_SPORT[row.sport]) extraSports.set(row.sport, discipline);
+    // 項目代碼決定分組：可填三碼官方代碼；沒填且不在內建表，就用運動名稱本身（不受列序影響）
+    if (row.discipline && !/^[A-Z0-9]{3}$/.test(row.discipline)) fail(line, "discipline 是三碼項目代碼，例如 BDM；不確定可留空");
+    const discipline = row.discipline || DISCIPLINE_BY_SPORT[row.sport] || `SPORT:${row.sport}`;
 
     const id = `${CONFIG.source.code}:MANUAL:${row.unit_id}`;
     const existing = units.get(id);
