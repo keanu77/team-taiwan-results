@@ -1,0 +1,16 @@
+import assert from "node:assert/strict";
+import { isMedalResponse, parseMedalStandings } from "../src/lib/results/medals";
+const row = (Org: string, Rk: string, RkEq = false) => ({ Enabled: true, Championship: "AG2026", Discipline: "ALL", Org, Rk, RkEq, Count: { ME_GOLD: { total: 2, M: 0, W: 0, X: 2 }, ME_SILVER: { total: 1 }, ME_BRONZE: { total: 3 }, total: { total: 6 } } });
+const source = [row("TPE", "9", true), row("JPN", "1"), row("KOR", "9", true)];
+const parsed = parseMedalStandings(source);
+assert.deepEqual(parsed.map((r) => [r.org, r.rank, r.tied]), [["JPN", "1", false], ["TPE", "9", true], ["KOR", "9", true]]);
+assert.equal(parsed[1].gold, 2, "use official team totals, not athlete or gender sums");
+assert.equal(source[0].Org, "TPE", "input must stay immutable");
+for (const input of [null, {}, [], [row("TPE", "1"), row("TPE", "2")], [{ ...row("TPE", "1"), Discipline: "TTE" }], [{ ...row("TPE", "1"), Count: { ...row("TPE", "1").Count, total: { total: 0 } } }], [{ ...row("TPE", "1"), Rk: "" }]]) assert.throws(() => parseMedalStandings(input));
+const data = { success: true, stale: false, warning: null, fetchedAt: "2026-09-23T10:00:00Z", standings: parsed };
+assert.equal(isMedalResponse(data), true);
+assert.equal(isMedalResponse({ ...data, standings: [...parsed, parsed[0]] }), false);
+assert.equal(isMedalResponse({ ...data, standings: [{ ...parsed[0], gold: -1 }] }), false);
+assert.equal(isMedalResponse({ ...data, fetchedAt: "invalid" }), false);
+assert.equal(isMedalResponse({ ...data, fetchedAt: null, standings: [] }), true, "unknown data can be represented without zero medals");
+console.info("PASS official medal totals, rank ties, malformed source rejection, immutable input and public payload validation");

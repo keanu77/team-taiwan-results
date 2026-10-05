@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 31, 41, 55;
+  --background-rgb: 246, 248, 251;
+}
+
+/* Night Track。darkMode 走 class 策略，沒人掛上 .dark 就不會生效 */
+.dark {
+  --foreground-rgb: 233, 240, 247;
+  --background-rgb: 7, 16, 24;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+}
+
+@layer base {
+  ::selection {
+    @apply bg-brand-100 text-brand-900;
+  }
+}
+
+/* 自定義工具類（class 名稱保持向後相容，全站頁面直接繼承新視覺） */
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 px-4 py-2 bg-brand-700 text-white font-medium rounded-xl shadow-sm hover:bg-brand-800 active:scale-[0.99] focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2 transition-all;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 px-4 py-2 bg-white text-gray-700 font-medium rounded-xl border border-gray-300 shadow-sm hover:bg-gray-50 hover:border-gray-400 dark:bg-night-surface dark:text-night-body dark:border-night-border dark:hover:bg-night-raised active:scale-[0.99] focus:outline-none focus-visible:ring-2 focus-visible:ring-gray-400 focus-visible:ring-offset-2 transition-all;
+  }
+
+  .btn-danger {
+    @apply inline-flex items-center justify-center gap-2 px-4 py-2 bg-red-700 text-white font-medium rounded-xl shadow-sm hover:bg-red-800 active:scale-[0.99] focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 focus-visible:ring-offset-2 transition-all;
+  }
+
+  .btn-accent {
+    @apply inline-flex items-center justify-center gap-2 px-4 py-2 bg-accent-600 text-white font-medium rounded-xl shadow-sm hover:bg-accent-700 active:scale-[0.99] focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-500 focus-visible:ring-offset-2 transition-all;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 px-4 py-2 bg-transparent text-brand-700 font-medium rounded-xl border border-brand-300 hover:bg-brand-50 hover:border-brand-400 active:scale-[0.99] focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2 transition-all;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 px-3 py-2 text-gray-600 font-medium rounded-xl hover:bg-gray-100 hover:text-gray-900 dark:text-night-muted dark:hover:bg-night-raised dark:hover:text-night-ink focus:outline-none focus-visible:ring-2 focus-visible:ring-gray-400 transition-all;
+  }
+
+  .input-field {
+    @apply w-full px-3.5 py-2.5 bg-white border border-gray-300 rounded-xl text-gray-900 placeholder:text-gray-400 dark:bg-night-surface dark:border-night-border dark:text-night-ink dark:placeholder:text-night-muted focus:outline-none focus:ring-2 focus:ring-brand-500/60 focus:border-brand-500 transition-all;
+  }
+
+  .card {
+    @apply bg-white rounded-2xl border border-gray-200/70 shadow-card p-6 dark:bg-night-surface dark:border-night-border;
+  }
+
+  .card-hover {
+    @apply hover:shadow-card-hover hover:-translate-y-0.5 transition-all duration-200;
+  }
+
+  .status-badge {
+    @apply inline-flex items-center gap-1 px-3 py-1 rounded-full text-sm font-medium;
+  }
+
+  .status-normal {
+    @apply bg-green-100 text-green-800;
+  }
+
+  .status-warning {
+    @apply bg-yellow-100 text-yellow-800;
+  }
+
+  .status-low {
+    @apply bg-red-100 text-red-800;
+  }
+
+  .table-header {
+    @apply bg-gray-50/80 text-left text-xs font-semibold text-gray-500 uppercase tracking-wider px-6 py-3 dark:bg-night-raised dark:text-night-muted;
+  }
+
+  .table-cell {
+    @apply px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-night-ink;
+  }
+
+  /* 頁面骨架：功能頁統一的標題區與容器 */
+  .page-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8;
+  }
+
+  .page-title {
+    @apply text-2xl sm:text-3xl font-bold tracking-tight text-brand-950 dark:text-night-ink;
+  }
+
+  .page-subtitle {
+    @apply mt-1 text-sm text-gray-500 dark:text-night-muted;
+  }
+
+  .section-title {
+    @apply text-lg font-semibold text-gray-900 dark:text-night-ink;
+  }
+
+  .tnum {
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: "tnum";
+  }
+}

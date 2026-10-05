@@ -1,0 +1,13 @@
+/node_modules
+/.next/
+/out/
+*.tsbuildinfo
+next-env.d.ts
+.DS_Store
+.env*
+
+# 同步產生的資料放在 data 分支；main 不收
+/data/
+/public/data/
+# 由 rosters/*.csv 產生
+/src/generated/

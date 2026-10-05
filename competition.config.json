@@ -1,0 +1,30 @@
+{
+  "name": "2026 愛知・名古屋亞運",
+  "startDate": "2026-09-10",
+  "endDate": "2026-10-04",
+  "timeZone": "Asia/Tokyo",
+  "timeZoneLabel": "日本",
+  "viewerTimeZone": "Asia/Taipei",
+  "viewerTimeZoneLabel": "台灣",
+  "team": {
+    "noc": "TPE",
+    "label": "中華台北",
+    "aliases": [
+      "Chinese Taipei",
+      "中華台北",
+      "中華臺北",
+      "中華隊"
+    ]
+  },
+  "source": {
+    "type": "bornan",
+    "code": "AG2026",
+    "apiBase": "https://back.results.asiangames2026.org/s/AG2026/en",
+    "webUrl": "https://results.asiangames2026.org/"
+  },
+  "syncIntervalMinutes": 30,
+  "teamMedals": {
+    "source": "中華奧會代表團成績公布總表",
+    "updatedAt": "2026-09-29T23:00:00+08:00"
+  }
+}

@@ -1,0 +1,21 @@
+import assert from "node:assert/strict";
+import { getAthleteNameDisplay } from "../src/lib/results/athleteNameLookup";
+import { countryName, isCountryTeamName } from "../src/lib/results/countries";
+
+assert.equal(countryName("ART"), "亞洲難民代表隊 · Asian Refugee Team");
+assert.equal(countryName("jpn"), "日本 · Japan");
+assert.equal(countryName("KOR"), "韓國 · Republic of Korea");
+assert.equal(countryName("KGZ"), "吉爾吉斯 · Kyrgyzstan");
+assert.equal(countryName("INA"), "印尼 · Indonesia", "NOC code, not ISO IDN");
+for (const name of ["TPE", "Chinese Taipei", "中華台北", "中華臺北"]) assert.equal(countryName(name), "TPE");
+assert.equal(countryName("UNKNOWN"), "UNKNOWN", "unknown representatives stay visible without guessed translation");
+assert.equal(countryName(""), "代表隊待確認");
+assert.equal(countryName("__proto__"), "__proto__");
+assert.equal(isCountryTeamName("People's Republic of China", "CHN"), true);
+assert.equal(isCountryTeamName("SHINOZUKA Hiroto/ITO Mima", "JPN"), false);
+assert.equal(isCountryTeamName("Chinese Taipei", "TPE"), true);
+assert.equal(isCountryTeamName("Unknown Team", "UNKNOWN"), false);
+const foreign = getAthleteNameDisplay({ id: "opponent", organisation: "JPN", name: "SHINOZUKA Hiroto/ITO Mima" }, "TTE");
+assert.equal(foreign.primaryName, "SHINOZUKA Hiroto/ITO Mima");
+assert.equal(foreign.englishName, null, "country translation must not duplicate or translate foreign athlete names");
+console.info("PASS bilingual NOC labels, TPE naming, unknown fallback and original foreign athlete names");

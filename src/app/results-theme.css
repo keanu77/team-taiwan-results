@@ -1,0 +1,119 @@
+/*
+ * 公開賽果頁的夜間模式。
+ * 賽果元件沿用淺色 utility；這裡在 .dark 下把本頁實際用到的顏色對應到 Night Track 色票，
+ * 避免每個元件都要補 dark: 變體。新增顏色 class 時要一併補對照，否則夜間會露出淺色。
+ * 字級：html[data-font-scale] 調整 rem 基準，全頁以 rem 為單位的尺寸一起縮放。
+ */
+html[data-font-scale="sm"] { font-size: 87.5%; }
+html[data-font-scale="lg"] { font-size: 112.5%; }
+html[data-font-scale="xl"] { font-size: 125%; }
+html[data-font-scale="xxl"] { font-size: 137.5%; }
+
+.dark .results-theme { color-scheme: dark; background-color: #071018; color: #C2D0E0; }
+
+/* 中性底色與框線 */
+.dark .results-theme .bg-white,
+.dark .results-theme .bg-white\/85,
+.dark .results-theme .bg-gray-50,
+.dark .results-theme .bg-slate-50,
+.dark .results-theme .open\:bg-slate-50[open] { background-color: #0F1A26; }
+.dark .results-theme .bg-gray-100,
+.dark .results-theme .bg-slate-100,
+.dark .results-theme .bg-slate-100\/80,
+.dark .results-theme .bg-slate-200,
+.dark .results-theme .bg-gray-200,
+.dark .results-theme .hover\:bg-gray-50:hover,
+.dark .results-theme .hover\:bg-gray-100:hover,
+.dark .results-theme .hover\:bg-slate-50:hover { background-color: #16273A; }
+.dark .results-theme .border-gray-100,
+.dark .results-theme .border-gray-200,
+.dark .results-theme .border-gray-200\/80,
+.dark .results-theme .border-gray-300,
+.dark .results-theme .border-slate-300 { border-color: #1E2E3E; }
+.dark .results-theme .ring-gray-200,
+.dark .results-theme .ring-gray-300,
+.dark .results-theme .ring-slate-400 { --tw-ring-color: #2A3D52; }
+
+/* 中性文字 */
+.dark .results-theme .text-gray-900,
+.dark .results-theme .text-gray-800,
+.dark .results-theme .text-slate-900,
+.dark .results-theme .text-slate-800,
+.dark .results-theme .hover\:text-gray-900:hover { color: #E9F0F7; }
+.dark .results-theme .text-gray-700,
+.dark .results-theme .text-gray-600,
+.dark .results-theme .text-slate-600 { color: #C2D0E0; }
+.dark .results-theme .text-gray-500,
+.dark .results-theme .text-gray-400,
+.dark .results-theme .text-slate-500,
+.dark .results-theme .disabled\:text-gray-400:disabled { color: #93A3B5; }
+
+/* 品牌色 */
+.dark .results-theme .bg-brand-50,
+.dark .results-theme .bg-brand-50\/60,
+.dark .results-theme .hover\:bg-brand-50:hover { background-color: #10243F; }
+.dark .results-theme .border-brand-100,
+.dark .results-theme .border-brand-200 { border-color: #24406A; }
+.dark .results-theme .text-brand-950,
+.dark .results-theme .text-brand-900,
+.dark .results-theme .text-brand-800,
+.dark .results-theme .hover\:text-brand-900:hover { color: #DCEAFD; }
+.dark .results-theme .text-brand-700,
+.dark .results-theme .text-brand-600,
+.dark .results-theme .hover\:text-brand-700:hover { color: #98C4F8; }
+.dark .results-theme .text-accent-600 { color: #5EEAD4; }
+
+/* 語意色：淺底改半透明色塊、深字改亮字 */
+.dark .results-theme .bg-amber-50,
+.dark .results-theme .bg-amber-100 { background-color: rgba(245, 158, 11, 0.16); }
+.dark .results-theme .bg-orange-50,
+.dark .results-theme .bg-orange-100 { background-color: rgba(249, 115, 22, 0.16); }
+.dark .results-theme .bg-blue-50,
+.dark .results-theme .hover\:bg-blue-50:hover,
+.dark .results-theme .bg-blue-100\/70,
+.dark .results-theme .hover\:bg-blue-100\/70:hover { background-color: rgba(59, 130, 246, 0.16); }
+.dark .results-theme .bg-indigo-50 { background-color: rgba(99, 102, 241, 0.18); }
+.dark .results-theme .bg-sky-50 { background-color: rgba(14, 165, 233, 0.16); }
+.dark .results-theme .bg-teal-50 { background-color: rgba(20, 184, 166, 0.16); }
+.dark .results-theme .bg-emerald-100 { background-color: rgba(16, 185, 129, 0.18); }
+.dark .results-theme .bg-rose-50,
+.dark .results-theme .bg-rose-100 { background-color: rgba(244, 63, 94, 0.16); }
+.dark .results-theme .bg-red-50 { background-color: rgba(239, 68, 68, 0.16); }
+
+.dark .results-theme .text-amber-900,
+.dark .results-theme .text-amber-950 { color: #FDE68A; }
+.dark .results-theme .text-orange-900,
+.dark .results-theme .text-orange-950 { color: #FED7AA; }
+.dark .results-theme .text-blue-800,
+.dark .results-theme .text-blue-900,
+.dark .results-theme .text-blue-950 { color: #BFDBFE; }
+.dark .results-theme .text-indigo-900 { color: #C7D2FE; }
+.dark .results-theme .text-sky-900 { color: #BAE6FD; }
+.dark .results-theme .text-teal-700,
+.dark .results-theme .text-teal-800,
+.dark .results-theme .text-teal-900 { color: #99F6E4; }
+.dark .results-theme .text-emerald-900 { color: #A7F3D0; }
+.dark .results-theme .text-rose-700,
+.dark .results-theme .text-rose-800,
+.dark .results-theme .text-rose-900 { color: #FECDD3; }
+.dark .results-theme .text-red-800 { color: #FECACA; }
+
+.dark .results-theme .border-amber-200 { border-color: rgba(245, 158, 11, 0.4); }
+.dark .results-theme .border-orange-200 { border-color: rgba(249, 115, 22, 0.4); }
+.dark .results-theme .border-red-200 { border-color: rgba(239, 68, 68, 0.4); }
+.dark .results-theme .border-blue-100,
+.dark .results-theme .border-blue-200\/70,
+.dark .results-theme .border-blue-200\/80,
+.dark .results-theme .border-blue-300 { border-color: rgba(59, 130, 246, 0.35); }
+.dark .results-theme .divide-blue-200\/70 > :not([hidden]) ~ :not([hidden]) { border-color: rgba(59, 130, 246, 0.35); }
+.dark .results-theme .ring-amber-200,
+.dark .results-theme .ring-amber-400 { --tw-ring-color: rgba(245, 158, 11, 0.45); }
+.dark .results-theme .ring-orange-300 { --tw-ring-color: rgba(249, 115, 22, 0.45); }
+.dark .results-theme .ring-blue-100,
+.dark .results-theme .ring-blue-200 { --tw-ring-color: rgba(59, 130, 246, 0.4); }
+.dark .results-theme .ring-indigo-200 { --tw-ring-color: rgba(99, 102, 241, 0.45); }
+.dark .results-theme .ring-sky-300 { --tw-ring-color: rgba(14, 165, 233, 0.45); }
+.dark .results-theme .ring-teal-200,
+.dark .results-theme .ring-teal-300 { --tw-ring-color: rgba(20, 184, 166, 0.45); }
+.dark .results-theme .ring-emerald-300 { --tw-ring-color: rgba(16, 185, 129, 0.45); }
+.dark .results-theme .ring-rose-200 { --tw-ring-color: rgba(244, 63, 94, 0.4); }

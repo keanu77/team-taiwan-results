@@ -1,0 +1,101 @@
+name: 同步成績並發布
+
+on:
+  # 每 30 分鐘一輪（避開整點的排程尖峰）。賽事前後同步程式會自己跳過，不會打官網。
+  schedule:
+    - cron: "7,37 * * * *"
+  # 改了設定、名單或程式就重新發布
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write   # 把同步資料 commit 到 data 分支
+  pages: write
+  id-token: write
+
+# 同一時間只跑一輪，避免兩輪同時寫 data 分支
+concurrency:
+  group: sync-and-deploy
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    outputs:
+      changed: ${{ steps.sync.outputs.changed }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 取回上一輪的資料（data 分支）
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git fetch --depth=1 origin data:data 2>/dev/null; then
+            git worktree add data data
+          else
+            git worktree add --orphan -b data data
+          fi
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: 同步官方成績
+        id: sync
+        run: npm run sync
+        env:
+          DATA_DIR: data
+
+      - name: 存回 data 分支
+        if: steps.sync.outputs.changed == 'true'
+        working-directory: data
+        run: |
+          git add -A
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -q -m "data: sync $(date -u +%FT%TZ)"
+          git push origin data
+
+  deploy:
+    needs: sync
+    # 排程觸發但資料沒變就不重新發布
+    if: needs.sync.outputs.changed == 'true' || github.event_name != 'schedule'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 取回最新資料
+        run: |
+          if git fetch --depth=1 origin data:data 2>/dev/null; then
+            git worktree add data data
+          fi
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - id: pages
+        uses: actions/configure-pages@v5
+
+      - name: 建置靜態網站
+        run: npm run build
+        env:
+          BASE_PATH: ${{ steps.pages.outputs.base_path }}
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: out
+
+      - id: deployment
+        uses: actions/deploy-pages@v4

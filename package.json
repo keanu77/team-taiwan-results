@@ -1,0 +1,41 @@
+{
+  "name": "team-taiwan-results",
+  "version": "1.0.0",
+  "private": true,
+  "description": "國家隊綜合賽會賽程與賽果追蹤頁：GitHub Actions 定時同步官方成績，發布到 GitHub Pages",
+  "license": "MIT",
+  "scripts": {
+    "rosters": "tsx scripts/build-rosters.ts",
+    "predev": "npm run rosters && node scripts/copy-data.mjs",
+    "dev": "next dev",
+    "prebuild": "npm run rosters && node scripts/copy-data.mjs",
+    "build": "next build",
+    "typecheck": "npm run rosters && tsc --noEmit",
+    "lint": "next lint",
+    "pretest": "npm run rosters",
+    "test": "sh scripts/run-tests.sh",
+    "presync": "npm run rosters",
+    "sync": "tsx scripts/sync.ts",
+    "import-medal-pdf": "node scripts/import-tpe-medals.mjs"
+  },
+  "dependencies": {
+    "@fontsource/ibm-plex-mono": "^5.3.0",
+    "@fontsource/ibm-plex-sans": "^5.3.0",
+    "next": "15.5.25",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.9.1",
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.2",
+    "autoprefixer": "^10.4.21",
+    "postcss": "8.5.28",
+    "tailwindcss": "^3.4.18",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

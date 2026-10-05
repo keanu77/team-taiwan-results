@@ -1,0 +1,14 @@
+// build 前把同步資料（data/）複製到 public/data/，讓靜態網站讀得到。沒有 data/ 就放空的 index。
+import { cpSync, existsSync, mkdirSync, rmSync, writeFileSync } from "node:fs";
+import { readFileSync } from "node:fs";
+
+const config = JSON.parse(readFileSync("competition.config.json", "utf8"));
+rmSync("public/data", { recursive: true, force: true });
+if (existsSync("data/index.json")) {
+  cpSync("data", "public/data", { recursive: true, filter: (path) => !path.endsWith(".tmp") && !path.includes("/.git") });
+  console.log("[copy-data] data/ → public/data/");
+} else {
+  mkdirSync("public/data", { recursive: true });
+  writeFileSync("public/data/index.json", JSON.stringify({ source: config.source.code, generatedAt: new Date(0).toISOString(), days: {}, medals: null }));
+  console.log("[copy-data] 沒有 data/，產生空的 index.json");
+}

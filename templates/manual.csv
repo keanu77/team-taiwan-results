@@ -1,0 +1,4 @@
+﻿unit_id,date,time,sport,event,phase,venue,status,name,organisation,result,rank,medal,outcome
+BDM-MS-F,2026-09-28,14:00,羽球,男子單打,決賽,範例體育館,正式成績,EXAMPLE Player-one,TPE,2-1,,金,勝
+BDM-MS-F,2026-09-28,14:00,羽球,男子單打,決賽,範例體育館,正式成績,SAMPLE Opponent,JPN,1-2,,銀,負
+ATH-HJ-F,2026-09-27,19:10,田徑,男子跳高,決賽,範例田徑場,正式成績,EXAMPLE Jumper,TPE,2.30,1,金,
