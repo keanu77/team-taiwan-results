@@ -1,15 +1,19 @@
 #!/usr/bin/env node
-// 匯入中華奧會代表團「成績公布總表」PDF → rosters/team-medals.csv，並更新 competition.config.json 的 teamMedals。
+// 匯入中華奧會代表團「成績公布總表」PDF → events/<賽事>/rosters/team-medals.csv，並更新該賽事 competition.config.json 的 teamMedals。
 // 只適用這份總表的版面；格式改了會解析失敗（不會寫入半套資料），屆時改用手動編輯 CSV。
 // 解析【依獎牌】頁的文字座標（需要 poppler 的 pdftotext），並以表內各色小計與總獎牌數交叉驗證。
-// 用法：npm run import-medal-pdf -- <總表.pdf> [--dry-run]
+// 用法：EVENT=<賽事代號> npm run import-medal-pdf -- <總表.pdf> [--dry-run]（只有一個賽事時可省略 EVENT）
 import { execFileSync } from 'node:child_process'
-import { readFileSync, writeFileSync } from 'node:fs'
+import { existsSync, readdirSync, readFileSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { pathToFileURL } from 'node:url'
 
-const OUTPUT = join(process.cwd(), 'rosters/team-medals.csv')
-const CONFIG = join(process.cwd(), 'competition.config.json')
+function eventDir() {
+  const events = existsSync('events') ? readdirSync('events').filter((name) => existsSync(join('events', name, 'competition.config.json'))).sort() : []
+  const id = process.env.EVENT?.trim() || (events.length === 1 ? events[0] : '')
+  if (!id || !events.includes(id)) throw new Error(`請用 EVENT 指定賽事；目前有：${events.join('、') || '（無）'}`)
+  return join(process.cwd(), 'events', id)
+}
 const MEDALS = { 金: 'gold', 銀: 'silver', 銅: 'bronze' }
 const MEDAL_ZH = { gold: '金', silver: '銀', bronze: '銅' }
 const csvCell = (value) => (/[",\r\n]/.test(value) ? `"${value.replaceAll('"', '""')}"` : value)
@@ -112,6 +116,8 @@ function main() {
   const summary = Object.entries(MEDALS).map(([label, color]) => `${data.medals.filter((m) => m.medal === color).length}${label}`).join(' ')
   console.info(`解析完成：${summary}，共 ${rows.length} 面（更新 ${data.updatedAt}）`)
   if (flag === '--dry-run') return console.info(JSON.stringify(data, null, 2))
+  const OUTPUT = join(eventDir(), 'rosters', 'team-medals.csv')
+  const CONFIG = join(eventDir(), 'competition.config.json')
   const lines = [['medal', 'date', 'sport', 'event', 'athletes'], ...data.medals.map((m) => [MEDAL_ZH[m.medal], m.date, m.sport, m.event, m.athletes.join('、')])]
   writeFileSync(OUTPUT, `\uFEFF${lines.map((row) => row.map(csvCell).join(',')).join('\n')}\n`)
   const config = JSON.parse(readFileSync(CONFIG, 'utf8'))

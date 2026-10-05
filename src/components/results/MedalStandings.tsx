@@ -20,7 +20,7 @@ export function MedalStandings({ refreshKey }: { refreshKey: number }) {
   const [data, setData] = useState<MedalResponse | null>(null);
   const [error, setError] = useState<string | null>(null);
   useEffect(() => {
-    // 手動成績沒有官方獎牌榜，只用 rosters/team-medals.csv 的明細
+    // 手動成績沒有官方獎牌榜，只用 events/<賽事>/rosters/team-medals.csv 的明細
     if (MANUAL) return;
     const controller = new AbortController();
     let pending = false;

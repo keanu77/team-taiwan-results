@@ -7,7 +7,7 @@ import type { TpeCompetitor, TpeResultUnit } from "../types";
 import type { FileStore } from "./fileStore";
 import type { SyncSummary } from "./run";
 
-// 手動成績：官網不是 Bornan 系統時，把成績填進 results/manual.csv，每列是一場比賽裡的一位（或一隊）參賽者。
+// 手動成績：官網不是 Bornan 系統時，把成績填進 events/<賽事>/results/manual.csv，每列是一場比賽裡的一位（或一隊）參賽者。
 
 export const MANUAL_COLUMNS = ["unit_id", "date", "time", "sport", "event", "phase", "venue", "status", "name", "organisation", "result", "rank", "medal", "outcome"] as const;
 const REQUIRED = ["unit_id", "date", "sport", "event", "status", "name", "organisation"] as const;

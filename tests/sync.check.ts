@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import { mkdtempSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
-import { parseConfig } from "../src/config";
+import { parseConfig } from "../src/config-schema";
 import { csvRecords, parseCsv, toCsv } from "../src/lib/csv";
 import { dayResponse, medalResponse, sourceCooldown } from "../src/lib/results/snapshot";
 import { fileStore } from "../src/lib/results/sync/fileStore";
@@ -20,7 +20,7 @@ assert.throws(() => csvRecords("a,b\n1,2", ["a", "c"], "x.csv"), /x\.csv 缺少�
 assert.deepEqual(parseCsv(toCsv(["n"], [["a,b"], ['q"']])), [["n"], ["a,b"], ['q"']]);
 
 // 設定檔驗證：錯的欄位直接指名
-const base = JSON.parse(readFileSync("competition.config.json", "utf8"));
+const base = JSON.parse(readFileSync("events/ag2026/competition.config.json", "utf8"));
 assert.equal(parseConfig(base).team.noc, "TPE");
 assert.throws(() => parseConfig({ ...base, endDate: "2026-01-01" }), /endDate/);
 assert.throws(() => parseConfig({ ...base, timeZone: "Mars/Base" }), /timeZone/);

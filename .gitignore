@@ -11,3 +11,4 @@ next-env.d.ts
 /public/data/
 # 由 rosters/*.csv 產生
 /src/generated/
+/site/

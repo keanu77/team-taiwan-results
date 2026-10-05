@@ -22,7 +22,8 @@ concurrency:
 jobs:
   sync:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    # 每個進行中的賽事最多花 20 分鐘；通常同一時間只有一個賽事在賽期內
+    timeout-minutes: 45
     outputs:
       changed: ${{ steps.sync.outputs.changed }}
     steps:
@@ -45,14 +46,13 @@ jobs:
 
       - run: npm ci
 
-      - name: 同步官方成績
+      - name: 同步各賽事成績（每個賽事寫到 data/<代號>/）
         id: sync
-        run: npm run sync
-        env:
-          DATA_DIR: data
+        run: npm run sync:all
 
       - name: 存回 data 分支
-        if: steps.sync.outputs.changed == 'true'
+        # 某個賽事同步失敗時，其他賽事成功的資料照樣保存
+        if: always() && steps.sync.outputs.changed == 'true'
         working-directory: data
         run: |
           git add -A
@@ -63,7 +63,7 @@ jobs:
   deploy:
     needs: sync
     # 排程觸發但資料沒變就不重新發布
-    if: needs.sync.outputs.changed == 'true' || github.event_name != 'schedule'
+    if: always() && (needs.sync.outputs.changed == 'true' || github.event_name != 'schedule')
     runs-on: ubuntu-latest
     timeout-minutes: 15
     environment:
@@ -88,14 +88,14 @@ jobs:
       - id: pages
         uses: actions/configure-pages@v5
 
-      - name: 建置靜態網站
-        run: npm run build
+      - name: 建置網站（每個賽事一個子目錄＋首頁賽事列表）
+        run: npm run build:site
         env:
           BASE_PATH: ${{ steps.pages.outputs.base_path }}
 
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: out
+          path: site
 
       - id: deployment
         uses: actions/deploy-pages@v4

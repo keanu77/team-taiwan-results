@@ -3,7 +3,9 @@
 綜合運動會（亞運、亞室武運、南美運動會等）的**國家隊賽程與賽果追蹤頁**。
 GitHub Actions 每 30 分鐘向官方成績系統同步一次，產生純靜態網站發布到 GitHub Pages：不需要伺服器、不需要資料庫，也不用付費。
 
-示範站（2026 愛知・名古屋亞運，中華台北）：<https://keanu77.github.io/team-taiwan-results/>
+網站：<https://keanu77.github.io/team-taiwan-results/>（首頁列出所有賽事，例如 [2026 愛知・名古屋亞運](https://keanu77.github.io/team-taiwan-results/ag2026/)）
+
+一個 repo 可以同時放多個賽事，每個賽事有自己的網址。只想看賽果的人直接開連結就好，不需要複製任何東西。
 
 - 依運動項目分組的當日／整個賽期賽程與比分，支援中英文選手搜尋
 - 本隊累計獎牌、得牌選手、各國獎牌排行榜
@@ -22,15 +24,38 @@ GitHub Actions（每 30 分鐘）
 
 - 只有**比賽前兩天到閉幕後三天**會真的去抓官網；其他時間排程會直接跳過。
 - 官網連線失敗時保留最後一次成功的資料，並暫停 30 分鐘再試，不會連續重試。
-- 同步資料放在獨立的 `data` 分支，`main` 的歷史不會被洗版。
+- 同步資料放在獨立的 `data` 分支（每個賽事一個資料夾），`main` 的歷史不會被洗版。
+
+## 目錄結構
+
+```
+events/
+  ag2026/                      ← 賽事代號＝網址路徑（小寫英數字與減號）
+    competition.config.json    ← 賽事設定
+    rosters/                   ← 中文對照名單（選填）
+      athletes.csv
+      event-names.csv
+      team-medals.csv
+    results/manual.csv         ← 只有手動成績模式需要
+templates/                     ← 空白範本
+```
+
+## 想追蹤新的賽事？
+
+- **請維護者加進這個網站**：開一個 [issue](https://github.com/keanu77/team-taiwan-results/issues)，附上賽事名稱、日期、官方成績網站網址，以及要追蹤的代表隊。
+- **自己架一份**（追蹤其他國家、小型賽事，或想自己管理）：照下面的步驟。
 
 ## 用在新的賽事
 
-### 1. 複製 repo
+### 1. 複製 repo（自己架才需要）
 
-按右上角 **Use this template**（或 Fork）建立自己的 repo。
+按右上角 **Use this template**（或 Fork）建立自己的 repo。只追蹤一個賽事的話，可以刪掉不要的 `events/` 資料夾；只剩一個賽事時，首頁會直接轉到那個賽事。
 
-### 2. 修改 `competition.config.json`
+### 2. 新增賽事資料夾
+
+把 `events/ag2026/` 整個複製成 `events/<新代號>/`（例如 `events/aimag2026/`），代號就是網址路徑。全部可以在 GitHub 網頁上完成：新增檔案時，檔名輸入 `events/aimag2026/competition.config.json` 就會自動建立資料夾。
+
+然後修改裡面的 `competition.config.json`：
 
 | 欄位 | 說明 | 範例 |
 |---|---|---|
@@ -52,7 +77,7 @@ GitHub Actions（每 30 分鐘）
 
 ### 3. 準備名單（選填，但建議）
 
-官方資料只有英文。把中文對照填進 `rosters/` 的三個 CSV（可以從 `templates/` 複製只有一列範例的空白版）：
+官方資料只有英文。把中文對照填進該賽事 `rosters/` 的三個 CSV（可以從 `templates/` 複製只有一列範例的空白版）：
 
 | 檔案 | 用途 | 欄位 |
 |---|---|---|
@@ -65,8 +90,8 @@ GitHub Actions（每 30 分鐘）
 中華奧會的「代表團成績公布總表」PDF 可以直接轉成 `team-medals.csv`（需要 [poppler](https://poppler.freedesktop.org/) 的 `pdftotext`）：
 
 ```bash
-npm run import-medal-pdf -- 總表.pdf --dry-run   # 先看解析結果
-npm run import-medal-pdf -- 總表.pdf             # 寫入 CSV 並更新 config 的 teamMedals
+EVENT=ag2026 npm run import-medal-pdf -- 總表.pdf --dry-run   # 先看解析結果
+EVENT=ag2026 npm run import-medal-pdf -- 總表.pdf             # 寫入該賽事的 CSV 並更新 config 的 teamMedals
 ```
 
 PDF 版面一改就可能解析失敗（失敗時不會寫入任何東西），那時改成手動編輯 CSV。
@@ -77,9 +102,11 @@ PDF 版面一改就可能解析失敗（失敗時不會寫入任何東西），�
 2. 到 **Actions** 分頁按啟用。Fork 的 repo 預設停用排程，沒啟用就不會自動更新。
 3. **Actions → 同步成績並發布 → Run workflow** 手動跑第一次。完成後網址會出現在 workflow 的 deploy 步驟。
 
-### 5. 換到下一屆賽事時
+### 5. 注意
 
-改完設定後，**刪除 `data` 分支**（Branches 頁面），舊賽事的快照才不會留著。同步程式偵測到 `data` 分支屬於另一個賽事代碼時會停下來提醒。
+- 每個賽事的同步資料存在 `data` 分支的 `<代號>/` 資料夾。**不要把舊賽事的資料夾改設定成新賽事**，請另開新代號；同步程式偵測到資料夾裡是另一個賽事代碼的資料時會停下來提醒。
+- 賽事結束後資料夾可以一直留著，網站會保留成封存頁，同步程式不會再去打官網。
+- 要下架某個賽事，刪掉 `events/<代號>/` 即可。
 
 ## 成績來源
 
@@ -91,7 +118,7 @@ PDF 版面一改就可能解析失敗（失敗時不會寫入任何東西），�
 
 ### `manual`：手動 CSV
 
-官網不是 Bornan 系統、或 API 不相容時，把 `source.type` 改成 `manual`，成績填在 `results/manual.csv`（格式見 `templates/manual.csv`），push 後就會發布。每列是一場比賽中的一位（或一隊）參賽者：
+官網不是 Bornan 系統、或 API 不相容時，把 `source.type` 改成 `manual`，成績填在該賽事的 `events/<代號>/results/manual.csv`（格式見 `templates/manual.csv`），push 後就會發布。每列是一場比賽中的一位（或一隊）參賽者：
 
 | 欄位 | 必填 | 說明 |
 |---|---|---|
@@ -112,13 +139,16 @@ PDF 版面一改就可能解析失敗（失敗時不會寫入任何東西），�
 
 需要 Node.js 22 以上。
 
+需要指定賽事的指令用 `EVENT=<代號>`；不指定時用 `events/` 底下第一個賽事。
+
 ```bash
 npm install
-npm run dev          # http://localhost:3000（沒有 data/ 時顯示空白狀態）
-npm run sync         # 實際向官方同步一輪，資料寫到 data/
-npm test             # 單元測試
+EVENT=ag2026 npm run dev     # http://localhost:3000（沒有同步資料時顯示空白狀態）
+EVENT=ag2026 npm run sync    # 向官方同步這個賽事一輪，資料寫到 data/ag2026/
+npm run sync:all             # 依序同步所有賽事（GitHub Actions 用這個）
+npm test                     # 單元測試
 npm run typecheck
-npm run build        # 靜態網站輸出到 out/
+npm run build:site           # 整個網站（所有賽事＋首頁）輸出到 site/
 ```
 
 ## 注意事項

@@ -11,5 +11,5 @@ export interface TpeAthleteNameEntry {
   identityGroup?: string;
 }
 
-/** 選手中英文名對照；來源是 rosters/athletes.csv（npm run rosters 轉成 src/generated/rosters.json）。 */
+/** 選手中英文名對照；來源是 events/<賽事>/rosters/athletes.csv（npm run event 轉成 src/generated/rosters.json）。 */
 export const TPE_ATHLETE_NAMES: readonly TpeAthleteNameEntry[] = ROSTERS.athletes;
