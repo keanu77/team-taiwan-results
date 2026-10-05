@@ -1,0 +1,369 @@
+{
+ "date": "2026-09-18",
+ "units": [
+  {
+   "id": "AG2026:TST:M.TEAM--------------.GPC-.00010000",
+   "discipline": "TST",
+   "sport": "軟式網球",
+   "event": "Men's Team",
+   "phase": "Group C",
+   "unit": "Match 1",
+   "startsAt": "2026-09-18T00:00:00.000Z",
+   "timeNote": "",
+   "venue": "Higashiyama Park Tennis Center",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "TSTMTEAM-------TPE01",
+     "organisation": "TPE",
+     "name": "TPE",
+     "result": "3",
+     "rank": "1",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    },
+    {
+     "id": "TSTMTEAM-------MGL01",
+     "organisation": "MGL",
+     "name": "Mongolia",
+     "result": "0",
+     "rank": "2",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    }
+   ],
+   "detailAvailable": true,
+   "sourceUrl": "https://results.asiangames2026.org/#/discipline/TST/results/M.TEAM--------------.GPC-.00010000"
+  },
+  {
+   "id": "AG2026:TST:W.TEAM--------------.GPB-.00010000",
+   "discipline": "TST",
+   "sport": "軟式網球",
+   "event": "Women's Team",
+   "phase": "Group B",
+   "unit": "Match 1",
+   "startsAt": "2026-09-18T00:00:00.000Z",
+   "timeNote": "",
+   "venue": "Higashiyama Park Tennis Center",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "TSTWTEAM-------TPE01",
+     "organisation": "TPE",
+     "name": "TPE",
+     "result": "3",
+     "rank": "1",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    },
+    {
+     "id": "TSTWTEAM-------THA01",
+     "organisation": "THA",
+     "name": "Thailand",
+     "result": "0",
+     "rank": "2",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    }
+   ],
+   "detailAvailable": true,
+   "sourceUrl": "https://results.asiangames2026.org/#/discipline/TST/results/W.TEAM--------------.GPB-.00010000"
+  },
+  {
+   "id": "AG2026:TST:M.TEAM--------------.GPC-.00030000",
+   "discipline": "TST",
+   "sport": "軟式網球",
+   "event": "Men's Team",
+   "phase": "Group C",
+   "unit": "Match 3",
+   "startsAt": "2026-09-18T02:00:00.000Z",
+   "timeNote": "",
+   "venue": "Higashiyama Park Tennis Center",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "TSTMTEAM-------TPE01",
+     "organisation": "TPE",
+     "name": "TPE",
+     "result": "3",
+     "rank": "1",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    },
+    {
+     "id": "TSTMTEAM-------IND01",
+     "organisation": "IND",
+     "name": "India",
+     "result": "0",
+     "rank": "2",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    }
+   ],
+   "detailAvailable": true,
+   "sourceUrl": "https://results.asiangames2026.org/#/discipline/TST/results/M.TEAM--------------.GPC-.00030000"
+  },
+  {
+   "id": "AG2026:TST:W.TEAM--------------.GPB-.00030000",
+   "discipline": "TST",
+   "sport": "軟式網球",
+   "event": "Women's Team",
+   "phase": "Group B",
+   "unit": "Match 3",
+   "startsAt": "2026-09-18T02:00:00.000Z",
+   "timeNote": "",
+   "venue": "Higashiyama Park Tennis Center",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "TSTWTEAM-------TPE01",
+     "organisation": "TPE",
+     "name": "TPE",
+     "result": "3",
+     "rank": "1",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    },
+    {
+     "id": "TSTWTEAM-------MGL01",
+     "organisation": "MGL",
+     "name": "Mongolia",
+     "result": "0",
+     "rank": "2",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    }
+   ],
+   "detailAvailable": true,
+   "sourceUrl": "https://results.asiangames2026.org/#/discipline/TST/results/W.TEAM--------------.GPB-.00030000"
+  },
+  {
+   "id": "AG2026:HOC:W.TEAM11------------.GPA-.000100--",
+   "discipline": "HOC",
+   "sport": "曲棍球",
+   "event": "Women",
+   "phase": "Pool A",
+   "unit": "Match 1",
+   "startsAt": "2026-09-18T04:00:00.000Z",
+   "timeNote": "",
+   "venue": "Gifu Prefectural Green Stadium",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "HOCWTEAM11-----KOR01",
+     "organisation": "KOR",
+     "name": "Republic of Korea",
+     "result": "3",
+     "rank": "1",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    },
+    {
+     "id": "HOCWTEAM11-----TPE01",
+     "organisation": "TPE",
+     "name": "TPE",
+     "result": "1",
+     "rank": "2",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    }
+   ],
+   "detailAvailable": true,
+   "sourceUrl": "https://results.asiangames2026.org/#/discipline/HOC/results/W.TEAM11------------.GPA-.000100--"
+  },
+  {
+   "id": "AG2026:BKB:W.TEAM5-------------.GPC-.000200--",
+   "discipline": "BKB",
+   "sport": "籃球",
+   "event": "Women",
+   "phase": "Group Phase - Group C",
+   "unit": "Game 2",
+   "startsAt": "2026-09-18T04:00:00.000Z",
+   "timeNote": "",
+   "venue": "Aichi International Arena",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "BKBWTEAM5------TPE01",
+     "organisation": "TPE",
+     "name": "TPE",
+     "result": "76",
+     "rank": "1",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    },
+    {
+     "id": "BKBWTEAM5------MGL01",
+     "organisation": "MGL",
+     "name": "Mongolia",
+     "result": "67",
+     "rank": "2",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    }
+   ],
+   "detailAvailable": true,
+   "sourceUrl": "https://results.asiangames2026.org/#/discipline/BKB/results/W.TEAM5-------------.GPC-.000200--"
+  },
+  {
+   "id": "AG2026:TST:W.TEAM--------------.GPB-.00050000",
+   "discipline": "TST",
+   "sport": "軟式網球",
+   "event": "Women's Team",
+   "phase": "Group B",
+   "unit": "Match 5",
+   "startsAt": "2026-09-18T04:00:00.000Z",
+   "timeNote": "",
+   "venue": "Higashiyama Park Tennis Center",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "TSTWTEAM-------TPE01",
+     "organisation": "TPE",
+     "name": "TPE",
+     "result": "3",
+     "rank": "1",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    },
+    {
+     "id": "TSTWTEAM-------PHI01",
+     "organisation": "PHI",
+     "name": "Philippines",
+     "result": "0",
+     "rank": "2",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    }
+   ],
+   "detailAvailable": true,
+   "sourceUrl": "https://results.asiangames2026.org/#/discipline/TST/results/W.TEAM--------------.GPB-.00050000"
+  },
+  {
+   "id": "AG2026:TST:M.TEAM--------------.GPC-.00060000",
+   "discipline": "TST",
+   "sport": "軟式網球",
+   "event": "Men's Team",
+   "phase": "Group C",
+   "unit": "Match 6",
+   "startsAt": "2026-09-18T04:00:00.000Z",
+   "timeNote": "",
+   "venue": "Higashiyama Park Tennis Center",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "TSTMTEAM-------TPE01",
+     "organisation": "TPE",
+     "name": "TPE",
+     "result": "3",
+     "rank": "1",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    },
+    {
+     "id": "TSTMTEAM-------LAO01",
+     "organisation": "LAO",
+     "name": "Lao People's Democratic Republic",
+     "result": "0",
+     "rank": "2",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    }
+   ],
+   "detailAvailable": true,
+   "sourceUrl": "https://results.asiangames2026.org/#/discipline/TST/results/M.TEAM--------------.GPC-.00060000"
+  },
+  {
+   "id": "AG2026:VVO:W.TEAM6-------------.GPC-.000600--",
+   "discipline": "VVO",
+   "sport": "排球",
+   "event": "Women",
+   "phase": "Preliminary Round - Pool C",
+   "unit": "Match 18",
+   "startsAt": "2026-09-18T10:00:00.000Z",
+   "timeNote": "",
+   "venue": "Okazaki Chuo Sogo Park Gymnasium",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "VVOWTEAM6------TPE01",
+     "organisation": "TPE",
+     "name": "TPE",
+     "result": "0",
+     "rank": "",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    },
+    {
+     "id": "VVOWTEAM6------THA01",
+     "organisation": "THA",
+     "name": "Thailand",
+     "result": "3",
+     "rank": "",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    }
+   ],
+   "detailAvailable": true,
+   "sourceUrl": "https://results.asiangames2026.org/#/discipline/VVO/results/W.TEAM6-------------.GPC-.000600--"
+  }
+ ],
+ "successCount": 1,
+ "lastSuccessAt": "2026-10-05T17:03:02.438Z",
+ "lastAttemptAt": "2026-10-05T17:02:43.364Z",
+ "lastError": null
+}

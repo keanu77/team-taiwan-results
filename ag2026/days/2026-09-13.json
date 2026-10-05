@@ -1,0 +1,49 @@
+{
+ "date": "2026-09-13",
+ "units": [
+  {
+   "id": "AG2026:BKB:M.TEAM5-------------.GPB-.000600--",
+   "discipline": "BKB",
+   "sport": "籃球",
+   "event": "Men",
+   "phase": "Group Phase - Group B",
+   "unit": "Game 6",
+   "startsAt": "2026-09-13T04:00:00.000Z",
+   "timeNote": "",
+   "venue": "Aichi International Arena",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "BKBMTEAM5------TPE01",
+     "organisation": "TPE",
+     "name": "TPE",
+     "result": "91",
+     "rank": "1",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    },
+    {
+     "id": "BKBMTEAM5------QAT01",
+     "organisation": "QAT",
+     "name": "Qatar",
+     "result": "69",
+     "rank": "2",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    }
+   ],
+   "detailAvailable": true,
+   "sourceUrl": "https://results.asiangames2026.org/#/discipline/BKB/results/M.TEAM5-------------.GPB-.000600--"
+  }
+ ],
+ "successCount": 1,
+ "lastSuccessAt": "2026-10-05T17:02:19.756Z",
+ "lastAttemptAt": "2026-10-05T17:02:16.586Z",
+ "lastError": null
+}

@@ -1,0 +1,89 @@
+{
+ "date": "2026-09-17",
+ "units": [
+  {
+   "id": "AG2026:FBL:W.TEAM11------------.GPE-.000300--",
+   "discipline": "FBL",
+   "sport": "足球",
+   "event": "Women",
+   "phase": "Group E",
+   "unit": "Women Group E",
+   "startsAt": "2026-09-17T07:00:00.000Z",
+   "timeNote": "",
+   "venue": "Shizuoka Stadium Ecopa",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "FBLWTEAM11-----THA01",
+     "organisation": "THA",
+     "name": "Thailand",
+     "result": "0",
+     "rank": "2",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    },
+    {
+     "id": "FBLWTEAM11-----TPE01",
+     "organisation": "TPE",
+     "name": "TPE",
+     "result": "1",
+     "rank": "1",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    }
+   ],
+   "detailAvailable": true,
+   "sourceUrl": "https://results.asiangames2026.org/#/discipline/FBL/results/W.TEAM11------------.GPE-.000300--"
+  },
+  {
+   "id": "AG2026:VVO:W.TEAM6-------------.GPC-.000300--",
+   "discipline": "VVO",
+   "sport": "排球",
+   "event": "Women",
+   "phase": "Preliminary Round - Pool C",
+   "unit": "Match 11",
+   "startsAt": "2026-09-17T07:00:00.000Z",
+   "timeNote": "",
+   "venue": "Okazaki Chuo Sogo Park Gymnasium",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "VVOWTEAM6------TPE01",
+     "organisation": "TPE",
+     "name": "TPE",
+     "result": "3",
+     "rank": "",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    },
+    {
+     "id": "VVOWTEAM6------MGL01",
+     "organisation": "MGL",
+     "name": "Mongolia",
+     "result": "0",
+     "rank": "",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    }
+   ],
+   "detailAvailable": true,
+   "sourceUrl": "https://results.asiangames2026.org/#/discipline/VVO/results/W.TEAM6-------------.GPC-.000300--"
+  }
+ ],
+ "successCount": 1,
+ "lastSuccessAt": "2026-10-05T17:02:43.363Z",
+ "lastAttemptAt": "2026-10-05T17:02:33.604Z",
+ "lastError": null
+}

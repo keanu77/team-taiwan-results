@@ -1,0 +1,49 @@
+{
+ "date": "2026-09-14",
+ "units": [
+  {
+   "id": "AG2026:FBL:W.TEAM11------------.GPE-.000100--",
+   "discipline": "FBL",
+   "sport": "足球",
+   "event": "Women",
+   "phase": "Group E",
+   "unit": "Women Group E",
+   "startsAt": "2026-09-14T07:00:00.000Z",
+   "timeNote": "",
+   "venue": "Shizuoka Stadium Ecopa",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "FBLWTEAM11-----TPE01",
+     "organisation": "TPE",
+     "name": "TPE",
+     "result": "2",
+     "rank": "1",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    },
+    {
+     "id": "FBLWTEAM11-----VIE01",
+     "organisation": "VIE",
+     "name": "Vietnam",
+     "result": "1",
+     "rank": "2",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    }
+   ],
+   "detailAvailable": true,
+   "sourceUrl": "https://results.asiangames2026.org/#/discipline/FBL/results/W.TEAM11------------.GPE-.000100--"
+  }
+ ],
+ "successCount": 1,
+ "lastSuccessAt": "2026-10-05T17:02:23.995Z",
+ "lastAttemptAt": "2026-10-05T17:02:19.757Z",
+ "lastError": null
+}

@@ -1,0 +1,2229 @@
+{
+ "date": "2026-10-02",
+ "units": [
+  {
+   "id": "AG2026:GLF:M.STROKE------------.FNL-.000300--",
+   "discipline": "GLF",
+   "sport": "Golf",
+   "event": "Men's Individual Stroke Play",
+   "phase": "Rounds",
+   "unit": "Round 3",
+   "startsAt": "2026-10-01T21:30:00.000Z",
+   "timeNote": "",
+   "venue": "Kasugai Country Club East Course",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": false,
+   "competitors": [
+    {
+     "id": "11704760",
+     "organisation": "TPE",
+     "name": "WANG Wei-Hsuan",
+     "result": "-11",
+     "rank": "2",
+     "outcome": "",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    },
+    {
+     "id": "12708292",
+     "organisation": "TPE",
+     "name": "CHAN Shih-Chang",
+     "result": "-7",
+     "rank": "8",
+     "outcome": "",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    },
+    {
+     "id": "905667",
+     "organisation": "TPE",
+     "name": "HUNG Chien-Yao",
+     "result": "+1",
+     "rank": "23",
+     "outcome": "",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    }
+   ],
+   "detailAvailable": true,
+   "sourceUrl": "https://results.asiangames2026.org/#/discipline/GLF/results/M.STROKE------------.FNL-.000300--"
+  },
+  {
+   "id": "AG2026:GLF:M.TEAM--------------.FNL-.000300--",
+   "discipline": "GLF",
+   "sport": "Golf",
+   "event": "Men's Team",
+   "phase": "Rounds",
+   "unit": "Round 3",
+   "startsAt": "2026-10-01T21:30:00.000Z",
+   "timeNote": "",
+   "venue": "Kasugai Country Club East Course",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": false,
+   "competitors": [
+    {
+     "id": "GLFMTEAM-------TPE01",
+     "organisation": "TPE",
+     "name": "TPE",
+     "result": "-18",
+     "rank": "3",
+     "outcome": "",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    }
+   ],
+   "detailAvailable": true,
+   "sourceUrl": "https://results.asiangames2026.org/#/discipline/GLF/results/M.TEAM--------------.FNL-.000300--"
+  },
+  {
+   "id": "AG2026:GLF:W.STROKE------------.FNL-.000300--",
+   "discipline": "GLF",
+   "sport": "Golf",
+   "event": "Women's Individual Stroke Play",
+   "phase": "Rounds",
+   "unit": "Round 3",
+   "startsAt": "2026-10-02T00:19:00.000Z",
+   "timeNote": "",
+   "venue": "Kasugai Country Club East Course",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": false,
+   "competitors": [
+    {
+     "id": "8374574",
+     "organisation": "TPE",
+     "name": "TSENG Ya-Ni",
+     "result": "-2",
+     "rank": "9",
+     "outcome": "",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    },
+    {
+     "id": "8390832",
+     "organisation": "TPE",
+     "name": "HSU Wei-Ling",
+     "result": "-1",
+     "rank": "11",
+     "outcome": "",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    },
+    {
+     "id": "10587356",
+     "organisation": "TPE",
+     "name": "CHIEN Pei-Yun",
+     "result": "0",
+     "rank": "12",
+     "outcome": "",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    }
+   ],
+   "detailAvailable": true,
+   "sourceUrl": "https://results.asiangames2026.org/#/discipline/GLF/results/W.STROKE------------.FNL-.000300--"
+  },
+  {
+   "id": "AG2026:GLF:W.TEAM--------------.FNL-.000300--",
+   "discipline": "GLF",
+   "sport": "Golf",
+   "event": "Women's Team",
+   "phase": "Rounds",
+   "unit": "Round 3",
+   "startsAt": "2026-10-02T00:19:00.000Z",
+   "timeNote": "",
+   "venue": "Kasugai Country Club East Course",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": false,
+   "competitors": [
+    {
+     "id": "GLFWTEAM-------TPE01",
+     "organisation": "TPE",
+     "name": "TPE",
+     "result": "-6",
+     "rank": "4",
+     "outcome": "",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    }
+   ],
+   "detailAvailable": true,
+   "sourceUrl": "https://results.asiangames2026.org/#/discipline/GLF/results/W.TEAM--------------.FNL-.000300--"
+  },
+  {
+   "id": "AG2026:CTR:W.OMNIUM------------.SCR-.000100--",
+   "discipline": "CTR",
+   "sport": "Cycling Track",
+   "event": "Women's Omnium",
+   "phase": "Scratch Race 1/4",
+   "unit": "Scratch Race 1/4",
+   "startsAt": "2026-10-02T01:00:00.000Z",
+   "timeNote": "",
+   "venue": "Izu Velodrome",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": false,
+   "competitors": [
+    {
+     "id": "1716430",
+     "organisation": "TPE",
+     "name": "HUANG Ting-ying",
+     "result": "5",
+     "rank": "5",
+     "outcome": "",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    }
+   ],
+   "detailAvailable": true,
+   "sourceUrl": "https://results.asiangames2026.org/#/discipline/CTR/results/W.OMNIUM------------.SCR-.000100--"
+  },
+  {
+   "id": "AG2026:CTR:M.KEIRIN------------.RND1.000100--",
+   "discipline": "CTR",
+   "sport": "Cycling Track",
+   "event": "Men's Keirin",
+   "phase": "First Round",
+   "unit": "Heat 1",
+   "startsAt": "2026-10-02T01:30:00.000Z",
+   "timeNote": "",
+   "venue": "Izu Velodrome",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": false,
+   "competitors": [
+    {
+     "id": "1726658",
+     "organisation": "TPE",
+     "name": "KANG Shih-feng",
+     "result": "10.558",
+     "rank": "3",
+     "outcome": "",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    }
+   ],
+   "detailAvailable": true,
+   "sourceUrl": "https://results.asiangames2026.org/#/discipline/CTR/results/M.KEIRIN------------.RND1.000100--"
+  },
+  {
+   "id": "AG2026:WRE:W.WR50KG------------.8FNL.000300--",
+   "discipline": "WRE",
+   "sport": "Wrestling",
+   "event": "Women's Wrestling 50kg",
+   "phase": "1/8 Finals",
+   "unit": "Qualification",
+   "startsAt": "2026-10-02T01:45:00.000Z",
+   "timeNote": "",
+   "venue": "Nagoya City Inae Sports Center",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "3635756",
+     "organisation": "TPE",
+     "name": "LIN Yi-hui",
+     "result": "0",
+     "rank": "",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    },
+    {
+     "id": "1538194",
+     "organisation": "VIE",
+     "name": "DO Ngoc Linh",
+     "result": "10",
+     "rank": "",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    }
+   ],
+   "detailAvailable": true,
+   "sourceUrl": "https://results.asiangames2026.org/#/discipline/WRE/results/W.WR50KG------------.8FNL.000300--"
+  },
+  {
+   "id": "AG2026:CTR:W.OMNIUM------------.TEMP.000100--",
+   "discipline": "CTR",
+   "sport": "Cycling Track",
+   "event": "Women's Omnium",
+   "phase": "Tempo Race 2/4",
+   "unit": "Tempo Race 2/4",
+   "startsAt": "2026-10-02T01:57:00.000Z",
+   "timeNote": "",
+   "venue": "Izu Velodrome",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": false,
+   "competitors": [
+    {
+     "id": "1716430",
+     "organisation": "TPE",
+     "name": "HUANG Ting-ying",
+     "result": "2",
+     "rank": "6",
+     "outcome": "",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    }
+   ],
+   "detailAvailable": true,
+   "sourceUrl": "https://results.asiangames2026.org/#/discipline/CTR/results/W.OMNIUM------------.TEMP.000100--"
+  },
+  {
+   "id": "AG2026:JUD:W.78KG--------------.REP1.000200--",
+   "discipline": "JUD",
+   "sport": "柔道",
+   "event": "Women -78kg",
+   "phase": "Repechage",
+   "unit": "Women -78 kg Repechage contest",
+   "startsAt": "2026-10-02T02:00:00.000Z",
+   "timeNote": "",
+   "venue": "Aichi International Arena",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "729196",
+     "organisation": "KAZ",
+     "name": "TOKAREVA Ekaterina",
+     "result": "110",
+     "rank": "",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    },
+    {
+     "id": "4329429",
+     "organisation": "TPE",
+     "name": "HSU WANG Shu-huei",
+     "result": "0S1",
+     "rank": "7",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    }
+   ],
+   "detailAvailable": true,
+   "sourceUrl": "https://results.asiangames2026.org/#/discipline/JUD/results/W.78KG--------------.REP1.000200--"
+  },
+  {
+   "id": "AG2026:JUD:W.O78KG-------------.REP1.000200--",
+   "discipline": "JUD",
+   "sport": "柔道",
+   "event": "Women +78kg",
+   "phase": "Repechage",
+   "unit": "Women +78 kg Repechage contest",
+   "startsAt": "2026-10-02T02:00:00.000Z",
+   "timeNote": "",
+   "venue": "Aichi International Arena",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "4331449",
+     "organisation": "TPE",
+     "name": "CHANG Ling-fang",
+     "result": "0",
+     "rank": "7",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    },
+    {
+     "id": "727797",
+     "organisation": "KAZ",
+     "name": "TOISHIBEKOVA Aida",
+     "result": "101",
+     "rank": "",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    }
+   ],
+   "detailAvailable": true,
+   "sourceUrl": "https://results.asiangames2026.org/#/discipline/JUD/results/W.O78KG-------------.REP1.000200--"
+  },
+  {
+   "id": "AG2026:SBL:W.TEAM9-------------.GP--.002600--",
+   "discipline": "SBL",
+   "sport": "Softball",
+   "event": "Softball Women",
+   "phase": "Preliminary Round",
+   "unit": "Game  26",
+   "startsAt": "2026-10-02T02:00:00.000Z",
+   "timeNote": "",
+   "venue": "Anjo Softball Ground",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "SBLWTEAM9------KOR01",
+     "organisation": "KOR",
+     "name": "Republic of Korea",
+     "result": "1",
+     "rank": "",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    },
+    {
+     "id": "SBLWTEAM9------TPE01",
+     "organisation": "TPE",
+     "name": "TPE",
+     "result": "11",
+     "rank": "",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    }
+   ],
+   "detailAvailable": true,
+   "sourceUrl": "https://results.asiangames2026.org/#/discipline/SBL/results/W.TEAM9-------------.GP--.002600--"
+  },
+  {
+   "id": "AG2026:JUD:M.90KG--------------.8FNL.000400--",
+   "discipline": "JUD",
+   "sport": "柔道",
+   "event": "Men -90kg",
+   "phase": "Elimination Round of 16",
+   "unit": "Men -90 kg Elimination Round of 16",
+   "startsAt": "2026-10-02T02:00:00.000Z",
+   "timeNote": "",
+   "venue": "Aichi International Arena",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "215625",
+     "organisation": "TPE",
+     "name": "CHEN Peng-yu",
+     "result": "0S2",
+     "rank": "9",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    },
+    {
+     "id": "9633190",
+     "organisation": "MGL",
+     "name": "JUGDERGARAV Enkhtur",
+     "result": "10S1",
+     "rank": "",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    }
+   ],
+   "detailAvailable": true,
+   "sourceUrl": "https://results.asiangames2026.org/#/discipline/JUD/results/M.90KG--------------.8FNL.000400--"
+  },
+  {
+   "id": "AG2026:JUD:M.O100KG------------.8FNL.000200--",
+   "discipline": "JUD",
+   "sport": "柔道",
+   "event": "Men +100kg",
+   "phase": "Elimination Round of 16",
+   "unit": "Men +100 kg Elimination Round of 16",
+   "startsAt": "2026-10-02T02:00:00.000Z",
+   "timeNote": "",
+   "venue": "Aichi International Arena",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "221341",
+     "organisation": "KGZ",
+     "name": "ZHOLDOSHKAZIEV Emirkhan",
+     "result": "100S2",
+     "rank": "",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    },
+    {
+     "id": "217009",
+     "organisation": "TPE",
+     "name": "DAI You-ming",
+     "result": "0S2",
+     "rank": "9",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    }
+   ],
+   "detailAvailable": true,
+   "sourceUrl": "https://results.asiangames2026.org/#/discipline/JUD/results/M.O100KG------------.8FNL.000200--"
+  },
+  {
+   "id": "AG2026:JUD:W.O78KG-------------.8FNL.000600--",
+   "discipline": "JUD",
+   "sport": "柔道",
+   "event": "Women +78kg",
+   "phase": "Elimination Round of 16",
+   "unit": "Women +78 kg Elimination Round of 16",
+   "startsAt": "2026-10-02T02:00:00.000Z",
+   "timeNote": "",
+   "venue": "Aichi International Arena",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "4331449",
+     "organisation": "TPE",
+     "name": "CHANG Ling-fang",
+     "result": "1",
+     "rank": "",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    },
+    {
+     "id": "9821437",
+     "organisation": "KGZ",
+     "name": "KALYEVA Aidemi Imanovna",
+     "result": "0S1",
+     "rank": "9",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    }
+   ],
+   "detailAvailable": true,
+   "sourceUrl": "https://results.asiangames2026.org/#/discipline/JUD/results/W.O78KG-------------.8FNL.000600--"
+  },
+  {
+   "id": "AG2026:JUD:W.78KG--------------.QFNL.000400--",
+   "discipline": "JUD",
+   "sport": "柔道",
+   "event": "Women -78kg",
+   "phase": "Quarterfinals",
+   "unit": "Women -78 kg Quarterfinal",
+   "startsAt": "2026-10-02T02:00:00.000Z",
+   "timeNote": "",
+   "venue": "Aichi International Arena",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "4329429",
+     "organisation": "TPE",
+     "name": "HSU WANG Shu-huei",
+     "result": "0S1",
+     "rank": "",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    },
+    {
+     "id": "4479753",
+     "organisation": "LBN",
+     "name": "CHAYEB Aqulina",
+     "result": "10",
+     "rank": "",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    }
+   ],
+   "detailAvailable": true,
+   "sourceUrl": "https://results.asiangames2026.org/#/discipline/JUD/results/W.78KG--------------.QFNL.000400--"
+  },
+  {
+   "id": "AG2026:JUD:W.O78KG-------------.QFNL.000300--",
+   "discipline": "JUD",
+   "sport": "柔道",
+   "event": "Women +78kg",
+   "phase": "Quarterfinals",
+   "unit": "Women +78 kg Quarterfinal",
+   "startsAt": "2026-10-02T02:00:00.000Z",
+   "timeNote": "",
+   "venue": "Aichi International Arena",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "13674679",
+     "organisation": "CHN",
+     "name": "NIU Xinran",
+     "result": "101",
+     "rank": "",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    },
+    {
+     "id": "4331449",
+     "organisation": "TPE",
+     "name": "CHANG Ling-fang",
+     "result": "0",
+     "rank": "",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    }
+   ],
+   "detailAvailable": true,
+   "sourceUrl": "https://results.asiangames2026.org/#/discipline/JUD/results/W.O78KG-------------.QFNL.000300--"
+  },
+  {
+   "id": "AG2026:SAL:M.ILCA7-------------.FNL-.000100--",
+   "discipline": "SAL",
+   "sport": "Sailing",
+   "event": "Men's Dinghy",
+   "phase": "Final",
+   "unit": "Final 1",
+   "startsAt": "2026-10-02T02:00:00.000Z",
+   "timeNote": "",
+   "venue": "Kaiyoh Yacht Harbor",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": false,
+   "competitors": [
+    {
+     "id": "15441989",
+     "organisation": "TPE",
+     "name": "WU Tsai-chien",
+     "result": "9",
+     "rank": "9",
+     "outcome": "",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    }
+   ],
+   "detailAvailable": true,
+   "sourceUrl": "https://results.asiangames2026.org/#/discipline/SAL/results/M.ILCA7-------------.FNL-.000100--"
+  },
+  {
+   "id": "AG2026:SAL:M.ILCA7-------------.FNL-.000200--",
+   "discipline": "SAL",
+   "sport": "Sailing",
+   "event": "Men's Dinghy",
+   "phase": "Final",
+   "unit": "Final 2",
+   "startsAt": "2026-10-02T02:00:00.000Z",
+   "timeNote": "",
+   "venue": "Kaiyoh Yacht Harbor",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": false,
+   "competitors": [
+    {
+     "id": "15441989",
+     "organisation": "TPE",
+     "name": "WU Tsai-chien",
+     "result": "5",
+     "rank": "5",
+     "outcome": "",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    }
+   ],
+   "detailAvailable": true,
+   "sourceUrl": "https://results.asiangames2026.org/#/discipline/SAL/results/M.ILCA7-------------.FNL-.000200--"
+  },
+  {
+   "id": "AG2026:WRE:W.WR76KG------------.8FNL.000700--",
+   "discipline": "WRE",
+   "sport": "Wrestling",
+   "event": "Women's Wrestling 76kg",
+   "phase": "1/8 Finals",
+   "unit": "1/8 Final",
+   "startsAt": "2026-10-02T02:02:00.000Z",
+   "timeNote": "",
+   "venue": "Nagoya City Inae Sports Center",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "13804657",
+     "organisation": "TPE",
+     "name": "CHANG Hui-tsz",
+     "result": "2",
+     "rank": "",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    },
+    {
+     "id": "13849606",
+     "organisation": "MGL",
+     "name": "ENKH-AMAR Davaanasan",
+     "result": "4",
+     "rank": "",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    }
+   ],
+   "detailAvailable": true,
+   "sourceUrl": "https://results.asiangames2026.org/#/discipline/WRE/results/W.WR76KG------------.8FNL.000700--"
+  },
+  {
+   "id": "AG2026:CTR:M.KEIRIN------------.REP-.000100--",
+   "discipline": "CTR",
+   "sport": "Cycling Track",
+   "event": "Men's Keirin",
+   "phase": "Repechages",
+   "unit": "Heat 1",
+   "startsAt": "2026-10-02T02:15:00.000Z",
+   "timeNote": "",
+   "venue": "Izu Velodrome",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": false,
+   "competitors": [
+    {
+     "id": "1726658",
+     "organisation": "TPE",
+     "name": "KANG Shih-feng",
+     "result": "10.540",
+     "rank": "2",
+     "outcome": "",
+     "qualification": "Q",
+     "irm": "OK",
+     "medal": ""
+    }
+   ],
+   "detailAvailable": true,
+   "sourceUrl": "https://results.asiangames2026.org/#/discipline/CTR/results/M.KEIRIN------------.REP-.000100--"
+  },
+  {
+   "id": "AG2026:HOC:W.TEAM11------------.SF51.000200--",
+   "discipline": "HOC",
+   "sport": "曲棍球",
+   "event": "Women",
+   "phase": "Classification-2 (5th-8th)",
+   "unit": "Classification (7th-8th)",
+   "startsAt": "2026-10-02T02:30:00.000Z",
+   "timeNote": "",
+   "venue": "Gifu Prefectural Green Stadium",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "HOCWTEAM11-----INA01",
+     "organisation": "INA",
+     "name": "Indonesia",
+     "result": "1",
+     "rank": "2",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    },
+    {
+     "id": "HOCWTEAM11-----TPE01",
+     "organisation": "TPE",
+     "name": "TPE",
+     "result": "1",
+     "rank": "1",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    }
+   ],
+   "detailAvailable": true,
+   "sourceUrl": "https://results.asiangames2026.org/#/discipline/HOC/results/W.TEAM11------------.SF51.000200--"
+  },
+  {
+   "id": "AG2026:ELS:O.LOL---------------.FNL-.000100--",
+   "discipline": "ELS",
+   "sport": "電子競技",
+   "event": "MOBA [League of Legends]",
+   "phase": "Finals",
+   "unit": "Gold Medal Match",
+   "startsAt": "2026-10-02T03:00:00.000Z",
+   "timeNote": "",
+   "venue": "",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "ELSOLOL--------TPE01",
+     "organisation": "TPE",
+     "name": "TPE",
+     "result": "0",
+     "rank": "2",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "OK",
+     "medal": "ME_SILVER"
+    },
+    {
+     "id": "ELSOLOL--------KOR01",
+     "organisation": "KOR",
+     "name": "Republic of Korea",
+     "result": "3",
+     "rank": "1",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "OK",
+     "medal": "ME_GOLD"
+    }
+   ],
+   "detailAvailable": true,
+   "sourceUrl": "https://results.asiangames2026.org/#/discipline/ELS/results/O.LOL---------------.FNL-.000100--"
+  },
+  {
+   "id": "AG2026:BOX:W.60KG--------------.FNL-.000100--",
+   "discipline": "BOX",
+   "sport": "拳擊",
+   "event": "Women's 60kg",
+   "phase": "Final",
+   "unit": "Final",
+   "startsAt": "2026-10-02T04:15:00.000Z",
+   "timeNote": "",
+   "venue": "Nishio Gymnasium",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "6116922",
+     "organisation": "TPE",
+     "name": "LIN Yu-ting",
+     "result": "5",
+     "rank": "1",
+     "outcome": "W",
+     "qualification": "Q",
+     "irm": "OK",
+     "medal": "ME_GOLD"
+    },
+    {
+     "id": "4354916",
+     "organisation": "CHN",
+     "name": "YANG Chengyu",
+     "result": "0",
+     "rank": "2",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "OK",
+     "medal": "ME_SILVER"
+    }
+   ],
+   "detailAvailable": true,
+   "sourceUrl": "https://results.asiangames2026.org/#/discipline/BOX/results/W.60KG--------------.FNL-.000100--"
+  },
+  {
+   "id": "AG2026:TKW:W.49KG--------------.8FNL.000400--",
+   "discipline": "TKW",
+   "sport": "跆拳道",
+   "event": "Women -49kg",
+   "phase": "Round of 16",
+   "unit": "Women -49kg Round of 16",
+   "startsAt": "2026-10-02T04:42:00.000Z",
+   "timeNote": "",
+   "venue": "Toyohashi Gymnasium",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "6586651",
+     "organisation": "TPE",
+     "name": "WANG Chieh-ling",
+     "result": "2",
+     "rank": "",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    },
+    {
+     "id": "16562933",
+     "organisation": "BRN",
+     "name": "KALAWADH Fatema",
+     "result": "0",
+     "rank": "9",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    }
+   ],
+   "detailAvailable": true,
+   "sourceUrl": "https://results.asiangames2026.org/#/discipline/TKW/results/W.49KG--------------.8FNL.000400--"
+  },
+  {
+   "id": "AG2026:BKG:W.INDIVID-----------.GP--.000100--",
+   "discipline": "BKG",
+   "sport": "Breaking",
+   "event": "B-Girls",
+   "phase": "Pre-Selection",
+   "unit": "Pre-Selection",
+   "startsAt": "2026-10-02T05:00:00.000Z",
+   "timeNote": "",
+   "venue": "Aichi Sky Expo Hall F",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": false,
+   "competitors": [
+    {
+     "id": "2839227",
+     "organisation": "TPE",
+     "name": "Jia Li (YANG Jia-li)",
+     "result": "76.77",
+     "rank": "6",
+     "outcome": "",
+     "qualification": "Q",
+     "irm": "OK",
+     "medal": ""
+    },
+    {
+     "id": "5430658",
+     "organisation": "TPE",
+     "name": "Sophia (HSU Fu-ya)",
+     "result": "70.74",
+     "rank": "9",
+     "outcome": "",
+     "qualification": "Q",
+     "irm": "OK",
+     "medal": ""
+    }
+   ],
+   "detailAvailable": true,
+   "sourceUrl": "https://results.asiangames2026.org/#/discipline/BKG/results/W.INDIVID-----------.GP--.000100--"
+  },
+  {
+   "id": "AG2026:ARC:M.RTEAM-------------.SFNL.000100--",
+   "discipline": "ARC",
+   "sport": "射箭",
+   "event": "Recurve Men's Team",
+   "phase": "Semifinals",
+   "unit": "Recurve Men's Team Semifinal",
+   "startsAt": "2026-10-02T05:00:00.000Z",
+   "timeNote": "",
+   "venue": "Okazaki Chuo Sogo Park Multipurpose Sq.",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "ARCMRTEAM------KOR01",
+     "organisation": "KOR",
+     "name": "Republic of Korea",
+     "result": "6",
+     "rank": "1",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    },
+    {
+     "id": "ARCMRTEAM------TPE01",
+     "organisation": "TPE",
+     "name": "TPE",
+     "result": "0",
+     "rank": "3",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    }
+   ],
+   "detailAvailable": true,
+   "sourceUrl": "https://results.asiangames2026.org/#/discipline/ARC/results/M.RTEAM-------------.SFNL.000100--"
+  },
+  {
+   "id": "AG2026:TKW:W.67KG--------------.8FNL.000200--",
+   "discipline": "TKW",
+   "sport": "跆拳道",
+   "event": "Women -67kg",
+   "phase": "Round of 16",
+   "unit": "Women -67kg Round of 16",
+   "startsAt": "2026-10-02T05:30:00.000Z",
+   "timeNote": "",
+   "venue": "Toyohashi Gymnasium",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "663821",
+     "organisation": "TPE",
+     "name": "WANG Wei-chia",
+     "result": "2",
+     "rank": "",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    },
+    {
+     "id": "4541910",
+     "organisation": "VIE",
+     "name": "TRAN Thi Anh Tuyet",
+     "result": "0",
+     "rank": "9",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    }
+   ],
+   "detailAvailable": true,
+   "sourceUrl": "https://results.asiangames2026.org/#/discipline/TKW/results/W.67KG--------------.8FNL.000200--"
+  },
+  {
+   "id": "AG2026:BKG:M.INDIVID-----------.GP--.000100--",
+   "discipline": "BKG",
+   "sport": "Breaking",
+   "event": "B-Boys",
+   "phase": "Pre-Selection",
+   "unit": "Pre-Selection",
+   "startsAt": "2026-10-02T05:45:00.000Z",
+   "timeNote": "",
+   "venue": "Aichi Sky Expo Hall F",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": false,
+   "competitors": [
+    {
+     "id": "5423974",
+     "organisation": "TPE",
+     "name": "Quake (SUN Chen)",
+     "result": "81.73",
+     "rank": "4",
+     "outcome": "",
+     "qualification": "Q",
+     "irm": "OK",
+     "medal": ""
+    },
+    {
+     "id": "5426736",
+     "organisation": "TPE",
+     "name": "Jasper (WU Ding-jie)",
+     "result": "76.87",
+     "rank": "10",
+     "outcome": "",
+     "qualification": "Q",
+     "irm": "OK",
+     "medal": ""
+    }
+   ],
+   "detailAvailable": true,
+   "sourceUrl": "https://results.asiangames2026.org/#/discipline/BKG/results/M.INDIVID-----------.GP--.000100--"
+  },
+  {
+   "id": "AG2026:ARC:M.RTEAM-------------.FNL-.000200--",
+   "discipline": "ARC",
+   "sport": "射箭",
+   "event": "Recurve Men's Team",
+   "phase": "Finals",
+   "unit": "Recurve Men's Team Bronze Medal Match",
+   "startsAt": "2026-10-02T05:55:00.000Z",
+   "timeNote": "",
+   "venue": "Okazaki Chuo Sogo Park Multipurpose Sq.",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "ARCMRTEAM------TPE01",
+     "organisation": "TPE",
+     "name": "TPE",
+     "result": "6",
+     "rank": "3",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "OK",
+     "medal": "ME_BRONZE"
+    },
+    {
+     "id": "ARCMRTEAM------IRI01",
+     "organisation": "IRI",
+     "name": "Islamic Republic of Iran",
+     "result": "2",
+     "rank": "4",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    }
+   ],
+   "detailAvailable": true,
+   "sourceUrl": "https://results.asiangames2026.org/#/discipline/ARC/results/M.RTEAM-------------.FNL-.000200--"
+  },
+  {
+   "id": "AG2026:CTR:M.KEIRIN------------.SFNL.000100--",
+   "discipline": "CTR",
+   "sport": "Cycling Track",
+   "event": "Men's Keirin",
+   "phase": "Semifinals",
+   "unit": "Heat 1",
+   "startsAt": "2026-10-02T06:09:00.000Z",
+   "timeNote": "",
+   "venue": "Izu Velodrome",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": false,
+   "competitors": [
+    {
+     "id": "1726658",
+     "organisation": "TPE",
+     "name": "KANG Shih-feng",
+     "result": "10.371",
+     "rank": "4",
+     "outcome": "",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    }
+   ],
+   "detailAvailable": true,
+   "sourceUrl": "https://results.asiangames2026.org/#/discipline/CTR/results/M.KEIRIN------------.SFNL.000100--"
+  },
+  {
+   "id": "AG2026:CTR:W.OMNIUM------------.ELIM.000100--",
+   "discipline": "CTR",
+   "sport": "Cycling Track",
+   "event": "Women's Omnium",
+   "phase": "Elimination Race 3/4",
+   "unit": "Elimination Race 3/4",
+   "startsAt": "2026-10-02T06:25:00.000Z",
+   "timeNote": "",
+   "venue": "Izu Velodrome",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": false,
+   "competitors": [
+    {
+     "id": "1716430",
+     "organisation": "TPE",
+     "name": "HUANG Ting-ying",
+     "result": "7",
+     "rank": "7",
+     "outcome": "",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    }
+   ],
+   "detailAvailable": true,
+   "sourceUrl": "https://results.asiangames2026.org/#/discipline/CTR/results/W.OMNIUM------------.ELIM.000100--"
+  },
+  {
+   "id": "AG2026:TKW:M.80KG--------------.8FNL.000700--",
+   "discipline": "TKW",
+   "sport": "跆拳道",
+   "event": "Men -80kg",
+   "phase": "Round of 16",
+   "unit": "Men -80kg Round of 16",
+   "startsAt": "2026-10-02T06:44:00.000Z",
+   "timeNote": "",
+   "venue": "Toyohashi Gymnasium",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "2251132",
+     "organisation": "PHI",
+     "name": "CEA Dave",
+     "result": "0",
+     "rank": "9",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    },
+    {
+     "id": "6603918",
+     "organisation": "TPE",
+     "name": "HUNG Jiun-yi",
+     "result": "2",
+     "rank": "",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    }
+   ],
+   "detailAvailable": true,
+   "sourceUrl": "https://results.asiangames2026.org/#/discipline/TKW/results/M.80KG--------------.8FNL.000700--"
+  },
+  {
+   "id": "AG2026:CTR:M.MADISON-----------.FNL-.000100--",
+   "discipline": "CTR",
+   "sport": "Cycling Track",
+   "event": "Men's Madison",
+   "phase": "Final",
+   "unit": "Final",
+   "startsAt": "2026-10-02T06:46:00.000Z",
+   "timeNote": "",
+   "venue": "Izu Velodrome",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": false,
+   "competitors": [
+    {
+     "id": "CTRMMADISON----TPE01",
+     "organisation": "TPE",
+     "name": "TPE",
+     "result": "-2",
+     "rank": "7",
+     "outcome": "",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    }
+   ],
+   "detailAvailable": true,
+   "sourceUrl": "https://results.asiangames2026.org/#/discipline/CTR/results/M.MADISON-----------.FNL-.000100--"
+  },
+  {
+   "id": "AG2026:TKW:W.49KG--------------.QFNL.000200--",
+   "discipline": "TKW",
+   "sport": "跆拳道",
+   "event": "Women -49kg",
+   "phase": "Quarterfinals",
+   "unit": "Women -49kg Quarterfinal",
+   "startsAt": "2026-10-02T06:56:00.000Z",
+   "timeNote": "",
+   "venue": "Toyohashi Gymnasium",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "12597407",
+     "organisation": "PHI",
+     "name": "MANGIN Tachiana Keizha",
+     "result": "2",
+     "rank": "",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    },
+    {
+     "id": "6586651",
+     "organisation": "TPE",
+     "name": "WANG Chieh-ling",
+     "result": "1",
+     "rank": "5",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    }
+   ],
+   "detailAvailable": true,
+   "sourceUrl": "https://results.asiangames2026.org/#/discipline/TKW/results/W.49KG--------------.QFNL.000200--"
+  },
+  {
+   "id": "AG2026:VVO:M.TEAM6-------------.SF9-.000100--",
+   "discipline": "VVO",
+   "sport": "排球",
+   "event": "Men",
+   "phase": "Classification Match 9th-12th",
+   "unit": "Match 39",
+   "startsAt": "2026-10-02T07:00:00.000Z",
+   "timeNote": "",
+   "venue": "Park Arena Komaki",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "VVOMTEAM6------KAZ01",
+     "organisation": "KAZ",
+     "name": "Kazakhstan",
+     "result": "1",
+     "rank": "",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    },
+    {
+     "id": "VVOMTEAM6------TPE01",
+     "organisation": "TPE",
+     "name": "TPE",
+     "result": "3",
+     "rank": "",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    }
+   ],
+   "detailAvailable": true,
+   "sourceUrl": "https://results.asiangames2026.org/#/discipline/VVO/results/M.TEAM6-------------.SF9-.000100--"
+  },
+  {
+   "id": "AG2026:BKG:W.INDIVID-----------.8FNL.000200--",
+   "discipline": "BKG",
+   "sport": "Breaking",
+   "event": "B-Girls",
+   "phase": "Round of 16",
+   "unit": "#2",
+   "startsAt": "2026-10-02T07:08:20.000Z",
+   "timeNote": "",
+   "venue": "Aichi Sky Expo Hall F",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "3991245",
+     "organisation": "KAZ",
+     "name": "Sayora (ALIBEKOVA Sayora)",
+     "result": "1",
+     "rank": "2",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    },
+    {
+     "id": "5430658",
+     "organisation": "TPE",
+     "name": "Sophia (HSU Fu-ya)",
+     "result": "2",
+     "rank": "1",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    }
+   ],
+   "detailAvailable": true,
+   "sourceUrl": "https://results.asiangames2026.org/#/discipline/BKG/results/W.INDIVID-----------.8FNL.000200--"
+  },
+  {
+   "id": "AG2026:TKW:W.67KG--------------.QFNL.000100--",
+   "discipline": "TKW",
+   "sport": "跆拳道",
+   "event": "Women -67kg",
+   "phase": "Quarterfinals",
+   "unit": "Women -67kg Quarterfinal",
+   "startsAt": "2026-10-02T07:20:00.000Z",
+   "timeNote": "",
+   "venue": "Toyohashi Gymnasium",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "946579",
+     "organisation": "CHN",
+     "name": "XING Jiani",
+     "result": "1",
+     "rank": "5",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    },
+    {
+     "id": "663821",
+     "organisation": "TPE",
+     "name": "WANG Wei-chia",
+     "result": "2",
+     "rank": "",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    }
+   ],
+   "detailAvailable": true,
+   "sourceUrl": "https://results.asiangames2026.org/#/discipline/TKW/results/W.67KG--------------.QFNL.000100--"
+  },
+  {
+   "id": "AG2026:TKW:M.80KG--------------.QFNL.000400--",
+   "discipline": "TKW",
+   "sport": "跆拳道",
+   "event": "Men -80kg",
+   "phase": "Quarterfinals",
+   "unit": "Men -80kg Quarterfinal",
+   "startsAt": "2026-10-02T07:44:00.000Z",
+   "timeNote": "",
+   "venue": "Toyohashi Gymnasium",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "6603918",
+     "organisation": "TPE",
+     "name": "HUNG Jiun-yi",
+     "result": "2",
+     "rank": "",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    },
+    {
+     "id": "16181835",
+     "organisation": "KOR",
+     "name": "KANG Jaegwon",
+     "result": "0",
+     "rank": "5",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    }
+   ],
+   "detailAvailable": true,
+   "sourceUrl": "https://results.asiangames2026.org/#/discipline/TKW/results/M.80KG--------------.QFNL.000400--"
+  },
+  {
+   "id": "AG2026:BKG:W.INDIVID-----------.8FNL.000700--",
+   "discipline": "BKG",
+   "sport": "Breaking",
+   "event": "B-Girls",
+   "phase": "Round of 16",
+   "unit": "#7",
+   "startsAt": "2026-10-02T07:50:00.000Z",
+   "timeNote": "",
+   "venue": "Aichi Sky Expo Hall F",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "2839227",
+     "organisation": "TPE",
+     "name": "Jia Li (YANG Jia-li)",
+     "result": "2",
+     "rank": "1",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    },
+    {
+     "id": "7207084",
+     "organisation": "VIE",
+     "name": "Tinie Rawk (NGUYEN Thi Hong Tram)",
+     "result": "0",
+     "rank": "2",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    }
+   ],
+   "detailAvailable": true,
+   "sourceUrl": "https://results.asiangames2026.org/#/discipline/BKG/results/W.INDIVID-----------.8FNL.000700--"
+  },
+  {
+   "id": "AG2026:CTR:M.KEIRIN------------.FNL-.000200--",
+   "discipline": "CTR",
+   "sport": "Cycling Track",
+   "event": "Men's Keirin",
+   "phase": "Finals",
+   "unit": "For Places 7-12",
+   "startsAt": "2026-10-02T07:57:00.000Z",
+   "timeNote": "",
+   "venue": "Izu Velodrome",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": false,
+   "competitors": [
+    {
+     "id": "1726658",
+     "organisation": "TPE",
+     "name": "KANG Shih-feng",
+     "result": "10.577",
+     "rank": "1",
+     "outcome": "",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    }
+   ],
+   "detailAvailable": true,
+   "sourceUrl": "https://results.asiangames2026.org/#/discipline/CTR/results/M.KEIRIN------------.FNL-.000200--"
+  },
+  {
+   "id": "AG2026:CTR:W.OMNIUM------------.PTS-.000100--",
+   "discipline": "CTR",
+   "sport": "Cycling Track",
+   "event": "Women's Omnium",
+   "phase": "Points Race 4/4",
+   "unit": "Points Race 4/4",
+   "startsAt": "2026-10-02T08:21:00.000Z",
+   "timeNote": "",
+   "venue": "Izu Velodrome",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": false,
+   "competitors": [
+    {
+     "id": "1716430",
+     "organisation": "TPE",
+     "name": "HUANG Ting-ying",
+     "result": "0",
+     "rank": "9",
+     "outcome": "",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    }
+   ],
+   "detailAvailable": true,
+   "sourceUrl": "https://results.asiangames2026.org/#/discipline/CTR/results/W.OMNIUM------------.PTS-.000100--"
+  },
+  {
+   "id": "AG2026:BKG:M.INDIVID-----------.8FNL.000400--",
+   "discipline": "BKG",
+   "sport": "Breaking",
+   "event": "B-Boys",
+   "phase": "Round of 16",
+   "unit": "#4",
+   "startsAt": "2026-10-02T08:33:20.000Z",
+   "timeNote": "",
+   "venue": "Aichi Sky Expo Hall F",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "5423974",
+     "organisation": "TPE",
+     "name": "Quake (SUN Chen)",
+     "result": "2",
+     "rank": "1",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    },
+    {
+     "id": "6362185",
+     "organisation": "VIE",
+     "name": "Sonic Boom(NGUYEN Van Huu)",
+     "result": "0",
+     "rank": "2",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    }
+   ],
+   "detailAvailable": true,
+   "sourceUrl": "https://results.asiangames2026.org/#/discipline/BKG/results/M.INDIVID-----------.8FNL.000400--"
+  },
+  {
+   "id": "AG2026:BOX:W.65KG--------------.FNL-.000100--",
+   "discipline": "BOX",
+   "sport": "拳擊",
+   "event": "Women's 65kg",
+   "phase": "Final",
+   "unit": "Final",
+   "startsAt": "2026-10-02T08:45:00.000Z",
+   "timeNote": "",
+   "venue": "Nishio Gymnasium",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "6112606",
+     "organisation": "TPE",
+     "name": "CHEN Nien-chin",
+     "result": "2",
+     "rank": "2",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "OK",
+     "medal": "ME_SILVER"
+    },
+    {
+     "id": "8621436",
+     "organisation": "IND",
+     "name": "PARVEEN",
+     "result": "3",
+     "rank": "1",
+     "outcome": "W",
+     "qualification": "Q",
+     "irm": "OK",
+     "medal": "ME_GOLD"
+    }
+   ],
+   "detailAvailable": true,
+   "sourceUrl": "https://results.asiangames2026.org/#/discipline/BOX/results/W.65KG--------------.FNL-.000100--"
+  },
+  {
+   "id": "AG2026:BKG:M.INDIVID-----------.8FNL.000600--",
+   "discipline": "BKG",
+   "sport": "Breaking",
+   "event": "B-Boys",
+   "phase": "Round of 16",
+   "unit": "#6",
+   "startsAt": "2026-10-02T08:50:00.000Z",
+   "timeNote": "",
+   "venue": "Aichi Sky Expo Hall F",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "8296763",
+     "organisation": "CHN",
+     "name": "Lithe-ing (QI Xiangyu)",
+     "result": "2",
+     "rank": "1",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    },
+    {
+     "id": "5426736",
+     "organisation": "TPE",
+     "name": "Jasper (WU Ding-jie)",
+     "result": "1",
+     "rank": "2",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    }
+   ],
+   "detailAvailable": true,
+   "sourceUrl": "https://results.asiangames2026.org/#/discipline/BKG/results/M.INDIVID-----------.8FNL.000600--"
+  },
+  {
+   "id": "AG2026:GRY:W.5AA---------------.QUAL.A0000100",
+   "discipline": "GRY",
+   "sport": "Rhythmic Gymnastics",
+   "event": "Group All-Around",
+   "phase": "Qualification",
+   "unit": "",
+   "startsAt": "2026-10-02T09:00:00.000Z",
+   "timeNote": "",
+   "venue": "Nagoya General Gymnasium [Rainbow Hall]",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": false,
+   "competitors": [
+    {
+     "id": "GRYW5AA--------TPE01",
+     "organisation": "TPE",
+     "name": "TPE",
+     "result": "38.500",
+     "rank": "8",
+     "outcome": "",
+     "qualification": "Q",
+     "irm": "OK",
+     "medal": ""
+    }
+   ],
+   "detailAvailable": true,
+   "sourceUrl": "https://results.asiangames2026.org/#/discipline/GRY/results/W.5AA---------------.QUAL.A0000100"
+  },
+  {
+   "id": "AG2026:TKW:W.67KG--------------.SFNL.000100--",
+   "discipline": "TKW",
+   "sport": "跆拳道",
+   "event": "Women -67kg",
+   "phase": "Semifinals",
+   "unit": "Women -67kg Semifinal",
+   "startsAt": "2026-10-02T09:06:00.000Z",
+   "timeNote": "",
+   "venue": "Toyohashi Gymnasium",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "663821",
+     "organisation": "TPE",
+     "name": "WANG Wei-chia",
+     "result": "0",
+     "rank": "3",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "OK",
+     "medal": "ME_BRONZE"
+    },
+    {
+     "id": "9305731",
+     "organisation": "IRI",
+     "name": "MORADI SHEIKHLARI Saghar",
+     "result": "2",
+     "rank": "",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    }
+   ],
+   "detailAvailable": true,
+   "sourceUrl": "https://results.asiangames2026.org/#/discipline/TKW/results/W.67KG--------------.SFNL.000100--"
+  },
+  {
+   "id": "AG2026:TKW:M.80KG--------------.SFNL.000200--",
+   "discipline": "TKW",
+   "sport": "跆拳道",
+   "event": "Men -80kg",
+   "phase": "Semifinals",
+   "unit": "Men -80kg Semifinal",
+   "startsAt": "2026-10-02T09:48:00.000Z",
+   "timeNote": "",
+   "venue": "Toyohashi Gymnasium",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "7581855",
+     "organisation": "KAZ",
+     "name": "TOLEUGALI Batyrkhan",
+     "result": "1",
+     "rank": "3",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "OK",
+     "medal": "ME_BRONZE"
+    },
+    {
+     "id": "6603918",
+     "organisation": "TPE",
+     "name": "HUNG Jiun-yi",
+     "result": "2",
+     "rank": "",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    }
+   ],
+   "detailAvailable": true,
+   "sourceUrl": "https://results.asiangames2026.org/#/discipline/TKW/results/M.80KG--------------.SFNL.000200--"
+  },
+  {
+   "id": "AG2026:TKW:M.80KG--------------.FNL-.000100--",
+   "discipline": "TKW",
+   "sport": "跆拳道",
+   "event": "Men -80kg",
+   "phase": "Gold Medal Contest",
+   "unit": "Men -80kg Gold Medal Contest",
+   "startsAt": "2026-10-02T11:05:00.000Z",
+   "timeNote": "",
+   "venue": "Toyohashi Gymnasium",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "4977631",
+     "organisation": "UZB",
+     "name": "JAYSUNOV Jasurbek",
+     "result": "2",
+     "rank": "1",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "OK",
+     "medal": "ME_GOLD"
+    },
+    {
+     "id": "6603918",
+     "organisation": "TPE",
+     "name": "HUNG Jiun-yi",
+     "result": "1",
+     "rank": "2",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "OK",
+     "medal": "ME_SILVER"
+    }
+   ],
+   "detailAvailable": true,
+   "sourceUrl": "https://results.asiangames2026.org/#/discipline/TKW/results/M.80KG--------------.FNL-.000100--"
+  },
+  {
+   "id": "AG2026:CSL:M.X1----------------.QUAL.000100--",
+   "discipline": "CSL",
+   "sport": "Canoe Slalom",
+   "event": "Men's Kayak Cross",
+   "phase": "Individual",
+   "unit": "Men's Kayak Cross - Individual - Individual",
+   "startsAt": null,
+   "timeNote": "接續前場",
+   "venue": "Yahagigawa Canoe Slalom Course",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": false,
+   "competitors": [
+    {
+     "id": "12247323",
+     "organisation": "TPE",
+     "name": "LIAO Li-hong",
+     "result": "76.37",
+     "rank": "7",
+     "outcome": "",
+     "qualification": "Q",
+     "irm": "OK",
+     "medal": ""
+    },
+    {
+     "id": "4233921",
+     "organisation": "TPE",
+     "name": "WU Jung-cheng",
+     "result": "80.67",
+     "rank": "10",
+     "outcome": "",
+     "qualification": "Q",
+     "irm": "OK",
+     "medal": ""
+    }
+   ],
+   "detailAvailable": true,
+   "sourceUrl": "https://results.asiangames2026.org/#/discipline/CSL/results/M.X1----------------.QUAL.000100--"
+  },
+  {
+   "id": "AG2026:CSL:W.X1----------------.QUAL.000100--",
+   "discipline": "CSL",
+   "sport": "Canoe Slalom",
+   "event": "Women's Kayak Cross",
+   "phase": "Individual",
+   "unit": "Women's Kayak Cross - Individual - Individual",
+   "startsAt": null,
+   "timeNote": "接續前場",
+   "venue": "Yahagigawa Canoe Slalom Course",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": false,
+   "competitors": [
+    {
+     "id": "4238983",
+     "organisation": "TPE",
+     "name": "CHANG Chu-han",
+     "result": "78.38",
+     "rank": "3",
+     "outcome": "",
+     "qualification": "Q",
+     "irm": "OK",
+     "medal": ""
+    },
+    {
+     "id": "6812784",
+     "organisation": "TPE",
+     "name": "WU Ting-i",
+     "result": "80.51",
+     "rank": "5",
+     "outcome": "",
+     "qualification": "Q",
+     "irm": "OK",
+     "medal": ""
+    }
+   ],
+   "detailAvailable": true,
+   "sourceUrl": "https://results.asiangames2026.org/#/discipline/CSL/results/W.X1----------------.QUAL.000100--"
+  },
+  {
+   "id": "AG2026:CSL:W.X1----------------.QFNL.000200--",
+   "discipline": "CSL",
+   "sport": "Canoe Slalom",
+   "event": "Women's Kayak Cross",
+   "phase": "Quarterfinals",
+   "unit": "Quarterfinal 2",
+   "startsAt": null,
+   "timeNote": "接續前場",
+   "venue": "Yahagigawa Canoe Slalom Course",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": false,
+   "competitors": [
+    {
+     "id": "6812784",
+     "organisation": "TPE",
+     "name": "WU Ting-i",
+     "result": "2",
+     "rank": "2",
+     "outcome": "",
+     "qualification": "Q",
+     "irm": "OK",
+     "medal": ""
+    }
+   ],
+   "detailAvailable": true,
+   "sourceUrl": "https://results.asiangames2026.org/#/discipline/CSL/results/W.X1----------------.QFNL.000200--"
+  },
+  {
+   "id": "AG2026:CSL:M.X1----------------.QFNL.000300--",
+   "discipline": "CSL",
+   "sport": "Canoe Slalom",
+   "event": "Men's Kayak Cross",
+   "phase": "Quarterfinals",
+   "unit": "Quarterfinal 3",
+   "startsAt": null,
+   "timeNote": "接續前場",
+   "venue": "Yahagigawa Canoe Slalom Course",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": false,
+   "competitors": [
+    {
+     "id": "4233921",
+     "organisation": "TPE",
+     "name": "WU Jung-cheng",
+     "result": "3",
+     "rank": "3",
+     "outcome": "",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    }
+   ],
+   "detailAvailable": true,
+   "sourceUrl": "https://results.asiangames2026.org/#/discipline/CSL/results/M.X1----------------.QFNL.000300--"
+  },
+  {
+   "id": "AG2026:CSL:W.X1----------------.QFNL.000300--",
+   "discipline": "CSL",
+   "sport": "Canoe Slalom",
+   "event": "Women's Kayak Cross",
+   "phase": "Quarterfinals",
+   "unit": "Quarterfinal 3",
+   "startsAt": null,
+   "timeNote": "接續前場",
+   "venue": "Yahagigawa Canoe Slalom Course",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": false,
+   "competitors": [
+    {
+     "id": "4238983",
+     "organisation": "TPE",
+     "name": "CHANG Chu-han",
+     "result": "1",
+     "rank": "1",
+     "outcome": "",
+     "qualification": "Q",
+     "irm": "OK",
+     "medal": ""
+    }
+   ],
+   "detailAvailable": true,
+   "sourceUrl": "https://results.asiangames2026.org/#/discipline/CSL/results/W.X1----------------.QFNL.000300--"
+  },
+  {
+   "id": "AG2026:CSL:M.X1----------------.QFNL.000400--",
+   "discipline": "CSL",
+   "sport": "Canoe Slalom",
+   "event": "Men's Kayak Cross",
+   "phase": "Quarterfinals",
+   "unit": "Quarterfinal 4",
+   "startsAt": null,
+   "timeNote": "接續前場",
+   "venue": "Yahagigawa Canoe Slalom Course",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": false,
+   "competitors": [
+    {
+     "id": "12247323",
+     "organisation": "TPE",
+     "name": "LIAO Li-hong",
+     "result": "4",
+     "rank": "3",
+     "outcome": "",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    }
+   ],
+   "detailAvailable": true,
+   "sourceUrl": "https://results.asiangames2026.org/#/discipline/CSL/results/M.X1----------------.QFNL.000400--"
+  },
+  {
+   "id": "AG2026:TEN:W.DOUBLES-----------.SFNL.000100--",
+   "discipline": "TEN",
+   "sport": "網球",
+   "event": "Women's Doubles",
+   "phase": "Semi-finals",
+   "unit": "Semi-finals",
+   "startsAt": null,
+   "timeNote": "時間待定",
+   "venue": "Higashiyama Park Tennis Center",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "TENWDOUBLES----TPE02",
+     "organisation": "TPE",
+     "name": "CHAN Hao-ching/WU Fang-hsien",
+     "result": "2",
+     "rank": "1",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    },
+    {
+     "id": "TENWDOUBLES----HKG01",
+     "organisation": "HKG",
+     "name": "CHONG Eudice/WONG Hong Yi",
+     "result": "0",
+     "rank": "2",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "OK",
+     "medal": "ME_BRONZE"
+    }
+   ],
+   "detailAvailable": true,
+   "sourceUrl": "https://results.asiangames2026.org/#/discipline/TEN/results/W.DOUBLES-----------.SFNL.000100--"
+  },
+  {
+   "id": "AG2026:TEN:W.DOUBLES-----------.SFNL.000200--",
+   "discipline": "TEN",
+   "sport": "網球",
+   "event": "Women's Doubles",
+   "phase": "Semi-finals",
+   "unit": "Semi-finals",
+   "startsAt": null,
+   "timeNote": "時間待定",
+   "venue": "Higashiyama Park Tennis Center",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "TENWDOUBLES----KAZ01",
+     "organisation": "KAZ",
+     "name": "DANILINA Anna/PUTINTSEVA Yuliya",
+     "result": "0",
+     "rank": "2",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "OK",
+     "medal": "ME_BRONZE"
+    },
+    {
+     "id": "TENWDOUBLES----TPE01",
+     "organisation": "TPE",
+     "name": "HSIEH Su-wei/LIANG En-shuo",
+     "result": "2",
+     "rank": "1",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    }
+   ],
+   "detailAvailable": true,
+   "sourceUrl": "https://results.asiangames2026.org/#/discipline/TEN/results/W.DOUBLES-----------.SFNL.000200--"
+  },
+  {
+   "id": "AG2026:TEN:X.DOUBLES-----------.SFNL.000200--",
+   "discipline": "TEN",
+   "sport": "網球",
+   "event": "Mixed Doubles",
+   "phase": "Semi-finals",
+   "unit": "Semi-finals",
+   "startsAt": null,
+   "timeNote": "時間待定",
+   "venue": "Higashiyama Park Tennis Center",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "TENXDOUBLES----JPN02",
+     "organisation": "JPN",
+     "name": "SHIBAHARA Ena/FRIEND Jay",
+     "result": "2",
+     "rank": "1",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    },
+    {
+     "id": "TENXDOUBLES----TPE02",
+     "organisation": "TPE",
+     "name": "HSIEH Su-wei/TSENG Chun-hsin",
+     "result": "1",
+     "rank": "2",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "OK",
+     "medal": "ME_BRONZE"
+    }
+   ],
+   "detailAvailable": true,
+   "sourceUrl": "https://results.asiangames2026.org/#/discipline/TEN/results/X.DOUBLES-----------.SFNL.000200--"
+  },
+  {
+   "id": "AG2026:CSL:W.X1----------------.SFNL.000100--",
+   "discipline": "CSL",
+   "sport": "Canoe Slalom",
+   "event": "Women's Kayak Cross",
+   "phase": "Semifinals",
+   "unit": "Semifinal 1",
+   "startsAt": null,
+   "timeNote": "接續前場",
+   "venue": "Yahagigawa Canoe Slalom Course",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": false,
+   "competitors": [
+    {
+     "id": "6812784",
+     "organisation": "TPE",
+     "name": "WU Ting-i",
+     "result": "2",
+     "rank": "4",
+     "outcome": "",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    }
+   ],
+   "detailAvailable": true,
+   "sourceUrl": "https://results.asiangames2026.org/#/discipline/CSL/results/W.X1----------------.SFNL.000100--"
+  },
+  {
+   "id": "AG2026:CSL:W.X1----------------.SFNL.000200--",
+   "discipline": "CSL",
+   "sport": "Canoe Slalom",
+   "event": "Women's Kayak Cross",
+   "phase": "Semifinals",
+   "unit": "Semifinal 2",
+   "startsAt": null,
+   "timeNote": "接續前場",
+   "venue": "Yahagigawa Canoe Slalom Course",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": false,
+   "competitors": [
+    {
+     "id": "4238983",
+     "organisation": "TPE",
+     "name": "CHANG Chu-han",
+     "result": "2",
+     "rank": "2",
+     "outcome": "",
+     "qualification": "Q",
+     "irm": "OK",
+     "medal": ""
+    }
+   ],
+   "detailAvailable": true,
+   "sourceUrl": "https://results.asiangames2026.org/#/discipline/CSL/results/W.X1----------------.SFNL.000200--"
+  },
+  {
+   "id": "AG2026:CSL:W.X1----------------.FNL-.000100--",
+   "discipline": "CSL",
+   "sport": "Canoe Slalom",
+   "event": "Women's Kayak Cross",
+   "phase": "Final",
+   "unit": "Final",
+   "startsAt": null,
+   "timeNote": "接續前場",
+   "venue": "Yahagigawa Canoe Slalom Course",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": false,
+   "competitors": [
+    {
+     "id": "4238983",
+     "organisation": "TPE",
+     "name": "CHANG Chu-han",
+     "result": "2",
+     "rank": "2",
+     "outcome": "",
+     "qualification": "",
+     "irm": "OK",
+     "medal": "ME_SILVER"
+    }
+   ],
+   "detailAvailable": true,
+   "sourceUrl": "https://results.asiangames2026.org/#/discipline/CSL/results/W.X1----------------.FNL-.000100--"
+  },
+  {
+   "id": "AG2026:CSL:W.X1----------------.FNL-.000200--",
+   "discipline": "CSL",
+   "sport": "Canoe Slalom",
+   "event": "Women's Kayak Cross",
+   "phase": "Final",
+   "unit": "Small Final",
+   "startsAt": null,
+   "timeNote": "接續前場",
+   "venue": "Yahagigawa Canoe Slalom Course",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": false,
+   "competitors": [
+    {
+     "id": "6812784",
+     "organisation": "TPE",
+     "name": "WU Ting-i",
+     "result": "1",
+     "rank": "1",
+     "outcome": "",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    }
+   ],
+   "detailAvailable": true,
+   "sourceUrl": "https://results.asiangames2026.org/#/discipline/CSL/results/W.X1----------------.FNL-.000200--"
+  }
+ ],
+ "successCount": 1,
+ "lastSuccessAt": "2026-10-05T17:02:07.833Z",
+ "lastAttemptAt": "2026-10-05T17:00:34.136Z",
+ "lastError": null
+}

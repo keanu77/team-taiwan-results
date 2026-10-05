@@ -1,0 +1,136 @@
+{
+ "source": "AG2026",
+ "generatedAt": "2026-10-05T17:19:46.976Z",
+ "days": {
+  "2026-10-04": {
+   "lastSuccessAt": "2026-10-05T15:47:41.819Z",
+   "lastAttemptAt": "2026-10-05T15:47:37.588Z",
+   "lastError": null
+  },
+  "2026-10-03": {
+   "lastSuccessAt": "2026-10-05T17:00:34.135Z",
+   "lastAttemptAt": "2026-10-05T16:59:36.353Z",
+   "lastError": null
+  },
+  "2026-10-02": {
+   "lastSuccessAt": "2026-10-05T17:02:07.833Z",
+   "lastAttemptAt": "2026-10-05T17:00:34.136Z",
+   "lastError": null
+  },
+  "2026-09-10": {
+   "lastSuccessAt": "2026-10-05T17:02:11.013Z",
+   "lastAttemptAt": "2026-10-05T17:02:07.834Z",
+   "lastError": null
+  },
+  "2026-09-11": {
+   "lastSuccessAt": "2026-10-05T17:02:13.410Z",
+   "lastAttemptAt": "2026-10-05T17:02:11.014Z",
+   "lastError": null
+  },
+  "2026-09-12": {
+   "lastSuccessAt": "2026-10-05T17:02:16.585Z",
+   "lastAttemptAt": "2026-10-05T17:02:13.410Z",
+   "lastError": null
+  },
+  "2026-09-13": {
+   "lastSuccessAt": "2026-10-05T17:02:19.756Z",
+   "lastAttemptAt": "2026-10-05T17:02:16.586Z",
+   "lastError": null
+  },
+  "2026-09-14": {
+   "lastSuccessAt": "2026-10-05T17:02:23.995Z",
+   "lastAttemptAt": "2026-10-05T17:02:19.757Z",
+   "lastError": null
+  },
+  "2026-09-15": {
+   "lastSuccessAt": "2026-10-05T17:02:26.199Z",
+   "lastAttemptAt": "2026-10-05T17:02:23.996Z",
+   "lastError": null
+  },
+  "2026-09-16": {
+   "lastSuccessAt": "2026-10-05T17:02:33.600Z",
+   "lastAttemptAt": "2026-10-05T17:02:26.200Z",
+   "lastError": null
+  },
+  "2026-09-17": {
+   "lastSuccessAt": "2026-10-05T17:02:43.363Z",
+   "lastAttemptAt": "2026-10-05T17:02:33.604Z",
+   "lastError": null
+  },
+  "2026-09-18": {
+   "lastSuccessAt": "2026-10-05T17:03:02.438Z",
+   "lastAttemptAt": "2026-10-05T17:02:43.364Z",
+   "lastError": null
+  },
+  "2026-09-19": {
+   "lastSuccessAt": "2026-10-05T17:03:06.673Z",
+   "lastAttemptAt": "2026-10-05T17:03:02.440Z",
+   "lastError": null
+  },
+  "2026-09-20": {
+   "lastSuccessAt": "2026-10-05T17:04:08.397Z",
+   "lastAttemptAt": "2026-10-05T17:03:06.674Z",
+   "lastError": null
+  },
+  "2026-09-21": {
+   "lastSuccessAt": "2026-10-05T17:05:21.944Z",
+   "lastAttemptAt": "2026-10-05T17:04:08.397Z",
+   "lastError": null
+  },
+  "2026-09-22": {
+   "lastSuccessAt": "2026-10-05T17:06:50.287Z",
+   "lastAttemptAt": "2026-10-05T17:05:21.946Z",
+   "lastError": null
+  },
+  "2026-09-23": {
+   "lastSuccessAt": "2026-10-05T17:08:24.215Z",
+   "lastAttemptAt": "2026-10-05T17:06:50.289Z",
+   "lastError": null
+  },
+  "2026-09-24": {
+   "lastSuccessAt": "2026-10-05T17:09:46.495Z",
+   "lastAttemptAt": "2026-10-05T17:08:24.217Z",
+   "lastError": null
+  },
+  "2026-09-25": {
+   "lastSuccessAt": "2026-10-05T17:11:20.959Z",
+   "lastAttemptAt": "2026-10-05T17:09:46.498Z",
+   "lastError": null
+  },
+  "2026-09-26": {
+   "lastSuccessAt": "2026-10-05T17:12:53.240Z",
+   "lastAttemptAt": "2026-10-05T17:11:20.961Z",
+   "lastError": null
+  },
+  "2026-09-27": {
+   "lastSuccessAt": "2026-10-05T17:14:31.950Z",
+   "lastAttemptAt": "2026-10-05T17:12:53.241Z",
+   "lastError": null
+  },
+  "2026-09-28": {
+   "lastSuccessAt": "2026-10-05T17:15:40.453Z",
+   "lastAttemptAt": "2026-10-05T17:14:31.952Z",
+   "lastError": null
+  },
+  "2026-09-29": {
+   "lastSuccessAt": "2026-10-05T17:17:00.047Z",
+   "lastAttemptAt": "2026-10-05T17:15:40.454Z",
+   "lastError": null
+  },
+  "2026-09-30": {
+   "lastSuccessAt": "2026-10-05T17:18:20.962Z",
+   "lastAttemptAt": "2026-10-05T17:17:00.048Z",
+   "lastError": null
+  },
+  "2026-10-01": {
+   "lastSuccessAt": "2026-10-05T17:19:46.975Z",
+   "lastAttemptAt": "2026-10-05T17:18:20.965Z",
+   "lastError": null
+  }
+ },
+ "medals": {
+  "lastSuccessAt": "2026-10-05T16:59:36.351Z",
+  "lastAttemptAt": "2026-10-05T16:59:34.118Z",
+  "lastError": null
+ }
+}

@@ -1,0 +1,78 @@
+{
+ "date": "2026-10-04",
+ "units": [
+  {
+   "id": "AG2026:EQU:O.JUMPINDVCOMA------.FNL-.000200--",
+   "discipline": "EQU",
+   "sport": "馬術",
+   "event": "Jumping,Individual Competition A(heights of 1.40-1.50m)",
+   "phase": "Final",
+   "unit": "2nd Round",
+   "startsAt": "2026-10-04T00:30:00.000Z",
+   "timeNote": "",
+   "venue": "Equestrian Park",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": false,
+   "competitors": [
+    {
+     "id": "8058786",
+     "organisation": "TPE",
+     "name": "CHEN Hung-Shen",
+     "result": "4",
+     "rank": "5",
+     "outcome": "",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    },
+    {
+     "id": "10428682",
+     "organisation": "TPE",
+     "name": "CHEN Yu-Lung",
+     "result": "8",
+     "rank": "7",
+     "outcome": "",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    }
+   ],
+   "detailAvailable": true,
+   "sourceUrl": "https://results.asiangames2026.org/#/discipline/EQU/results/O.JUMPINDVCOMA------.FNL-.000200--"
+  },
+  {
+   "id": "AG2026:EQU:O.JUMPINDVCOMB------.FNL-.000200--",
+   "discipline": "EQU",
+   "sport": "馬術",
+   "event": "Jumping,Individual Competition B(heights of up to 1.55m)",
+   "phase": "Final",
+   "unit": "2nd Round",
+   "startsAt": "2026-10-04T02:45:00.000Z",
+   "timeNote": "",
+   "venue": "Equestrian Park",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": false,
+   "competitors": [
+    {
+     "id": "11688539",
+     "organisation": "TPE",
+     "name": "LIN Yun-Chi",
+     "result": "17",
+     "rank": "8",
+     "outcome": "",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    }
+   ],
+   "detailAvailable": true,
+   "sourceUrl": "https://results.asiangames2026.org/#/discipline/EQU/results/O.JUMPINDVCOMB------.FNL-.000200--"
+  }
+ ],
+ "successCount": 1,
+ "lastSuccessAt": "2026-10-05T15:47:41.819Z",
+ "lastAttemptAt": "2026-10-05T15:47:37.588Z",
+ "lastError": null
+}

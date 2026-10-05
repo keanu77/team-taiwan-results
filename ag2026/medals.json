@@ -1,0 +1,1626 @@
+{
+ "standings": [
+  {
+   "org": "CHN",
+   "rank": "1",
+   "tied": false,
+   "gold": 169,
+   "silver": 89,
+   "bronze": 83,
+   "total": 341
+  },
+  {
+   "org": "JPN",
+   "rank": "2",
+   "tied": false,
+   "gold": 83,
+   "silver": 95,
+   "bronze": 91,
+   "total": 269
+  },
+  {
+   "org": "KOR",
+   "rank": "3",
+   "tied": false,
+   "gold": 39,
+   "silver": 43,
+   "bronze": 68,
+   "total": 150
+  },
+  {
+   "org": "IND",
+   "rank": "4",
+   "tied": false,
+   "gold": 21,
+   "silver": 27,
+   "bronze": 37,
+   "total": 85
+  },
+  {
+   "org": "UZB",
+   "rank": "5",
+   "tied": false,
+   "gold": 21,
+   "silver": 25,
+   "bronze": 24,
+   "total": 70
+  },
+  {
+   "org": "IRI",
+   "rank": "6",
+   "tied": false,
+   "gold": 19,
+   "silver": 18,
+   "bronze": 15,
+   "total": 52
+  },
+  {
+   "org": "THA",
+   "rank": "7",
+   "tied": false,
+   "gold": 18,
+   "silver": 13,
+   "bronze": 21,
+   "total": 52
+  },
+  {
+   "org": "KAZ",
+   "rank": "8",
+   "tied": false,
+   "gold": 12,
+   "silver": 24,
+   "bronze": 48,
+   "total": 84
+  },
+  {
+   "org": "HKG",
+   "rank": "9",
+   "tied": false,
+   "gold": 11,
+   "silver": 19,
+   "bronze": 24,
+   "total": 54
+  },
+  {
+   "org": "BRN",
+   "rank": "10",
+   "tied": false,
+   "gold": 11,
+   "silver": 5,
+   "bronze": 6,
+   "total": 22
+  },
+  {
+   "org": "MAS",
+   "rank": "11",
+   "tied": false,
+   "gold": 9,
+   "silver": 7,
+   "bronze": 16,
+   "total": 32
+  },
+  {
+   "org": "PRK",
+   "rank": "12",
+   "tied": false,
+   "gold": 7,
+   "silver": 13,
+   "bronze": 9,
+   "total": 29
+  },
+  {
+   "org": "UAE",
+   "rank": "13",
+   "tied": false,
+   "gold": 7,
+   "silver": 5,
+   "bronze": 1,
+   "total": 13
+  },
+  {
+   "org": "QAT",
+   "rank": "14",
+   "tied": false,
+   "gold": 6,
+   "silver": 6,
+   "bronze": 6,
+   "total": 18
+  },
+  {
+   "org": "TPE",
+   "rank": "15",
+   "tied": false,
+   "gold": 5,
+   "silver": 17,
+   "bronze": 33,
+   "total": 55
+  },
+  {
+   "org": "INA",
+   "rank": "16",
+   "tied": false,
+   "gold": 5,
+   "silver": 11,
+   "bronze": 23,
+   "total": 39
+  },
+  {
+   "org": "PHI",
+   "rank": "17",
+   "tied": false,
+   "gold": 4,
+   "silver": 9,
+   "bronze": 16,
+   "total": 29
+  },
+  {
+   "org": "KSA",
+   "rank": "18",
+   "tied": false,
+   "gold": 4,
+   "silver": 3,
+   "bronze": 10,
+   "total": 17
+  },
+  {
+   "org": "KUW",
+   "rank": "19",
+   "tied": false,
+   "gold": 4,
+   "silver": 1,
+   "bronze": 4,
+   "total": 9
+  },
+  {
+   "org": "VIE",
+   "rank": "20",
+   "tied": false,
+   "gold": 3,
+   "silver": 3,
+   "bronze": 19,
+   "total": 25
+  },
+  {
+   "org": "SGP",
+   "rank": "21",
+   "tied": false,
+   "gold": 2,
+   "silver": 9,
+   "bronze": 7,
+   "total": 18
+  },
+  {
+   "org": "TJK",
+   "rank": "22",
+   "tied": false,
+   "gold": 2,
+   "silver": 5,
+   "bronze": 9,
+   "total": 16
+  },
+  {
+   "org": "JOR",
+   "rank": "23",
+   "tied": false,
+   "gold": 2,
+   "silver": 3,
+   "bronze": 6,
+   "total": 11
+  },
+  {
+   "org": "MYA",
+   "rank": "24",
+   "tied": false,
+   "gold": 2,
+   "silver": 1,
+   "bronze": 2,
+   "total": 5
+  },
+  {
+   "org": "MAC",
+   "rank": "25",
+   "tied": false,
+   "gold": 1,
+   "silver": 4,
+   "bronze": 1,
+   "total": 6
+  },
+  {
+   "org": "KGZ",
+   "rank": "26",
+   "tied": false,
+   "gold": 1,
+   "silver": 3,
+   "bronze": 10,
+   "total": 14
+  },
+  {
+   "org": "MGL",
+   "rank": "27",
+   "tied": false,
+   "gold": 1,
+   "silver": 1,
+   "bronze": 13,
+   "total": 15
+  },
+  {
+   "org": "SRI",
+   "rank": "28",
+   "tied": false,
+   "gold": 1,
+   "silver": 1,
+   "bronze": 1,
+   "total": 3
+  },
+  {
+   "org": "PAK",
+   "rank": "29",
+   "tied": false,
+   "gold": 0,
+   "silver": 2,
+   "bronze": 8,
+   "total": 10
+  },
+  {
+   "org": "IRQ",
+   "rank": "30",
+   "tied": false,
+   "gold": 0,
+   "silver": 2,
+   "bronze": 3,
+   "total": 5
+  },
+  {
+   "org": "TKM",
+   "rank": "31",
+   "tied": false,
+   "gold": 0,
+   "silver": 2,
+   "bronze": 0,
+   "total": 2
+  },
+  {
+   "org": "AFG",
+   "rank": "32",
+   "tied": true,
+   "gold": 0,
+   "silver": 1,
+   "bronze": 2,
+   "total": 3
+  },
+  {
+   "org": "LBN",
+   "rank": "32",
+   "tied": true,
+   "gold": 0,
+   "silver": 1,
+   "bronze": 2,
+   "total": 3
+  },
+  {
+   "org": "OMA",
+   "rank": "34",
+   "tied": false,
+   "gold": 0,
+   "silver": 1,
+   "bronze": 1,
+   "total": 2
+  },
+  {
+   "org": "CAM",
+   "rank": "35",
+   "tied": false,
+   "gold": 0,
+   "silver": 0,
+   "bronze": 4,
+   "total": 4
+  },
+  {
+   "org": "NEP",
+   "rank": "36",
+   "tied": false,
+   "gold": 0,
+   "silver": 0,
+   "bronze": 2,
+   "total": 2
+  },
+  {
+   "org": "BAN",
+   "rank": "37",
+   "tied": true,
+   "gold": 0,
+   "silver": 0,
+   "bronze": 1,
+   "total": 1
+  },
+  {
+   "org": "BRU",
+   "rank": "37",
+   "tied": true,
+   "gold": 0,
+   "silver": 0,
+   "bronze": 1,
+   "total": 1
+  },
+  {
+   "org": "LAO",
+   "rank": "37",
+   "tied": true,
+   "gold": 0,
+   "silver": 0,
+   "bronze": 1,
+   "total": 1
+  },
+  {
+   "org": "SYR",
+   "rank": "37",
+   "tied": true,
+   "gold": 0,
+   "silver": 0,
+   "bronze": 1,
+   "total": 1
+  }
+ ],
+ "tpeMedals": [
+  {
+   "medal": "silver",
+   "discipline": "TST",
+   "eventCode": "M.TEAM--------------.----",
+   "event": "Men's Team",
+   "date": "2026-09-20",
+   "gender": "M",
+   "type": "T",
+   "athletes": [
+    {
+     "name": "YU Kai-wen",
+     "registrationId": "13655436"
+    },
+    {
+     "name": "LIN Wei-chieh",
+     "registrationId": "13656004"
+    },
+    {
+     "name": "CHEN Po-yi",
+     "registrationId": "13758863"
+    },
+    {
+     "name": "CHEN Yu-hsun",
+     "registrationId": "3483464"
+    },
+    {
+     "name": "CHANG Yu-sung",
+     "registrationId": "3589239"
+    }
+   ]
+  },
+  {
+   "medal": "silver",
+   "discipline": "TST",
+   "eventCode": "W.TEAM--------------.----",
+   "event": "Women's Team",
+   "date": "2026-09-20",
+   "gender": "W",
+   "type": "T",
+   "athletes": [
+    {
+     "name": "ZHOU Yan-zhen",
+     "registrationId": "13768472"
+    },
+    {
+     "name": "CHIANG Min-yu",
+     "registrationId": "13770907"
+    },
+    {
+     "name": "LO Shu-ting",
+     "registrationId": "13778200"
+    },
+    {
+     "name": "HSU Chiao-ying",
+     "registrationId": "3500721"
+    },
+    {
+     "name": "HUANG Shih-yuan",
+     "registrationId": "3607367"
+    }
+   ]
+  },
+  {
+   "medal": "bronze",
+   "discipline": "KTE",
+   "eventCode": "W.KATA--------------.FNL-",
+   "event": "Women's Individual Kata Final",
+   "date": "2026-09-20",
+   "gender": "W",
+   "type": "A",
+   "athletes": [
+    {
+     "name": "CHIEN Hui-hsuan",
+     "registrationId": "9589159"
+    }
+   ]
+  },
+  {
+   "medal": "gold",
+   "discipline": "TST",
+   "eventCode": "X.DOUBLES-----------.----",
+   "event": "Mixed Doubles",
+   "date": "2026-09-21",
+   "gender": "X",
+   "type": "D",
+   "athletes": [
+    {
+     "name": "YU Kai-wen / HUANG Shih-yuan",
+     "registrationId": "TSTXDOUBLES----TPE01"
+    }
+   ]
+  },
+  {
+   "medal": "silver",
+   "discipline": "WSU",
+   "eventCode": "M.TAIJ--------------.FNL-",
+   "event": "Men's Taijiquan & Taijijian",
+   "date": "2026-09-21",
+   "gender": "M",
+   "type": "A",
+   "athletes": [
+    {
+     "name": "SUN Chia-hung",
+     "registrationId": "6021490"
+    }
+   ]
+  },
+  {
+   "medal": "bronze",
+   "discipline": "KTE",
+   "eventCode": "M.67KG--------------.FNL-",
+   "event": "Men's Kumite -67kg Final",
+   "date": "2026-09-21",
+   "gender": "M",
+   "type": "A",
+   "athletes": [
+    {
+     "name": "SHIH Cheng-chung",
+     "registrationId": "9606559"
+    }
+   ]
+  },
+  {
+   "medal": "bronze",
+   "discipline": "KTE",
+   "eventCode": "M.84KG--------------.FNL-",
+   "event": "Men's Kumite -84kg Final",
+   "date": "2026-09-22",
+   "gender": "M",
+   "type": "A",
+   "athletes": [
+    {
+     "name": "CHUNG Meng-yu",
+     "registrationId": "565146"
+    }
+   ]
+  },
+  {
+   "medal": "bronze",
+   "discipline": "WSU",
+   "eventCode": "M.NANG--------------.FNL-",
+   "event": "Men's Nanquan & Nangun",
+   "date": "2026-09-22",
+   "gender": "M",
+   "type": "A",
+   "athletes": [
+    {
+     "name": "LIU Chang-min",
+     "registrationId": "6020214"
+    }
+   ]
+  },
+  {
+   "medal": "bronze",
+   "discipline": "KTE",
+   "eventCode": "W.TEAM--------------.FNL-",
+   "event": "Women's Team Kata Final",
+   "date": "2026-09-22",
+   "gender": "W",
+   "type": "T",
+   "athletes": [
+    {
+     "name": "TIEN Hsin-erh",
+     "registrationId": "544674"
+    },
+    {
+     "name": "HUNG Chih-hsuan",
+     "registrationId": "6458453"
+    },
+    {
+     "name": "CHIEN Hui-hsuan",
+     "registrationId": "9589159"
+    }
+   ]
+  },
+  {
+   "medal": "bronze",
+   "discipline": "WSU",
+   "eventCode": "M.75KG--------------.----",
+   "event": "Men's 75kg",
+   "date": "2026-09-23",
+   "gender": "M",
+   "type": "A",
+   "athletes": [
+    {
+     "name": "ZHANG Huan-yi",
+     "registrationId": "1813658"
+    }
+   ]
+  },
+  {
+   "medal": "bronze",
+   "discipline": "TST",
+   "eventCode": "M.SINGLES-----------.----",
+   "event": "Men's Singles",
+   "date": "2026-09-23",
+   "gender": "M",
+   "type": "A",
+   "athletes": [
+    {
+     "name": "CHEN Po-yi",
+     "registrationId": "13758863"
+    }
+   ]
+  },
+  {
+   "medal": "bronze",
+   "discipline": "SHO",
+   "eventCode": "M.SKM---------------.----",
+   "event": "Skeet Men Individual",
+   "date": "2026-09-23",
+   "gender": "M",
+   "type": "A",
+   "athletes": [
+    {
+     "name": "LEE Meng-Yuan",
+     "registrationId": "13634212"
+    }
+   ]
+  },
+  {
+   "medal": "bronze",
+   "discipline": "GAR",
+   "eventCode": "M.TEAM--------------.----",
+   "event": "Men's Team",
+   "date": "2026-09-23",
+   "gender": "M",
+   "type": "T",
+   "athletes": [
+    {
+     "name": "TANG Chia-hung",
+     "registrationId": "1117271"
+    },
+    {
+     "name": "HUNG Yuan-hsi",
+     "registrationId": "1121200"
+    },
+    {
+     "name": "CHUANG Chia-lung",
+     "registrationId": "12769578"
+    },
+    {
+     "name": "LEE Chih-kai",
+     "registrationId": "15910117"
+    },
+    {
+     "name": "SHIAO Yu-jan",
+     "registrationId": "15919954"
+    }
+   ]
+  },
+  {
+   "medal": "bronze",
+   "discipline": "TTE",
+   "eventCode": "M.TEAM--------------.----",
+   "event": "Men's Team",
+   "date": "2026-09-23",
+   "gender": "M",
+   "type": "T",
+   "athletes": [
+    {
+     "name": "FENG Yi-hsin",
+     "registrationId": "15725713"
+    },
+    {
+     "name": "HSU Hsien-chia",
+     "registrationId": "15728414"
+    },
+    {
+     "name": "LIN Yun-ju",
+     "registrationId": "4735886"
+    },
+    {
+     "name": "KUO Guan-hong",
+     "registrationId": "641974"
+    },
+    {
+     "name": "HUNG Jing-kai",
+     "registrationId": "644675"
+    }
+   ]
+  },
+  {
+   "medal": "bronze",
+   "discipline": "ELS",
+   "eventCode": "O.NRK---------------.FNL-",
+   "event": "NARAKA : BLADEPOINT Finals",
+   "date": "2026-09-24",
+   "gender": "O",
+   "type": "T",
+   "athletes": [
+    {
+     "name": "LIU Tang-shiun",
+     "registrationId": "10596502"
+    },
+    {
+     "name": "YEN Kai-en",
+     "registrationId": "10599402"
+    },
+    {
+     "name": "CHEN Shang-yi",
+     "registrationId": "2791732"
+    },
+    {
+     "name": "YEH Chih-yu",
+     "registrationId": "2794621"
+    },
+    {
+     "name": "CHENG Hsu-yu",
+     "registrationId": "8190463"
+    }
+   ]
+  },
+  {
+   "medal": "gold",
+   "discipline": "SWM",
+   "eventCode": "M.200MBF------------.----",
+   "event": "Men's 200m Butterfly",
+   "date": "2026-09-25",
+   "gender": "M",
+   "type": "A",
+   "athletes": [
+    {
+     "name": "WANG Kuan-hung",
+     "registrationId": "399162"
+    }
+   ]
+  },
+  {
+   "medal": "silver",
+   "discipline": "SKB",
+   "eventCode": "M.PARK--------------.----",
+   "event": "Men's Park",
+   "date": "2026-09-25",
+   "gender": "M",
+   "type": "A",
+   "athletes": [
+    {
+     "name": "KU Yong-yan",
+     "registrationId": "2585854"
+    }
+   ]
+  },
+  {
+   "medal": "silver",
+   "discipline": "SKB",
+   "eventCode": "W.PARK--------------.----",
+   "event": "Women's Park",
+   "date": "2026-09-25",
+   "gender": "W",
+   "type": "A",
+   "athletes": [
+    {
+     "name": "LIN Yi-fan",
+     "registrationId": "8000441"
+    }
+   ]
+  },
+  {
+   "medal": "bronze",
+   "discipline": "CSP",
+   "eventCode": "M.C1-500M-----------.FNL-",
+   "event": "Men's Canoe Single 500m Final",
+   "date": "2026-09-25",
+   "gender": "M",
+   "type": "A",
+   "athletes": [
+    {
+     "name": "LAI Kuan-chieh",
+     "registrationId": "12270735"
+    }
+   ]
+  },
+  {
+   "medal": "bronze",
+   "discipline": "KAB",
+   "eventCode": "M.TEAM7-------------.FNL-",
+   "event": "Men's Team Final",
+   "date": "2026-09-25",
+   "gender": "M",
+   "type": "T",
+   "athletes": [
+    {
+     "name": "CHEN Zheng-wei",
+     "registrationId": "174604"
+    },
+    {
+     "name": "CHUANG Chia-ming",
+     "registrationId": "1876956"
+    },
+    {
+     "name": "LI Jyun-jie",
+     "registrationId": "1878194"
+    },
+    {
+     "name": "LIN Po-ting",
+     "registrationId": "1884923"
+    },
+    {
+     "name": "CAI Ruei-chen",
+     "registrationId": "1899421"
+    },
+    {
+     "name": "SU Hsiang-chih",
+     "registrationId": "196252"
+    },
+    {
+     "name": "CHANG Chung-mao",
+     "registrationId": "6055177"
+    },
+    {
+     "name": "JIN Wu Fu-kai",
+     "registrationId": "6061419"
+    },
+    {
+     "name": "WANG Lun-chu",
+     "registrationId": "6063960"
+    },
+    {
+     "name": "PENG Xian-ya",
+     "registrationId": "6073317"
+    },
+    {
+     "name": "TSAI Chung-hao",
+     "registrationId": "9759064"
+    },
+    {
+     "name": "YEH Jiunn-ming",
+     "registrationId": "9765436"
+    }
+   ]
+  },
+  {
+   "medal": "bronze",
+   "discipline": "WLF",
+   "eventCode": "W.57KG--------------.FNL-",
+   "event": "Women's 57kg All Groups",
+   "date": "2026-09-25",
+   "gender": "W",
+   "type": "A",
+   "athletes": [
+    {
+     "name": "CHEN Guan-ling",
+     "registrationId": "1853876"
+    }
+   ]
+  },
+  {
+   "medal": "bronze",
+   "discipline": "WLF",
+   "eventCode": "W.61KG--------------.FNL-",
+   "event": "Women's 61kg All Groups",
+   "date": "2026-09-25",
+   "gender": "W",
+   "type": "A",
+   "athletes": [
+    {
+     "name": "KUO Hsing-chun",
+     "registrationId": "694199"
+    }
+   ]
+  },
+  {
+   "medal": "bronze",
+   "discipline": "KAB",
+   "eventCode": "W.TEAM7-------------.FNL-",
+   "event": "Women's Team Final",
+   "date": "2026-09-25",
+   "gender": "W",
+   "type": "T",
+   "athletes": [
+    {
+     "name": "HU Yu-chen",
+     "registrationId": "1907902"
+    },
+    {
+     "name": "HUANG Ssu-chin",
+     "registrationId": "1909110"
+    },
+    {
+     "name": "CHUANG Ya-han",
+     "registrationId": "1912012"
+    },
+    {
+     "name": "HUANG Yi-yun",
+     "registrationId": "1915241"
+    },
+    {
+     "name": "CHEN Shi-han",
+     "registrationId": "1919173"
+    },
+    {
+     "name": "REN Ming-xiu",
+     "registrationId": "1927057"
+    },
+    {
+     "name": "LIN I-min",
+     "registrationId": "219503"
+    },
+    {
+     "name": "YEN Chiao-wen",
+     "registrationId": "222520"
+    },
+    {
+     "name": "FENG Hsiu-chen",
+     "registrationId": "6088053"
+    },
+    {
+     "name": "QIN Pei-jyun",
+     "registrationId": "9780788"
+    },
+    {
+     "name": "WU Yu-jung",
+     "registrationId": "9788082"
+    },
+    {
+     "name": "KANG Yung-chiao",
+     "registrationId": "9792065"
+    }
+   ]
+  },
+  {
+   "medal": "bronze",
+   "discipline": "BBL",
+   "eventCode": "M.TEAM9-------------.FNL-",
+   "event": "Men’s Finals",
+   "date": "2026-09-26",
+   "gender": "M",
+   "type": "T",
+   "athletes": [
+    {
+     "name": "YU Tsung-ju",
+     "registrationId": "11414238"
+    },
+    {
+     "name": "HUANG Chieh-han",
+     "registrationId": "4008801"
+    },
+    {
+     "name": "YANG Po-hsiang",
+     "registrationId": "6355165"
+    },
+    {
+     "name": "GUO Dinghong",
+     "registrationId": "8096499"
+    },
+    {
+     "name": "HSU Siang-sheng",
+     "registrationId": "8274986"
+    },
+    {
+     "name": "LIU Chih-jung",
+     "registrationId": "8285115"
+    },
+    {
+     "name": "WANG Yu-chieh",
+     "registrationId": "10281202"
+    },
+    {
+     "name": "TSAI Wei-tai",
+     "registrationId": "10297158"
+    },
+    {
+     "name": "CHANG Hsiang",
+     "registrationId": "10304539"
+    },
+    {
+     "name": "WANG Yan-cheng",
+     "registrationId": "10443943"
+    },
+    {
+     "name": "LIN Yi-wei",
+     "registrationId": "11399646"
+    },
+    {
+     "name": "KUO Tzu-chuan",
+     "registrationId": "11423689"
+    },
+    {
+     "name": "LI I-wei",
+     "registrationId": "11562773"
+    },
+    {
+     "name": "KAO Yu-wei",
+     "registrationId": "11563014"
+    },
+    {
+     "name": "CHEN Min-sih",
+     "registrationId": "11563614"
+    },
+    {
+     "name": "LIN Yu-li",
+     "registrationId": "11563897"
+    },
+    {
+     "name": "LIU Ji-hong",
+     "registrationId": "11574279"
+    },
+    {
+     "name": "CHEN Chen-wei",
+     "registrationId": "11582874"
+    },
+    {
+     "name": "WANG Cheng-hao",
+     "registrationId": "4011816"
+    },
+    {
+     "name": "YANG Chen-yu",
+     "registrationId": "6345818"
+    },
+    {
+     "name": "CHEN Hsiao-yun",
+     "registrationId": "6346549"
+    },
+    {
+     "name": "HUANG Wei-sheng",
+     "registrationId": "8260716"
+    },
+    {
+     "name": "LIN Yu-min",
+     "registrationId": "8281596"
+    },
+    {
+     "name": "CHU Chia-en",
+     "registrationId": "8589060"
+    }
+   ]
+  },
+  {
+   "medal": "bronze",
+   "discipline": "ELS",
+   "eventCode": "O.PYO---------------.FNL-",
+   "event": "Puyo Puyo Champions Finals",
+   "date": "2026-09-26",
+   "gender": "M",
+   "type": "A",
+   "athletes": [
+    {
+     "name": "KUO Tzu-ang",
+     "registrationId": "2800288"
+    }
+   ]
+  },
+  {
+   "medal": "gold",
+   "discipline": "ATH",
+   "eventCode": "M.HIGHJUMP----------.----",
+   "event": "Men's High Jump",
+   "date": "2026-09-27",
+   "gender": "M",
+   "type": "A",
+   "athletes": [
+    {
+     "name": "FU Chao-hsuan",
+     "registrationId": "998221"
+    }
+   ]
+  },
+  {
+   "medal": "silver",
+   "discipline": "KUR",
+   "eventCode": "W.57KG--------------.FNL-",
+   "event": "Women -57kg Final",
+   "date": "2026-09-27",
+   "gender": "W",
+   "type": "A",
+   "athletes": [
+    {
+     "name": "LEE Wan-ting",
+     "registrationId": "2624547"
+    }
+   ]
+  },
+  {
+   "medal": "silver",
+   "discipline": "WLF",
+   "eventCode": "W.69KG--------------.FNL-",
+   "event": "Women's 69kg All Groups",
+   "date": "2026-09-27",
+   "gender": "W",
+   "type": "A",
+   "athletes": [
+    {
+     "name": "CHEN Wen-huei",
+     "registrationId": "696828"
+    }
+   ]
+  },
+  {
+   "medal": "bronze",
+   "discipline": "KUR",
+   "eventCode": "W.57KG--------------.FNL-",
+   "event": "Women -57kg Final",
+   "date": "2026-09-27",
+   "gender": "W",
+   "type": "A",
+   "athletes": [
+    {
+     "name": "WANG Pin-chun",
+     "registrationId": "11632493"
+    }
+   ]
+  },
+  {
+   "medal": "silver",
+   "discipline": "ATH",
+   "eventCode": "M.4X100M------------.----",
+   "event": "Men's 4 x 100m Relay",
+   "date": "2026-09-28",
+   "gender": "M",
+   "type": "T",
+   "athletes": [
+    {
+     "name": "YANG Chun-han",
+     "registrationId": "992272"
+    },
+    {
+     "name": "CHEN Wen-pu",
+     "registrationId": "5078982"
+    },
+    {
+     "name": "HUANG Zuo-jyun",
+     "registrationId": "5080943"
+    },
+    {
+     "name": "LAI Po-hsiang",
+     "registrationId": "5084736"
+    }
+   ]
+  },
+  {
+   "medal": "bronze",
+   "discipline": "ATH",
+   "eventCode": "M.400MHURD----------.----",
+   "event": "Men's 400m Hurdles",
+   "date": "2026-09-28",
+   "gender": "M",
+   "type": "A",
+   "athletes": [
+    {
+     "name": "LIN Chung-wei",
+     "registrationId": "15982339"
+    }
+   ]
+  },
+  {
+   "medal": "bronze",
+   "discipline": "TTE",
+   "eventCode": "M.SINGLES-----------.----",
+   "event": "Men's Singles",
+   "date": "2026-09-28",
+   "gender": "M",
+   "type": "A",
+   "athletes": [
+    {
+     "name": "LIN Yun-ju",
+     "registrationId": "4735886"
+    }
+   ]
+  },
+  {
+   "medal": "bronze",
+   "discipline": "SHO",
+   "eventCode": "W.SPTW--------------.----",
+   "event": "25m Pistol Women Team",
+   "date": "2026-09-28",
+   "gender": "W",
+   "type": "T",
+   "athletes": [
+    {
+     "name": "CHENG Yen-Ching",
+     "registrationId": "13649678"
+    },
+    {
+     "name": "TIEN Chia-Chen",
+     "registrationId": "13656350"
+    },
+    {
+     "name": "CHEN Yu-Ju",
+     "registrationId": "13694029"
+    }
+   ]
+  },
+  {
+   "medal": "bronze",
+   "discipline": "BDM",
+   "eventCode": "X.DOUBLES-----------.----",
+   "event": "Mixed Doubles",
+   "date": "2026-09-28",
+   "gender": "X",
+   "type": "D",
+   "athletes": [
+    {
+     "name": "YE Hong-Wei / CHAN Nicole Gonzales",
+     "registrationId": "BDMXDOUBLES----TPE01"
+    }
+   ]
+  },
+  {
+   "medal": "silver",
+   "discipline": "SHO",
+   "eventCode": "M.TRM---------------.----",
+   "event": "Trap Men Individual",
+   "date": "2026-09-29",
+   "gender": "M",
+   "type": "A",
+   "athletes": [
+    {
+     "name": "YANG Kun-Pi",
+     "registrationId": "4303935"
+    }
+   ]
+  },
+  {
+   "medal": "silver",
+   "discipline": "KUR",
+   "eventCode": "W.O87KG-------------.FNL-",
+   "event": "Women +87kg Final",
+   "date": "2026-09-29",
+   "gender": "W",
+   "type": "A",
+   "athletes": [
+    {
+     "name": "SHIH Liu Li-ling",
+     "registrationId": "8048932"
+    }
+   ]
+  },
+  {
+   "medal": "bronze",
+   "discipline": "CTR",
+   "eventCode": "W.SPRTEAM3----------.----",
+   "event": "Women's Team Sprint",
+   "date": "2026-09-29",
+   "gender": "W",
+   "type": "T",
+   "athletes": [
+    {
+     "name": "WANG Sin-ting",
+     "registrationId": "5879153"
+    },
+    {
+     "name": "CHEN Ching-yun",
+     "registrationId": "9547816"
+    },
+    {
+     "name": "LIU Shang-ying",
+     "registrationId": "1728973"
+    },
+    {
+     "name": "QIU Jing-wen",
+     "registrationId": "9547127"
+    }
+   ]
+  },
+  {
+   "medal": "bronze",
+   "discipline": "ARC",
+   "eventCode": "M.CTEAM-------------.FNL-",
+   "event": "Compound Men's Team Finals",
+   "date": "2026-09-30",
+   "gender": "M",
+   "type": "T",
+   "athletes": [
+    {
+     "name": "CHANG Cheng-Wei",
+     "registrationId": "2036175"
+    },
+    {
+     "name": "CHEN Chieh-Lun",
+     "registrationId": "3175093"
+    },
+    {
+     "name": "YEN Tzu-Hsiang",
+     "registrationId": "5473113"
+    }
+   ]
+  },
+  {
+   "medal": "bronze",
+   "discipline": "ELS",
+   "eventCode": "O.IDV---------------.FNL-",
+   "event": "Identity V - Asian Games Version Finals",
+   "date": "2026-09-30",
+   "gender": "O",
+   "type": "T",
+   "athletes": [
+    {
+     "name": "CHENG Kai-sheng",
+     "registrationId": "10600824"
+    },
+    {
+     "name": "CHEN Kuang-yeh",
+     "registrationId": "10604282"
+    },
+    {
+     "name": "CHU Tang-yao",
+     "registrationId": "10605835"
+    },
+    {
+     "name": "TANG Sheng-chun",
+     "registrationId": "2796267"
+    },
+    {
+     "name": "CHANG Chun-ming",
+     "registrationId": "2796816"
+    },
+    {
+     "name": "CHUANG Po-chun",
+     "registrationId": "2797435"
+    },
+    {
+     "name": "SU Bin-cheng",
+     "registrationId": "8196315"
+    }
+   ]
+  },
+  {
+   "medal": "silver",
+   "discipline": "ARC",
+   "eventCode": "M.CINDIVID----------.FNL-",
+   "event": "Compound Men's Individual Finals",
+   "date": "2026-10-01",
+   "gender": "M",
+   "type": "A",
+   "athletes": [
+    {
+     "name": "CHANG Cheng-Wei",
+     "registrationId": "2036175"
+    }
+   ]
+  },
+  {
+   "medal": "bronze",
+   "discipline": "TEN",
+   "eventCode": "M.DOUBLES-----------.----",
+   "event": "Men's Doubles",
+   "date": "2026-10-01",
+   "gender": "M",
+   "type": "D",
+   "athletes": [
+    {
+     "name": "HO Chenjui / HSU Yu-hsiou",
+     "registrationId": "TENMDOUBLES----TPE02"
+    }
+   ]
+  },
+  {
+   "medal": "gold",
+   "discipline": "BOX",
+   "eventCode": "W.60KG--------------.----",
+   "event": "Women's 60kg",
+   "date": "2026-10-02",
+   "gender": "W",
+   "type": "A",
+   "athletes": [
+    {
+     "name": "LIN Yu-ting",
+     "registrationId": "6116922"
+    }
+   ]
+  },
+  {
+   "medal": "silver",
+   "discipline": "TKW",
+   "eventCode": "M.80KG--------------.FNL-",
+   "event": "Men -80kg Gold Medal Contest",
+   "date": "2026-10-02",
+   "gender": "M",
+   "type": "A",
+   "athletes": [
+    {
+     "name": "HUNG Jiun-yi",
+     "registrationId": "6603918"
+    }
+   ]
+  },
+  {
+   "medal": "silver",
+   "discipline": "CSL",
+   "eventCode": "M.C1----------------.----",
+   "event": "Men's Canoe Single",
+   "date": "2026-10-02",
+   "gender": "M",
+   "type": "A",
+   "athletes": [
+    {
+     "name": "WU Jung-cheng",
+     "registrationId": "4233921"
+    }
+   ]
+  },
+  {
+   "medal": "silver",
+   "discipline": "ELS",
+   "eventCode": "O.LOL---------------.FNL-",
+   "event": "League of Legends Finals",
+   "date": "2026-10-02",
+   "gender": "O",
+   "type": "T",
+   "athletes": [
+    {
+     "name": "LIN Yu-en",
+     "registrationId": "10637407"
+    },
+    {
+     "name": "LIU Jia-hao",
+     "registrationId": "11829980"
+    },
+    {
+     "name": "CHIU Tzu-chuan",
+     "registrationId": "2804242"
+    },
+    {
+     "name": "YU Jun-jia",
+     "registrationId": "8198201"
+    },
+    {
+     "name": "TSAI Ming-hung",
+     "registrationId": "8199538"
+    },
+    {
+     "name": "CHEN Yi-chin",
+     "registrationId": "8211779"
+    }
+   ]
+  },
+  {
+   "medal": "silver",
+   "discipline": "BOX",
+   "eventCode": "W.65KG--------------.----",
+   "event": "Women's 65kg",
+   "date": "2026-10-02",
+   "gender": "W",
+   "type": "A",
+   "athletes": [
+    {
+     "name": "CHEN Nien-chin",
+     "registrationId": "6112606"
+    }
+   ]
+  },
+  {
+   "medal": "silver",
+   "discipline": "CSL",
+   "eventCode": "W.X1----------------.----",
+   "event": "Women's Kayak Cross",
+   "date": "2026-10-02",
+   "gender": "W",
+   "type": "A",
+   "athletes": [
+    {
+     "name": "CHANG Chu-han",
+     "registrationId": "4238983"
+    }
+   ]
+  },
+  {
+   "medal": "bronze",
+   "discipline": "ARC",
+   "eventCode": "M.RTEAM-------------.FNL-",
+   "event": "Recurve Men's Team Finals",
+   "date": "2026-10-02",
+   "gender": "M",
+   "type": "T",
+   "athletes": [
+    {
+     "name": "TANG Chih-Chun",
+     "registrationId": "2091847"
+    },
+    {
+     "name": "LIN Zih-Siang",
+     "registrationId": "2093480"
+    },
+    {
+     "name": "CHENG Hsiang-Hui",
+     "registrationId": "5358471"
+    }
+   ]
+  },
+  {
+   "medal": "bronze",
+   "discipline": "TKW",
+   "eventCode": "W.67KG--------------.FNL-",
+   "event": "Women -67kg Gold Medal Contest",
+   "date": "2026-10-02",
+   "gender": "W",
+   "type": "A",
+   "athletes": [
+    {
+     "name": "WANG Wei-chia",
+     "registrationId": "663821"
+    }
+   ]
+  },
+  {
+   "medal": "bronze",
+   "discipline": "SBL",
+   "eventCode": "W.TEAM9-------------.FNL-",
+   "event": "Women’s Finals",
+   "date": "2026-10-02",
+   "gender": "W",
+   "type": "T",
+   "athletes": [
+    {
+     "name": "LI Szu-shih",
+     "registrationId": "15798350"
+    },
+    {
+     "name": "YANG An-chi",
+     "registrationId": "15819402"
+    },
+    {
+     "name": "KE Hsia-ai",
+     "registrationId": "15878055"
+    },
+    {
+     "name": "LIN Chi-yun",
+     "registrationId": "15887482"
+    },
+    {
+     "name": "LIN Chih-ying",
+     "registrationId": "2460090"
+    },
+    {
+     "name": "HO Yi-fan",
+     "registrationId": "2463220"
+    },
+    {
+     "name": "SHEN Chia-wen",
+     "registrationId": "2465052"
+    },
+    {
+     "name": "LIU Hsuan",
+     "registrationId": "3606585"
+    },
+    {
+     "name": "SU Yi-hsuan",
+     "registrationId": "3607262"
+    },
+    {
+     "name": "LIN Feng-chen",
+     "registrationId": "3608913"
+    },
+    {
+     "name": "CHIANG Ting-en",
+     "registrationId": "3630142"
+    },
+    {
+     "name": "TU Ya-ting",
+     "registrationId": "5924628"
+    },
+    {
+     "name": "CHEN Chia-yi",
+     "registrationId": "5948665"
+    },
+    {
+     "name": "PAN Yu-ling",
+     "registrationId": "6000879"
+    },
+    {
+     "name": "CHU Yi-shan",
+     "registrationId": "6001604"
+    },
+    {
+     "name": "CHEN Ching-yu",
+     "registrationId": "6003651"
+    },
+    {
+     "name": "YEH Kuei-ping",
+     "registrationId": "6014379"
+    }
+   ]
+  },
+  {
+   "medal": "bronze",
+   "discipline": "TEN",
+   "eventCode": "X.DOUBLES-----------.----",
+   "event": "Mixed Doubles",
+   "date": "2026-10-02",
+   "gender": "X",
+   "type": "D",
+   "athletes": [
+    {
+     "name": "HSIEH Su-wei / TSENG Chun-hsin",
+     "registrationId": "TENXDOUBLES----TPE02"
+    }
+   ]
+  },
+  {
+   "medal": "gold",
+   "discipline": "TEN",
+   "eventCode": "W.DOUBLES-----------.----",
+   "event": "Women's Doubles",
+   "date": "2026-10-03",
+   "gender": "W",
+   "type": "D",
+   "athletes": [
+    {
+     "name": "HSIEH Su-wei / LIANG En-shuo",
+     "registrationId": "TENWDOUBLES----TPE01"
+    }
+   ]
+  },
+  {
+   "medal": "silver",
+   "discipline": "TEN",
+   "eventCode": "W.DOUBLES-----------.----",
+   "event": "Women's Doubles",
+   "date": "2026-10-03",
+   "gender": "W",
+   "type": "D",
+   "athletes": [
+    {
+     "name": "CHAN Hao-ching / WU Fang-hsien",
+     "registrationId": "TENWDOUBLES----TPE02"
+    }
+   ]
+  },
+  {
+   "medal": "bronze",
+   "discipline": "TKW",
+   "eventCode": "W.57KG--------------.FNL-",
+   "event": "Women -57kg Gold Medal Contest",
+   "date": "2026-10-03",
+   "gender": "W",
+   "type": "A",
+   "athletes": [
+    {
+     "name": "LIN Wei-chun",
+     "registrationId": "10187608"
+    }
+   ]
+  },
+  {
+   "medal": "bronze",
+   "discipline": "GLF",
+   "eventCode": "W.TEAM--------------.FNL-",
+   "event": "Women's Team",
+   "date": "2026-10-03",
+   "gender": "W",
+   "type": "T",
+   "athletes": [
+    {
+     "name": "CHIEN Pei-yun",
+     "registrationId": "10587356"
+    },
+    {
+     "name": "TSENG Ya-ni",
+     "registrationId": "8374574"
+    },
+    {
+     "name": "HSU Wei-ling",
+     "registrationId": "8390832"
+    }
+   ]
+  }
+ ],
+ "lastSuccessAt": "2026-10-05T16:59:36.351Z",
+ "lastAttemptAt": "2026-10-05T16:59:34.118Z",
+ "lastError": null
+}

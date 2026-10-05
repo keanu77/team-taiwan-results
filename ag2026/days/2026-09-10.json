@@ -1,0 +1,49 @@
+{
+ "date": "2026-09-10",
+ "units": [
+  {
+   "id": "AG2026:BKB:M.TEAM5-------------.GPB-.000200--",
+   "discipline": "BKB",
+   "sport": "籃球",
+   "event": "Men",
+   "phase": "Group Phase - Group B",
+   "unit": "Game 2",
+   "startsAt": "2026-09-10T04:00:00.000Z",
+   "timeNote": "",
+   "venue": "Aichi International Arena",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "BKBMTEAM5------JOR01",
+     "organisation": "JOR",
+     "name": "Jordan",
+     "result": "80",
+     "rank": "2",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    },
+    {
+     "id": "BKBMTEAM5------TPE01",
+     "organisation": "TPE",
+     "name": "TPE",
+     "result": "83",
+     "rank": "1",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "OK",
+     "medal": ""
+    }
+   ],
+   "detailAvailable": true,
+   "sourceUrl": "https://results.asiangames2026.org/#/discipline/BKB/results/M.TEAM5-------------.GPB-.000200--"
+  }
+ ],
+ "successCount": 1,
+ "lastSuccessAt": "2026-10-05T17:02:11.013Z",
+ "lastAttemptAt": "2026-10-05T17:02:07.834Z",
+ "lastError": null
+}
