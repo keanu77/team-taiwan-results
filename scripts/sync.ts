@@ -1,12 +1,12 @@
 // GitHub Actions 每輪執行一次：npm run sync
-// 環境變數：DATA_DIR（預設 data）、SYNC_BUDGET_MINUTES（預設 20）
+// 環境變數：DATA_DIR（預設 data）、SYNC_BUDGET_MINUTES（預設 20）、MANUAL_CSV（預設 results/manual.csv）
 import { appendFileSync, existsSync, readFileSync } from "node:fs";
 import { CONFIG } from "../src/config";
 import { fileStore } from "../src/lib/results/sync/fileStore";
 import { runManualSync } from "../src/lib/results/sync/manual";
 import { runSync, type SyncSummary } from "../src/lib/results/sync/run";
 
-const MANUAL_CSV = "results/manual.csv";
+const MANUAL_CSV = process.env.MANUAL_CSV ?? "results/manual.csv";
 
 async function main() {
   const store = fileStore(process.env.DATA_DIR ?? "data");
