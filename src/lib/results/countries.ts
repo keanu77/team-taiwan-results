@@ -25,7 +25,8 @@ const BUILT_IN: Record<string, readonly [string, string]> = {
 };
 
 // 內建表只有亞運代表隊；其他賽會可在 events/<代號>/rosters/countries.csv 補充或覆寫（code,chinese,english）
-const COUNTRIES: Record<string, readonly [string, string]> = { ...BUILT_IN, ...(ROSTERS.countries as Record<string, [string, string]>) };
+// rosters.json 由 prepare-event 產生，JSON 匯入推斷不出 tuple 型別，所以經 unknown 轉型（有填 countries.csv 時才會撞到）
+const COUNTRIES: Record<string, readonly [string, string]> = { ...BUILT_IN, ...(ROSTERS.countries as unknown as Record<string, [string, string]>) };
 
 export function countryName(organisation: string): string {
   const code = organisation.trim().toUpperCase();
