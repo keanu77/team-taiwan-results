@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { isResultsResponse } from "../src/components/results/resultDisplay";
-import { normalizeResult } from "../src/lib/results/model";
+import { eventEnded, normalizeResult } from "../src/lib/results/model";
 import { combineResultDays } from "../src/lib/results/period";
 import type { TpeResultsResponse } from "../src/lib/results/types";
 
@@ -30,4 +30,11 @@ assert.equal(empty.period!.availableDays, 2, "a successfully synced empty day st
 assert.equal(empty.units.length, 0);
 assert.equal(empty.stale, false);
 assert.equal(empty.warning, null);
+// 手動成績：沒填資料的日子＝當天沒有本隊場次，不是同步缺漏
+const manual = combineResultDays([day("2026-09-10"), day("2026-09-11", { fetchedAt: null, syncEnabled: false })]);
+assert.equal(manual.stale, false);
+assert.equal(manual.warning, null, "manual days without rows are not reported as missing");
+// 閉幕判斷用主辦地日期（範例賽事 10/4 閉幕、東京時間）
+assert.equal(eventEnded(new Date("2026-10-04T14:59:00Z")), false, "the closing day itself is not over");
+assert.equal(eventEnded(new Date("2026-10-04T15:00:00Z")), true, "the day after closing in host time is over");
 console.info("PASS period aggregation: coverage, missing days, deduplication, freshness, immutable daily data, range response identity");

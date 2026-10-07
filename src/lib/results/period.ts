@@ -10,7 +10,8 @@ export function combineResultDays(days: TpeResultsResponse[]): TpeResultsRespons
   for (const day of [...saved].sort((a, b) => a.fetchedAt!.localeCompare(b.fetchedAt!) || a.date.localeCompare(b.date))) {
     for (const unit of day.units) units.set(unit.id, { ...unit, scheduleDate: day.date });
   }
-  const missing = ordered.length - saved.length;
+  // 手動成績（syncEnabled=false）沒資料的日子就是沒有本隊場次，不算缺漏
+  const missing = ordered.filter((day) => !day.fetchedAt && day.syncEnabled).length;
   const latest = saved.map((day) => day.fetchedAt!).sort().at(-1) ?? null;
   const stale = ordered.some((day) => day.stale);
   return {

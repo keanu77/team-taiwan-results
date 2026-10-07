@@ -54,14 +54,14 @@ export function isArchived(meta: SyncMeta | null | undefined, now: Date): boolea
   return Boolean(meta?.lastSuccessAt && !meta.lastError && resultDate(now) > FINAL_CORRECTION_DATE && resultDate(new Date(meta.lastSuccessAt)) >= FINAL_CORRECTION_DATE);
 }
 
-export function dayResponse(date: string, row: StoredDay | null, cooldown: number, now: Date): TpeResultsResponse {
+export function dayResponse(date: string, row: StoredDay | null, cooldown: number, now: Date, sourceType = CONFIG.source.type): TpeResultsResponse {
   const nowMs = now.getTime();
   // 超過兩倍同步間隔沒更新才算延遲（當日 1 小時、前兩日 12 小時、更早 48 小時）
   const expiry = resultSyncInterval(date, now) * 2;
   const archived = isArchived(row, now);
-  // 手動成績沒有「排程」：有資料就是最新，不顯示延遲警告
-  const manual = CONFIG.source.type !== "bornan";
-  const stale = !row?.lastSuccessAt || Boolean(row.lastError) || (!manual && !archived && nowMs - time(row.lastSuccessAt) > expiry);
+  // 手動成績沒有「排程」：有資料就是最新；沒有資料代表當天沒有本隊場次，都不算延遲
+  const manual = sourceType !== "bornan";
+  const stale = Boolean(row?.lastError) || (!manual && (!row?.lastSuccessAt || (!archived && nowMs - time(row.lastSuccessAt) > expiry)));
   const scheduled = !manual && (Boolean(row) || date <= shiftResultDate(defaultResultDate(now), 1));
   return {
     success: true, source: RESULTS_SOURCE, competition: RESULTS_COMPETITION,

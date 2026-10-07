@@ -50,6 +50,10 @@ export function parseResultDate(value: unknown): string | null {
   if (!Number.isFinite(parsed.getTime()) || parsed.toISOString().slice(0, 10) !== value) return null;
   return value >= RESULTS_MIN_DATE && value <= RESULTS_MAX_DATE ? value : null;
 }
+/** 主辦地日期已過閉幕日：賽事已結束，「今日」不再有意義 */
+export function eventEnded(now = new Date()): boolean {
+  return resultDate(now) > RESULTS_MAX_DATE;
+}
 export function defaultResultDate(now = new Date()): string {
   const date = resultDate(now);
   return date < RESULTS_MIN_DATE ? RESULTS_MIN_DATE : date > RESULTS_MAX_DATE ? RESULTS_MAX_DATE : date;

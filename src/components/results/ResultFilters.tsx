@@ -5,15 +5,19 @@ import { clampResultsDate, displayTpe, isResultsDate, RESULTS_MAX_DATE, RESULTS_
 import type { ResultQuery } from "./resultQuery";
 import { CONFIG, slashDate, utcOffsetLabel } from "@/config";
 
-const START_LABEL = RESULTS_MIN_DATE.slice(5).replace(/^0/, "").replace("-0", "/").replace("-", "/");
+const shortDate = (date: string) => date.slice(5).replace(/^0/, "").replace("-0", "/").replace("-", "/");
+const START_LABEL = shortDate(RESULTS_MIN_DATE);
+const END_LABEL = shortDate(RESULTS_MAX_DATE);
 const ZONE_NOTE = [
   `${CONFIG.timeZoneLabel} ${utcOffsetLabel(CONFIG.timeZone, new Date(`${RESULTS_MIN_DATE}T12:00:00Z`))}`,
   ...(CONFIG.viewerTimeZone !== CONFIG.timeZone ? [`${CONFIG.viewerTimeZoneLabel} ${utcOffsetLabel(CONFIG.viewerTimeZone, new Date(`${RESULTS_MIN_DATE}T12:00:00Z`))}`] : []),
 ].join("，");
 
-export function ResultFilters({ query, today, sports, statuses, loading, onQuery }: {
+export function ResultFilters({ query, today, ended, sports, statuses, loading, onQuery }: {
   query: ResultQuery;
   today: string;
+  /** 賽事已閉幕：期間改顯示到閉幕日 */
+  ended: boolean;
   sports: { key: string; label: string }[];
   statuses: { value: string; label: string }[];
   loading: boolean;
@@ -36,7 +40,7 @@ export function ResultFilters({ query, today, sports, statuses, loading, onQuery
     <div className="mb-4 max-w-sm">
       <label htmlFor="results-range" className="mb-2 block text-sm font-medium text-gray-700">查詢範圍</label>
       <select id="results-range" name="range" className="input-field min-w-0" value={draft.period ? "period" : "day"} onChange={(event) => setDraft((current) => ({ ...current, period: event.target.value === "period", date: clampResultsDate(today), sport: "", status: "" }))}>
-        <option value="period">賽事期間（{START_LABEL} 至當日）</option><option value="day">單日賽程</option>
+        <option value="period">賽事期間（{START_LABEL} 至{ended ? ` ${END_LABEL}` : "當日"}）</option><option value="day">單日賽程</option>
       </select>
     </div>
     <div className="grid gap-4 lg:grid-cols-[minmax(0,1.3fr)_minmax(0,2fr)]">

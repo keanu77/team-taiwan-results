@@ -18,6 +18,7 @@ import { useTpeResults } from "@/components/results/useTpeResults";
 import { matchesAthlete } from "@/lib/results/resultSearch";
 import { groupResultSports, resultSport } from "@/lib/results/sportGroups";
 import { CONFIG } from "@/config";
+import { eventEnded } from "@/lib/results/model";
 import { TEAM } from "@/lib/results/team";
 import "./results-theme.css";
 
@@ -25,13 +26,15 @@ function ResultsContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const [today, setToday] = useState("");
+  const [ended, setEnded] = useState(false);
   const [pendingQuery, setPendingQuery] = useState<string | null>(null);
   const [queryNumber, setQueryNumber] = useState(0);
   const [athleteQuery, setAthleteQuery] = useState("");
   const resultsRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
-    setToday(hostToday());
-    const interval = window.setInterval(() => setToday(hostToday()), 60_000);
+    const tick = () => { setToday(hostToday()); setEnded(eventEnded()); };
+    tick();
+    const interval = window.setInterval(tick, 60_000);
     return () => window.clearInterval(interval);
   }, []);
   const requestedDate = searchParams.get("date");
@@ -80,10 +83,10 @@ function ResultsContent() {
 
       <div role="group" aria-label="快速查看" className="mb-3 flex flex-wrap items-center gap-2">
         <span className="text-sm font-medium text-gray-700">快速查看</span>
-        {([["今日賽程", isTodayQuery(query, today), () => submitQuery(todayQuery(today))], ["賽事期間全部", period && !sport && !status, () => submitQuery(periodQuery(today))]] as const).map(([label, active, onClick]) =>
+        {([...(ended ? [] : [["今日賽程", isTodayQuery(query, today), () => submitQuery(todayQuery(today))]] as const), ["賽事期間全部", period && !sport && !status, () => submitQuery(periodQuery(today))]] as const).map(([label, active, onClick]) =>
           <button key={label} type="button" aria-pressed={active} disabled={!today} onClick={onClick} className={`min-h-11 rounded-full px-4 text-sm font-medium ring-1 ring-inset transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-600 disabled:opacity-50 ${active ? "bg-brand-700 text-white ring-brand-700" : "bg-white text-brand-700 ring-gray-300 hover:bg-brand-50"}`}>{label}</button>)}
       </div>
-      <ResultFilters key={`${date}:${resultQueryHref(query)}`} query={query} today={today} sports={sports} statuses={statuses} loading={loading} onQuery={submitQuery} />
+      <ResultFilters key={`${date}:${resultQueryHref(query)}`} query={query} today={today} ended={ended} sports={sports} statuses={statuses} loading={loading} onQuery={submitQuery} />
       {!period && requestedDate && !isResultsDate(requestedDate) && <p className="mt-2 text-xs text-amber-900">網址日期無效或超出範圍，已顯示可查詢的日期。</p>}
 
       <div ref={resultsRef} tabIndex={-1} className="mt-5 scroll-mt-6 rounded-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-500" aria-label="查詢結果">

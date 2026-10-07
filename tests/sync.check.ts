@@ -167,6 +167,10 @@ async function main() {
     assert.match(day.warning ?? "", /暫時無法完整更新/);
     assert.equal(medalResponse(store.readMedals(), clock).standings.length, 1);
     assert.equal(dayResponse("2026-09-25", null, 0, clock).fetchedAt, null);
+    const manualEmpty = dayResponse("2026-09-25", null, 0, clock, "manual");
+    assert.equal(manualEmpty.stale, false, "a manual day without rows is not a delayed sync");
+    assert.equal(manualEmpty.syncEnabled, false);
+    assert.equal(dayResponse("2026-09-25", null, 0, clock).stale, true, "a bornan day without a snapshot is still stale");
 
     // 原本有場次、這次官方回傳全空：保留上一份
     clock = new Date(clock.getTime() + 40 * 60_000);
