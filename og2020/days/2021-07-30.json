@@ -1,0 +1,474 @@
+{
+ "date": "2021-07-30",
+ "successCount": 1,
+ "lastSuccessAt": "2026-10-07T23:40:44.807Z",
+ "lastAttemptAt": "2026-10-07T23:40:44.807Z",
+ "lastError": null,
+ "units": [
+  {
+   "id": "OG2020:MANUAL:GOL-men-s-individual-stroke-play-fnl-000200",
+   "discipline": "GOL",
+   "sport": "高爾夫",
+   "event": "Men's Individual Stroke Play",
+   "phase": "第 2 輪",
+   "unit": "",
+   "startsAt": "2021-07-29T22:30:00.000Z",
+   "timeNote": "",
+   "venue": "Kasumigaseki Country Club",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": false,
+   "competitors": [
+    {
+     "id": "TPE:PAN C T",
+     "name": "PAN C T",
+     "organisation": "TPE",
+     "result": "66 桿",
+     "rank": "",
+     "outcome": "",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/olympic-games/tokyo-2020/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2020:MANUAL:ROW-women-s-single-sculls-fnl-000400",
+   "discipline": "ROW",
+   "sport": "划船",
+   "event": "Women's Single Sculls",
+   "phase": "D 組決賽",
+   "unit": "",
+   "startsAt": "2021-07-29T23:25:00.000Z",
+   "timeNote": "",
+   "venue": "Sea Forest Waterway",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": false,
+   "competitors": [
+    {
+     "id": "TPE:HUANG Yi-Ting",
+     "name": "HUANG Yi-Ting",
+     "organisation": "TPE",
+     "result": "7:52.18（總排名第 20）",
+     "rank": "2",
+     "outcome": "",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/olympic-games/tokyo-2020/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2020:MANUAL:SHO-25m-pistol-women-qual-000200",
+   "discipline": "SHO",
+   "sport": "射擊",
+   "event": "25m Pistol Women's",
+   "phase": "資格賽（快射）",
+   "unit": "",
+   "startsAt": "2021-07-30T00:00:00.000Z",
+   "timeNote": "",
+   "venue": "Asaka Shooting Range - 25m Range",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": false,
+   "competitors": [
+    {
+     "id": "TPE:WU Chia-Ying",
+     "name": "WU Chia-Ying",
+     "organisation": "TPE",
+     "result": "584-22x",
+     "rank": "7",
+     "outcome": "",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    },
+    {
+     "id": "TPE:TIEN Chia Chen",
+     "name": "TIEN Chia Chen",
+     "organisation": "TPE",
+     "result": "584-24x",
+     "rank": "5",
+     "outcome": "",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/olympic-games/tokyo-2020/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2020:MANUAL:ATH-women-s-100m-prel-000200",
+   "discipline": "ATH",
+   "sport": "田徑",
+   "event": "Women's 100m",
+   "phase": "資格預賽第 2 組",
+   "unit": "",
+   "startsAt": "2021-07-30T00:07:00.000Z",
+   "timeNote": "",
+   "venue": "Olympic Stadium - Track",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": false,
+   "competitors": [
+    {
+     "id": "TPE:HSIEH Hsi-En",
+     "name": "HSIEH Hsi-En",
+     "organisation": "TPE",
+     "result": "12.49",
+     "rank": "7",
+     "outcome": "",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/olympic-games/tokyo-2020/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2020:MANUAL:ARC-women-s-individual-8fnl-000300",
+   "discipline": "ARC",
+   "sport": "射箭",
+   "event": "Women's Individual",
+   "phase": "16 強",
+   "unit": "",
+   "startsAt": "2021-07-30T00:43:00.000Z",
+   "timeNote": "",
+   "venue": "Yumenoshima Final Field",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "USA:BROWN Mackenzie",
+     "name": "BROWN Mackenzie",
+     "organisation": "USA",
+     "result": "6-2",
+     "rank": "",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    },
+    {
+     "id": "TPE:LIN Chia-En",
+     "name": "LIN Chia-En",
+     "organisation": "TPE",
+     "result": "2-6",
+     "rank": "",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/olympic-games/tokyo-2020/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2020:MANUAL:ATH-men-s-400m-hurdles-rnd1-000100",
+   "discipline": "ATH",
+   "sport": "田徑",
+   "event": "Men's 400m Hurdles",
+   "phase": "第 1 輪第 1 組",
+   "unit": "",
+   "startsAt": "2021-07-30T02:25:00.000Z",
+   "timeNote": "",
+   "venue": "Olympic Stadium - Track",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": false,
+   "competitors": [
+    {
+     "id": "TPE:CHEN Chieh",
+     "name": "CHEN Chieh",
+     "organisation": "TPE",
+     "result": "50.96",
+     "rank": "7",
+     "outcome": "",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/olympic-games/tokyo-2020/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2020:MANUAL:BOX-women-s-welter-64-69kg-qfnl-000200",
+   "discipline": "BOX",
+   "sport": "拳擊",
+   "event": "Women's Welter (64-69kg)",
+   "phase": "八強",
+   "unit": "",
+   "startsAt": "2021-07-30T03:18:00.000Z",
+   "timeNote": "",
+   "venue": "Kokugikan Arena",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "IND:BORGOHAIN Lovlina",
+     "name": "BORGOHAIN Lovlina",
+     "organisation": "IND",
+     "result": "4-1",
+     "rank": "",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    },
+    {
+     "id": "TPE:CHEN Nien-Chin",
+     "name": "CHEN Nien-Chin",
+     "organisation": "TPE",
+     "result": "1-4",
+     "rank": "",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/olympic-games/tokyo-2020/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2020:MANUAL:SHO-25m-pistol-women-fnl-000100",
+   "discipline": "SHO",
+   "sport": "射擊",
+   "event": "25m Pistol Women's",
+   "phase": "決賽",
+   "unit": "",
+   "startsAt": "2021-07-30T05:00:00.000Z",
+   "timeNote": "",
+   "venue": "Asaka Shooting Range - Final Hall",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": false,
+   "competitors": [
+    {
+     "id": "TPE:WU Chia-Ying",
+     "name": "WU Chia-Ying",
+     "organisation": "TPE",
+     "result": "命中 23（加賽）",
+     "rank": "5",
+     "outcome": "",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    },
+    {
+     "id": "TPE:TIEN Chia Chen",
+     "name": "TIEN Chia Chen",
+     "organisation": "TPE",
+     "result": "命中 10",
+     "rank": "8",
+     "outcome": "",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/olympic-games/tokyo-2020/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2020:MANUAL:BOX-women-s-light-57-60kg-8fnl-000500",
+   "discipline": "BOX",
+   "sport": "拳擊",
+   "event": "Women's Light (57-60kg)",
+   "phase": "16 強",
+   "unit": "",
+   "startsAt": "2021-07-30T08:00:00.000Z",
+   "timeNote": "",
+   "venue": "Kokugikan Arena",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "BRA:FERREIRA Beatriz",
+     "name": "FERREIRA Beatriz",
+     "organisation": "BRA",
+     "result": "5-0",
+     "rank": "",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    },
+    {
+     "id": "TPE:WU Shih-Yi",
+     "name": "WU Shih-Yi",
+     "organisation": "TPE",
+     "result": "0-5",
+     "rank": "",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/olympic-games/tokyo-2020/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2020:MANUAL:BDM-women-s-singles-qfnl-000400",
+   "discipline": "BDM",
+   "sport": "羽球",
+   "event": "Women's Singles",
+   "phase": "八強",
+   "unit": "",
+   "startsAt": "2021-07-30T08:30:00.000Z",
+   "timeNote": "",
+   "venue": "Musashino Forest Sport Plaza BDM Court 1",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "THA:INTANON Ratchanok",
+     "name": "INTANON Ratchanok",
+     "organisation": "THA",
+     "result": "1-2",
+     "rank": "",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    },
+    {
+     "id": "TPE:TAI Tzu-Ying",
+     "name": "TAI Tzu-Ying",
+     "organisation": "TPE",
+     "result": "2-1",
+     "rank": "",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/olympic-games/tokyo-2020/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2020:MANUAL:BDM-men-s-doubles-sfnl-000200",
+   "discipline": "BDM",
+   "sport": "羽球",
+   "event": "Men's Doubles",
+   "phase": "四強",
+   "unit": "",
+   "startsAt": "2021-07-30T09:15:00.000Z",
+   "timeNote": "",
+   "venue": "Musashino Forest Sport Plaza BDM Court 1",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "TPE:LEE Yang/WANG Chi-Lin",
+     "name": "LEE Yang/WANG Chi-Lin",
+     "organisation": "TPE",
+     "result": "2-0",
+     "rank": "",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    },
+    {
+     "id": "INA:AHSAN Mohammad/SETIAWAN Hendra",
+     "name": "AHSAN Mohammad/SETIAWAN Hendra",
+     "organisation": "INA",
+     "result": "0-2",
+     "rank": "",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/olympic-games/tokyo-2020/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2020:MANUAL:SWM-women-s-50m-freestyle-heat-000700",
+   "discipline": "SWM",
+   "sport": "游泳",
+   "event": "Women's 50m Freestyle",
+   "phase": "預賽第 7 組",
+   "unit": "",
+   "startsAt": "2021-07-30T10:36:00.000Z",
+   "timeNote": "",
+   "venue": "Tokyo Aquatics Centre",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": false,
+   "competitors": [
+    {
+     "id": "TPE:HUANG Mei-Chien",
+     "name": "HUANG Mei-Chien",
+     "organisation": "TPE",
+     "result": "25.99",
+     "rank": "38",
+     "outcome": "",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/olympic-games/tokyo-2020/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2020:MANUAL:TTE-men-s-singles-fnl-000200",
+   "discipline": "TTE",
+   "sport": "桌球",
+   "event": "Men's Singles",
+   "phase": "銅牌戰",
+   "unit": "",
+   "startsAt": "2021-07-30T11:00:00.000Z",
+   "timeNote": "",
+   "venue": "Tokyo Metropolitan Gymnasium Table 1",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "TPE:LIN Yun Ju",
+     "name": "LIN Yun Ju",
+     "organisation": "TPE",
+     "result": "3-4",
+     "rank": "",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    },
+    {
+     "id": "GER:OVTCHAROV Dimitrij",
+     "name": "OVTCHAROV Dimitrij",
+     "organisation": "GER",
+     "result": "4-3",
+     "rank": "",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "",
+     "medal": "BRONZE"
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/olympic-games/tokyo-2020/",
+   "detailAvailable": true
+  }
+ ]
+}

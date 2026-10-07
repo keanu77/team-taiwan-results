@@ -1,0 +1,205 @@
+{
+ "date": "2021-08-04",
+ "successCount": 1,
+ "lastSuccessAt": "2026-10-07T23:40:44.807Z",
+ "lastAttemptAt": "2026-10-07T23:40:44.807Z",
+ "lastError": null,
+ "units": [
+  {
+   "id": "OG2020:MANUAL:GOL-women-s-individual-stroke-play-fnl-000100",
+   "discipline": "GOL",
+   "sport": "高爾夫",
+   "event": "Women's Individual Stroke Play",
+   "phase": "第 1 輪",
+   "unit": "",
+   "startsAt": "2021-08-03T22:30:00.000Z",
+   "timeNote": "",
+   "venue": "Kasumigaseki Country Club",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": false,
+   "competitors": [
+    {
+     "id": "TPE:HSU Wei-Ling",
+     "name": "HSU Wei-Ling",
+     "organisation": "TPE",
+     "result": "69 桿",
+     "rank": "",
+     "outcome": "",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    },
+    {
+     "id": "TPE:LEE Min",
+     "name": "LEE Min",
+     "organisation": "TPE",
+     "result": "69 桿",
+     "rank": "",
+     "outcome": "",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/olympic-games/tokyo-2020/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2020:MANUAL:ATH-men-s-javelin-throw-qual-a00100",
+   "discipline": "ATH",
+   "sport": "田徑",
+   "event": "Men's Javelin Throw",
+   "phase": "資格賽 A 組",
+   "unit": "",
+   "startsAt": "2021-08-04T00:05:00.000Z",
+   "timeNote": "",
+   "venue": "Olympic Stadium - Long Throws",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": false,
+   "competitors": [
+    {
+     "id": "TPE:HUANG Shih-Feng",
+     "name": "HUANG Shih-Feng",
+     "organisation": "TPE",
+     "result": "77.16",
+     "rank": "14",
+     "outcome": "",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/olympic-games/tokyo-2020/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2020:MANUAL:ATH-men-s-javelin-throw-qual-b00100",
+   "discipline": "ATH",
+   "sport": "田徑",
+   "event": "Men's Javelin Throw",
+   "phase": "資格賽 B 組",
+   "unit": "",
+   "startsAt": "2021-08-04T01:35:00.000Z",
+   "timeNote": "",
+   "venue": "Olympic Stadium - Long Throws",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": false,
+   "competitors": [
+    {
+     "id": "TPE:CHENG Chao-Tsun",
+     "name": "CHENG Chao-Tsun",
+     "organisation": "TPE",
+     "result": "71.20",
+     "rank": "15",
+     "outcome": "",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/olympic-games/tokyo-2020/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2020:MANUAL:ATH-men-s-110m-hurdles-sfnl-000200",
+   "discipline": "ATH",
+   "sport": "田徑",
+   "event": "Men's 110m Hurdles",
+   "phase": "準決賽第 2 組",
+   "unit": "",
+   "startsAt": "2021-08-04T02:08:00.000Z",
+   "timeNote": "",
+   "venue": "Olympic Stadium - Track",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": false,
+   "competitors": [
+    {
+     "id": "TPE:CHEN Kuei-Ru",
+     "name": "CHEN Kuei-Ru",
+     "organisation": "TPE",
+     "result": "13.57",
+     "rank": "6",
+     "outcome": "",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/olympic-games/tokyo-2020/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2020:MANUAL:WLF-men-s--plus-109kg-fnl-b00100",
+   "discipline": "WLF",
+   "sport": "舉重",
+   "event": "Men's +109kg",
+   "phase": "B 組",
+   "unit": "",
+   "startsAt": "2021-08-04T04:50:00.000Z",
+   "timeNote": "",
+   "venue": "Tokyo International Forum",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": false,
+   "competitors": [
+    {
+     "id": "TPE:HSIEH Yun-Ting",
+     "name": "HSIEH Yun-Ting",
+     "organisation": "TPE",
+     "result": "378 公斤（抓舉 172、挺舉 206）",
+     "rank": "12",
+     "outcome": "",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/olympic-games/tokyo-2020/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2020:MANUAL:BOX-women-s-fly-48-51kg-sfnl-000100",
+   "discipline": "BOX",
+   "sport": "拳擊",
+   "event": "Women's Fly (48-51kg)",
+   "phase": "四強",
+   "unit": "",
+   "startsAt": "2021-08-04T05:00:00.000Z",
+   "timeNote": "",
+   "venue": "Kokugikan Arena",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "TUR:CAKIROGLU Buse Naz",
+     "name": "CAKIROGLU Buse Naz",
+     "organisation": "TUR",
+     "result": "5-0",
+     "rank": "",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    },
+    {
+     "id": "TPE:HUANG Hsiao-Wen",
+     "name": "HUANG Hsiao-Wen",
+     "organisation": "TPE",
+     "result": "0-5",
+     "rank": "",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "",
+     "medal": "BRONZE"
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/olympic-games/tokyo-2020/",
+   "detailAvailable": true
+  }
+ ]
+}

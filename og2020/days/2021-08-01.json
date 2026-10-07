@@ -1,0 +1,256 @@
+{
+ "date": "2021-08-01",
+ "successCount": 1,
+ "lastSuccessAt": "2026-10-07T23:40:44.807Z",
+ "lastAttemptAt": "2026-10-07T23:40:44.807Z",
+ "lastError": null,
+ "units": [
+  {
+   "id": "OG2020:MANUAL:GOL-men-s-individual-stroke-play-fnl-000400",
+   "discipline": "GOL",
+   "sport": "高爾夫",
+   "event": "Men's Individual Stroke Play",
+   "phase": "第 4 輪",
+   "unit": "",
+   "startsAt": "2021-07-31T22:30:00.000Z",
+   "timeNote": "",
+   "venue": "Kasumigaseki Country Club",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": false,
+   "competitors": [
+    {
+     "id": "TPE:PAN C T",
+     "name": "PAN C T",
+     "organisation": "TPE",
+     "result": "63 桿，累計 269 桿（-15）",
+     "rank": "3",
+     "outcome": "",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/olympic-games/tokyo-2020/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2020:MANUAL:TTE-men-s-team-8fnl-00070000",
+   "discipline": "TTE",
+   "sport": "桌球",
+   "event": "Men's Team",
+   "phase": "16 強",
+   "unit": "",
+   "startsAt": "2021-08-01T01:00:00.000Z",
+   "timeNote": "",
+   "venue": "Tokyo Metropolitan Gymnasium Table 4",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "TPE:Chinese Taipei",
+     "name": "Chinese Taipei",
+     "organisation": "TPE",
+     "result": "3-0",
+     "rank": "",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    },
+    {
+     "id": "CRO:Croatia",
+     "name": "Croatia",
+     "organisation": "CRO",
+     "result": "0-3",
+     "rank": "",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/olympic-games/tokyo-2020/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2020:MANUAL:BOX-women-s-fly-48-51kg-qfnl-000200",
+   "discipline": "BOX",
+   "sport": "拳擊",
+   "event": "Women's Fly (48-51kg)",
+   "phase": "八強",
+   "unit": "",
+   "startsAt": "2021-08-01T02:15:00.000Z",
+   "timeNote": "",
+   "venue": "Kokugikan Arena",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "SRB:RADOVANOVIC Nina",
+     "name": "RADOVANOVIC Nina",
+     "organisation": "SRB",
+     "result": "0-5",
+     "rank": "",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    },
+    {
+     "id": "TPE:HUANG Hsiao-Wen",
+     "name": "HUANG Hsiao-Wen",
+     "organisation": "TPE",
+     "result": "5-0",
+     "rank": "",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/olympic-games/tokyo-2020/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2020:MANUAL:GOL-men-s-individual-stroke-play-fnl-0003rr",
+   "discipline": "GOL",
+   "sport": "高爾夫",
+   "event": "Men's Individual Stroke Play",
+   "phase": "銅牌延長賽",
+   "unit": "",
+   "startsAt": "2021-08-01T07:30:00.000Z",
+   "timeNote": "",
+   "venue": "Kasumigaseki Country Club",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": false,
+   "competitors": [
+    {
+     "id": "TPE:PAN C T",
+     "name": "PAN C T",
+     "organisation": "TPE",
+     "result": "延長賽勝出",
+     "rank": "",
+     "outcome": "",
+     "qualification": "",
+     "irm": "",
+     "medal": "BRONZE"
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/olympic-games/tokyo-2020/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2020:MANUAL:GAR-men-s-pommel-horse-fnl-000001",
+   "discipline": "GAR",
+   "sport": "競技體操",
+   "event": "Men's Pommel Horse",
+   "phase": "決賽",
+   "unit": "",
+   "startsAt": "2021-08-01T09:41:00.000Z",
+   "timeNote": "",
+   "venue": "Ariake Gymnastics Centre - Pommel",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": false,
+   "competitors": [
+    {
+     "id": "TPE:LEE Chih Kai",
+     "name": "LEE Chih Kai",
+     "organisation": "TPE",
+     "result": "15.400（難度 6.700，完成 8.700）",
+     "rank": "2",
+     "outcome": "",
+     "qualification": "",
+     "irm": "",
+     "medal": "SILVER"
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/olympic-games/tokyo-2020/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2020:MANUAL:TTE-women-s-team-8fnl-00070000",
+   "discipline": "TTE",
+   "sport": "桌球",
+   "event": "Women's Team",
+   "phase": "16 強",
+   "unit": "",
+   "startsAt": "2021-08-01T10:30:00.000Z",
+   "timeNote": "",
+   "venue": "Tokyo Metropolitan Gymnasium Table 3",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "TPE:Chinese Taipei",
+     "name": "Chinese Taipei",
+     "organisation": "TPE",
+     "result": "3-0",
+     "rank": "",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    },
+    {
+     "id": "USA:United States",
+     "name": "United States",
+     "organisation": "USA",
+     "result": "0-3",
+     "rank": "",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/olympic-games/tokyo-2020/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2020:MANUAL:BDM-women-s-singles-fnl-000100",
+   "discipline": "BDM",
+   "sport": "羽球",
+   "event": "Women's Singles",
+   "phase": "金牌戰",
+   "unit": "",
+   "startsAt": "2021-08-01T12:20:00.000Z",
+   "timeNote": "",
+   "venue": "Musashino Forest Sport Plaza BDM Court 1",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "CHN:CHEN Yu Fei",
+     "name": "CHEN Yu Fei",
+     "organisation": "CHN",
+     "result": "2-1",
+     "rank": "",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "",
+     "medal": "GOLD"
+    },
+    {
+     "id": "TPE:TAI Tzu-Ying",
+     "name": "TAI Tzu-Ying",
+     "organisation": "TPE",
+     "result": "1-2",
+     "rank": "",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "",
+     "medal": "SILVER"
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/olympic-games/tokyo-2020/",
+   "detailAvailable": true
+  }
+ ]
+}

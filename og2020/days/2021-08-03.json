@@ -1,0 +1,107 @@
+{
+ "date": "2021-08-03",
+ "successCount": 1,
+ "lastSuccessAt": "2026-10-07T23:40:44.807Z",
+ "lastAttemptAt": "2026-10-07T23:40:44.807Z",
+ "lastError": null,
+ "units": [
+  {
+   "id": "OG2020:MANUAL:TTE-men-s-team-qfnl-00040000",
+   "discipline": "TTE",
+   "sport": "桌球",
+   "event": "Men's Team",
+   "phase": "八強",
+   "unit": "",
+   "startsAt": "2021-08-03T05:30:00.000Z",
+   "timeNote": "",
+   "venue": "Tokyo Metropolitan Gymnasium Table 2",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "TPE:Chinese Taipei",
+     "name": "Chinese Taipei",
+     "organisation": "TPE",
+     "result": "2-3",
+     "rank": "",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    },
+    {
+     "id": "GER:Germany",
+     "name": "Germany",
+     "organisation": "GER",
+     "result": "3-2",
+     "rank": "",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/olympic-games/tokyo-2020/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2020:MANUAL:EQU-jumping-individual-qual-000100",
+   "discipline": "EQU",
+   "sport": "馬術",
+   "event": "Jumping Individual",
+   "phase": "資格賽",
+   "unit": "",
+   "startsAt": "2021-08-03T10:00:00.000Z",
+   "timeNote": "",
+   "venue": "Equestrian Park",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": false,
+   "competitors": [
+    {
+     "id": "TPE:CHEN Jasmine Shao-Man",
+     "name": "CHEN Jasmine Shao-Man",
+     "organisation": "TPE",
+     "result": "罰 9 分，91.01 秒",
+     "rank": "47",
+     "outcome": "",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/olympic-games/tokyo-2020/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2020:MANUAL:ATH-men-s-110m-hurdles-rnd1-000400",
+   "discipline": "ATH",
+   "sport": "田徑",
+   "event": "Men's 110m Hurdles",
+   "phase": "第 1 輪第 4 組",
+   "unit": "",
+   "startsAt": "2021-08-03T10:34:00.000Z",
+   "timeNote": "",
+   "venue": "Olympic Stadium - Track",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": false,
+   "competitors": [
+    {
+     "id": "TPE:CHEN Kuei-Ru",
+     "name": "CHEN Kuei-Ru",
+     "organisation": "TPE",
+     "result": "13.53",
+     "rank": "5",
+     "outcome": "",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/olympic-games/tokyo-2020/",
+   "detailAvailable": true
+  }
+ ]
+}

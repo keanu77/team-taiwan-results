@@ -1,0 +1,307 @@
+{
+ "date": "2021-07-28",
+ "successCount": 1,
+ "lastSuccessAt": "2026-10-07T23:40:44.807Z",
+ "lastAttemptAt": "2026-10-07T23:40:44.807Z",
+ "lastError": null,
+ "units": [
+  {
+   "id": "OG2020:MANUAL:BDM-women-s-singles-gpp-000300",
+   "discipline": "BDM",
+   "sport": "羽球",
+   "event": "Women's Singles",
+   "phase": "分組賽 P 組",
+   "unit": "",
+   "startsAt": "2021-07-28T00:00:00.000Z",
+   "timeNote": "",
+   "venue": "Musashino Forest Sport Plaza BDM Court 2",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "TPE:TAI Tzu-Ying",
+     "name": "TAI Tzu-Ying",
+     "organisation": "TPE",
+     "result": "2-0",
+     "rank": "",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    },
+    {
+     "id": "FRA:QI Xuefei",
+     "name": "QI Xuefei",
+     "organisation": "FRA",
+     "result": "0-2",
+     "rank": "",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/olympic-games/tokyo-2020/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2020:MANUAL:SHO-trap-men-qual-000100",
+   "discipline": "SHO",
+   "sport": "射擊",
+   "event": "Trap Men's",
+   "phase": "資格賽第 1 天",
+   "unit": "",
+   "startsAt": "2021-07-28T00:50:00.000Z",
+   "timeNote": "",
+   "venue": "Asaka Shooting Range - Shotgun Ranges",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": false,
+   "competitors": [
+    {
+     "id": "TPE:YANG Kun-Pi",
+     "name": "YANG Kun-Pi",
+     "organisation": "TPE",
+     "result": "72",
+     "rank": "21",
+     "outcome": "",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/olympic-games/tokyo-2020/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2020:MANUAL:TTE-men-s-singles-qfnl-000200",
+   "discipline": "TTE",
+   "sport": "桌球",
+   "event": "Men's Singles",
+   "phase": "八強",
+   "unit": "",
+   "startsAt": "2021-07-28T07:00:00.000Z",
+   "timeNote": "",
+   "venue": "Tokyo Metropolitan Gymnasium Table 1",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "TPE:LIN Yun Ju",
+     "name": "LIN Yun Ju",
+     "organisation": "TPE",
+     "result": "4-0",
+     "rank": "",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    },
+    {
+     "id": "SLO:JORGIC Darko",
+     "name": "JORGIC Darko",
+     "organisation": "SLO",
+     "result": "0-4",
+     "rank": "",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/olympic-games/tokyo-2020/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2020:MANUAL:BDM-men-s-singles-gpf-000100",
+   "discipline": "BDM",
+   "sport": "羽球",
+   "event": "Men's Singles",
+   "phase": "分組賽 F 組",
+   "unit": "",
+   "startsAt": "2021-07-28T09:40:00.000Z",
+   "timeNote": "",
+   "venue": "Musashino Forest Sport Plaza BDM Court 2",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "TPE:WANG Tzu-Wei",
+     "name": "WANG Tzu-Wei",
+     "organisation": "TPE",
+     "result": "2-1",
+     "rank": "",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    },
+    {
+     "id": "IRL:NGUYEN Nhat",
+     "name": "NGUYEN Nhat",
+     "organisation": "IRL",
+     "result": "1-2",
+     "rank": "",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/olympic-games/tokyo-2020/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2020:MANUAL:BDM-men-s-singles-gpp-000100",
+   "discipline": "BDM",
+   "sport": "羽球",
+   "event": "Men's Singles",
+   "phase": "分組賽 P 組",
+   "unit": "",
+   "startsAt": "2021-07-28T09:40:00.000Z",
+   "timeNote": "",
+   "venue": "Musashino Forest Sport Plaza BDM Court 1",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "TPE:CHOU Tien-Chen",
+     "name": "CHOU Tien-Chen",
+     "organisation": "TPE",
+     "result": "2-1",
+     "rank": "",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    },
+    {
+     "id": "CAN:YANG Brian",
+     "name": "YANG Brian",
+     "organisation": "CAN",
+     "result": "1-2",
+     "rank": "",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/olympic-games/tokyo-2020/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2020:MANUAL:ARC-women-s-individual-r64-001800",
+   "discipline": "ARC",
+   "sport": "射箭",
+   "event": "Women's Individual",
+   "phase": "64 強",
+   "unit": "",
+   "startsAt": "2021-07-28T10:15:00.000Z",
+   "timeNote": "",
+   "venue": "Yumenoshima Final Field",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "UKR:MARCHENKO Veronika",
+     "name": "MARCHENKO Veronika",
+     "organisation": "UKR",
+     "result": "6-4",
+     "rank": "",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    },
+    {
+     "id": "TPE:LEI Chien-Ying",
+     "name": "LEI Chien-Ying",
+     "organisation": "TPE",
+     "result": "4-6",
+     "rank": "",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/olympic-games/tokyo-2020/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2020:MANUAL:GAR-men-s-all-around-fnl-000001",
+   "discipline": "GAR",
+   "sport": "競技體操",
+   "event": "Men's All-Around",
+   "phase": "決賽",
+   "unit": "",
+   "startsAt": "2021-07-28T10:15:00.000Z",
+   "timeNote": "",
+   "venue": "Ariake Gymnastics Centre - Men",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": false,
+   "competitors": [
+    {
+     "id": "TPE:LEE Chih Kai",
+     "name": "LEE Chih Kai",
+     "organisation": "TPE",
+     "result": "80.699",
+     "rank": "21",
+     "outcome": "",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    },
+    {
+     "id": "TPE:TANG Chia-Hung",
+     "name": "TANG Chia-Hung",
+     "organisation": "TPE",
+     "result": "84.798",
+     "rank": "7",
+     "outcome": "",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/olympic-games/tokyo-2020/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2020:MANUAL:SWM-men-s-200m-individual-medley-heat-000300",
+   "discipline": "SWM",
+   "sport": "游泳",
+   "event": "Men's 200m Individual Medley",
+   "phase": "預賽第 3 組",
+   "unit": "",
+   "startsAt": "2021-07-28T11:01:00.000Z",
+   "timeNote": "",
+   "venue": "Tokyo Aquatics Centre",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": false,
+   "competitors": [
+    {
+     "id": "TPE:WANG Hsing-Hao",
+     "name": "WANG Hsing-Hao",
+     "organisation": "TPE",
+     "result": "2:00.72",
+     "rank": "37",
+     "outcome": "",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/olympic-games/tokyo-2020/",
+   "detailAvailable": true
+  }
+ ]
+}

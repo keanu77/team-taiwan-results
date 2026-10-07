@@ -1,0 +1,140 @@
+{
+ "date": "2021-07-23",
+ "successCount": 1,
+ "lastSuccessAt": "2026-10-07T23:40:44.807Z",
+ "lastAttemptAt": "2026-10-07T23:40:44.807Z",
+ "lastError": null,
+ "units": [
+  {
+   "id": "OG2020:MANUAL:ARC-women-s-individual-qual-000100",
+   "discipline": "ARC",
+   "sport": "射箭",
+   "event": "Women's Individual",
+   "phase": "排名賽",
+   "unit": "",
+   "startsAt": "2021-07-23T00:00:00.000Z",
+   "timeNote": "",
+   "venue": "Yumenoshima Ranking Field",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": false,
+   "competitors": [
+    {
+     "id": "TPE:LIN Chia-En",
+     "name": "LIN Chia-En",
+     "organisation": "TPE",
+     "result": "651",
+     "rank": "21",
+     "outcome": "",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    },
+    {
+     "id": "TPE:LEI Chien-Ying",
+     "name": "LEI Chien-Ying",
+     "organisation": "TPE",
+     "result": "640",
+     "rank": "30",
+     "outcome": "",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    },
+    {
+     "id": "TPE:TAN Ya-Ting",
+     "name": "TAN Ya-Ting",
+     "organisation": "TPE",
+     "result": "646",
+     "rank": "27",
+     "outcome": "",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/olympic-games/tokyo-2020/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2020:MANUAL:ROW-women-s-single-sculls-heat-000600",
+   "discipline": "ROW",
+   "sport": "划船",
+   "event": "Women's Single Sculls",
+   "phase": "預賽第 6 組",
+   "unit": "",
+   "startsAt": "2021-07-23T01:20:00.000Z",
+   "timeNote": "",
+   "venue": "Sea Forest Waterway",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": false,
+   "competitors": [
+    {
+     "id": "TPE:HUANG Yi-Ting",
+     "name": "HUANG Yi-Ting",
+     "organisation": "TPE",
+     "result": "8:04.59",
+     "rank": "4",
+     "outcome": "",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/olympic-games/tokyo-2020/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2020:MANUAL:ARC-men-s-individual-qual-000100",
+   "discipline": "ARC",
+   "sport": "射箭",
+   "event": "Men's Individual",
+   "phase": "排名賽",
+   "unit": "",
+   "startsAt": "2021-07-23T04:00:00.000Z",
+   "timeNote": "",
+   "venue": "Yumenoshima Ranking Field",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": false,
+   "competitors": [
+    {
+     "id": "TPE:TANG Chih-Chun",
+     "name": "TANG Chih-Chun",
+     "organisation": "TPE",
+     "result": "668",
+     "rank": "12",
+     "outcome": "",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    },
+    {
+     "id": "TPE:DENG Yu-Cheng",
+     "name": "DENG Yu-Cheng",
+     "organisation": "TPE",
+     "result": "656",
+     "rank": "30",
+     "outcome": "",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    },
+    {
+     "id": "TPE:WEI Chun-Heng",
+     "name": "WEI Chun-Heng",
+     "organisation": "TPE",
+     "result": "661",
+     "rank": "21",
+     "outcome": "",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/olympic-games/tokyo-2020/",
+   "detailAvailable": true
+  }
+ ]
+}

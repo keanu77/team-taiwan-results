@@ -1,0 +1,78 @@
+{
+ "date": "2021-08-06",
+ "successCount": 1,
+ "lastSuccessAt": "2026-10-07T23:40:44.807Z",
+ "lastAttemptAt": "2026-10-07T23:40:44.807Z",
+ "lastError": null,
+ "units": [
+  {
+   "id": "OG2020:MANUAL:GOL-women-s-individual-stroke-play-fnl-000300",
+   "discipline": "GOL",
+   "sport": "高爾夫",
+   "event": "Women's Individual Stroke Play",
+   "phase": "第 3 輪",
+   "unit": "",
+   "startsAt": "2021-08-05T22:30:00.000Z",
+   "timeNote": "",
+   "venue": "Kasumigaseki Country Club",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": false,
+   "competitors": [
+    {
+     "id": "TPE:LEE Min",
+     "name": "LEE Min",
+     "organisation": "TPE",
+     "result": "72 桿",
+     "rank": "",
+     "outcome": "",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    },
+    {
+     "id": "TPE:HSU Wei-Ling",
+     "name": "HSU Wei-Ling",
+     "organisation": "TPE",
+     "result": "71 桿",
+     "rank": "",
+     "outcome": "",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/olympic-games/tokyo-2020/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2020:MANUAL:KTE-men-s-kata-elim-pool-b",
+   "discipline": "KTE",
+   "sport": "空手道",
+   "event": "Men's Kata",
+   "phase": "分組賽 B 組",
+   "unit": "",
+   "startsAt": "2021-08-06T01:00:00.000Z",
+   "timeNote": "",
+   "venue": "Nippon Budokan",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": false,
+   "competitors": [
+    {
+     "id": "TPE:WANG Yi-Ta",
+     "name": "WANG Yi-Ta",
+     "organisation": "TPE",
+     "result": "24.97（第一套 25.00，第二套 24.94）",
+     "rank": "5",
+     "outcome": "",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/olympic-games/tokyo-2020/",
+   "detailAvailable": true
+  }
+ ]
+}
