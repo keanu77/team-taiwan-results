@@ -1,23 +1,33 @@
 import { defaultResultDate, RESULTS_MIN_DATE, shiftResultDate } from "@/lib/results/model";
 import type { MedalResponse } from "@/lib/results/medals";
 import { combineResultDays } from "@/lib/results/period";
-import { dayResponse, isDataIndex, isStoredDay, isStoredMedals, medalResponse, sourceCooldown, type DataIndex } from "@/lib/results/snapshot";
+import { dayResponse, isDataIndex, isStoredDay, isStoredMedals, medalResponse, sourceCooldown, type DataIndex, type SyncMeta } from "@/lib/results/snapshot";
 import type { TpeResultsResponse } from "@/lib/results/types";
 
 // 網站是純靜態檔：讀 GitHub Actions 同步後放進 /data/ 的 JSON，再在瀏覽器組成畫面要的格式。
 
 const BASE = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
-async function getJson(path: string, signal?: AbortSignal): Promise<unknown> {
-  // GitHub Pages 會快取 10 分鐘；帶上「分鐘」參數，每分鐘最多讀到一次新版本
-  const response = await fetch(`${BASE}/data/${path}?v=${Math.floor(Date.now() / 60_000)}`, { signal, cache: "no-store", credentials: "omit" });
+/** 已下載過的檔案，以「路徑＋版本」為鍵；版本沒變就不再下載 */
+const cache = new Map<string, unknown>();
+
+async function getJson(path: string, version: string, signal?: AbortSignal): Promise<unknown> {
+  const key = `${path}?v=${version}`;
+  if (cache.has(key)) return cache.get(key);
+  // 版本號放進網址：內容沒變時網址也不變，瀏覽器與 CDN 的快取都用得上
+  const response = await fetch(`${BASE}/data/${path}?v=${encodeURIComponent(version)}`, { signal, credentials: "omit" });
   if (response.status === 404) return null;
   if (!response.ok) throw new Error("暫時無法讀取賽果，請稍後重試。");
-  return response.json();
+  const value: unknown = await response.json();
+  cache.set(key, value);
+  return value;
 }
 
+const metaVersion = (meta: SyncMeta | null | undefined) => meta?.lastSuccessAt ?? meta?.lastAttemptAt ?? "none";
+
 async function loadIndex(signal?: AbortSignal): Promise<DataIndex | null> {
-  const value = await getJson("index.json", signal);
+  // index.json 是唯一需要「每次都問新版」的檔案；GitHub Pages 會快取 10 分鐘，所以帶上分鐘數
+  const value = await getJson("index.json", String(Math.floor(Date.now() / 60_000)), signal);
   if (value === null) return null;
   if (!isDataIndex(value)) throw new Error("賽果資料格式異常，請稍後重試。");
   return value;
@@ -25,7 +35,7 @@ async function loadIndex(signal?: AbortSignal): Promise<DataIndex | null> {
 
 async function loadDay(index: DataIndex | null, date: string, signal?: AbortSignal) {
   if (!index?.days[date]) return null;
-  const value = await getJson(`days/${date}.json`, signal);
+  const value = await getJson(`days/${date}.json`, metaVersion(index.days[date]), signal);
   if (value === null) return null;
   if (!isStoredDay(value, date)) throw new Error("賽果資料格式異常，請稍後重試。");
   return value;
@@ -44,7 +54,8 @@ export async function loadResults(date: string, period: boolean, signal?: AbortS
 }
 
 export async function loadMedals(signal?: AbortSignal): Promise<MedalResponse> {
-  const value = await getJson("medals.json", signal);
+  const index = await loadIndex(signal);
+  const value = index?.medals ? await getJson("medals.json", metaVersion(index.medals), signal) : null;
   if (value !== null && !isStoredMedals(value)) throw new Error("獎牌榜格式異常，請稍後重試。");
   return medalResponse(value, new Date());
 }

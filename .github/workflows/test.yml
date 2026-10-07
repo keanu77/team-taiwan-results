@@ -1,19 +1,28 @@
 name: 測試
 
+# main 的 push 已在「同步成績並發布」裡先測試；這裡負責 PR
 on:
   pull_request:
-  push:
-    branches: [main]
+
+permissions:
+  contents: read
 
 jobs:
   test:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
         with:
           node-version: 22
           cache: npm
       - run: npm ci
       - run: npm run typecheck
       - run: npm test
+      # 確認整站（首頁產生器、各賽事、BASE_PATH）都建得出來
+      - run: npm run build:site
+        env:
+          BASE_PATH: /team-taiwan-results

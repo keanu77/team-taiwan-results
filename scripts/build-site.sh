@@ -9,7 +9,8 @@ rm -rf "$SITE_DIR"
 mkdir -p "$SITE_DIR"
 
 events=()
-for dir in events/*/; do
+root="${EVENTS_DIR:-events}"
+for dir in "$root"/*/; do
   id="$(basename "$dir")"
   [[ "$id" =~ ^[a-z0-9][a-z0-9-]{1,39}$ ]] && [ -f "$dir/competition.config.json" ] || continue
   events+=("$id")

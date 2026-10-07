@@ -10,7 +10,7 @@ const escape = (value) => String(value).replace(/[&<>"']/g, (c) => ({ "&": "&amp
 const slash = (date) => date.replaceAll("-", "/");
 
 const events = ids
-  .map((id) => ({ id, ...JSON.parse(readFileSync(join("events", id, "competition.config.json"), "utf8")) }))
+  .map((id) => ({ id, ...JSON.parse(readFileSync(join(process.env.EVENTS_DIR ?? "events", id, "competition.config.json"), "utf8")) }))
   .sort((a, b) => b.startDate.localeCompare(a.startDate) || a.id.localeCompare(b.id));
 
 const cards = events.map((e) => `

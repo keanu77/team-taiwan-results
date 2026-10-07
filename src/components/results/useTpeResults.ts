@@ -13,12 +13,16 @@ interface ResultsState {
 }
 
 const CACHE_READ_INTERVAL_MS = 60_000;
+/** 已封存或手動更新的賽事不會每 30 分鐘變動，降到 10 分鐘讀一次（與 GitHub Pages 快取相同） */
+const IDLE_READ_INTERVAL_MS = 10 * 60_000;
 
 /** 只讀取已同步的靜態檔，不會觸發向官方抓取。 */
 export function useTpeResults(date: string, period = false) {
   const [state, setState] = useState<ResultsState>({ key: "", data: null, loading: false, error: null });
   const [retry, setRetry] = useState(0);
   const generation = useRef(0);
+  const idle = useRef(false);
+  const lastRead = useRef(0);
   const nextReadAt = useRef(0);
   const [cooldownUntil, setCooldownUntil] = useState(0);
   const [refreshInSeconds, setRefreshInSeconds] = useState(0);
@@ -58,6 +62,8 @@ export function useTpeResults(date: string, period = false) {
         const data: unknown = await loadResults(date, period, request.signal);
         if (!isResultsResponse(data, date, period)) throw new Error("賽果資料格式異常，請稍後重試。");
         if (generation.current === current && !request.signal.aborted) {
+          lastRead.current = Date.now();
+          idle.current = data.nextSyncAt === null && data.fetchedAt !== null;
           setState({ key: requestKey, data, loading: false, error: null });
         }
       } catch (error) {
@@ -70,7 +76,12 @@ export function useTpeResults(date: string, period = false) {
     }
 
     void read();
-    const interval = window.setInterval(() => { if (document.visibilityState === "visible") void read(); }, CACHE_READ_INTERVAL_MS);
+    const interval = window.setInterval(() => {
+      if (document.visibilityState !== "visible") return;
+      // 沒有下一次排程同步（已封存或手動更新）就放慢
+      if (idle.current && Date.now() - lastRead.current < IDLE_READ_INTERVAL_MS) return;
+      void read();
+    }, CACHE_READ_INTERVAL_MS);
     return () => {
       generation.current += 1;
       controller?.abort();

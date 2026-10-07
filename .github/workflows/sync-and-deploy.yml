@@ -9,10 +9,8 @@ on:
     branches: [main]
   workflow_dispatch:
 
-permissions:
-  contents: write   # 把同步資料 commit 到 data 分支
-  pages: write
-  id-token: write
+# 預設不給任何權限，每個 job 只拿自己需要的
+permissions: {}
 
 # 同一時間只跑一輪，避免兩輪同時寫 data 分支
 concurrency:
@@ -20,26 +18,57 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  # 程式有變動時（push／手動）先跑測試；排程輪不重跑，省時間
+  test:
+    if: github.event_name != 'schedule'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm test
+
   sync:
     runs-on: ubuntu-latest
-    # 每個進行中的賽事最多花 20 分鐘；通常同一時間只有一個賽事在賽期內
     timeout-minutes: 45
+    permissions:
+      contents: write   # 只用來把同步資料推到 data 分支
     outputs:
-      changed: ${{ steps.sync.outputs.changed }}
+      changed: ${{ steps.result.outputs.changed }}
+      failed: ${{ steps.result.outputs.failed }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
 
       - name: 取回上一輪的資料（data 分支）
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          if git fetch --depth=1 origin data:data 2>/dev/null; then
+          set +e
+          git ls-remote --exit-code --heads origin data >/dev/null
+          rc=$?
+          set -e
+          if [ "$rc" -eq 0 ]; then
+            # 分支存在卻取不到（網路問題）就停下，不要從零重抓或蓋掉資料
+            git fetch --depth=1 origin data:data
             git worktree add data data
-          else
+          elif [ "$rc" -eq 2 ]; then
+            echo "第一次執行：建立 data 分支"
             git worktree add --orphan -b data data
+          else
+            echo "::error::無法連到 repo 確認 data 分支（ls-remote 回傳 $rc）"
+            exit 1
           fi
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
         with:
           node-version: 22
           cache: npm
@@ -48,37 +77,81 @@ jobs:
 
       - name: 同步各賽事成績（每個賽事寫到 data/<代號>/）
         id: sync
+        # 某個賽事失敗也要繼續：先把成功的資料存起來，最後再把這輪標紅
+        continue-on-error: true
         run: npm run sync:all
+        env:
+          SYNC_CHANGED_FILE: ${{ runner.temp }}/sync-changed
+          SYNC_TOTAL_BUDGET_MINUTES: "30"
+
+      - name: 整理結果
+        id: result
+        run: |
+          changed=false
+          if [ -f "$RUNNER_TEMP/sync-changed" ]; then changed=true; fi
+          echo "changed=$changed" >> "$GITHUB_OUTPUT"
+          echo "failed=${{ steps.sync.outcome == 'failure' }}" >> "$GITHUB_OUTPUT"
 
       - name: 存回 data 分支
-        # 某個賽事同步失敗時，其他賽事成功的資料照樣保存
-        if: always() && steps.sync.outputs.changed == 'true'
+        if: steps.result.outputs.changed == 'true'
         working-directory: data
+        env:
+          TOKEN: ${{ github.token }}
         run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A
           if git diff --cached --quiet; then exit 0; fi
           git commit -q -m "data: sync $(date -u +%FT%TZ)"
-          git push origin data
+          remote="https://x-access-token:${TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          # 每輪一個 commit，賽期內一天約 48 個；超過 500 個就壓成一個快照，避免 repo 越長越大
+          count="$(git rev-list --count HEAD 2>/dev/null || echo 0)"
+          if [ "$count" -gt 500 ]; then
+            git checkout -q --orphan snapshot
+            git commit -q -m "data: snapshot $(date -u +%FT%TZ)（壓縮 ${count} 個同步紀錄）"
+            git push -q --force "$remote" snapshot:data
+          else
+            git push -q "$remote" HEAD:data
+          fi
 
   deploy:
-    needs: sync
-    # 排程觸發但資料沒變就不重新發布
-    if: always() && (needs.sync.outputs.changed == 'true' || github.event_name != 'schedule')
+    needs: [test, sync]
+    # 測試沒過不發布；排程輪資料沒變也不發布
+    if: >-
+      always()
+      && (needs.test.result == 'success' || needs.test.result == 'skipped')
+      && needs.sync.result == 'success'
+      && (needs.sync.outputs.changed == 'true' || github.event_name != 'schedule')
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
 
       - name: 取回最新資料
         run: |
-          if git fetch --depth=1 origin data:data 2>/dev/null; then
+          set +e
+          git ls-remote --exit-code --heads origin data >/dev/null
+          rc=$?
+          set -e
+          if [ "$rc" -eq 0 ]; then
+            git fetch --depth=1 origin data:data
             git worktree add data data
+          elif [ "$rc" -ne 2 ]; then
+            # 取不到資料就不要發布，否則會把網站蓋成空白
+            echo "::error::無法取得 data 分支（ls-remote 回傳 $rc），本輪不發布"
+            exit 1
           fi
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
         with:
           node-version: 22
           cache: npm
@@ -86,16 +159,27 @@ jobs:
       - run: npm ci
 
       - id: pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6.0.0
 
       - name: 建置網站（每個賽事一個子目錄＋首頁賽事列表）
         run: npm run build:site
         env:
           BASE_PATH: ${{ steps.pages.outputs.base_path }}
 
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
         with:
           path: site
 
       - id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5.0.1
+
+  # 同步有失敗時把整輪標紅（資料已保存、網站已更新，只是提醒有賽事沒抓到）
+  report:
+    needs: [sync, deploy]
+    if: always() && needs.sync.outputs.failed == 'true'
+    runs-on: ubuntu-latest
+    permissions: {}
+    steps:
+      - run: |
+          echo "::error::本輪有賽事同步失敗，已保留上一份資料；詳見 sync job 的記錄"
+          exit 1
