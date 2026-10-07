@@ -12,3 +12,5 @@ next-env.d.ts
 # 由 rosters/*.csv 產生
 /src/generated/
 /site/
+# import-wayback 的原始檔快取
+/.cache/

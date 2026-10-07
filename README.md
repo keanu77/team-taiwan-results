@@ -181,6 +181,21 @@ PDF 版面一改就可能解析失敗（失敗時不會寫入任何東西），�
 同一場剛好兩位不同代表隊的參賽者時，會以對戰形式顯示。手動與試算表模式不顯示各國獎牌排行榜，獎牌數依 `team-medals.csv` 計算。
 新賽事還沒填任何成績時，只有表頭的 CSV 不算錯；已經有成績卻存成只剩表頭，會被擋下以免清空。
 
+#### 已結束的奧運：從 Wayback 存檔回補
+
+奧運官方成績 API 在閉幕後就下線，但網際網路檔案館（Wayback Machine）存有當時的逐場原始檔。`import-wayback` 會讀這些存檔，把本隊出賽的場次轉成 `manual.csv`：
+
+```bash
+EVENT=og2024 npm run import-wayback -- --comp OG2024 --disc BDM,BOX --dry-run   # 先看結果
+EVENT=og2024 npm run import-wayback -- --comp OG2024 --disc BDM,BOX             # 寫入
+```
+
+- `--disc` 是三碼項目代碼，只替換這些項目的列，其他列保留，可以分批匯入；`--only BDMMDOUBLES` 可只抓特定項目。
+- 對戰項目會連對手一起收，多人同場（舉重、射箭排名賽等）只收本隊；獎牌依金牌戰／銅牌戰勝負或決賽名次推算，拳擊四強敗方算銅牌。
+- Wayback 沒存到的場次會列出「Wayback 缺」，無法判斷那場有沒有本隊，要對照官方頁面人工補。
+- 累計獎牌仍以 `team-medals.csv` 為準，匯入後請對照代表團公布的得牌明細填寫。
+- 原始檔快取在 `.cache/wayback/`（不進版控），重跑不會重抓。
+
 ## 本機開發
 
 需要 Node.js 22 以上。
