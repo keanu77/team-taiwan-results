@@ -1,0 +1,518 @@
+{
+ "date": "2024-07-28",
+ "successCount": 1,
+ "lastSuccessAt": "2026-10-07T16:36:57.150Z",
+ "lastAttemptAt": "2026-10-07T16:36:57.150Z",
+ "lastError": null,
+ "units": [
+  {
+   "id": "OG2024:MANUAL:BDMWSINGLES-GPE-000100",
+   "discipline": "BDM",
+   "sport": "羽球",
+   "event": "Women's Singles",
+   "phase": "分組賽 E 組",
+   "unit": "",
+   "startsAt": "2024-07-28T07:20:00.000Z",
+   "timeNote": "",
+   "venue": "La Chapelle Arena",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "TPE:TAI Tzu Ying",
+     "name": "TAI Tzu Ying",
+     "organisation": "TPE",
+     "result": "2-0（21-15, 21-14）",
+     "rank": "",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    },
+    {
+     "id": "BEL:TAN Lianne",
+     "name": "TAN Lianne",
+     "organisation": "BEL",
+     "result": "0-2（15-21, 14-21）",
+     "rank": "",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/paris-2024/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2024:MANUAL:ARCWTEAM3-8FNL000200",
+   "discipline": "ARC",
+   "sport": "射箭",
+   "event": "Women's Team",
+   "phase": "16 強",
+   "unit": "",
+   "startsAt": "2024-07-28T07:30:00.000Z",
+   "timeNote": "",
+   "venue": "Invalides",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "TPE:Chinese Taipei",
+     "name": "Chinese Taipei",
+     "organisation": "TPE",
+     "result": "5-1",
+     "rank": "",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    },
+    {
+     "id": "USA:United States of America",
+     "name": "United States of America",
+     "organisation": "USA",
+     "result": "1-5",
+     "rank": "",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/paris-2024/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2024:MANUAL:TTEMSINGLES-R64-000300",
+   "discipline": "TTE",
+   "sport": "桌球",
+   "event": "Men's Singles",
+   "phase": "64 強",
+   "unit": "",
+   "startsAt": "2024-07-28T08:45:00.000Z",
+   "timeNote": "",
+   "venue": "South Paris Arena 4",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "TPE:KAO Cheng-Jui",
+     "name": "KAO Cheng-Jui",
+     "organisation": "TPE",
+     "result": "4-1",
+     "rank": "",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    },
+    {
+     "id": "IRI:ALAMIAN Nima",
+     "name": "ALAMIAN Nima",
+     "organisation": "IRI",
+     "result": "1-4",
+     "rank": "",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/paris-2024/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2024:MANUAL:TENWDOUBLES-R32-000300",
+   "discipline": "TEN",
+   "sport": "網球",
+   "event": "Women's Doubles",
+   "phase": "第 1 輪",
+   "unit": "",
+   "startsAt": "2024-07-28T10:00:00.000Z",
+   "timeNote": "",
+   "venue": "Roland-Garros Stadium",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "ROU:BEGU Irina-Camelia / NICULESCU Monica",
+     "name": "BEGU Irina-Camelia / NICULESCU Monica",
+     "organisation": "ROU",
+     "result": "0-2",
+     "rank": "",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    },
+    {
+     "id": "TPE:HSIEH Su-Wei / TSAO Chia Yi",
+     "name": "HSIEH Su-Wei / TSAO Chia Yi",
+     "organisation": "TPE",
+     "result": "2-0",
+     "rank": "",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/paris-2024/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2024:MANUAL:TTEWSINGLES-R64-000800",
+   "discipline": "TTE",
+   "sport": "桌球",
+   "event": "Women's Singles",
+   "phase": "64 強",
+   "unit": "",
+   "startsAt": "2024-07-28T11:00:00.000Z",
+   "timeNote": "",
+   "venue": "South Paris Arena 4",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "CMR:HANFFOU Sarah",
+     "name": "HANFFOU Sarah",
+     "organisation": "CMR",
+     "result": "0-4",
+     "rank": "",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    },
+    {
+     "id": "TPE:CHENG I-Ching",
+     "name": "CHENG I-Ching",
+     "organisation": "TPE",
+     "result": "4-0",
+     "rank": "",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/paris-2024/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2024:MANUAL:ARCWTEAM3-QFNL000100",
+   "discipline": "ARC",
+   "sport": "射箭",
+   "event": "Women's Team",
+   "phase": "八強",
+   "unit": "",
+   "startsAt": "2024-07-28T12:38:00.000Z",
+   "timeNote": "",
+   "venue": "Invalides",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "KOR:Republic of Korea",
+     "name": "Republic of Korea",
+     "organisation": "KOR",
+     "result": "6-2",
+     "rank": "",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    },
+    {
+     "id": "TPE:Chinese Taipei",
+     "name": "Chinese Taipei",
+     "organisation": "TPE",
+     "result": "2-6",
+     "rank": "",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/paris-2024/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2024:MANUAL:BDMMSINGLES-GPI-000100",
+   "discipline": "BDM",
+   "sport": "羽球",
+   "event": "Men's Singles",
+   "phase": "分組賽 I 組",
+   "unit": "",
+   "startsAt": "2024-07-28T14:30:00.000Z",
+   "timeNote": "",
+   "venue": "La Chapelle Arena",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "TPE:CHOU Tien Chen",
+     "name": "CHOU Tien Chen",
+     "organisation": "TPE",
+     "result": "2-0（21-17, 21-13）",
+     "rank": "",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    },
+    {
+     "id": "MEX:GARRIDO Luis Ramon",
+     "name": "GARRIDO Luis Ramon",
+     "organisation": "MEX",
+     "result": "0-2（17-21, 13-21）",
+     "rank": "",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/paris-2024/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2024:MANUAL:TTEXDOUBLES-QFNL000100",
+   "discipline": "TTE",
+   "sport": "桌球",
+   "event": "Mixed Doubles",
+   "phase": "八強",
+   "unit": "",
+   "startsAt": "2024-07-28T15:00:00.000Z",
+   "timeNote": "",
+   "venue": "South Paris Arena 4",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "CHN:WANG Chuqin / SUN Yingsha",
+     "name": "WANG Chuqin / SUN Yingsha",
+     "organisation": "CHN",
+     "result": "4-2",
+     "rank": "",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    },
+    {
+     "id": "TPE:LIN Yun-Ju / CHEN Szu-Yu",
+     "name": "LIN Yun-Ju / CHEN Szu-Yu",
+     "organisation": "TPE",
+     "result": "2-4",
+     "rank": "",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/paris-2024/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2024:MANUAL:TTEMSINGLES-R64-002400",
+   "discipline": "TTE",
+   "sport": "桌球",
+   "event": "Men's Singles",
+   "phase": "64 強",
+   "unit": "",
+   "startsAt": "2024-07-28T18:00:00.000Z",
+   "timeNote": "",
+   "venue": "South Paris Arena 4",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "PUR:AFANADOR Brian",
+     "name": "AFANADOR Brian",
+     "organisation": "PUR",
+     "result": "1-4",
+     "rank": "",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    },
+    {
+     "id": "TPE:LIN Yun-Ju",
+     "name": "LIN Yun-Ju",
+     "organisation": "TPE",
+     "result": "4-1",
+     "rank": "",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/paris-2024/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2024:MANUAL:BDMMDOUBLES-GPD-000400",
+   "discipline": "BDM",
+   "sport": "羽球",
+   "event": "Men's Doubles",
+   "phase": "分組賽 D 組",
+   "unit": "",
+   "startsAt": "2024-07-28T18:20:00.000Z",
+   "timeNote": "",
+   "venue": "La Chapelle Arena",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "DEN:ASTRUP Kim / RASMUSSEN Anders Skaarup",
+     "name": "ASTRUP Kim / RASMUSSEN Anders Skaarup",
+     "organisation": "DEN",
+     "result": "1-2（15-21, 21-19, 15-21）",
+     "rank": "",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    },
+    {
+     "id": "TPE:LEE Yang / WANG Chi-Lin",
+     "name": "LEE Yang / WANG Chi-Lin",
+     "organisation": "TPE",
+     "result": "2-1（21-15, 19-21, 21-15）",
+     "rank": "",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/paris-2024/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2024:MANUAL:BDMXDOUBLES-GPC-000600",
+   "discipline": "BDM",
+   "sport": "羽球",
+   "event": "Mixed Doubles",
+   "phase": "分組賽 C 組",
+   "unit": "",
+   "startsAt": "2024-07-28T19:10:00.000Z",
+   "timeNote": "",
+   "venue": "La Chapelle Arena",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "JPN:WATANABE Yuta / HIGASHINO Arisa",
+     "name": "WATANABE Yuta / HIGASHINO Arisa",
+     "organisation": "JPN",
+     "result": "2-0（21-14, 21-13）",
+     "rank": "",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    },
+    {
+     "id": "TPE:YE Hong Wei / LEE Chia Hsin",
+     "name": "YE Hong Wei / LEE Chia Hsin",
+     "organisation": "TPE",
+     "result": "0-2（14-21, 13-21）",
+     "rank": "",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/paris-2024/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2024:MANUAL:GARW1APBB-QUAL-000005",
+   "discipline": "GAR",
+   "sport": "競技體操",
+   "event": "Women's Balance Beam",
+   "phase": "資格賽第 5 組",
+   "unit": "",
+   "startsAt": "2024-07-28T19:34:00.000Z",
+   "timeNote": "",
+   "venue": "Bercy Arena",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": false,
+   "competitors": [
+    {
+     "id": "TPE:TING Hua-Tien",
+     "name": "TING Hua-Tien",
+     "organisation": "TPE",
+     "result": "12.533（難度 5.000，完成 7.533）",
+     "rank": "50",
+     "outcome": "",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/paris-2024/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2024:MANUAL:BOXW66KG-R32-001000",
+   "discipline": "BOX",
+   "sport": "拳擊",
+   "event": "Women's 66kg",
+   "phase": "32 強",
+   "unit": "",
+   "startsAt": "2024-07-28T19:36:00.000Z",
+   "timeNote": "",
+   "venue": "North Paris Arena",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "DOM:MORONTA HERNANDEZ Maria Altagracia",
+     "name": "MORONTA HERNANDEZ Maria Altagracia",
+     "organisation": "DOM",
+     "result": "1-4（點數判定）",
+     "rank": "",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    },
+    {
+     "id": "TPE:CHEN Nien Chin",
+     "name": "CHEN Nien Chin",
+     "organisation": "TPE",
+     "result": "4-1（點數判定）",
+     "rank": "",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/paris-2024/",
+   "detailAvailable": true
+  }
+ ]
+}

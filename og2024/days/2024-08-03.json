@@ -1,0 +1,343 @@
+{
+ "date": "2024-08-03",
+ "successCount": 1,
+ "lastSuccessAt": "2026-10-07T16:36:57.150Z",
+ "lastAttemptAt": "2026-10-07T16:36:57.150Z",
+ "lastError": null,
+ "units": [
+  {
+   "id": "OG2024:MANUAL:SHOMSKM-QUAL000200",
+   "discipline": "SHO",
+   "sport": "射擊",
+   "event": "Skeet Men's",
+   "phase": "資格賽第 2 天",
+   "unit": "",
+   "startsAt": "2024-08-03T07:00:00.000Z",
+   "timeNote": "",
+   "venue": "Chateauroux Shooting Ctr",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": false,
+   "competitors": [
+    {
+     "id": "TPE:LEE Meng Yuan",
+     "name": "LEE Meng Yuan",
+     "organisation": "TPE",
+     "result": "124",
+     "rank": "3",
+     "outcome": "",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/paris-2024/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2024:MANUAL:ARCWINDIVID-8FNL000400",
+   "discipline": "ARC",
+   "sport": "射箭",
+   "event": "Women's Individual",
+   "phase": "16 強",
+   "unit": "",
+   "startsAt": "2024-08-03T07:56:00.000Z",
+   "timeNote": "",
+   "venue": "Invalides",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "KOR:JEON Hunyoung",
+     "name": "JEON Hunyoung",
+     "organisation": "KOR",
+     "result": "6-4",
+     "rank": "",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    },
+    {
+     "id": "TPE:LEI Chien-Ying",
+     "name": "LEI Chien-Ying",
+     "organisation": "TPE",
+     "result": "4-6",
+     "rank": "",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/paris-2024/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2024:MANUAL:GLFMSTROKE-FNL-000300",
+   "discipline": "GOL",
+   "sport": "高爾夫",
+   "event": "Men's Individual Stroke Play",
+   "phase": "第 3 輪",
+   "unit": "",
+   "startsAt": "2024-08-03T10:28:00.000Z",
+   "timeNote": "",
+   "venue": "Le Golf National",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": false,
+   "competitors": [
+    {
+     "id": "TPE:PAN C.T.",
+     "name": "PAN C.T.",
+     "organisation": "TPE",
+     "result": "72 桿（+1），累計 206 桿（-7）",
+     "rank": "17",
+     "outcome": "",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    },
+    {
+     "id": "TPE:YU Kevin",
+     "name": "YU Kevin",
+     "organisation": "TPE",
+     "result": "72 桿（+1），累計 214 桿（+1）",
+     "rank": "46",
+     "outcome": "",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/paris-2024/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2024:MANUAL:SHOMSKM-FNL-000100",
+   "discipline": "SHO",
+   "sport": "射擊",
+   "event": "Skeet Men's",
+   "phase": "決賽",
+   "unit": "",
+   "startsAt": "2024-08-03T13:30:00.000Z",
+   "timeNote": "",
+   "venue": "Chateauroux Shooting Ctr",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": false,
+   "competitors": [
+    {
+     "id": "TPE:LEE Meng Yuan",
+     "name": "LEE Meng Yuan",
+     "organisation": "TPE",
+     "result": "45",
+     "rank": "3",
+     "outcome": "",
+     "qualification": "",
+     "irm": "",
+     "medal": "BRONZE"
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/paris-2024/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2024:MANUAL:CSLWX1-RND1001100",
+   "discipline": "CSL",
+   "sport": "CSL",
+   "event": "Women's Kayak Cross",
+   "phase": "第 1 輪第 11 組",
+   "unit": "",
+   "startsAt": "2024-08-03T14:20:00.000Z",
+   "timeNote": "",
+   "venue": "Nautical St - White water",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": false,
+   "competitors": [
+    {
+     "id": "TPE:CHANG Chu-Han",
+     "name": "CHANG Chu-Han",
+     "organisation": "TPE",
+     "result": "",
+     "rank": "3",
+     "outcome": "",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/paris-2024/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2024:MANUAL:CSLMX1-RND1000900",
+   "discipline": "CSL",
+   "sport": "CSL",
+   "event": "Men's Kayak Cross",
+   "phase": "第 1 輪第 9 組",
+   "unit": "",
+   "startsAt": "2024-08-03T15:20:00.000Z",
+   "timeNote": "",
+   "venue": "Nautical St - White water",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": false,
+   "competitors": [
+    {
+     "id": "TPE:WU Shao-Hsuan",
+     "name": "WU Shao-Hsuan",
+     "organisation": "TPE",
+     "result": "",
+     "rank": "3",
+     "outcome": "",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/paris-2024/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2024:MANUAL:BOXW60KG-SFNL000100",
+   "discipline": "BOX",
+   "sport": "拳擊",
+   "event": "Women's 60kg",
+   "phase": "四強",
+   "unit": "",
+   "startsAt": "2024-08-03T15:38:00.000Z",
+   "timeNote": "",
+   "venue": "North Paris Arena",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "CHN:YANG Wenlu",
+     "name": "YANG Wenlu",
+     "organisation": "CHN",
+     "result": "5-0（點數判定）",
+     "rank": "",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    },
+    {
+     "id": "TPE:WU Shih Yi",
+     "name": "WU Shih Yi",
+     "organisation": "TPE",
+     "result": "0-5（點數判定）",
+     "rank": "",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "",
+     "medal": "BRONZE"
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/paris-2024/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2024:MANUAL:CSLWX1-REP-000200",
+   "discipline": "CSL",
+   "sport": "CSL",
+   "event": "Women's Kayak Cross",
+   "phase": "復活賽第 2 組",
+   "unit": "",
+   "startsAt": "2024-08-03T16:10:00.000Z",
+   "timeNote": "",
+   "venue": "Nautical St - White water",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": false,
+   "competitors": [
+    {
+     "id": "TPE:CHANG Chu-Han",
+     "name": "CHANG Chu-Han",
+     "organisation": "TPE",
+     "result": "",
+     "rank": "2",
+     "outcome": "",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/paris-2024/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2024:MANUAL:CSLMX1-REP-000100",
+   "discipline": "CSL",
+   "sport": "CSL",
+   "event": "Men's Kayak Cross",
+   "phase": "復活賽第 1 組",
+   "unit": "",
+   "startsAt": "2024-08-03T16:45:00.000Z",
+   "timeNote": "",
+   "venue": "Nautical St - White water",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": false,
+   "competitors": [
+    {
+     "id": "TPE:WU Shao-Hsuan",
+     "name": "WU Shao-Hsuan",
+     "organisation": "TPE",
+     "result": "",
+     "rank": "2",
+     "outcome": "",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/paris-2024/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2024:MANUAL:BOXW66KG-QFNL000300",
+   "discipline": "BOX",
+   "sport": "拳擊",
+   "event": "Women's 66kg",
+   "phase": "八強",
+   "unit": "",
+   "startsAt": "2024-08-03T19:36:00.000Z",
+   "timeNote": "",
+   "venue": "North Paris Arena",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "TPE:CHEN Nien Chin",
+     "name": "CHEN Nien Chin",
+     "organisation": "TPE",
+     "result": "5-0（點數判定）",
+     "rank": "",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    },
+    {
+     "id": "UZB:KHAMIDOVA Navbakhor",
+     "name": "KHAMIDOVA Navbakhor",
+     "organisation": "UZB",
+     "result": "0-5（點數判定）",
+     "rank": "",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/paris-2024/",
+   "detailAvailable": true
+  }
+ ]
+}

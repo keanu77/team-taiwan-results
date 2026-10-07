@@ -1,0 +1,158 @@
+{
+ "date": "2024-08-06",
+ "successCount": 1,
+ "lastSuccessAt": "2026-10-07T16:36:57.150Z",
+ "lastAttemptAt": "2026-10-07T16:36:57.150Z",
+ "lastError": null,
+ "units": [
+  {
+   "id": "OG2024:MANUAL:TTEWTEAM-8FNL00020000",
+   "discipline": "TTE",
+   "sport": "桌球",
+   "event": "Women's Team",
+   "phase": "16 強",
+   "unit": "",
+   "startsAt": "2024-08-06T08:00:00.000Z",
+   "timeNote": "",
+   "venue": "South Paris Arena 4",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "AUS:Australia",
+     "name": "Australia",
+     "organisation": "AUS",
+     "result": "0-3",
+     "rank": "",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    },
+    {
+     "id": "TPE:Chinese Taipei",
+     "name": "Chinese Taipei",
+     "organisation": "TPE",
+     "result": "3-0",
+     "rank": "",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/paris-2024/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2024:MANUAL:ATHM200M-REP-000300",
+   "discipline": "ATH",
+   "sport": "田徑",
+   "event": "Men's 200m",
+   "phase": "復活賽第 3 組",
+   "unit": "",
+   "startsAt": "2024-08-06T10:46:00.000Z",
+   "timeNote": "",
+   "venue": "Stade de France",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": false,
+   "competitors": [
+    {
+     "id": "TPE:YANG Chun-Han",
+     "name": "YANG Chun-Han",
+     "organisation": "TPE",
+     "result": "20.73",
+     "rank": "3",
+     "outcome": "",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/paris-2024/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2024:MANUAL:TTEMTEAM-QFNL00030000",
+   "discipline": "TTE",
+   "sport": "桌球",
+   "event": "Men's Team",
+   "phase": "八強",
+   "unit": "",
+   "startsAt": "2024-08-06T13:00:00.000Z",
+   "timeNote": "",
+   "venue": "South Paris Arena 4",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "JPN:Japan",
+     "name": "Japan",
+     "organisation": "JPN",
+     "result": "3-1",
+     "rank": "",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    },
+    {
+     "id": "TPE:Chinese Taipei",
+     "name": "Chinese Taipei",
+     "organisation": "TPE",
+     "result": "1-3",
+     "rank": "",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/paris-2024/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2024:MANUAL:BOXW66KG-SFNL000200",
+   "discipline": "BOX",
+   "sport": "拳擊",
+   "event": "Women's 66kg",
+   "phase": "四強",
+   "unit": "",
+   "startsAt": "2024-08-06T20:50:00.000Z",
+   "timeNote": "",
+   "venue": "Roland-Garros Stadium",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "TPE:CHEN Nien Chin",
+     "name": "CHEN Nien Chin",
+     "organisation": "TPE",
+     "result": "1-4（點數判定）",
+     "rank": "",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "",
+     "medal": "BRONZE"
+    },
+    {
+     "id": "CHN:YANG Liu",
+     "name": "YANG Liu",
+     "organisation": "CHN",
+     "result": "4-1（點數判定）",
+     "rank": "",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/paris-2024/",
+   "detailAvailable": true
+  }
+ ]
+}

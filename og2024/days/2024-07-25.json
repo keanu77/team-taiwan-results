@@ -1,0 +1,198 @@
+{
+ "date": "2024-07-25",
+ "successCount": 1,
+ "lastSuccessAt": "2026-10-07T16:36:57.150Z",
+ "lastAttemptAt": "2026-10-07T16:36:57.150Z",
+ "lastError": null,
+ "units": [
+  {
+   "id": "OG2024:MANUAL:ARCWINDIVID-QUAL000100",
+   "discipline": "ARC",
+   "sport": "射箭",
+   "event": "Women's Individual",
+   "phase": "排名賽",
+   "unit": "",
+   "startsAt": "2024-07-25T07:30:00.000Z",
+   "timeNote": "",
+   "venue": "Invalides",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": false,
+   "competitors": [
+    {
+     "id": "TPE:LEI Chien-Ying",
+     "name": "LEI Chien-Ying",
+     "organisation": "TPE",
+     "result": "652",
+     "rank": "29",
+     "outcome": "",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    },
+    {
+     "id": "TPE:LI Tsai-Chi",
+     "name": "LI Tsai-Chi",
+     "organisation": "TPE",
+     "result": "646",
+     "rank": "40",
+     "outcome": "",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    },
+    {
+     "id": "TPE:CHIU Yi-Ching",
+     "name": "CHIU Yi-Ching",
+     "organisation": "TPE",
+     "result": "628",
+     "rank": "53",
+     "outcome": "",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/paris-2024/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2024:MANUAL:ARCWTEAM3-QUAL000100",
+   "discipline": "ARC",
+   "sport": "射箭",
+   "event": "Women's Team",
+   "phase": "排名賽",
+   "unit": "",
+   "startsAt": "2024-07-25T07:30:00.000Z",
+   "timeNote": "",
+   "venue": "Invalides",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": false,
+   "competitors": [
+    {
+     "id": "TPE:Chinese Taipei",
+     "name": "Chinese Taipei",
+     "organisation": "TPE",
+     "result": "1926",
+     "rank": "9",
+     "outcome": "",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/paris-2024/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2024:MANUAL:ARCMINDIVID-QUAL000100",
+   "discipline": "ARC",
+   "sport": "射箭",
+   "event": "Men's Individual",
+   "phase": "排名賽",
+   "unit": "",
+   "startsAt": "2024-07-25T12:15:00.000Z",
+   "timeNote": "",
+   "venue": "Invalides",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": false,
+   "competitors": [
+    {
+     "id": "TPE:TAI Yu-Hsuan",
+     "name": "TAI Yu-Hsuan",
+     "organisation": "TPE",
+     "result": "665",
+     "rank": "24",
+     "outcome": "",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    },
+    {
+     "id": "TPE:TANG Chih-Chun",
+     "name": "TANG Chih-Chun",
+     "organisation": "TPE",
+     "result": "665",
+     "rank": "25",
+     "outcome": "",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    },
+    {
+     "id": "TPE:LIN Zih-Siang",
+     "name": "LIN Zih-Siang",
+     "organisation": "TPE",
+     "result": "662",
+     "rank": "32",
+     "outcome": "",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/paris-2024/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2024:MANUAL:ARCMTEAM3-QUAL000100",
+   "discipline": "ARC",
+   "sport": "射箭",
+   "event": "Men's Team",
+   "phase": "排名賽",
+   "unit": "",
+   "startsAt": "2024-07-25T12:15:00.000Z",
+   "timeNote": "",
+   "venue": "Invalides",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": false,
+   "competitors": [
+    {
+     "id": "TPE:Chinese Taipei",
+     "name": "Chinese Taipei",
+     "organisation": "TPE",
+     "result": "1992",
+     "rank": "5",
+     "outcome": "",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/paris-2024/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2024:MANUAL:ARCXTEAM2-QUAL000100",
+   "discipline": "ARC",
+   "sport": "射箭",
+   "event": "Mixed Team",
+   "phase": "排名賽",
+   "unit": "",
+   "startsAt": "2024-07-25T12:15:00.000Z",
+   "timeNote": "",
+   "venue": "Invalides",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": false,
+   "competitors": [
+    {
+     "id": "TPE:Chinese Taipei",
+     "name": "Chinese Taipei",
+     "organisation": "TPE",
+     "result": "1317",
+     "rank": "16",
+     "outcome": "",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/paris-2024/",
+   "detailAvailable": true
+  }
+ ]
+}

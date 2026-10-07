@@ -1,0 +1,136 @@
+{
+ "date": "2024-08-05",
+ "successCount": 1,
+ "lastSuccessAt": "2026-10-07T16:36:57.150Z",
+ "lastAttemptAt": "2026-10-07T16:36:57.150Z",
+ "lastError": null,
+ "units": [
+  {
+   "id": "OG2024:MANUAL:TTEMTEAM-8FNL00060000",
+   "discipline": "TTE",
+   "sport": "桌球",
+   "event": "Men's Team",
+   "phase": "16 強",
+   "unit": "",
+   "startsAt": "2024-08-05T08:00:00.000Z",
+   "timeNote": "",
+   "venue": "South Paris Arena 4",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "EGY:Egypt",
+     "name": "Egypt",
+     "organisation": "EGY",
+     "result": "0-3",
+     "rank": "",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    },
+    {
+     "id": "TPE:Chinese Taipei",
+     "name": "Chinese Taipei",
+     "organisation": "TPE",
+     "result": "3-0",
+     "rank": "",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/paris-2024/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2024:MANUAL:ATHM400MHURD-RND1000500",
+   "discipline": "ATH",
+   "sport": "田徑",
+   "event": "Men's 400m Hurdles",
+   "phase": "第 1 輪第 5 組",
+   "unit": "",
+   "startsAt": "2024-08-05T08:37:00.000Z",
+   "timeNote": "",
+   "venue": "Stade de France",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": false,
+   "competitors": [
+    {
+     "id": "TPE:PENG Ming-Yang",
+     "name": "PENG Ming-Yang",
+     "organisation": "TPE",
+     "result": "DNF",
+     "rank": "",
+     "outcome": "",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/paris-2024/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2024:MANUAL:GARM1APHB-FNL-000001",
+   "discipline": "GAR",
+   "sport": "競技體操",
+   "event": "Men's Horizontal Bar",
+   "phase": "決賽",
+   "unit": "",
+   "startsAt": "2024-08-05T11:33:00.000Z",
+   "timeNote": "",
+   "venue": "Bercy Arena",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": false,
+   "competitors": [
+    {
+     "id": "TPE:TANG Chia-Hung",
+     "name": "TANG Chia-Hung",
+     "organisation": "TPE",
+     "result": "13.966（難度 6.500，完成 7.466）",
+     "rank": "3",
+     "outcome": "",
+     "qualification": "",
+     "irm": "",
+     "medal": "BRONZE"
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/paris-2024/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2024:MANUAL:ATHM200M-RND1000600",
+   "discipline": "ATH",
+   "sport": "田徑",
+   "event": "Men's 200m",
+   "phase": "第 1 輪第 6 組",
+   "unit": "",
+   "startsAt": "2024-08-05T18:30:00.000Z",
+   "timeNote": "",
+   "venue": "Stade de France",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": false,
+   "competitors": [
+    {
+     "id": "TPE:YANG Chun-Han",
+     "name": "YANG Chun-Han",
+     "organisation": "TPE",
+     "result": "20.83",
+     "rank": "6",
+     "outcome": "",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/paris-2024/",
+   "detailAvailable": true
+  }
+ ]
+}

@@ -1,0 +1,118 @@
+{
+ "date": "2024-08-08",
+ "successCount": 1,
+ "lastSuccessAt": "2026-10-07T16:36:57.150Z",
+ "lastAttemptAt": "2026-10-07T16:36:57.150Z",
+ "lastError": null,
+ "units": [
+  {
+   "id": "OG2024:MANUAL:GLFWSTROKE-FNL-000200",
+   "discipline": "GOL",
+   "sport": "高爾夫",
+   "event": "Women's Individual Stroke Play",
+   "phase": "第 2 輪",
+   "unit": "",
+   "startsAt": "2024-08-08T07:00:00.000Z",
+   "timeNote": "",
+   "venue": "Le Golf National",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": false,
+   "competitors": [
+    {
+     "id": "TPE:HSU Wei-Ling",
+     "name": "HSU Wei-Ling",
+     "organisation": "TPE",
+     "result": "69 桿（-3），累計 143 桿（-1）",
+     "rank": "14",
+     "outcome": "",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    },
+    {
+     "id": "TPE:CHIEN Pei-Yun",
+     "name": "CHIEN Pei-Yun",
+     "organisation": "TPE",
+     "result": "71 桿（-1），累計 147 桿（+3）",
+     "rank": "29",
+     "outcome": "",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/paris-2024/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2024:MANUAL:TKWW57KG-8FNL000700",
+   "discipline": "TKW",
+   "sport": "跆拳道",
+   "event": "Women -57kg",
+   "phase": "16 強",
+   "unit": "",
+   "startsAt": "2024-08-08T09:36:00.000Z",
+   "timeNote": "",
+   "venue": "Grand Palais",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "LBN:AOUN Laetitia",
+     "name": "AOUN Laetitia",
+     "organisation": "LBN",
+     "result": "2-0（PTF）",
+     "rank": "",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    },
+    {
+     "id": "TPE:LO Chia-Ling",
+     "name": "LO Chia-Ling",
+     "organisation": "TPE",
+     "result": "0-2（PTF）",
+     "rank": "",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/paris-2024/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2024:MANUAL:WLFW59KG-FNL-000100",
+   "discipline": "WLF",
+   "sport": "舉重",
+   "event": "Women's 59kg",
+   "phase": "決賽",
+   "unit": "",
+   "startsAt": "2024-08-08T13:00:00.000Z",
+   "timeNote": "",
+   "venue": "South Paris Arena 6",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": false,
+   "competitors": [
+    {
+     "id": "TPE:KUO Hsing-Chun",
+     "name": "KUO Hsing-Chun",
+     "organisation": "TPE",
+     "result": "235",
+     "rank": "3",
+     "outcome": "",
+     "qualification": "",
+     "irm": "",
+     "medal": "BRONZE"
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/paris-2024/",
+   "detailAvailable": true
+  }
+ ]
+}

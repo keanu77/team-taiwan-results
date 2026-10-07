@@ -1,0 +1,496 @@
+{
+ "date": "2024-07-27",
+ "successCount": 1,
+ "lastSuccessAt": "2026-10-07T16:36:57.150Z",
+ "lastAttemptAt": "2026-10-07T16:36:57.150Z",
+ "lastError": null,
+ "units": [
+  {
+   "id": "OG2024:MANUAL:JUDM60KG-8FNL000100",
+   "discipline": "JUD",
+   "sport": "柔道",
+   "event": "Men -60 kg",
+   "phase": "16 強",
+   "unit": "",
+   "startsAt": "2024-07-27T08:54:00.000Z",
+   "timeNote": "",
+   "venue": "Champ-de-Mars Arena",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "TPE:YANG Yung Wei",
+     "name": "YANG Yung Wei",
+     "organisation": "TPE",
+     "result": "10-1",
+     "rank": "",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    },
+    {
+     "id": "ITA:CARLINO Andrea",
+     "name": "CARLINO Andrea",
+     "organisation": "ITA",
+     "result": "1-10",
+     "rank": "",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/paris-2024/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2024:MANUAL:JUDW48KG-R32-001400",
+   "discipline": "JUD",
+   "sport": "柔道",
+   "event": "Women -48 kg",
+   "phase": "32 強",
+   "unit": "",
+   "startsAt": "2024-07-27T09:12:00.000Z",
+   "timeNote": "",
+   "venue": "Champ-de-Mars Arena",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "TPE:LIN Chen-Hao",
+     "name": "LIN Chen-Hao",
+     "organisation": "TPE",
+     "result": "10-0",
+     "rank": "",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    },
+    {
+     "id": "COL:LASSO Erika",
+     "name": "LASSO Erika",
+     "organisation": "COL",
+     "result": "0-10",
+     "rank": "",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/paris-2024/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2024:MANUAL:JUDM60KG-QFNL000100",
+   "discipline": "JUD",
+   "sport": "柔道",
+   "event": "Men -60 kg",
+   "phase": "八強",
+   "unit": "",
+   "startsAt": "2024-07-27T09:42:00.000Z",
+   "timeNote": "",
+   "venue": "Champ-de-Mars Arena",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "TPE:YANG Yung Wei",
+     "name": "YANG Yung Wei",
+     "organisation": "TPE",
+     "result": "0-1",
+     "rank": "",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    },
+    {
+     "id": "KAZ:SMETOV Yeldos",
+     "name": "SMETOV Yeldos",
+     "organisation": "KAZ",
+     "result": "1-0",
+     "rank": "",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/paris-2024/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2024:MANUAL:JUDW48KG-8FNL000700",
+   "discipline": "JUD",
+   "sport": "柔道",
+   "event": "Women -48 kg",
+   "phase": "16 強",
+   "unit": "",
+   "startsAt": "2024-07-27T10:06:00.000Z",
+   "timeNote": "",
+   "venue": "Champ-de-Mars Arena",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "KAZ:ABUZHAKYNOVA Abiba",
+     "name": "ABUZHAKYNOVA Abiba",
+     "organisation": "KAZ",
+     "result": "10-0",
+     "rank": "",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    },
+    {
+     "id": "TPE:LIN Chen-Hao",
+     "name": "LIN Chen-Hao",
+     "organisation": "TPE",
+     "result": "0-10",
+     "rank": "",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/paris-2024/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2024:MANUAL:SHOWAPW-QUAL000100",
+   "discipline": "SHO",
+   "sport": "射擊",
+   "event": "10m Air Pistol Women's",
+   "phase": "資格賽",
+   "unit": "",
+   "startsAt": "2024-07-27T10:30:00.000Z",
+   "timeNote": "",
+   "venue": "Chateauroux Shooting Ctr",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": false,
+   "competitors": [
+    {
+     "id": "TPE:LIU Heng Yu",
+     "name": "LIU Heng Yu",
+     "organisation": "TPE",
+     "result": "573",
+     "rank": "13",
+     "outcome": "",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    },
+    {
+     "id": "TPE:YU Ai Wen",
+     "name": "YU Ai Wen",
+     "organisation": "TPE",
+     "result": "564",
+     "rank": "35",
+     "outcome": "",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/paris-2024/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2024:MANUAL:BDMXDOUBLES-GPC-000200",
+   "discipline": "BDM",
+   "sport": "羽球",
+   "event": "Mixed Doubles",
+   "phase": "分組賽 C 組",
+   "unit": "",
+   "startsAt": "2024-07-27T12:00:00.000Z",
+   "timeNote": "",
+   "venue": "La Chapelle Arena",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "HKG:TANG Chun Man / TSE Ying Suet",
+     "name": "TANG Chun Man / TSE Ying Suet",
+     "organisation": "HKG",
+     "result": "2-0（21-13, 21-13）",
+     "rank": "",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    },
+    {
+     "id": "TPE:YE Hong Wei / LEE Chia Hsin",
+     "name": "YE Hong Wei / LEE Chia Hsin",
+     "organisation": "TPE",
+     "result": "0-2（13-21, 13-21）",
+     "rank": "",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/paris-2024/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2024:MANUAL:BOXW54KG-R32-000200",
+   "discipline": "BOX",
+   "sport": "拳擊",
+   "event": "Women's 54kg",
+   "phase": "32 強",
+   "unit": "",
+   "startsAt": "2024-07-27T13:30:00.000Z",
+   "timeNote": "",
+   "venue": "North Paris Arena",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "TPE:HUANG Hsiao Wen",
+     "name": "HUANG Hsiao Wen",
+     "organisation": "TPE",
+     "result": "5-0（點數判定）",
+     "rank": "",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    },
+    {
+     "id": "MNE:GOJKOVIC Bojana",
+     "name": "GOJKOVIC Bojana",
+     "organisation": "MNE",
+     "result": "0-5（點數判定）",
+     "rank": "",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/paris-2024/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2024:MANUAL:CSLWK1-HEAT000100",
+   "discipline": "CSL",
+   "sport": "CSL",
+   "event": "Women's Kayak Single",
+   "phase": "預賽第 1 趟",
+   "unit": "",
+   "startsAt": "2024-07-27T14:00:00.000Z",
+   "timeNote": "",
+   "venue": "Nautical St - White water",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": false,
+   "competitors": [
+    {
+     "id": "TPE:CHANG Chu-Han",
+     "name": "CHANG Chu-Han",
+     "organisation": "TPE",
+     "result": "109.92",
+     "rank": "22",
+     "outcome": "",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/paris-2024/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2024:MANUAL:JUDM60KG-REP1000100",
+   "discipline": "JUD",
+   "sport": "柔道",
+   "event": "Men -60 kg",
+   "phase": "復活賽",
+   "unit": "",
+   "startsAt": "2024-07-27T14:24:00.000Z",
+   "timeNote": "",
+   "venue": "Champ-de-Mars Arena",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "TPE:YANG Yung Wei",
+     "name": "YANG Yung Wei",
+     "organisation": "TPE",
+     "result": "0-1",
+     "rank": "",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    },
+    {
+     "id": "JPN:NAGAYAMA Ryuju",
+     "name": "NAGAYAMA Ryuju",
+     "organisation": "JPN",
+     "result": "1-0",
+     "rank": "",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/paris-2024/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2024:MANUAL:BOXW60KG-R32-000700",
+   "discipline": "BOX",
+   "sport": "拳擊",
+   "event": "Women's 60kg",
+   "phase": "32 強",
+   "unit": "",
+   "startsAt": "2024-07-27T14:50:00.000Z",
+   "timeNote": "",
+   "venue": "North Paris Arena",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "TPE:WU Shih Yi",
+     "name": "WU Shih Yi",
+     "organisation": "TPE",
+     "result": "5-0（點數判定）",
+     "rank": "",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    },
+    {
+     "id": "KOR:OH Yeonji",
+     "name": "OH Yeonji",
+     "organisation": "KOR",
+     "result": "0-5（點數判定）",
+     "rank": "",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/paris-2024/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2024:MANUAL:CSLWK1-HEAT000200",
+   "discipline": "CSL",
+   "sport": "CSL",
+   "event": "Women's Kayak Single",
+   "phase": "預賽第 2 趟",
+   "unit": "",
+   "startsAt": "2024-07-27T16:10:00.000Z",
+   "timeNote": "",
+   "venue": "Nautical St - White water",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": false,
+   "competitors": [
+    {
+     "id": "TPE:CHANG Chu-Han",
+     "name": "CHANG Chu-Han",
+     "organisation": "TPE",
+     "result": "117.93",
+     "rank": "24",
+     "outcome": "",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/paris-2024/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2024:MANUAL:BDMMDOUBLES-GPD-000200",
+   "discipline": "BDM",
+   "sport": "羽球",
+   "event": "Men's Doubles",
+   "phase": "分組賽 D 組",
+   "unit": "",
+   "startsAt": "2024-07-27T19:10:00.000Z",
+   "timeNote": "",
+   "venue": "La Chapelle Arena",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "JPN:HOKI Takuro / KOBAYASHI Yugo",
+     "name": "HOKI Takuro / KOBAYASHI Yugo",
+     "organisation": "JPN",
+     "result": "0-2（16-21, 10-21）",
+     "rank": "",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    },
+    {
+     "id": "TPE:LEE Yang / WANG Chi-Lin",
+     "name": "LEE Yang / WANG Chi-Lin",
+     "organisation": "TPE",
+     "result": "2-0（21-16, 21-10）",
+     "rank": "",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/paris-2024/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2024:MANUAL:GARM1APHB-QUAL000003",
+   "discipline": "GAR",
+   "sport": "競技體操",
+   "event": "Men's Horizontal Bar",
+   "phase": "資格賽第 3 組",
+   "unit": "",
+   "startsAt": "2024-07-27T20:07:00.000Z",
+   "timeNote": "",
+   "venue": "",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": false,
+   "competitors": [
+    {
+     "id": "TPE:TANG Chia-Hung",
+     "name": "TANG Chia-Hung",
+     "organisation": "TPE",
+     "result": "14.933",
+     "rank": "",
+     "outcome": "",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/paris-2024/",
+   "detailAvailable": true
+  }
+ ]
+}

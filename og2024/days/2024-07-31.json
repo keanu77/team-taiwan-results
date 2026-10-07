@@ -1,0 +1,369 @@
+{
+ "date": "2024-07-31",
+ "successCount": 1,
+ "lastSuccessAt": "2026-10-07T16:36:57.150Z",
+ "lastAttemptAt": "2026-10-07T16:36:57.150Z",
+ "lastError": null,
+ "units": [
+  {
+   "id": "OG2024:MANUAL:SHOWTRW-QUAL000200",
+   "discipline": "SHO",
+   "sport": "射擊",
+   "event": "Trap Women's",
+   "phase": "資格賽第 2 天",
+   "unit": "",
+   "startsAt": "2024-07-31T07:00:00.000Z",
+   "timeNote": "",
+   "venue": "Chateauroux Shooting Ctr",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": false,
+   "competitors": [
+    {
+     "id": "TPE:LIU Wan-Yu",
+     "name": "LIU Wan-Yu",
+     "organisation": "TPE",
+     "result": "112",
+     "rank": "25",
+     "outcome": "",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    },
+    {
+     "id": "TPE:LIN Yi Chun",
+     "name": "LIN Yi Chun",
+     "organisation": "TPE",
+     "result": "110",
+     "rank": "26",
+     "outcome": "",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/paris-2024/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2024:MANUAL:BOXM71KG-8FNL000200",
+   "discipline": "BOX",
+   "sport": "拳擊",
+   "event": "Men's 71kg",
+   "phase": "16 強",
+   "unit": "",
+   "startsAt": "2024-07-31T09:48:00.000Z",
+   "timeNote": "",
+   "venue": "North Paris Arena",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "USA:JONES Omari",
+     "name": "JONES Omari",
+     "organisation": "USA",
+     "result": "5-0（點數判定）",
+     "rank": "",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    },
+    {
+     "id": "TPE:KAN Chia Wei",
+     "name": "KAN Chia Wei",
+     "organisation": "TPE",
+     "result": "0-5（點數判定）",
+     "rank": "",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/paris-2024/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2024:MANUAL:BDMMDOUBLES-GPD-000900",
+   "discipline": "BDM",
+   "sport": "羽球",
+   "event": "Men's Doubles",
+   "phase": "分組賽 D 組",
+   "unit": "",
+   "startsAt": "2024-07-31T12:00:00.000Z",
+   "timeNote": "",
+   "venue": "La Chapelle Arena",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "CHN:LIU Yu Chen / OU Xuan Yi",
+     "name": "LIU Yu Chen / OU Xuan Yi",
+     "organisation": "CHN",
+     "result": "1-2（21-17, 17-21, 22-24）",
+     "rank": "",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    },
+    {
+     "id": "TPE:LEE Yang / WANG Chi-Lin",
+     "name": "LEE Yang / WANG Chi-Lin",
+     "organisation": "TPE",
+     "result": "2-1（17-21, 21-17, 24-22）",
+     "rank": "",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/paris-2024/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2024:MANUAL:BDMWSINGLES-GPE-000300",
+   "discipline": "BDM",
+   "sport": "羽球",
+   "event": "Women's Singles",
+   "phase": "分組賽 E 組",
+   "unit": "",
+   "startsAt": "2024-07-31T12:50:00.000Z",
+   "timeNote": "",
+   "venue": "La Chapelle Arena",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "TPE:TAI Tzu Ying",
+     "name": "TAI Tzu Ying",
+     "organisation": "TPE",
+     "result": "0-2（19-21, 15-21）",
+     "rank": "",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    },
+    {
+     "id": "THA:INTANON Ratchanok",
+     "name": "INTANON Ratchanok",
+     "organisation": "THA",
+     "result": "2-0（21-19, 21-15）",
+     "rank": "",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/paris-2024/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2024:MANUAL:BDMMSINGLES-GPI-000300",
+   "discipline": "BDM",
+   "sport": "羽球",
+   "event": "Men's Singles",
+   "phase": "分組賽 I 組",
+   "unit": "",
+   "startsAt": "2024-07-31T13:40:00.000Z",
+   "timeNote": "",
+   "venue": "La Chapelle Arena",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "TPE:CHOU Tien Chen",
+     "name": "CHOU Tien Chen",
+     "organisation": "TPE",
+     "result": "2-0（21-18, 21-13）",
+     "rank": "",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    },
+    {
+     "id": "HKG:LEE Cheuk Yiu",
+     "name": "LEE Cheuk Yiu",
+     "organisation": "HKG",
+     "result": "0-2（18-21, 13-21）",
+     "rank": "",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/paris-2024/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2024:MANUAL:TTEWSINGLES-8FNL000200",
+   "discipline": "TTE",
+   "sport": "桌球",
+   "event": "Women's Singles",
+   "phase": "16 強",
+   "unit": "",
+   "startsAt": "2024-07-31T14:00:00.000Z",
+   "timeNote": "",
+   "venue": "South Paris Arena 4",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "POL:BAJOR Natalia",
+     "name": "BAJOR Natalia",
+     "organisation": "POL",
+     "result": "0-4",
+     "rank": "",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    },
+    {
+     "id": "TPE:CHENG I-Ching",
+     "name": "CHENG I-Ching",
+     "organisation": "TPE",
+     "result": "4-0",
+     "rank": "",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/paris-2024/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2024:MANUAL:TTEMSINGLES-8FNL000600",
+   "discipline": "TTE",
+   "sport": "桌球",
+   "event": "Men's Singles",
+   "phase": "16 強",
+   "unit": "",
+   "startsAt": "2024-07-31T15:00:00.000Z",
+   "timeNote": "",
+   "venue": "South Paris Arena 4",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "SLO:JORGIC Darko",
+     "name": "JORGIC Darko",
+     "organisation": "SLO",
+     "result": "0-4",
+     "rank": "",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    },
+    {
+     "id": "TPE:LIN Yun-Ju",
+     "name": "LIN Yun-Ju",
+     "organisation": "TPE",
+     "result": "4-0",
+     "rank": "",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/paris-2024/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2024:MANUAL:BOXW60KG-QFNL000200",
+   "discipline": "BOX",
+   "sport": "拳擊",
+   "event": "Women's 60kg",
+   "phase": "八強",
+   "unit": "",
+   "startsAt": "2024-07-31T15:38:00.000Z",
+   "timeNote": "",
+   "venue": "North Paris Arena",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "ECU:PALACIOS ESPINOZA Maria Jose",
+     "name": "PALACIOS ESPINOZA Maria Jose",
+     "organisation": "ECU",
+     "result": "1-4（點數判定）",
+     "rank": "",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    },
+    {
+     "id": "TPE:WU Shih Yi",
+     "name": "WU Shih Yi",
+     "organisation": "TPE",
+     "result": "4-1（點數判定）",
+     "rank": "",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/paris-2024/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2024:MANUAL:TTEMSINGLES-8FNL000100",
+   "discipline": "TTE",
+   "sport": "桌球",
+   "event": "Men's Singles",
+   "phase": "16 強",
+   "unit": "",
+   "startsAt": "2024-07-31T18:00:00.000Z",
+   "timeNote": "",
+   "venue": "South Paris Arena 4",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "SWE:MOREGARD Truls",
+     "name": "MOREGARD Truls",
+     "organisation": "SWE",
+     "result": "4-1",
+     "rank": "",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    },
+    {
+     "id": "TPE:KAO Cheng-Jui",
+     "name": "KAO Cheng-Jui",
+     "organisation": "TPE",
+     "result": "1-4",
+     "rank": "",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/paris-2024/",
+   "detailAvailable": true
+  }
+ ]
+}

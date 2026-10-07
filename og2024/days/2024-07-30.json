@@ -1,0 +1,594 @@
+{
+ "date": "2024-07-30",
+ "successCount": 1,
+ "lastSuccessAt": "2026-10-07T16:36:57.150Z",
+ "lastAttemptAt": "2026-10-07T16:36:57.150Z",
+ "lastError": null,
+ "units": [
+  {
+   "id": "OG2024:MANUAL:SHOMTRM-QUAL000200",
+   "discipline": "SHO",
+   "sport": "射擊",
+   "event": "Trap Men's",
+   "phase": "資格賽第 2 天",
+   "unit": "",
+   "startsAt": "2024-07-30T07:00:00.000Z",
+   "timeNote": "",
+   "venue": "Chateauroux Shooting Ctr",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": false,
+   "competitors": [
+    {
+     "id": "TPE:YANG Kun-Pi",
+     "name": "YANG Kun-Pi",
+     "organisation": "TPE",
+     "result": "121",
+     "rank": "12",
+     "outcome": "",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/paris-2024/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2024:MANUAL:SHOWTRW-QUAL000100",
+   "discipline": "SHO",
+   "sport": "射擊",
+   "event": "Trap Women's",
+   "phase": "資格賽第 1 天",
+   "unit": "",
+   "startsAt": "2024-07-30T07:00:00.000Z",
+   "timeNote": "",
+   "venue": "Chateauroux Shooting Ctr",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": false,
+   "competitors": [
+    {
+     "id": "TPE:LIU Wan-Yu",
+     "name": "LIU Wan-Yu",
+     "organisation": "TPE",
+     "result": "71",
+     "rank": "11",
+     "outcome": "",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    },
+    {
+     "id": "TPE:LIN Yi Chun",
+     "name": "LIN Yi Chun",
+     "organisation": "TPE",
+     "result": "65",
+     "rank": "28",
+     "outcome": "",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/paris-2024/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2024:MANUAL:BDMMDOUBLES-GPD-000700",
+   "discipline": "BDM",
+   "sport": "羽球",
+   "event": "Men's Doubles",
+   "phase": "分組賽 D 組",
+   "unit": "",
+   "startsAt": "2024-07-30T09:00:00.000Z",
+   "timeNote": "",
+   "venue": "La Chapelle Arena",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "TPE:LEE Yang / WANG Chi-Lin",
+     "name": "LEE Yang / WANG Chi-Lin",
+     "organisation": "TPE",
+     "result": "2-0（21-12, 21-13）",
+     "rank": "",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    },
+    {
+     "id": "USA:CHIU Vinson / YUAN Joshua",
+     "name": "CHIU Vinson / YUAN Joshua",
+     "organisation": "USA",
+     "result": "0-2（12-21, 13-21）",
+     "rank": "",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/paris-2024/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2024:MANUAL:TTEMSINGLES-R32-001200",
+   "discipline": "TTE",
+   "sport": "桌球",
+   "event": "Men's Singles",
+   "phase": "32 強",
+   "unit": "",
+   "startsAt": "2024-07-30T09:00:00.000Z",
+   "timeNote": "",
+   "venue": "South Paris Arena 4",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "CRO:GACINA Andrej",
+     "name": "GACINA Andrej",
+     "organisation": "CRO",
+     "result": "0-4",
+     "rank": "",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    },
+    {
+     "id": "TPE:LIN Yun-Ju",
+     "name": "LIN Yun-Ju",
+     "organisation": "TPE",
+     "result": "4-0",
+     "rank": "",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/paris-2024/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2024:MANUAL:SWMM200MBF-HEAT000200",
+   "discipline": "SWM",
+   "sport": "游泳",
+   "event": "Men's 200m Butterfly",
+   "phase": "預賽第 2 組",
+   "unit": "",
+   "startsAt": "2024-07-30T09:04:00.000Z",
+   "timeNote": "",
+   "venue": "Paris La Defense Arena",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": false,
+   "competitors": [
+    {
+     "id": "TPE:WANG Kuan-Hung",
+     "name": "WANG Kuan-Hung",
+     "organisation": "TPE",
+     "result": "1:55.32",
+     "rank": "3",
+     "outcome": "",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/paris-2024/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2024:MANUAL:ARCMINDIVID-R64-000600",
+   "discipline": "ARC",
+   "sport": "射箭",
+   "event": "Men's Individual",
+   "phase": "64 強",
+   "unit": "",
+   "startsAt": "2024-07-30T10:13:00.000Z",
+   "timeNote": "",
+   "venue": "Invalides",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "FIN:TEKONIEMI Antti",
+     "name": "TEKONIEMI Antti",
+     "organisation": "FIN",
+     "result": "0-6",
+     "rank": "",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    },
+    {
+     "id": "TPE:TAI Yu-Hsuan",
+     "name": "TAI Yu-Hsuan",
+     "organisation": "TPE",
+     "result": "6-0",
+     "rank": "",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/paris-2024/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2024:MANUAL:BOXW54KG-8FNL000100",
+   "discipline": "BOX",
+   "sport": "拳擊",
+   "event": "Women's 54kg",
+   "phase": "16 強",
+   "unit": "",
+   "startsAt": "2024-07-30T10:20:00.000Z",
+   "timeNote": "",
+   "venue": "North Paris Arena",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "BUL:PETROVA Stanimira",
+     "name": "PETROVA Stanimira",
+     "organisation": "BUL",
+     "result": "4-1（點數判定）",
+     "rank": "",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    },
+    {
+     "id": "TPE:HUANG Hsiao Wen",
+     "name": "HUANG Hsiao Wen",
+     "organisation": "TPE",
+     "result": "1-4（點數判定）",
+     "rank": "",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/paris-2024/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2024:MANUAL:ARCMINDIVID-R32-000300",
+   "discipline": "ARC",
+   "sport": "射箭",
+   "event": "Men's Individual",
+   "phase": "32 強",
+   "unit": "",
+   "startsAt": "2024-07-30T10:52:00.000Z",
+   "timeNote": "",
+   "venue": "Invalides",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "FRA:CHIRAULT Thomas",
+     "name": "CHIRAULT Thomas",
+     "organisation": "FRA",
+     "result": "6-5",
+     "rank": "",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    },
+    {
+     "id": "TPE:TAI Yu-Hsuan",
+     "name": "TAI Yu-Hsuan",
+     "organisation": "TPE",
+     "result": "5-6",
+     "rank": "",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/paris-2024/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2024:MANUAL:TENWDOUBLES-R32-001600",
+   "discipline": "TEN",
+   "sport": "網球",
+   "event": "Women's Doubles",
+   "phase": "第 1 輪",
+   "unit": "",
+   "startsAt": "2024-07-30T11:30:00.000Z",
+   "timeNote": "",
+   "venue": "Roland-Garros Stadium",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "TPE:CHAN Hao-Ching / CHAN Latisha",
+     "name": "CHAN Hao-Ching / CHAN Latisha",
+     "organisation": "TPE",
+     "result": "0-2",
+     "rank": "",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    },
+    {
+     "id": "CZE:KREJCIKOVA Barbora / SINIAKOVA Katerina",
+     "name": "KREJCIKOVA Barbora / SINIAKOVA Katerina",
+     "organisation": "CZE",
+     "result": "2-0",
+     "rank": "",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/paris-2024/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2024:MANUAL:ARCMINDIVID-R64-000200",
+   "discipline": "ARC",
+   "sport": "射箭",
+   "event": "Men's Individual",
+   "phase": "64 強",
+   "unit": "",
+   "startsAt": "2024-07-30T12:49:00.000Z",
+   "timeNote": "",
+   "venue": "Invalides",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "ESP:ACHA GONZALEZ Pablo",
+     "name": "ACHA GONZALEZ Pablo",
+     "organisation": "ESP",
+     "result": "2-6",
+     "rank": "",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    },
+    {
+     "id": "TPE:LIN Zih-Siang",
+     "name": "LIN Zih-Siang",
+     "organisation": "TPE",
+     "result": "6-2",
+     "rank": "",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/paris-2024/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2024:MANUAL:ARCMINDIVID-R32-000100",
+   "discipline": "ARC",
+   "sport": "射箭",
+   "event": "Men's Individual",
+   "phase": "32 強",
+   "unit": "",
+   "startsAt": "2024-07-30T13:28:00.000Z",
+   "timeNote": "",
+   "venue": "Invalides",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "KOR:KIM Woojin",
+     "name": "KIM Woojin",
+     "organisation": "KOR",
+     "result": "6-0",
+     "rank": "",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    },
+    {
+     "id": "TPE:LIN Zih-Siang",
+     "name": "LIN Zih-Siang",
+     "organisation": "TPE",
+     "result": "0-6",
+     "rank": "",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/paris-2024/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2024:MANUAL:CSLMK1-HEAT000100",
+   "discipline": "CSL",
+   "sport": "CSL",
+   "event": "Men's Kayak Single",
+   "phase": "預賽第 1 趟",
+   "unit": "",
+   "startsAt": "2024-07-30T13:50:00.000Z",
+   "timeNote": "",
+   "venue": "Nautical St - White water",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": false,
+   "competitors": [
+    {
+     "id": "TPE:WU Shao-Hsuan",
+     "name": "WU Shao-Hsuan",
+     "organisation": "TPE",
+     "result": "101.22",
+     "rank": "20",
+     "outcome": "",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/paris-2024/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2024:MANUAL:CSLMK1-HEAT000200",
+   "discipline": "CSL",
+   "sport": "CSL",
+   "event": "Men's Kayak Single",
+   "phase": "預賽第 2 趟",
+   "unit": "",
+   "startsAt": "2024-07-30T15:30:00.000Z",
+   "timeNote": "",
+   "venue": "Nautical St - White water",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": false,
+   "competitors": [
+    {
+     "id": "TPE:WU Shao-Hsuan",
+     "name": "WU Shao-Hsuan",
+     "organisation": "TPE",
+     "result": "99.45",
+     "rank": "19",
+     "outcome": "",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/paris-2024/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2024:MANUAL:ARCMINDIVID-R64-000700",
+   "discipline": "ARC",
+   "sport": "射箭",
+   "event": "Men's Individual",
+   "phase": "64 強",
+   "unit": "",
+   "startsAt": "2024-07-30T15:45:00.000Z",
+   "timeNote": "",
+   "venue": "Invalides",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "TPE:TANG Chih-Chun",
+     "name": "TANG Chih-Chun",
+     "organisation": "TPE",
+     "result": "7-1",
+     "rank": "",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    },
+    {
+     "id": "INA:PANGESTU Arif",
+     "name": "PANGESTU Arif",
+     "organisation": "INA",
+     "result": "1-7",
+     "rank": "",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/paris-2024/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2024:MANUAL:ARCMINDIVID-R32-000400",
+   "discipline": "ARC",
+   "sport": "射箭",
+   "event": "Men's Individual",
+   "phase": "32 強",
+   "unit": "",
+   "startsAt": "2024-07-30T16:37:00.000Z",
+   "timeNote": "",
+   "venue": "Invalides",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "TPE:TANG Chih-Chun",
+     "name": "TANG Chih-Chun",
+     "organisation": "TPE",
+     "result": "2-6",
+     "rank": "",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    },
+    {
+     "id": "TUR:GAZOZ Mete",
+     "name": "GAZOZ Mete",
+     "organisation": "TUR",
+     "result": "6-2",
+     "rank": "",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/paris-2024/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2024:MANUAL:SWMM200MBF-SFNL000100",
+   "discipline": "SWM",
+   "sport": "游泳",
+   "event": "Men's 200m Butterfly",
+   "phase": "準決賽第 1 組",
+   "unit": "",
+   "startsAt": "2024-07-30T18:44:00.000Z",
+   "timeNote": "",
+   "venue": "Paris La Defense Arena",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": false,
+   "competitors": [
+    {
+     "id": "TPE:WANG Kuan-Hung",
+     "name": "WANG Kuan-Hung",
+     "organisation": "TPE",
+     "result": "1:55.07",
+     "rank": "5",
+     "outcome": "",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/paris-2024/",
+   "detailAvailable": true
+  }
+ ]
+}

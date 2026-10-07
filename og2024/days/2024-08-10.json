@@ -1,0 +1,176 @@
+{
+ "date": "2024-08-10",
+ "successCount": 1,
+ "lastSuccessAt": "2026-10-07T16:36:57.150Z",
+ "lastAttemptAt": "2026-10-07T16:36:57.150Z",
+ "lastError": null,
+ "units": [
+  {
+   "id": "OG2024:MANUAL:GLFWSTROKE-FNL-000400",
+   "discipline": "GOL",
+   "sport": "高爾夫",
+   "event": "Women's Individual Stroke Play",
+   "phase": "第 4 輪",
+   "unit": "",
+   "startsAt": "2024-08-10T09:33:00.000Z",
+   "timeNote": "",
+   "venue": "Le Golf National",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": false,
+   "competitors": [
+    {
+     "id": "TPE:HSU Wei-Ling",
+     "name": "HSU Wei-Ling",
+     "organisation": "TPE",
+     "result": "68 桿（-4），累計 283 桿（-5）",
+     "rank": "8",
+     "outcome": "",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    },
+    {
+     "id": "TPE:CHIEN Pei-Yun",
+     "name": "CHIEN Pei-Yun",
+     "organisation": "TPE",
+     "result": "68 桿（-4），累計 286 桿（-2）",
+     "rank": "18",
+     "outcome": "",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/paris-2024/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2024:MANUAL:BKGMINDIVID-GPD-000200",
+   "discipline": "BKG",
+   "sport": "BKG",
+   "event": "B-Boys",
+   "phase": "循環賽 D 組",
+   "unit": "",
+   "startsAt": "2024-08-10T14:41:00.000Z",
+   "timeNote": "",
+   "venue": "La Concorde 1",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": false,
+   "competitors": [
+    {
+     "id": "TPE:QUAKE",
+     "name": "QUAKE",
+     "organisation": "TPE",
+     "result": "2",
+     "rank": "",
+     "outcome": "",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/paris-2024/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2024:MANUAL:BKGMINDIVID-GPD-000400",
+   "discipline": "BKG",
+   "sport": "BKG",
+   "event": "B-Boys",
+   "phase": "循環賽 D 組",
+   "unit": "",
+   "startsAt": "2024-08-10T15:31:00.000Z",
+   "timeNote": "",
+   "venue": "La Concorde 1",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": false,
+   "competitors": [
+    {
+     "id": "TPE:QUAKE",
+     "name": "QUAKE",
+     "organisation": "TPE",
+     "result": "0",
+     "rank": "",
+     "outcome": "",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/paris-2024/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2024:MANUAL:BKGMINDIVID-GPD-000500",
+   "discipline": "BKG",
+   "sport": "BKG",
+   "event": "B-Boys",
+   "phase": "循環賽 D 組",
+   "unit": "",
+   "startsAt": "2024-08-10T16:14:00.000Z",
+   "timeNote": "",
+   "venue": "La Concorde 1",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": false,
+   "competitors": [
+    {
+     "id": "TPE:QUAKE",
+     "name": "QUAKE",
+     "organisation": "TPE",
+     "result": "0",
+     "rank": "",
+     "outcome": "",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/paris-2024/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2024:MANUAL:BOXW57KG-FNL-000100",
+   "discipline": "BOX",
+   "sport": "拳擊",
+   "event": "Women's 57kg",
+   "phase": "決賽",
+   "unit": "",
+   "startsAt": "2024-08-10T19:30:00.000Z",
+   "timeNote": "",
+   "venue": "Roland-Garros Stadium",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": true,
+   "competitors": [
+    {
+     "id": "TPE:LIN Yu Ting",
+     "name": "LIN Yu Ting",
+     "organisation": "TPE",
+     "result": "5-0（點數判定）",
+     "rank": "",
+     "outcome": "W",
+     "qualification": "",
+     "irm": "",
+     "medal": "GOLD"
+    },
+    {
+     "id": "POL:SZEREMETA Julia",
+     "name": "SZEREMETA Julia",
+     "organisation": "POL",
+     "result": "0-5（點數判定）",
+     "rank": "",
+     "outcome": "L",
+     "qualification": "",
+     "irm": "",
+     "medal": "SILVER"
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/paris-2024/",
+   "detailAvailable": true
+  }
+ ]
+}

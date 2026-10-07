@@ -1,0 +1,78 @@
+{
+ "date": "2024-08-09",
+ "successCount": 1,
+ "lastSuccessAt": "2026-10-07T16:36:57.150Z",
+ "lastAttemptAt": "2026-10-07T16:36:57.150Z",
+ "lastError": null,
+ "units": [
+  {
+   "id": "OG2024:MANUAL:GLFWSTROKE-FNL-000300",
+   "discipline": "GOL",
+   "sport": "高爾夫",
+   "event": "Women's Individual Stroke Play",
+   "phase": "第 3 輪",
+   "unit": "",
+   "startsAt": "2024-08-09T09:55:00.000Z",
+   "timeNote": "",
+   "venue": "Le Golf National",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": false,
+   "competitors": [
+    {
+     "id": "TPE:HSU Wei-Ling",
+     "name": "HSU Wei-Ling",
+     "organisation": "TPE",
+     "result": "72 桿（E），累計 215 桿（-1）",
+     "rank": "17",
+     "outcome": "",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    },
+    {
+     "id": "TPE:CHIEN Pei-Yun",
+     "name": "CHIEN Pei-Yun",
+     "organisation": "TPE",
+     "result": "71 桿（-1），累計 218 桿（+2）",
+     "rank": "24",
+     "outcome": "",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/paris-2024/",
+   "detailAvailable": true
+  },
+  {
+   "id": "OG2024:MANUAL:WLFW71KG-FNL-000100",
+   "discipline": "WLF",
+   "sport": "舉重",
+   "event": "Women's 71kg",
+   "phase": "決賽",
+   "unit": "",
+   "startsAt": "2024-08-09T17:30:00.000Z",
+   "timeNote": "",
+   "venue": "South Paris Arena 6",
+   "status": "OFFICIAL",
+   "statusLabel": "正式成績",
+   "headToHead": false,
+   "competitors": [
+    {
+     "id": "TPE:CHEN Wen-Huei",
+     "name": "CHEN Wen-Huei",
+     "organisation": "TPE",
+     "result": "236",
+     "rank": "6",
+     "outcome": "",
+     "qualification": "",
+     "irm": "",
+     "medal": ""
+    }
+   ],
+   "sourceUrl": "https://olympics.com/en/paris-2024/",
+   "detailAvailable": true
+  }
+ ]
+}
