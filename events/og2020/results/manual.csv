@@ -1,0 +1,248 @@
+﻿unit_id,date,time,sport,event,phase,venue,status,name,organisation,result,rank,medal,outcome,discipline
+ARC-women-s-individual-qual-000100,2021-07-23,09:00,射箭,Women's Individual,排名賽,Yumenoshima Ranking Field,OFFICIAL,LIN Chia-En,TPE,651,21,,,ARC
+ARC-women-s-individual-qual-000100,2021-07-23,09:00,射箭,Women's Individual,排名賽,Yumenoshima Ranking Field,OFFICIAL,LEI Chien-Ying,TPE,640,30,,,ARC
+ARC-women-s-individual-qual-000100,2021-07-23,09:00,射箭,Women's Individual,排名賽,Yumenoshima Ranking Field,OFFICIAL,TAN Ya-Ting,TPE,646,27,,,ARC
+ROW-women-s-single-sculls-heat-000600,2021-07-23,10:20,划船,Women's Single Sculls,預賽第 6 組,Sea Forest Waterway,OFFICIAL,HUANG Yi-Ting,TPE,8:04.59,4,,,ROW
+ARC-men-s-individual-qual-000100,2021-07-23,13:00,射箭,Men's Individual,排名賽,Yumenoshima Ranking Field,OFFICIAL,TANG Chih-Chun,TPE,668,12,,,ARC
+ARC-men-s-individual-qual-000100,2021-07-23,13:00,射箭,Men's Individual,排名賽,Yumenoshima Ranking Field,OFFICIAL,DENG Yu-Cheng,TPE,656,30,,,ARC
+ARC-men-s-individual-qual-000100,2021-07-23,13:00,射箭,Men's Individual,排名賽,Yumenoshima Ranking Field,OFFICIAL,WEI Chun-Heng,TPE,661,21,,,ARC
+ROW-women-s-single-sculls-rep-000100,2021-07-24,08:00,划船,Women's Single Sculls,復活賽第 1 組,Sea Forest Waterway,OFFICIAL,HUANG Yi-Ting,TPE,8:11.56,2,,,ROW
+SHO-10m-air-rifle-women-qual-000100,2021-07-24,08:30,射擊,10m Air Rifle Women's,資格賽,Asaka Shooting Range - 10m Range,OFFICIAL,LIN Ying-Shin,TPE,623.4,26,,,SHO
+ARC-mixed-team-8fnl-000200,2021-07-24,09:30,射箭,Mixed Team,16 強,Yumenoshima Final Field,OFFICIAL,India,IND,5-3,,,勝,ARC
+ARC-mixed-team-8fnl-000200,2021-07-24,09:30,射箭,Mixed Team,16 強,Yumenoshima Final Field,OFFICIAL,Chinese Taipei,TPE,3-5,,,負,ARC
+TKW-contest-result-women-49kg-8fnl-000100,2021-07-24,10:14,跆拳道,Women -49kg,16 強,Makuhari Messe Hall A,OFFICIAL,SU Po-Ya,TPE,9-10,,,負,TKW
+TKW-contest-result-women-49kg-8fnl-000100,2021-07-24,10:14,跆拳道,Women -49kg,16 強,Makuhari Messe Hall A,OFFICIAL,YAMADA Miyu,JPN,10-9,,,勝,TKW
+CRD-men-s-road-race-fnl-000100,2021-07-24,11:00,公路自由車,Men's Road Race,決賽,Fuji International Speedway,OFFICIAL,FENG Chun Kai,TPE,DNF,,,,CRD
+TTE-mixed-doubles-8fnl-000500,2021-07-24,12:00,桌球,Mixed Doubles,16 強,Tokyo Metropolitan Gymnasium Table 1,OFFICIAL,LIN Yun Ju / CHENG I Ching,TPE,4-0,,,勝,TTE
+TTE-mixed-doubles-8fnl-000500,2021-07-24,12:00,桌球,Mixed Doubles,16 強,Tokyo Metropolitan Gymnasium Table 1,OFFICIAL,ACHANTA Kamal / BATRA Manika,IND,0-4,,,負,TTE
+BDM-men-s-doubles-gpa-000400,2021-07-24,12:20,羽球,Men's Doubles,分組賽 A 組,Musashino Forest Sport Plaza BDM Court 3,OFFICIAL,LEE Yang/WANG Chi-Lin,TPE,1-2,,,負,BDM
+BDM-men-s-doubles-gpa-000400,2021-07-24,12:20,羽球,Men's Doubles,分組賽 A 組,Musashino Forest Sport Plaza BDM Court 3,OFFICIAL,RANKIREDDY Satwiksairaj/SHETTY Chirag,IND,2-1,,,勝,BDM
+BDM-women-s-singles-gpp-000600,2021-07-24,13:00,羽球,Women's Singles,分組賽 P 組,Musashino Forest Sport Plaza BDM Court 1,OFFICIAL,TAI Tzu-Ying,TPE,2-0,,,勝,BDM
+BDM-women-s-singles-gpp-000600,2021-07-24,13:00,羽球,Women's Singles,分組賽 P 組,Musashino Forest Sport Plaza BDM Court 1,OFFICIAL,JAQUET Sabrina,SUI,0-2,,,負,BDM
+WLF-women-s-49kg-fnl-a00100,2021-07-24,13:50,舉重,Women's 49kg,A 組,Tokyo International Forum,OFFICIAL,FANG Wan-Ling,TPE,181 公斤（抓舉 80、挺舉 101）,4,,,WLF
+JUD-women-48-kg-rep1-000100,2021-07-24,17:00,柔道,Women -48 kg,復活賽,Nippon Budokan Judo Mat 1,OFFICIAL,LIN Chen-Hao,TPE,0s2-10s1,,,負,JUD
+JUD-women-48-kg-rep1-000100,2021-07-24,17:00,柔道,Women -48 kg,復活賽,Nippon Budokan Judo Mat 1,OFFICIAL,RISHONY Shira,ISR,10s1-0s2,,,勝,JUD
+SWM-men-s-400m-individual-medley-heat-000200,2021-07-24,19:07,游泳,Men's 400m Individual Medley,預賽第 2 組,Tokyo Aquatics Centre,OFFICIAL,WANG Hsing-Hao,TPE,4:19.06,25,,,SWM
+GAR-men-s-qual-sd3-aa,2021-07-24,19:30,競技體操,Men's All-Around,資格賽第 3 組,Ariake Gymnastics Centre,OFFICIAL,LEE Chih Kai,TPE,84.332（晉級）,17,,,GAR
+GAR-men-s-qual-sd3-aa,2021-07-24,19:30,競技體操,Men's All-Around,資格賽第 3 組,Ariake Gymnastics Centre,OFFICIAL,TANG Chia-Hung,TPE,82.932（晉級）,22,,,GAR
+GAR-men-s-qual-sd3-aa,2021-07-24,19:30,競技體操,Men's All-Around,資格賽第 3 組,Ariake Gymnastics Centre,OFFICIAL,SHIAO Yu-Jan,TPE,77.799,54,,,GAR
+GAR-men-s-qual-sd3-aa,2021-07-24,19:30,競技體操,Men's All-Around,資格賽第 3 組,Ariake Gymnastics Centre,OFFICIAL,HUNG Yuan-Hsi,TPE,74.098,60,,,GAR
+GAR-men-s-qual-sd3-ph,2021-07-24,19:30,競技體操,Men's Pommel Horse,資格賽第 3 組,Ariake Gymnastics Centre,OFFICIAL,LEE Chih Kai,TPE,15.266（難度 6.400，完成 8.866，晉級）,1,,,GAR
+GAR-men-s-qual-sd3-team,2021-07-24,19:30,競技體操,Men's Team,資格賽第 3 組,Ariake Gymnastics Centre,OFFICIAL,Chinese Taipei,TPE,246.263（候補第 2）,10,,,GAR
+BDM-men-s-singles-gpf-000300,2021-07-24,20:00,羽球,Men's Singles,分組賽 F 組,Musashino Forest Sport Plaza BDM Court 3,OFFICIAL,WANG Tzu-Wei,TPE,2-0,,,勝,BDM
+BDM-men-s-singles-gpf-000300,2021-07-24,20:00,羽球,Men's Singles,分組賽 F 組,Musashino Forest Sport Plaza BDM Court 3,OFFICIAL,KARUNARATNE Niluka,SRI,0-2,,,負,BDM
+JUD-men-60-kg-8fnl-000200,2021-07-24,,柔道,Men -60 kg,16 強,Nippon Budokan Judo Mat 2,OFFICIAL,YANG Yung Wei,TPE,10-0s1,,,勝,JUD
+JUD-men-60-kg-8fnl-000200,2021-07-24,,柔道,Men -60 kg,16 強,Nippon Budokan Judo Mat 2,OFFICIAL,GERCHEV Yanislav,BUL,0s1-10,,,負,JUD
+JUD-men-60-kg-fnl-000100,2021-07-24,,柔道,Men -60 kg,決賽,Nippon Budokan Judo Mat 1,OFFICIAL,YANG Yung Wei,TPE,0s3-10s1,,銀,負,JUD
+JUD-men-60-kg-fnl-000100,2021-07-24,,柔道,Men -60 kg,決賽,Nippon Budokan Judo Mat 1,OFFICIAL,TAKATO Naohisa,JPN,10s1-0s3,,金,勝,JUD
+JUD-men-60-kg-qfnl-000100,2021-07-24,,柔道,Men -60 kg,八強,Nippon Budokan Judo Mat 2,OFFICIAL,TSJAKADOEA Tornike,NED,0s1-10,,,負,JUD
+JUD-men-60-kg-qfnl-000100,2021-07-24,,柔道,Men -60 kg,八強,Nippon Budokan Judo Mat 2,OFFICIAL,YANG Yung Wei,TPE,10-0s1,,,勝,JUD
+JUD-men-60-kg-sfnl-000100,2021-07-24,,柔道,Men -60 kg,四強,Nippon Budokan Judo Mat 1,OFFICIAL,YANG Yung Wei,TPE,10s1-0s2,,,勝,JUD
+JUD-men-60-kg-sfnl-000100,2021-07-24,,柔道,Men -60 kg,四強,Nippon Budokan Judo Mat 1,OFFICIAL,MKHEIDZE Luka,FRA,0s2-10s1,,,負,JUD
+JUD-women-48-kg-8fnl-000200,2021-07-24,,柔道,Women -48 kg,16 強,Nippon Budokan Judo Mat 1,OFFICIAL,DOLGOVA Irina,ROC,0s1-1s2,,,負,JUD
+JUD-women-48-kg-8fnl-000200,2021-07-24,,柔道,Women -48 kg,16 強,Nippon Budokan Judo Mat 1,OFFICIAL,LIN Chen-Hao,TPE,1s2-0s1,,,勝,JUD
+JUD-women-48-kg-qfnl-000100,2021-07-24,,柔道,Women -48 kg,八強,Nippon Budokan Judo Mat 1,OFFICIAL,KRASNIQI Distria,KOS,10-0,,,勝,JUD
+JUD-women-48-kg-qfnl-000100,2021-07-24,,柔道,Women -48 kg,八強,Nippon Budokan Judo Mat 1,OFFICIAL,LIN Chen-Hao,TPE,0-10,,,負,JUD
+JUD-women-48-kg-r32-000400,2021-07-24,,柔道,Women -48 kg,32 強,Nippon Budokan Judo Mat 1,OFFICIAL,MILANI Francesca,ITA,1s1-10s2,,,負,JUD
+JUD-women-48-kg-r32-000400,2021-07-24,,柔道,Women -48 kg,32 強,Nippon Budokan Judo Mat 1,OFFICIAL,LIN Chen-Hao,TPE,10s2-1s1,,,勝,JUD
+TEN-women-s-doubles-r32-001300,2021-07-24,,網球,Women's Doubles,第 1 輪,Ariake Tennis Park Court 11,OFFICIAL,CHAN Hao-Ching / CHAN Latisha,TPE,"1-2（5-7, 6-1, 6-10）",,,負,TEN
+TEN-women-s-doubles-r32-001300,2021-07-24,,網球,Women's Doubles,第 1 輪,Ariake Tennis Park Court 11,OFFICIAL,NICULESCU Monica / OLARU Raluca,ROU,"2-1（7-5, 1-6, 10-6）",,,勝,TEN
+SHO-10m-air-pistol-women-qual-000100,2021-07-25,09:00,射擊,10m Air Pistol Women's,資格賽,Asaka Shooting Range - 10m Range,OFFICIAL,WU Chia-Ying,TPE,573 -18x,14,,,SHO
+SHO-10m-air-pistol-women-qual-000100,2021-07-25,09:00,射擊,10m Air Pistol Women's,資格賽,Asaka Shooting Range - 10m Range,OFFICIAL,TIEN Chia Chen,TPE,559 -10x,42,,,SHO
+BDM-men-s-singles-gpp-000300,2021-07-25,10:00,羽球,Men's Singles,分組賽 P 組,Musashino Forest Sport Plaza BDM Court 1,OFFICIAL,CHOU Tien-Chen,TPE,2-0,,,勝,BDM
+BDM-men-s-singles-gpp-000300,2021-07-25,10:00,羽球,Men's Singles,分組賽 P 組,Musashino Forest Sport Plaza BDM Court 1,OFFICIAL,BURESTEDT Felix,SWE,0-2,,,負,BDM
+GAR-women-s-qual-sd1-bb,2021-07-25,10:00,競技體操,Women's Balance Beam,資格賽第 1 組,Ariake Gymnastics Centre,OFFICIAL,TING Hua-Tien,TPE,12.566（難度 5.800，完成 6.766）,50,,,GAR
+GAR-women-s-qual-sd1-ub,2021-07-25,10:00,競技體操,Women's Uneven Bars,資格賽第 1 組,Ariake Gymnastics Centre,OFFICIAL,TING Hua-Tien,TPE,12.233（難度 4.600，完成 7.633）,63,,,GAR
+ARC-women-s-team-8fnl-000700,2021-07-25,10:16,射箭,Women's Team,16 強,Yumenoshima Final Field,OFFICIAL,Chinese Taipei,TPE,2-6,,,負,ARC
+ARC-women-s-team-8fnl-000700,2021-07-25,10:16,射箭,Women's Team,16 強,Yumenoshima Final Field,OFFICIAL,Germany,GER,6-2,,,勝,ARC
+TTE-mixed-doubles-qfnl-000300,2021-07-25,11:00,桌球,Mixed Doubles,八強,Tokyo Metropolitan Gymnasium Table 1,OFFICIAL,LIN Yun Ju / CHENG I Ching,TPE,4-2,,,勝,TTE
+TTE-mixed-doubles-qfnl-000300,2021-07-25,11:00,桌球,Mixed Doubles,八強,Tokyo Metropolitan Gymnasium Table 1,OFFICIAL,LEE Sangsu / JEON Jihee,KOR,2-4,,,負,TTE
+ROW-women-s-single-sculls-qfnl-000400,2021-07-25,11:30,划船,Women's Single Sculls,八強賽第 4 組,Sea Forest Waterway,OFFICIAL,HUANG Yi-Ting,TPE,8:34.51,6,,,ROW
+TKW-contest-result-men-68kg-8fnl-000300,2021-07-25,11:38,跆拳道,Men -68kg,16 強,Makuhari Messe Hall A,OFFICIAL,HUANG Yu-Jen,TPE,15-18,,,負,TKW
+TKW-contest-result-men-68kg-8fnl-000300,2021-07-25,11:38,跆拳道,Men -68kg,16 強,Makuhari Messe Hall A,OFFICIAL,HOSSEINI Mirhashem,IRI,18-15,,,勝,TKW
+SHO-10m-air-rifle-men-qual-000100,2021-07-25,13:00,射擊,10m Air Rifle Men's,資格賽,Asaka Shooting Range - 10m Range,OFFICIAL,LU Shao-Chuan,TPE,626.3,17,,,SHO
+TKW-contest-result-women-57kg-8fnl-000700,2021-07-25,13:16,跆拳道,Women -57kg,16 強,Makuhari Messe Hall A,OFFICIAL,LO Chia-Ling,TPE,20-18,,,勝,TKW
+TKW-contest-result-women-57kg-8fnl-000700,2021-07-25,13:16,跆拳道,Women -57kg,16 強,Makuhari Messe Hall A,OFFICIAL,LEE Ahreum,KOR,18-20,,,負,TKW
+CSL-women-s-kayak-heat-000100,2021-07-25,13:50,CSL,Women's Kayak,預賽第 1 趟,Kasai Canoe Slalom Centre,OFFICIAL,CHANG Chu-Han,TPE,182.95（划行 126.95，罰秒 56）,26,,,CSL
+TTE-men-s-singles-r64-001400,2021-07-25,15:30,桌球,Men's Singles,第 2 輪,Tokyo Metropolitan Gymnasium Table 2,OFFICIAL,CHUANG Chih Yuan,TPE,4-3,,,勝,TTE
+TTE-men-s-singles-r64-001400,2021-07-25,15:30,桌球,Men's Singles,第 2 輪,Tokyo Metropolitan Gymnasium Table 2,OFFICIAL,CIFUENTES Horacio,ARG,3-4,,,負,TTE
+TKW-contest-result-women-57kg-qfnl-000400,2021-07-25,15:36,跆拳道,Women -57kg,八強,Makuhari Messe Hall A,OFFICIAL,LO Chia-Ling,TPE,18-7,,,勝,TKW
+TKW-contest-result-women-57kg-qfnl-000400,2021-07-25,15:36,跆拳道,Women -57kg,八強,Makuhari Messe Hall A,OFFICIAL,PARK Skylar,CAN,7-18,,,負,TKW
+WLF-men-s-61kg-fnl-a00100,2021-07-25,15:50,舉重,Men's 61kg,A 組,Tokyo International Forum,OFFICIAL,KAO Chan-Hung,TPE,DNF（抓舉 125）,,,,WLF
+CSL-women-s-kayak-heat-000200,2021-07-25,15:58,CSL,Women's Kayak,預賽第 2 趟,Kasai Canoe Slalom Centre,OFFICIAL,CHANG Chu-Han,TPE,136.66（划行 128.66，罰秒 8）,25,,,CSL
+TKW-contest-result-women-57kg-sfnl-000200,2021-07-25,16:32,跆拳道,Women -57kg,四強,Makuhari Messe Hall A,OFFICIAL,ZOLOTIC Anastasija,USA,28-5,,,勝,TKW
+TKW-contest-result-women-57kg-sfnl-000200,2021-07-25,16:32,跆拳道,Women -57kg,四強,Makuhari Messe Hall A,OFFICIAL,LO Chia-Ling,TPE,5-28,,,負,TKW
+TKW-contest-result-women-57kg-repf-000100,2021-07-25,20:30,跆拳道,Women -57kg,銅牌戰,Makuhari Messe Hall A,OFFICIAL,LO Chia-Ling,TPE,10-6,,銅,勝,TKW
+TKW-contest-result-women-57kg-repf-000100,2021-07-25,20:30,跆拳道,Women -57kg,銅牌戰,Makuhari Messe Hall A,OFFICIAL,BEN YESSOUF Tekiath,NIG,6-10,,,負,TKW
+TTE-mixed-doubles-sfnl-000200,2021-07-25,21:00,桌球,Mixed Doubles,四強,Tokyo Metropolitan Gymnasium Table 1,OFFICIAL,LIN Yun Ju / CHENG I Ching,TPE,1-4,,,負,TTE
+TTE-mixed-doubles-sfnl-000200,2021-07-25,21:00,桌球,Mixed Doubles,四強,Tokyo Metropolitan Gymnasium Table 1,OFFICIAL,MIZUTANI Jun / ITO Mima,JPN,4-1,,,勝,TTE
+TEN-men-s-singles-r64-000900,2021-07-25,,網球,Men's Singles,第 1 輪,Ariake Tennis Park Court 1,OFFICIAL,ZVEREV Alexander,GER,"2-0（6-1, 6-3）",,,勝,TEN
+TEN-men-s-singles-r64-000900,2021-07-25,,網球,Men's Singles,第 1 輪,Ariake Tennis Park Court 1,OFFICIAL,LU Yen-Hsun,TPE,"0-2（1-6, 3-6）",,,負,TEN
+TEN-women-s-doubles-r32-000100,2021-07-25,,網球,Women's Doubles,第 1 輪,Ariake Tennis Park Court 9,OFFICIAL,KREJCIKOVA Barbora / SINIAKOVA Katerina,CZE,"2-0（6-2, 6-1）",,,勝,TEN
+TEN-women-s-doubles-r32-000100,2021-07-25,,網球,Women's Doubles,第 1 輪,Ariake Tennis Park Court 9,OFFICIAL,HSIEH Yu-Chieh / HSU Chieh-Yu,TPE,"0-2（2-6, 1-6）",,,負,TEN
+ARC-men-s-team-8fnl-000600,2021-07-26,10:39,射箭,Men's Team,16 強,Yumenoshima Final Field,OFFICIAL,Australia,AUS,4-5,,,負,ARC
+ARC-men-s-team-8fnl-000600,2021-07-26,10:39,射箭,Men's Team,16 強,Yumenoshima Final Field,OFFICIAL,Chinese Taipei,TPE,5-4,,,勝,ARC
+BDM-men-s-doubles-gpa-000500,2021-07-26,11:20,羽球,Men's Doubles,分組賽 A 組,Musashino Forest Sport Plaza BDM Court 1,OFFICIAL,LEE Yang/WANG Chi-Lin,TPE,2-0,,,勝,BDM
+BDM-men-s-doubles-gpa-000500,2021-07-26,11:20,羽球,Men's Doubles,分組賽 A 組,Musashino Forest Sport Plaza BDM Court 1,OFFICIAL,LANE Ben/VENDY Sean,GBR,0-2,,,負,BDM
+TKW-contest-result-men-80kg-8fnl-000500,2021-07-26,12:15,跆拳道,Men -80kg,16 強,Makuhari Messe Hall A,OFFICIAL,LIU Wei-Ting,TPE,11-15,,,負,TKW
+TKW-contest-result-men-80kg-8fnl-000500,2021-07-26,12:15,跆拳道,Men -80kg,16 強,Makuhari Messe Hall A,OFFICIAL,BEIGI HARCHEGANI Milad,AZE,15-11,,,勝,TKW
+BOX-women-s-feather-54-57kg-8fnl-000100,2021-07-26,13:39,拳擊,Women's Feather (54-57kg),16 強,Kokugikan Arena,OFFICIAL,LIN Yu-Ting,TPE,2-3,,,負,BOX
+BOX-women-s-feather-54-57kg-8fnl-000100,2021-07-26,13:39,拳擊,Women's Feather (54-57kg),16 強,Kokugikan Arena,OFFICIAL,PETECIO Nesthy,PHI,3-2,,,勝,BOX
+WLF-women-s-55kg-fnl-b00100,2021-07-26,13:50,舉重,Women's 55kg,B 組,Tokyo International Forum,OFFICIAL,CHIANG Nien-Hsin,TPE,176 公斤（抓舉 81、挺舉 95）,13,,,WLF
+BDM-women-s-singles-gpp-000100,2021-07-26,14:00,羽球,Women's Singles,分組賽 P 組,Musashino Forest Sport Plaza BDM Court 1,OFFICIAL,TAI Tzu-Ying,TPE,2-0,,,勝,BDM
+BDM-women-s-singles-gpp-000100,2021-07-26,14:00,羽球,Women's Singles,分組賽 P 組,Musashino Forest Sport Plaza BDM Court 1,OFFICIAL,NGUYEN Thuy Linh,VIE,0-2,,,負,BDM
+ARC-men-s-team-qfnl-000300,2021-07-26,14:31,射箭,Men's Team,八強,Yumenoshima Final Field,OFFICIAL,China,CHN,1-5,,,負,ARC
+ARC-men-s-team-qfnl-000300,2021-07-26,14:31,射箭,Men's Team,八強,Yumenoshima Final Field,OFFICIAL,Chinese Taipei,TPE,5-1,,,勝,ARC
+TTE-men-s-singles-r32-001400,2021-07-26,15:30,桌球,Men's Singles,第 3 輪,Tokyo Metropolitan Gymnasium Table 1,OFFICIAL,WONG Chun Ting,HKG,1-4,,,負,TTE
+TTE-men-s-singles-r32-001400,2021-07-26,15:30,桌球,Men's Singles,第 3 輪,Tokyo Metropolitan Gymnasium Table 1,OFFICIAL,CHUANG Chih Yuan,TPE,4-1,,,勝,TTE
+ARC-men-s-team-sfnl-000200,2021-07-26,15:40,射箭,Men's Team,四強,Yumenoshima Final Field,OFFICIAL,Chinese Taipei,TPE,6-0,,,勝,ARC
+ARC-men-s-team-sfnl-000200,2021-07-26,15:40,射箭,Men's Team,四強,Yumenoshima Final Field,OFFICIAL,Netherlands,NED,0-6,,,負,ARC
+ARC-men-s-team-fnl-000100,2021-07-26,16:40,射箭,Men's Team,金牌戰,Yumenoshima Final Field,OFFICIAL,Republic of Korea,KOR,6-0,,金,勝,ARC
+ARC-men-s-team-fnl-000100,2021-07-26,16:40,射箭,Men's Team,金牌戰,Yumenoshima Final Field,OFFICIAL,Chinese Taipei,TPE,0-6,,銀,負,ARC
+SWM-men-s-200m-butterfly-heat-000400,2021-07-26,19:28,游泳,Men's 200m Butterfly,預賽第 4 組,Tokyo Aquatics Centre,OFFICIAL,WANG Kuan-Hung,TPE,1:54.44,2,,,SWM
+TTE-mixed-doubles-fnl-000200,2021-07-26,20:00,桌球,Mixed Doubles,銅牌戰,Tokyo Metropolitan Gymnasium Table 1,OFFICIAL,LEBESSON Emmanuel / YUAN Jia Nan,FRA,0-4,,,負,TTE
+TTE-mixed-doubles-fnl-000200,2021-07-26,20:00,桌球,Mixed Doubles,銅牌戰,Tokyo Metropolitan Gymnasium Table 1,OFFICIAL,LIN Yun Ju / CHENG I Ching,TPE,4-0,,銅,勝,TTE
+JUD-women-57-kg-8fnl-000800,2021-07-26,,柔道,Women -57 kg,16 強,Nippon Budokan Judo Mat 1,OFFICIAL,LIEN Chen-Ling,TPE,0s3-10,,,負,JUD
+JUD-women-57-kg-8fnl-000800,2021-07-26,,柔道,Women -57 kg,16 強,Nippon Budokan Judo Mat 1,OFFICIAL,KAJZER Kaja,SLO,10-0s3,,,勝,JUD
+TTE-men-s-singles-r32-000500,2021-07-27,10:00,桌球,Men's Singles,第 3 輪,Tokyo Metropolitan Gymnasium Table 2,OFFICIAL,LIN Yun Ju,TPE,4-1,,,勝,TTE
+TTE-men-s-singles-r32-000500,2021-07-27,10:00,桌球,Men's Singles,第 3 輪,Tokyo Metropolitan Gymnasium Table 2,OFFICIAL,KAELLBERG Anton,SWE,1-4,,,負,TTE
+TTE-women-s-singles-r32-000800,2021-07-27,11:00,桌球,Women's Singles,第 3 輪,Tokyo Metropolitan Gymnasium Table 1,OFFICIAL,CHENG I Ching,TPE,0-4,,,負,TTE
+TTE-women-s-singles-r32-000800,2021-07-27,11:00,桌球,Women's Singles,第 3 輪,Tokyo Metropolitan Gymnasium Table 1,OFFICIAL,YU Mengyu,SGP,4-0,,,勝,TTE
+SWM-men-s-200m-butterfly-sfnl-000100,2021-07-27,11:35,游泳,Men's 200m Butterfly,準決賽第 1 組,Tokyo Aquatics Centre,OFFICIAL,WANG Kuan-Hung,TPE,1:55.52,13,,,SWM
+BDM-men-s-doubles-gpa-000100,2021-07-27,12:00,羽球,Men's Doubles,分組賽 A 組,Musashino Forest Sport Plaza BDM Court 2,OFFICIAL,GIDEON Marcus Fernaldi/SUKAMULJO Kevin Sanjaya,INA,1-2,,,負,BDM
+BDM-men-s-doubles-gpa-000100,2021-07-27,12:00,羽球,Men's Doubles,分組賽 A 組,Musashino Forest Sport Plaza BDM Court 2,OFFICIAL,LEE Yang/WANG Chi-Lin,TPE,2-1,,,勝,BDM
+TTE-women-s-singles-r32-001500,2021-07-27,12:00,桌球,Women's Singles,第 3 輪,Tokyo Metropolitan Gymnasium Table 2,OFFICIAL,CHEN Szu Yu,TPE,4-0,,,勝,TTE
+TTE-women-s-singles-r32-001500,2021-07-27,12:00,桌球,Women's Singles,第 3 輪,Tokyo Metropolitan Gymnasium Table 2,OFFICIAL,ZHANG Lily,USA,0-4,,,負,TTE
+SHO-10m-air-rifle-mixed-team-qual-000100,2021-07-27,13:15,射擊,10m Air Rifle Mixed Team,資格賽第 1 階段,Asaka Shooting Range - 10m Range,OFFICIAL,Chinese Taipei,TPE,625.4,14,,,SHO
+BOX-women-s-welter-64-69kg-8fnl-000400,2021-07-27,14:42,拳擊,Women's Welter (64-69kg),16 強,Kokugikan Arena,OFFICIAL,CARINI Angela,ITA,2-3,,,負,BOX
+BOX-women-s-welter-64-69kg-8fnl-000400,2021-07-27,14:42,拳擊,Women's Welter (64-69kg),16 強,Kokugikan Arena,OFFICIAL,CHEN Nien-Chin,TPE,3-2,,,勝,BOX
+ARC-women-s-individual-r64-002300,2021-07-27,15:02,射箭,Women's Individual,64 強,Yumenoshima Final Field,OFFICIAL,TAN Ya-Ting,TPE,4-6,,,負,ARC
+ARC-women-s-individual-r64-002300,2021-07-27,15:02,射箭,Women's Individual,64 強,Yumenoshima Final Field,OFFICIAL,PITMAN Bryony,GBR,6-4,,,勝,ARC
+WLF-women-s-59kg-fnl-a00100,2021-07-27,15:50,舉重,Women's 59kg,A 組,Tokyo International Forum,OFFICIAL,KUO Hsing-Chun,TPE,236 公斤（抓舉 103、挺舉 133）,1,金,,WLF
+TTE-men-s-singles-8fnl-000300,2021-07-27,16:30,桌球,Men's Singles,16 強,Tokyo Metropolitan Gymnasium Table 4,OFFICIAL,LIN Yun Ju,TPE,4-2,,,勝,TTE
+TTE-men-s-singles-8fnl-000300,2021-07-27,16:30,桌球,Men's Singles,16 強,Tokyo Metropolitan Gymnasium Table 4,OFFICIAL,TSUBOI Gustavo,BRA,2-4,,,負,TTE
+BOX-women-s-light-57-60kg-r32-001000,2021-07-27,19:06,拳擊,Women's Light (57-60kg),32 強,Kokugikan Arena,OFFICIAL,WU Shih-Yi,TPE,4-1,,,勝,BOX
+BOX-women-s-light-57-60kg-r32-001000,2021-07-27,19:06,拳擊,Women's Light (57-60kg),32 強,Kokugikan Arena,OFFICIAL,ALEXIUSSON Agnes,SWE,1-4,,,負,BOX
+WLF-women-s-64kg-fnl-a00100,2021-07-27,19:50,舉重,Women's 64kg,A 組,Tokyo International Forum,OFFICIAL,CHEN Wen-Huei,TPE,230 公斤（抓舉 103、挺舉 127）,3,銅,,WLF
+TTE-men-s-singles-8fnl-000700,2021-07-27,21:30,桌球,Men's Singles,16 強,Tokyo Metropolitan Gymnasium Table 1,OFFICIAL,ASSAR Omar,EGY,4-3,,,勝,TTE
+TTE-men-s-singles-8fnl-000700,2021-07-27,21:30,桌球,Men's Singles,16 強,Tokyo Metropolitan Gymnasium Table 1,OFFICIAL,CHUANG Chih Yuan,TPE,3-4,,,負,TTE
+TTE-women-s-singles-8fnl-000800,2021-07-27,21:30,桌球,Women's Singles,16 強,Tokyo Metropolitan Gymnasium Table 4,OFFICIAL,CHEN Szu Yu,TPE,0-4,,,負,TTE
+TTE-women-s-singles-8fnl-000800,2021-07-27,21:30,桌球,Women's Singles,16 強,Tokyo Metropolitan Gymnasium Table 4,OFFICIAL,SUN Yingsha,CHN,4-0,,,勝,TTE
+BDM-women-s-singles-gpp-000300,2021-07-28,09:00,羽球,Women's Singles,分組賽 P 組,Musashino Forest Sport Plaza BDM Court 2,OFFICIAL,TAI Tzu-Ying,TPE,2-0,,,勝,BDM
+BDM-women-s-singles-gpp-000300,2021-07-28,09:00,羽球,Women's Singles,分組賽 P 組,Musashino Forest Sport Plaza BDM Court 2,OFFICIAL,QI Xuefei,FRA,0-2,,,負,BDM
+SHO-trap-men-qual-000100,2021-07-28,09:50,射擊,Trap Men's,資格賽第 1 天,Asaka Shooting Range - Shotgun Ranges,OFFICIAL,YANG Kun-Pi,TPE,72,21,,,SHO
+TTE-men-s-singles-qfnl-000200,2021-07-28,16:00,桌球,Men's Singles,八強,Tokyo Metropolitan Gymnasium Table 1,OFFICIAL,LIN Yun Ju,TPE,4-0,,,勝,TTE
+TTE-men-s-singles-qfnl-000200,2021-07-28,16:00,桌球,Men's Singles,八強,Tokyo Metropolitan Gymnasium Table 1,OFFICIAL,JORGIC Darko,SLO,0-4,,,負,TTE
+BDM-men-s-singles-gpf-000100,2021-07-28,18:40,羽球,Men's Singles,分組賽 F 組,Musashino Forest Sport Plaza BDM Court 2,OFFICIAL,WANG Tzu-Wei,TPE,2-1,,,勝,BDM
+BDM-men-s-singles-gpf-000100,2021-07-28,18:40,羽球,Men's Singles,分組賽 F 組,Musashino Forest Sport Plaza BDM Court 2,OFFICIAL,NGUYEN Nhat,IRL,1-2,,,負,BDM
+BDM-men-s-singles-gpp-000100,2021-07-28,18:40,羽球,Men's Singles,分組賽 P 組,Musashino Forest Sport Plaza BDM Court 1,OFFICIAL,CHOU Tien-Chen,TPE,2-1,,,勝,BDM
+BDM-men-s-singles-gpp-000100,2021-07-28,18:40,羽球,Men's Singles,分組賽 P 組,Musashino Forest Sport Plaza BDM Court 1,OFFICIAL,YANG Brian,CAN,1-2,,,負,BDM
+ARC-women-s-individual-r64-001800,2021-07-28,19:15,射箭,Women's Individual,64 強,Yumenoshima Final Field,OFFICIAL,MARCHENKO Veronika,UKR,6-4,,,勝,ARC
+ARC-women-s-individual-r64-001800,2021-07-28,19:15,射箭,Women's Individual,64 強,Yumenoshima Final Field,OFFICIAL,LEI Chien-Ying,TPE,4-6,,,負,ARC
+GAR-men-s-all-around-fnl-000001,2021-07-28,19:15,競技體操,Men's All-Around,決賽,Ariake Gymnastics Centre - Men,OFFICIAL,LEE Chih Kai,TPE,80.699,21,,,GAR
+GAR-men-s-all-around-fnl-000001,2021-07-28,19:15,競技體操,Men's All-Around,決賽,Ariake Gymnastics Centre - Men,OFFICIAL,TANG Chia-Hung,TPE,84.798,7,,,GAR
+SWM-men-s-200m-individual-medley-heat-000300,2021-07-28,20:01,游泳,Men's 200m Individual Medley,預賽第 3 組,Tokyo Aquatics Centre,OFFICIAL,WANG Hsing-Hao,TPE,2:00.72,37,,,SWM
+GOL-men-s-individual-stroke-play-fnl-000100,2021-07-29,07:30,高爾夫,Men's Individual Stroke Play,第 1 輪,Kasumigaseki Country Club,OFFICIAL,PAN C T,TPE,74 桿,,,,GOL
+SHO-25m-pistol-women-qual-000100,2021-07-29,09:00,射擊,25m Pistol Women's,資格賽（慢射）,Asaka Shooting Range - 25m Range,OFFICIAL,WU Chia-Ying,TPE,289,14,,,SHO
+SHO-25m-pistol-women-qual-000100,2021-07-29,09:00,射擊,25m Pistol Women's,資格賽（慢射）,Asaka Shooting Range - 25m Range,OFFICIAL,TIEN Chia Chen,TPE,291,10,,,SHO
+SHO-trap-men-qual-000200,2021-07-29,09:50,射擊,Trap Men's,資格賽第 2 天,Asaka Shooting Range - Shotgun Ranges,OFFICIAL,YANG Kun-Pi,TPE,121,14,,,SHO
+ARC-men-s-individual-r64-001800,2021-07-29,11:01,射箭,Men's Individual,64 強,Yumenoshima Final Field,OFFICIAL,DAS Atanu,IND,6-4,,,勝,ARC
+ARC-men-s-individual-r64-001800,2021-07-29,11:01,射箭,Men's Individual,64 強,Yumenoshima Final Field,OFFICIAL,DENG Yu-Cheng,TPE,4-6,,,負,ARC
+ROW-women-s-single-sculls-sfnl-000400,2021-07-29,12:10,划船,Women's Single Sculls,準決賽 C/D 第 2 組,Sea Forest Waterway,OFFICIAL,HUANG Yi-Ting,TPE,7:56.00,5,,,ROW
+BDM-men-s-doubles-qfnl-000300,2021-07-29,12:15,羽球,Men's Doubles,八強,Musashino Forest Sport Plaza BDM Court 1,OFFICIAL,LEE Yang/WANG Chi-Lin,TPE,2-0,,,勝,BDM
+BDM-men-s-doubles-qfnl-000300,2021-07-29,12:15,羽球,Men's Doubles,八強,Musashino Forest Sport Plaza BDM Court 1,OFFICIAL,ENDO Hiroyuki/WATANABE Yuta,JPN,0-2,,,負,BDM
+ARC-women-s-individual-r64-001100,2021-07-29,12:32,射箭,Women's Individual,64 強,Yumenoshima Final Field,OFFICIAL,LIN Chia-En,TPE,6-4,,,勝,ARC
+ARC-women-s-individual-r64-001100,2021-07-29,12:32,射箭,Women's Individual,64 強,Yumenoshima Final Field,OFFICIAL,PSARRA Evangelia,GRE,4-6,,,負,ARC
+ARC-women-s-individual-r32-000600,2021-07-29,13:11,射箭,Women's Individual,32 強,Yumenoshima Final Field,OFFICIAL,LIN Chia-En,TPE,7-3,,,勝,ARC
+ARC-women-s-individual-r32-000600,2021-07-29,13:11,射箭,Women's Individual,32 強,Yumenoshima Final Field,OFFICIAL,PARNAT Reena,EST,3-7,,,負,ARC
+ARC-men-s-individual-r64-001100,2021-07-29,13:24,射箭,Men's Individual,64 強,Yumenoshima Final Field,OFFICIAL,WEI Chun-Heng,TPE,6-2,,,勝,ARC
+ARC-men-s-individual-r64-001100,2021-07-29,13:24,射箭,Men's Individual,64 強,Yumenoshima Final Field,OFFICIAL,CASTRO Daniel,ESP,2-6,,,負,ARC
+ARC-men-s-individual-r64-001200,2021-07-29,13:37,射箭,Men's Individual,64 強,Yumenoshima Final Field,OFFICIAL,NGUYEN Hoang Phi Vu,VIE,1-7,,,負,ARC
+ARC-men-s-individual-r64-001200,2021-07-29,13:37,射箭,Men's Individual,64 強,Yumenoshima Final Field,OFFICIAL,TANG Chih-Chun,TPE,7-1,,,勝,ARC
+BOX-women-s-fly-48-51kg-8fnl-000400,2021-07-29,13:54,拳擊,Women's Fly (48-51kg),16 強,Kokugikan Arena,OFFICIAL,SORRENTINO Giordana,ITA,0-5,,,負,BOX
+BOX-women-s-fly-48-51kg-8fnl-000400,2021-07-29,13:54,拳擊,Women's Fly (48-51kg),16 強,Kokugikan Arena,OFFICIAL,HUANG Hsiao-Wen,TPE,5-0,,,勝,BOX
+ARC-men-s-individual-r32-000600,2021-07-29,14:16,射箭,Men's Individual,32 強,Yumenoshima Final Field,OFFICIAL,WEI Chun-Heng,TPE,5-6,,,負,ARC
+ARC-men-s-individual-r32-000600,2021-07-29,14:16,射箭,Men's Individual,32 強,Yumenoshima Final Field,OFFICIAL,TANG Chih-Chun,TPE,6-5,,,勝,ARC
+TTE-men-s-singles-sfnl-000100,2021-07-29,15:00,桌球,Men's Singles,四強,Tokyo Metropolitan Gymnasium Table 1,OFFICIAL,FAN Zhendong,CHN,4-3,,,勝,TTE
+TTE-men-s-singles-sfnl-000100,2021-07-29,15:00,桌球,Men's Singles,四強,Tokyo Metropolitan Gymnasium Table 1,OFFICIAL,LIN Yun Ju,TPE,3-4,,,負,TTE
+BDM-men-s-singles-8fnl-000300,2021-07-29,17:00,羽球,Men's Singles,16 強,Musashino Forest Sport Plaza BDM Court 2,OFFICIAL,AXELSEN Viktor,DEN,2-0,,,勝,BDM
+BDM-men-s-singles-8fnl-000300,2021-07-29,17:00,羽球,Men's Singles,16 強,Musashino Forest Sport Plaza BDM Court 2,OFFICIAL,WANG Tzu-Wei,TPE,0-2,,,負,BDM
+SWM-men-s-100m-butterfly-heat-000300,2021-07-29,19:49,游泳,Men's 100m Butterfly,預賽第 3 組,Tokyo Aquatics Centre,OFFICIAL,WANG Kuan-Hung,TPE,52.44,35,,,SWM
+GOL-men-s-individual-stroke-play-fnl-000200,2021-07-30,07:30,高爾夫,Men's Individual Stroke Play,第 2 輪,Kasumigaseki Country Club,OFFICIAL,PAN C T,TPE,66 桿,,,,GOL
+ROW-women-s-single-sculls-fnl-000400,2021-07-30,08:25,划船,Women's Single Sculls,D 組決賽,Sea Forest Waterway,OFFICIAL,HUANG Yi-Ting,TPE,7:52.18（總排名第 20）,2,,,ROW
+SHO-25m-pistol-women-qual-000200,2021-07-30,09:00,射擊,25m Pistol Women's,資格賽（快射）,Asaka Shooting Range - 25m Range,OFFICIAL,WU Chia-Ying,TPE,584-22x,7,,,SHO
+SHO-25m-pistol-women-qual-000200,2021-07-30,09:00,射擊,25m Pistol Women's,資格賽（快射）,Asaka Shooting Range - 25m Range,OFFICIAL,TIEN Chia Chen,TPE,584-24x,5,,,SHO
+ATH-women-s-100m-prel-000200,2021-07-30,09:07,田徑,Women's 100m,資格預賽第 2 組,Olympic Stadium - Track,OFFICIAL,HSIEH Hsi-En,TPE,12.49,7,,,ATH
+ARC-women-s-individual-8fnl-000300,2021-07-30,09:43,射箭,Women's Individual,16 強,Yumenoshima Final Field,OFFICIAL,BROWN Mackenzie,USA,6-2,,,勝,ARC
+ARC-women-s-individual-8fnl-000300,2021-07-30,09:43,射箭,Women's Individual,16 強,Yumenoshima Final Field,OFFICIAL,LIN Chia-En,TPE,2-6,,,負,ARC
+ATH-men-s-400m-hurdles-rnd1-000100,2021-07-30,11:25,田徑,Men's 400m Hurdles,第 1 輪第 1 組,Olympic Stadium - Track,OFFICIAL,CHEN Chieh,TPE,50.96,7,,,ATH
+BOX-women-s-welter-64-69kg-qfnl-000200,2021-07-30,12:18,拳擊,Women's Welter (64-69kg),八強,Kokugikan Arena,OFFICIAL,BORGOHAIN Lovlina,IND,4-1,,,勝,BOX
+BOX-women-s-welter-64-69kg-qfnl-000200,2021-07-30,12:18,拳擊,Women's Welter (64-69kg),八強,Kokugikan Arena,OFFICIAL,CHEN Nien-Chin,TPE,1-4,,,負,BOX
+SHO-25m-pistol-women-fnl-000100,2021-07-30,14:00,射擊,25m Pistol Women's,決賽,Asaka Shooting Range - Final Hall,OFFICIAL,WU Chia-Ying,TPE,命中 23（加賽）,5,,,SHO
+SHO-25m-pistol-women-fnl-000100,2021-07-30,14:00,射擊,25m Pistol Women's,決賽,Asaka Shooting Range - Final Hall,OFFICIAL,TIEN Chia Chen,TPE,命中 10,8,,,SHO
+BOX-women-s-light-57-60kg-8fnl-000500,2021-07-30,17:00,拳擊,Women's Light (57-60kg),16 強,Kokugikan Arena,OFFICIAL,FERREIRA Beatriz,BRA,5-0,,,勝,BOX
+BOX-women-s-light-57-60kg-8fnl-000500,2021-07-30,17:00,拳擊,Women's Light (57-60kg),16 強,Kokugikan Arena,OFFICIAL,WU Shih-Yi,TPE,0-5,,,負,BOX
+BDM-women-s-singles-qfnl-000400,2021-07-30,17:30,羽球,Women's Singles,八強,Musashino Forest Sport Plaza BDM Court 1,OFFICIAL,INTANON Ratchanok,THA,1-2,,,負,BDM
+BDM-women-s-singles-qfnl-000400,2021-07-30,17:30,羽球,Women's Singles,八強,Musashino Forest Sport Plaza BDM Court 1,OFFICIAL,TAI Tzu-Ying,TPE,2-1,,,勝,BDM
+BDM-men-s-doubles-sfnl-000200,2021-07-30,18:15,羽球,Men's Doubles,四強,Musashino Forest Sport Plaza BDM Court 1,OFFICIAL,LEE Yang/WANG Chi-Lin,TPE,2-0,,,勝,BDM
+BDM-men-s-doubles-sfnl-000200,2021-07-30,18:15,羽球,Men's Doubles,四強,Musashino Forest Sport Plaza BDM Court 1,OFFICIAL,AHSAN Mohammad/SETIAWAN Hendra,INA,0-2,,,負,BDM
+SWM-women-s-50m-freestyle-heat-000700,2021-07-30,19:36,游泳,Women's 50m Freestyle,預賽第 7 組,Tokyo Aquatics Centre,OFFICIAL,HUANG Mei-Chien,TPE,25.99,38,,,SWM
+TTE-men-s-singles-fnl-000200,2021-07-30,20:00,桌球,Men's Singles,銅牌戰,Tokyo Metropolitan Gymnasium Table 1,OFFICIAL,LIN Yun Ju,TPE,3-4,,,負,TTE
+TTE-men-s-singles-fnl-000200,2021-07-30,20:00,桌球,Men's Singles,銅牌戰,Tokyo Metropolitan Gymnasium Table 1,OFFICIAL,OVTCHAROV Dimitrij,GER,4-3,,銅,勝,TTE
+GOL-men-s-individual-stroke-play-fnl-000300,2021-07-31,09:30,高爾夫,Men's Individual Stroke Play,第 3 輪,Kasumigaseki Country Club,OFFICIAL,PAN C T,TPE,66 桿,,,,GOL
+ARC-men-s-individual-8fnl-000300,2021-07-31,09:43,射箭,Men's Individual,16 強,Yumenoshima Final Field,OFFICIAL,SHANNY Itay,ISR,5-6,,,負,ARC
+ARC-men-s-individual-8fnl-000300,2021-07-31,09:43,射箭,Men's Individual,16 強,Yumenoshima Final Field,OFFICIAL,TANG Chih-Chun,TPE,6-5,,,勝,ARC
+BDM-men-s-singles-qfnl-000400,2021-07-31,13:10,羽球,Men's Singles,八強,Musashino Forest Sport Plaza BDM Court 1,OFFICIAL,CHEN Long,CHN,2-1,,,勝,BDM
+BDM-men-s-singles-qfnl-000400,2021-07-31,13:10,羽球,Men's Singles,八強,Musashino Forest Sport Plaza BDM Court 1,OFFICIAL,CHOU Tien-Chen,TPE,1-2,,,負,BDM
+ARC-men-s-individual-qfnl-000200,2021-07-31,14:45,射箭,Men's Individual,八強,Yumenoshima Final Field,OFFICIAL,TANG Chih-Chun,TPE,6-4,,,勝,ARC
+ARC-men-s-individual-qfnl-000200,2021-07-31,14:45,射箭,Men's Individual,八強,Yumenoshima Final Field,OFFICIAL,KIM Woojin,KOR,4-6,,,負,ARC
+ARC-men-s-individual-sfnl-000100,2021-07-31,15:45,射箭,Men's Individual,四強,Yumenoshima Final Field,OFFICIAL,NESPOLI Mauro,ITA,6-2,,,勝,ARC
+ARC-men-s-individual-sfnl-000100,2021-07-31,15:45,射箭,Men's Individual,四強,Yumenoshima Final Field,OFFICIAL,TANG Chih-Chun,TPE,2-6,,,負,ARC
+ARC-men-s-individual-fnl-000200,2021-07-31,16:30,射箭,Men's Individual,銅牌戰,Yumenoshima Final Field,OFFICIAL,TANG Chih-Chun,TPE,3-7,,,負,ARC
+ARC-men-s-individual-fnl-000200,2021-07-31,16:30,射箭,Men's Individual,銅牌戰,Yumenoshima Final Field,OFFICIAL,FURUKAWA Takaharu,JPN,7-3,,銅,勝,ARC
+BDM-women-s-singles-sfnl-000200,2021-07-31,18:50,羽球,Women's Singles,四強,Musashino Forest Sport Plaza BDM Court 1,OFFICIAL,PUSARLA V. Sindhu,IND,0-2,,,負,BDM
+BDM-women-s-singles-sfnl-000200,2021-07-31,18:50,羽球,Women's Singles,四強,Musashino Forest Sport Plaza BDM Court 1,OFFICIAL,TAI Tzu-Ying,TPE,2-0,,,勝,BDM
+ATH-men-s-100m-rnd1-000100,2021-07-31,19:45,田徑,Men's 100m,第 1 輪第 1 組,Olympic Stadium - Track,OFFICIAL,YANG Chun-Han,TPE,10.21,5,,,ATH
+WLF-men-s-96kg-fnl-a00100,2021-07-31,19:50,舉重,Men's 96kg,A 組,Tokyo International Forum,OFFICIAL,CHEN Po-Jen,TPE,381 公斤（抓舉 176、挺舉 205）,5,,,WLF
+BDM-men-s-doubles-fnl-000100,2021-07-31,20:30,羽球,Men's Doubles,金牌戰,Musashino Forest Sport Plaza BDM Court 1,OFFICIAL,LI Jun Hui/LIU Yu Chen,CHN,0-2,,銀,負,BDM
+BDM-men-s-doubles-fnl-000100,2021-07-31,20:30,羽球,Men's Doubles,金牌戰,Musashino Forest Sport Plaza BDM Court 1,OFFICIAL,LEE Yang/WANG Chi-Lin,TPE,2-0,,金,勝,BDM
+GOL-men-s-individual-stroke-play-fnl-000400,2021-08-01,07:30,高爾夫,Men's Individual Stroke Play,第 4 輪,Kasumigaseki Country Club,OFFICIAL,PAN C T,TPE,63 桿，累計 269 桿（-15）,3,,,GOL
+TTE-men-s-team-8fnl-00070000,2021-08-01,10:00,桌球,Men's Team,16 強,Tokyo Metropolitan Gymnasium Table 4,OFFICIAL,Chinese Taipei,TPE,3-0,,,勝,TTE
+TTE-men-s-team-8fnl-00070000,2021-08-01,10:00,桌球,Men's Team,16 強,Tokyo Metropolitan Gymnasium Table 4,OFFICIAL,Croatia,CRO,0-3,,,負,TTE
+BOX-women-s-fly-48-51kg-qfnl-000200,2021-08-01,11:15,拳擊,Women's Fly (48-51kg),八強,Kokugikan Arena,OFFICIAL,RADOVANOVIC Nina,SRB,0-5,,,負,BOX
+BOX-women-s-fly-48-51kg-qfnl-000200,2021-08-01,11:15,拳擊,Women's Fly (48-51kg),八強,Kokugikan Arena,OFFICIAL,HUANG Hsiao-Wen,TPE,5-0,,,勝,BOX
+GOL-men-s-individual-stroke-play-fnl-0003rr,2021-08-01,16:30,高爾夫,Men's Individual Stroke Play,銅牌延長賽,Kasumigaseki Country Club,OFFICIAL,PAN C T,TPE,延長賽勝出,,銅,,GOL
+GAR-men-s-pommel-horse-fnl-000001,2021-08-01,18:41,競技體操,Men's Pommel Horse,決賽,Ariake Gymnastics Centre - Pommel,OFFICIAL,LEE Chih Kai,TPE,15.400（難度 6.700，完成 8.700）,2,銀,,GAR
+TTE-women-s-team-8fnl-00070000,2021-08-01,19:30,桌球,Women's Team,16 強,Tokyo Metropolitan Gymnasium Table 3,OFFICIAL,Chinese Taipei,TPE,3-0,,,勝,TTE
+TTE-women-s-team-8fnl-00070000,2021-08-01,19:30,桌球,Women's Team,16 強,Tokyo Metropolitan Gymnasium Table 3,OFFICIAL,United States,USA,0-3,,,負,TTE
+BDM-women-s-singles-fnl-000100,2021-08-01,21:20,羽球,Women's Singles,金牌戰,Musashino Forest Sport Plaza BDM Court 1,OFFICIAL,CHEN Yu Fei,CHN,2-1,,金,勝,BDM
+BDM-women-s-singles-fnl-000100,2021-08-01,21:20,羽球,Women's Singles,金牌戰,Musashino Forest Sport Plaza BDM Court 1,OFFICIAL,TAI Tzu-Ying,TPE,1-2,,銀,負,BDM
+TTE-women-s-team-qfnl-00040000,2021-08-02,19:30,桌球,Women's Team,八強,Tokyo Metropolitan Gymnasium Table 2,OFFICIAL,Chinese Taipei,TPE,0-3,,,負,TTE
+TTE-women-s-team-qfnl-00040000,2021-08-02,19:30,桌球,Women's Team,八強,Tokyo Metropolitan Gymnasium Table 2,OFFICIAL,Japan,JPN,3-0,,,勝,TTE
+TTE-men-s-team-qfnl-00040000,2021-08-03,14:30,桌球,Men's Team,八強,Tokyo Metropolitan Gymnasium Table 2,OFFICIAL,Chinese Taipei,TPE,2-3,,,負,TTE
+TTE-men-s-team-qfnl-00040000,2021-08-03,14:30,桌球,Men's Team,八強,Tokyo Metropolitan Gymnasium Table 2,OFFICIAL,Germany,GER,3-2,,,勝,TTE
+EQU-jumping-individual-qual-000100,2021-08-03,19:00,馬術,Jumping Individual,資格賽,Equestrian Park,OFFICIAL,CHEN Jasmine Shao-Man,TPE,罰 9 分，91.01 秒,47,,,EQU
+ATH-men-s-110m-hurdles-rnd1-000400,2021-08-03,19:34,田徑,Men's 110m Hurdles,第 1 輪第 4 組,Olympic Stadium - Track,OFFICIAL,CHEN Kuei-Ru,TPE,13.53,5,,,ATH
+GOL-women-s-individual-stroke-play-fnl-000100,2021-08-04,07:30,高爾夫,Women's Individual Stroke Play,第 1 輪,Kasumigaseki Country Club,OFFICIAL,HSU Wei-Ling,TPE,69 桿,,,,GOL
+GOL-women-s-individual-stroke-play-fnl-000100,2021-08-04,07:30,高爾夫,Women's Individual Stroke Play,第 1 輪,Kasumigaseki Country Club,OFFICIAL,LEE Min,TPE,69 桿,,,,GOL
+ATH-men-s-javelin-throw-qual-a00100,2021-08-04,09:05,田徑,Men's Javelin Throw,資格賽 A 組,Olympic Stadium - Long Throws,OFFICIAL,HUANG Shih-Feng,TPE,77.16,14,,,ATH
+ATH-men-s-javelin-throw-qual-b00100,2021-08-04,10:35,田徑,Men's Javelin Throw,資格賽 B 組,Olympic Stadium - Long Throws,OFFICIAL,CHENG Chao-Tsun,TPE,71.20,15,,,ATH
+ATH-men-s-110m-hurdles-sfnl-000200,2021-08-04,11:08,田徑,Men's 110m Hurdles,準決賽第 2 組,Olympic Stadium - Track,OFFICIAL,CHEN Kuei-Ru,TPE,13.57,6,,,ATH
+WLF-men-s--plus-109kg-fnl-b00100,2021-08-04,13:50,舉重,Men's +109kg,B 組,Tokyo International Forum,OFFICIAL,HSIEH Yun-Ting,TPE,378 公斤（抓舉 172、挺舉 206）,12,,,WLF
+BOX-women-s-fly-48-51kg-sfnl-000100,2021-08-04,14:00,拳擊,Women's Fly (48-51kg),四強,Kokugikan Arena,OFFICIAL,CAKIROGLU Buse Naz,TUR,5-0,,,勝,BOX
+BOX-women-s-fly-48-51kg-sfnl-000100,2021-08-04,14:00,拳擊,Women's Fly (48-51kg),四強,Kokugikan Arena,OFFICIAL,HUANG Hsiao-Wen,TPE,0-5,,銅,負,BOX
+GOL-women-s-individual-stroke-play-fnl-000200,2021-08-05,07:30,高爾夫,Women's Individual Stroke Play,第 2 輪,Kasumigaseki Country Club,OFFICIAL,HSU Wei-Ling,TPE,69 桿,,,,GOL
+GOL-women-s-individual-stroke-play-fnl-000200,2021-08-05,07:30,高爾夫,Women's Individual Stroke Play,第 2 輪,Kasumigaseki Country Club,OFFICIAL,LEE Min,TPE,69 桿,,,,GOL
+KTE-women-s-kumite-55kg-gpa-000200,2021-08-05,,空手道,Women's Kumite -55kg,分組賽 A 組,Nippon Budokan,OFFICIAL,WEN Tzuyun,TPE,2-5,,,負,KTE
+KTE-women-s-kumite-55kg-gpa-000200,2021-08-05,,空手道,Women's Kumite -55kg,分組賽 A 組,Nippon Budokan,OFFICIAL,GORANOVA Ivet,BUL,5-2,,,勝,KTE
+KTE-women-s-kumite-55kg-gpa-000400,2021-08-05,,空手道,Women's Kumite -55kg,分組賽 A 組,Nippon Budokan,OFFICIAL,WEN Tzuyun,TPE,5-1,,,勝,KTE
+KTE-women-s-kumite-55kg-gpa-000400,2021-08-05,,空手道,Women's Kumite -55kg,分組賽 A 組,Nippon Budokan,OFFICIAL,BAHMANYAR Sara,IRI,1-5,,,負,KTE
+KTE-women-s-kumite-55kg-gpa-000600,2021-08-05,,空手道,Women's Kumite -55kg,分組賽 A 組,Nippon Budokan,OFFICIAL,OZCELIK ARAPOGLU Serap,TUR,4-5,,,負,KTE
+KTE-women-s-kumite-55kg-gpa-000600,2021-08-05,,空手道,Women's Kumite -55kg,分組賽 A 組,Nippon Budokan,OFFICIAL,WEN Tzuyun,TPE,5-4,,,勝,KTE
+KTE-women-s-kumite-55kg-sfnl-000200,2021-08-05,,空手道,Women's Kumite -55kg,四強,Nippon Budokan,OFFICIAL,TERLIUGA Anzhelika,UKR,4-4,,,勝,KTE
+KTE-women-s-kumite-55kg-sfnl-000200,2021-08-05,,空手道,Women's Kumite -55kg,四強,Nippon Budokan,OFFICIAL,WEN Tzuyun,TPE,4-4,,銅,負,KTE
+GOL-women-s-individual-stroke-play-fnl-000300,2021-08-06,07:30,高爾夫,Women's Individual Stroke Play,第 3 輪,Kasumigaseki Country Club,OFFICIAL,LEE Min,TPE,72 桿,,,,GOL
+GOL-women-s-individual-stroke-play-fnl-000300,2021-08-06,07:30,高爾夫,Women's Individual Stroke Play,第 3 輪,Kasumigaseki Country Club,OFFICIAL,HSU Wei-Ling,TPE,71 桿,,,,GOL
+KTE-men-s-kata-elim-pool-b,2021-08-06,10:00,空手道,Men's Kata,分組賽 B 組,Nippon Budokan,OFFICIAL,WANG Yi-Ta,TPE,24.97（第一套 25.00，第二套 24.94）,5,,,KTE
+GOL-women-s-individual-stroke-play-fnl-000400,2021-08-07,06:30,高爾夫,Women's Individual Stroke Play,第 4 輪,Kasumigaseki Country Club,OFFICIAL,LEE Min,TPE,72 桿，累計 282 桿（-2）,34,,,GOL
+GOL-women-s-individual-stroke-play-fnl-000400,2021-08-07,06:30,高爾夫,Women's Individual Stroke Play,第 4 輪,Kasumigaseki Country Club,OFFICIAL,HSU Wei-Ling,TPE,66 桿，累計 275 桿（-9）,15,,,GOL

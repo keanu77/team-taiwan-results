@@ -1,0 +1,26 @@
+{
+  "name": "2020 東京奧運",
+  "startDate": "2021-07-21",
+  "endDate": "2021-08-08",
+  "timeZone": "Asia/Tokyo",
+  "timeZoneLabel": "日本",
+  "viewerTimeZone": "Asia/Taipei",
+  "viewerTimeZoneLabel": "台灣",
+  "team": {
+    "noc": "TPE",
+    "label": "中華台北",
+    "aliases": [
+      "Chinese Taipei"
+    ]
+  },
+  "source": {
+    "type": "manual",
+    "code": "OG2020",
+    "webUrl": "https://olympics.com/en/olympic-games/tokyo-2020"
+  },
+  "syncIntervalMinutes": 30,
+  "teamMedals": {
+    "source": "代表團得牌名單",
+    "updatedAt": "2026-10-08T03:30:00+08:00"
+  }
+}
