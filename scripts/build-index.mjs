@@ -58,8 +58,10 @@ footer{margin-top:32px;font-size:.8rem;color:var(--muted)}footer a{color:inherit
 `;
 
 writeFileSync(join(siteDir, "index.html"), html);
-// GitHub Pages 找不到網址時顯示根目錄的 404.html
-writeFileSync(join(siteDir, "404.html"), html.replace("<title>賽程與賽果追蹤</title>", "<title>找不到頁面｜賽程與賽果追蹤</title>")
+// GitHub Pages 找不到網址時顯示根目錄的 404.html。它會出現在任何深度的網址下（例如 /og2020/），
+// 相對連結要以網站根目錄為準，否則點下去會變成 /og2020/og2024/
+const base = `${(process.env.BASE_PATH ?? "").replace(/\/+$/, "")}/`;
+writeFileSync(join(siteDir, "404.html"), html.replace("<head>", `<head>\n<base href="${escape(base)}">`).replace("<title>賽程與賽果追蹤</title>", "<title>找不到頁面｜賽程與賽果追蹤</title>")
   .replace(/<meta http-equiv="refresh"[^>]*>/, "")
   .replace(/<p class="lead">[^<]*<\/p>/, '<p class="lead">找不到這個頁面，請從下面選擇賽事。</p>'));
 console.log(`[index] ${events.length} 個賽事：${events.map((e) => e.id).join("、")}`);
