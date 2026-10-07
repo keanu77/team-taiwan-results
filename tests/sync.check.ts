@@ -70,6 +70,11 @@ assert.deepEqual(final.competitors.map((c) => [c.medal, c.outcome]), [["GOLD", "
 const skate = manual.get("2026-09-21")![0];
 assert.equal(skate.discipline, "SPORT:滑板", "unknown sports get their own group, independent of row order");
 assert.equal(skate.timeNote, "時間待定");
+const followed = parseManualResults(manualCsv.replace("XYZ-1,2026-09-21,,", "XYZ-1,2026-09-21,接續前場,")).get("2026-09-21")![0];
+assert.deepEqual([followed.startsAt, followed.timeNote], [null, "接續前場"], "official 'followed by' slots keep their meaning instead of 時間待定");
+const anchored = parseManualResults(manualCsv.replace("XYZ-1,2026-09-21,,", "XYZ-1,2026-09-21,09:30 接續前場,")).get("2026-09-21")![0];
+assert.deepEqual([anchored.startsAt, anchored.timeNote], [hostTimeToIso("2026-09-21", "09:30"), "接續前場"], "a leading time only anchors the order");
+assert.throws(() => parseManualResults(manualCsv.replace("XYZ-1,2026-09-21,,", "XYZ-1,2026-09-21,25:00 接續前場,")), /time 格式/);
 assert.throws(() => parseManualResults(manualCsv.replace("正式成績,CHOU", "好像贏了,CHOU")), /第 2 列：status 不認得/);
 assert.throws(() => parseManualResults(manualCsv.replace("2026-09-21", "2027-01-01")), /第 4 列：date/);
 assert.throws(() => parseManualResults(manualCsv.replace("正式成績,SHI", "進行中,SHI")), /同一個 unit_id/);

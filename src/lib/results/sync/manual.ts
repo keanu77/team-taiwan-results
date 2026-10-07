@@ -11,6 +11,7 @@ import type { SyncSummary } from "./run";
 
 export const MANUAL_COLUMNS = ["unit_id", "date", "time", "sport", "event", "phase", "venue", "status", "name", "organisation", "result", "rank", "medal", "outcome", "discipline"] as const;
 const REQUIRED = ["unit_id", "date", "sport", "event", "status", "name", "organisation"] as const;
+const FOLLOWS_PREVIOUS = "接續前場";
 
 const STATUS_BY_LABEL: Record<string, string> = Object.fromEntries(Object.entries(STATUS_LABELS).map(([code, label]) => [label, code]));
 const MEDALS: Record<string, string> = { 金: "GOLD", 金牌: "GOLD", GOLD: "GOLD", 銀: "SILVER", 銀牌: "SILVER", SILVER: "SILVER", 銅: "BRONZE", 銅牌: "BRONZE", BRONZE: "BRONZE" };
@@ -52,7 +53,12 @@ export function parseManualResults(text: string): Map<string, TpeResultUnit[]> {
     const line = index + 2;
     if (!/^[A-Za-z0-9._-]{1,80}$/.test(row.unit_id)) fail(line, "unit_id 只能用英數字、點、底線、減號");
     if (!/^\d{4}-\d{2}-\d{2}$/.test(row.date) || row.date < CONFIG.startDate || row.date > CONFIG.endDate) fail(line, `date 須在 ${CONFIG.startDate}–${CONFIG.endDate}`);
-    if (row.time && !/^([01]\d|2[0-3]):[0-5]\d$/.test(row.time)) fail(line, "time 格式是 HH:MM（主辦地時間）");
+    // 「接續前場」：官方只寫接在前一場之後（Followed by），沒有開賽時間。
+    // 可在前面加前一場的時間（「09:30 接續前場」），只用來排序，畫面仍顯示接續前場
+    const time = row.time?.match(/^(?:(([01]\d|2[0-3]):[0-5]\d) )?(接續前場)$|^(([01]\d|2[0-3]):[0-5]\d)$/);
+    if (row.time && !time) fail(line, `time 格式是 HH:MM（主辦地時間），或填「${FOLLOWS_PREVIOUS}」「HH:MM ${FOLLOWS_PREVIOUS}」`);
+    const followsPrevious = Boolean(time?.[3]);
+    const clock = time?.[1] ?? time?.[4] ?? "";
     const status = STATUS_LABELS[row.status.toUpperCase()] ? row.status.toUpperCase() : STATUS_BY_LABEL[row.status];
     if (!status) fail(line, `status 不認得：${row.status}（可填 ${Object.values(STATUS_LABELS).slice(0, 6).join("、")}…）`);
     const medal = row.medal ? MEDALS[row.medal.toUpperCase()] : "";
@@ -70,7 +76,7 @@ export function parseManualResults(text: string): Map<string, TpeResultUnit[]> {
     if (existing && (existing.date !== row.date || existing.event !== row.event || existing.status !== status)) fail(line, `同一個 unit_id（${row.unit_id}）的日期、項目、狀態要一致`);
     const unit = existing ?? {
       id, date: row.date, discipline, sport: row.sport, event: row.event, phase: row.phase ?? "", unit: "",
-      startsAt: row.time ? hostTimeToIso(row.date, row.time) : null, timeNote: row.time ? "" : "時間待定",
+      startsAt: clock ? hostTimeToIso(row.date, clock) : null, timeNote: followsPrevious ? FOLLOWS_PREVIOUS : row.time ? "" : "時間待定",
       venue: row.venue ?? "", status, statusLabel: STATUS_LABELS[status], headToHead: false, competitors: [],
       sourceUrl: `${CONFIG.source.webUrl}/`, detailAvailable: true,
     };

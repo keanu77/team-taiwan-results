@@ -135,6 +135,13 @@ const r16m6 = round("AG2026:BDM:X.DOUBLES.8FNL.000600--", "2nd Round", "Match 6"
 const timed = unit({ id: "AG2026:BDM:X.DOUBLES.QFNL.000100--", phase: "Quarterfinals", unit: "Match 1", startsAt: "2026-09-25T05:00:00Z", scheduleDate: "2026-09-25" });
 assert.deepEqual([r16m6, r32m12, timed, r32m4].sort(compareSchedule).map((u) => u.id), [timed.id, r32m4.id, r32m12.id, r16m6.id], "known times first, then bracket round, then match number");
 assert.deepEqual([round("b", "Round of 16", "Match 1", { scheduleDate: "2026-09-26" }), r16m6].sort(compareSchedule).map((u) => u.id), [r16m6.id, "b"], "schedule date wins over round");
+// 手動成績的「接續前場」可帶前一場時間當排序錨點（官方即時來源的佔位時間不採用）
+const manualFollow = (id: string, startsAt: string) => unit({ id: `OG2020:MANUAL:${id}`, phase: "32 強", unit: "", startsAt, timeNote: "接續前場", scheduleDate: "2021-07-24" });
+const morning = manualFollow("JUD-r32", "2021-07-24T01:14:00Z");
+const nextFollow = manualFollow("JUD-8fnl", "2021-07-24T01:15:00Z");
+const evening = unit({ id: "OG2020:MANUAL:JUD-rep1", phase: "復活賽", unit: "", startsAt: "2021-07-24T08:00:00Z", scheduleDate: "2021-07-24" });
+assert.deepEqual([evening, nextFollow, morning].sort(compareSchedule).map((u) => u.id), [morning.id, nextFollow.id, evening.id], "manual follow-on slots sort by their anchor time");
+assert.equal(summarizeSport([{ ...morning, status: "SCHEDULED" }]).featured?.timeKnown, false, "an anchor is never shown as a start time");
 
 const stagesOf = (...phases: string[]) => summarizeSport(phases.map((phase, i) => unit({ id: `stage-${i}`, phase }))).stages;
 assert.deepEqual(stagesOf("Round of 16", "Quarterfinals", "Round of 32"), ["三十二強賽", "十六強賽", "八強賽"], "stages follow the bracket, not feed order");

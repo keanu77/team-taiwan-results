@@ -56,7 +56,7 @@ export function ResultDetails({ unit }: { unit: TpeResultUnit }) {
             <p className="font-medium text-gray-900">{CONFIG.timeZoneLabel} <time dateTime={unit.startsAt}>{formatResultTime(unit.startsAt)}</time></p>
             {CONFIG.viewerTimeZone !== CONFIG.timeZone && <p className="text-gray-600">{CONFIG.viewerTimeZoneLabel} <time dateTime={unit.startsAt}>{formatResultTime(unit.startsAt, CONFIG.viewerTimeZone)}</time></p>}
           </div>
-        ) : <p className="font-medium text-gray-700">{followsPrevious ? "接續前場，開賽時間未定" : "開賽時間待確認"}</p>}
+        ) : <p className="font-medium text-gray-700">{followsPrevious ? "接續前場，官方未列開賽時間" : "開賽時間待確認"}</p>}
         {unit.timeNote && <p className="mt-1 text-xs text-gray-600 [overflow-wrap:anywhere]">時間註記：{displayTpe(unit.timeNote)}</p>}
         <p className="mt-1 text-xs text-gray-500 [overflow-wrap:anywhere]">場館：{displayTpe(unit.venue) || "待公布"}</p>
       </div>

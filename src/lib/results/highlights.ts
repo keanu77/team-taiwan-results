@@ -227,8 +227,18 @@ function matchNumber(unit: TpeResultUnit): number {
   const number = unit.unit.match(/(\d+)\s*$/);
   return number ? Number(number[1]) : 0;
 }
+/**
+ * 排序用時間。手動成績的「接續前場」可帶前一場時間當錨點（manual.csv 的「09:30 接續前場」），
+ * 只用來排序、不顯示；官方即時來源的接續場次可能帶佔位時間，不採用。
+ */
+function sortTime(unit: TpeResultUnit): number {
+  const known = knownTime(unit);
+  if (known !== null) return known;
+  const anchor = unit.id.includes(":MANUAL:") && unit.startsAt ? Date.parse(unit.startsAt) : NaN;
+  return Number.isFinite(anchor) ? anchor : Infinity;
+}
 function byTime(a: TpeResultUnit, b: TpeResultUnit): number {
-  return (knownTime(a) ?? Infinity) - (knownTime(b) ?? Infinity) || unitStageRank(a) - unitStageRank(b) || matchNumber(a) - matchNumber(b) || a.id.localeCompare(b.id);
+  return sortTime(a) - sortTime(b) || unitStageRank(a) - unitStageRank(b) || matchNumber(a) - matchNumber(b) || a.id.localeCompare(b.id);
 }
 
 /** 場次顯示順序：日期 → 已知開賽時間 → 賽制輪次 → 場序。「接續前場」沒有時間，只能依輪次與場序推定。 */
