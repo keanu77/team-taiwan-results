@@ -1,5 +1,5 @@
 import assert from "node:assert/strict";
-import { convertArchiveUnit, splitEventPhase } from "../src/lib/results/import/olympicsArchive";
+import { convertArchiveUnit, splitEventPhase, splitTitle } from "../src/lib/results/import/olympicsArchive";
 
 // 精簡自 2024 巴黎奧運官方逐場 JSON（Wayback 存檔）
 const team = (name: string, code: string) => ({ name, organisation: { code } });
@@ -74,4 +74,24 @@ assert.deepEqual(convertArchiveUnit(unit("TTEMTEAM--------------QFNL00030002", "
 assert.equal(convertArchiveUnit(unit("TTEMTEAM--------------QFNL00030000", "Men's Team Quarterfinal", "Quarterfinal", [
   { resultData: "1", resultWLT: "L", participant: team("Chinese Taipei", "TPE") }, { resultData: "3", resultWLT: "W", participant: team("Sweden", "SWE") },
 ]), "TPE").rows.length, 2, "the team match itself is kept");
+// 東京奧運每日賽程頁只有一行標題
+for (const [title, h2h, event, phase] of [
+  ["Men -60 kg Semifinal of Table A", true, "Men -60 kg", "四強"],
+  ["Women's Fly (48-51kg) Quarterfinal 2", true, "Women's Fly (48-51kg)", "八強"],
+  ["Mixed Doubles Quarterfinal 1", true, "Mixed Doubles", "八強"],
+  ["Women's Single Sculls Quarterfinal 4", false, "Women's Single Sculls", "八強賽第 4 組"],
+  ["Women's Single Sculls Semifinal C/D 2", false, "Women's Single Sculls", "準決賽 C/D 第 2 組"],
+  ["Women's Single Sculls Final D", false, "Women's Single Sculls", "D 組決賽"],
+  ["Women's Single Sculls Repechage 1", false, "Women's Single Sculls", "復活賽第 1 組"],
+  ["Women's Kumite -55kg Elimination Round - Pool A", true, "Women's Kumite -55kg", "分組賽 A 組"],
+  ["Women's 49kg Group A", false, "Women's 49kg", "A 組"],
+  ["Jumping Individual Qualifier", false, "Jumping Individual", "資格賽"],
+  ["Men's Individual Stroke Play Bronze Medal Play-off", false, "Men's Individual Stroke Play", "銅牌延長賽"],
+  ["Women -57kg Bronze Medal Contests", true, "Women -57kg", "銅牌戰"],
+  ["Men's Singles Round 3", true, "Men's Singles", "第 3 輪"],
+  ["10m Air Rifle Mixed Team Qualification Stage 1", false, "10m Air Rifle Mixed Team", "資格賽第 1 階段"],
+  ["Men's Individual 1/16 Eliminations", true, "Men's Individual", "32 強"],
+  ["Men's Road Race", false, "Men's Road Race", "決賽"],
+  ["Men's Pommel Horse Final", false, "Men's Pommel Horse", "決賽"],
+] as const) assert.deepEqual(splitTitle(title, h2h), { event, phase, known: true }, title);
 console.info("PASS olympics archive: head-to-head scores and medals, boxing bronze, rank-based finals, ranking rounds, non-official units, phase labels");
