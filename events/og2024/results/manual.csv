@@ -1,0 +1,227 @@
+﻿unit_id,date,time,sport,event,phase,venue,status,name,organisation,result,rank,medal,outcome,discipline
+ARCWINDIVID-QUAL000100,2024-07-25,09:30,射箭,Women's Individual,排名賽,Invalides,OFFICIAL,LEI Chien-Ying,TPE,652,29,,,ARC
+ARCWINDIVID-QUAL000100,2024-07-25,09:30,射箭,Women's Individual,排名賽,Invalides,OFFICIAL,LI Tsai-Chi,TPE,646,40,,,ARC
+ARCWINDIVID-QUAL000100,2024-07-25,09:30,射箭,Women's Individual,排名賽,Invalides,OFFICIAL,CHIU Yi-Ching,TPE,628,53,,,ARC
+ARCWTEAM3-QUAL000100,2024-07-25,09:30,射箭,Women's Team,排名賽,Invalides,OFFICIAL,Chinese Taipei,TPE,1926,9,,,ARC
+ARCMINDIVID-QUAL000100,2024-07-25,14:15,射箭,Men's Individual,排名賽,Invalides,OFFICIAL,TAI Yu-Hsuan,TPE,665,24,,,ARC
+ARCMINDIVID-QUAL000100,2024-07-25,14:15,射箭,Men's Individual,排名賽,Invalides,OFFICIAL,TANG Chih-Chun,TPE,665,25,,,ARC
+ARCMINDIVID-QUAL000100,2024-07-25,14:15,射箭,Men's Individual,排名賽,Invalides,OFFICIAL,LIN Zih-Siang,TPE,662,32,,,ARC
+ARCMTEAM3-QUAL000100,2024-07-25,14:15,射箭,Men's Team,排名賽,Invalides,OFFICIAL,Chinese Taipei,TPE,1992,5,,,ARC
+ARCXTEAM2-QUAL000100,2024-07-25,14:15,射箭,Mixed Team,排名賽,Invalides,OFFICIAL,Chinese Taipei,TPE,1317,16,,,ARC
+JUDM60KG-8FNL000100,2024-07-27,10:54,柔道,Men -60 kg,16 強,Champ-de-Mars Arena,OFFICIAL,YANG Yung Wei,TPE,10-1,,,勝,JUD
+JUDM60KG-8FNL000100,2024-07-27,10:54,柔道,Men -60 kg,16 強,Champ-de-Mars Arena,OFFICIAL,CARLINO Andrea,ITA,1-10,,,負,JUD
+JUDW48KG-R32-001400,2024-07-27,11:12,柔道,Women -48 kg,32 強,Champ-de-Mars Arena,OFFICIAL,LIN Chen-Hao,TPE,10-0,,,勝,JUD
+JUDW48KG-R32-001400,2024-07-27,11:12,柔道,Women -48 kg,32 強,Champ-de-Mars Arena,OFFICIAL,LASSO Erika,COL,0-10,,,負,JUD
+JUDM60KG-QFNL000100,2024-07-27,11:42,柔道,Men -60 kg,八強,Champ-de-Mars Arena,OFFICIAL,YANG Yung Wei,TPE,0-1,,,負,JUD
+JUDM60KG-QFNL000100,2024-07-27,11:42,柔道,Men -60 kg,八強,Champ-de-Mars Arena,OFFICIAL,SMETOV Yeldos,KAZ,1-0,,,勝,JUD
+JUDW48KG-8FNL000700,2024-07-27,12:06,柔道,Women -48 kg,16 強,Champ-de-Mars Arena,OFFICIAL,ABUZHAKYNOVA Abiba,KAZ,10-0,,,勝,JUD
+JUDW48KG-8FNL000700,2024-07-27,12:06,柔道,Women -48 kg,16 強,Champ-de-Mars Arena,OFFICIAL,LIN Chen-Hao,TPE,0-10,,,負,JUD
+SHOWAPW-QUAL000100,2024-07-27,12:30,射擊,10m Air Pistol Women's,資格賽,Chateauroux Shooting Ctr,OFFICIAL,LIU Heng Yu,TPE,573,13,,,SHO
+SHOWAPW-QUAL000100,2024-07-27,12:30,射擊,10m Air Pistol Women's,資格賽,Chateauroux Shooting Ctr,OFFICIAL,YU Ai Wen,TPE,564,35,,,SHO
+BDMXDOUBLES-GPC-000200,2024-07-27,14:00,羽球,Mixed Doubles,分組賽 C 組,La Chapelle Arena,OFFICIAL,TANG Chun Man / TSE Ying Suet,HKG,"2-0（21-13, 21-13）",,,勝,BDM
+BDMXDOUBLES-GPC-000200,2024-07-27,14:00,羽球,Mixed Doubles,分組賽 C 組,La Chapelle Arena,OFFICIAL,YE Hong Wei / LEE Chia Hsin,TPE,"0-2（13-21, 13-21）",,,負,BDM
+BOXW54KG-R32-000200,2024-07-27,15:30,拳擊,Women's 54kg,32 強,North Paris Arena,OFFICIAL,HUANG Hsiao Wen,TPE,5-0（點數判定）,,,勝,BOX
+BOXW54KG-R32-000200,2024-07-27,15:30,拳擊,Women's 54kg,32 強,North Paris Arena,OFFICIAL,GOJKOVIC Bojana,MNE,0-5（點數判定）,,,負,BOX
+CSLWK1-HEAT000100,2024-07-27,16:00,CSL,Women's Kayak Single,預賽第 1 趟,Nautical St - White water,OFFICIAL,CHANG Chu-Han,TPE,109.92,22,,,CSL
+JUDM60KG-REP1000100,2024-07-27,16:24,柔道,Men -60 kg,復活賽,Champ-de-Mars Arena,OFFICIAL,YANG Yung Wei,TPE,0-1,,,負,JUD
+JUDM60KG-REP1000100,2024-07-27,16:24,柔道,Men -60 kg,復活賽,Champ-de-Mars Arena,OFFICIAL,NAGAYAMA Ryuju,JPN,1-0,,,勝,JUD
+BOXW60KG-R32-000700,2024-07-27,16:50,拳擊,Women's 60kg,32 強,North Paris Arena,OFFICIAL,WU Shih Yi,TPE,5-0（點數判定）,,,勝,BOX
+BOXW60KG-R32-000700,2024-07-27,16:50,拳擊,Women's 60kg,32 強,North Paris Arena,OFFICIAL,OH Yeonji,KOR,0-5（點數判定）,,,負,BOX
+CSLWK1-HEAT000200,2024-07-27,18:10,CSL,Women's Kayak Single,預賽第 2 趟,Nautical St - White water,OFFICIAL,CHANG Chu-Han,TPE,117.93,24,,,CSL
+BDMMDOUBLES-GPD-000200,2024-07-27,21:10,羽球,Men's Doubles,分組賽 D 組,La Chapelle Arena,OFFICIAL,HOKI Takuro / KOBAYASHI Yugo,JPN,"0-2（16-21, 10-21）",,,負,BDM
+BDMMDOUBLES-GPD-000200,2024-07-27,21:10,羽球,Men's Doubles,分組賽 D 組,La Chapelle Arena,OFFICIAL,LEE Yang / WANG Chi-Lin,TPE,"2-0（21-16, 21-10）",,,勝,BDM
+GARM1APHB-QUAL000003,2024-07-27,22:07,競技體操,Men's Horizontal Bar,資格賽第 3 組,,OFFICIAL,TANG Chia-Hung,TPE,14.933,,,,GAR
+BDMWSINGLES-GPE-000100,2024-07-28,09:20,羽球,Women's Singles,分組賽 E 組,La Chapelle Arena,OFFICIAL,TAI Tzu Ying,TPE,"2-0（21-15, 21-14）",,,勝,BDM
+BDMWSINGLES-GPE-000100,2024-07-28,09:20,羽球,Women's Singles,分組賽 E 組,La Chapelle Arena,OFFICIAL,TAN Lianne,BEL,"0-2（15-21, 14-21）",,,負,BDM
+ARCWTEAM3-8FNL000200,2024-07-28,09:30,射箭,Women's Team,16 強,Invalides,OFFICIAL,Chinese Taipei,TPE,5-1,,,勝,ARC
+ARCWTEAM3-8FNL000200,2024-07-28,09:30,射箭,Women's Team,16 強,Invalides,OFFICIAL,United States of America,USA,1-5,,,負,ARC
+TTEMSINGLES-R64-000300,2024-07-28,10:45,桌球,Men's Singles,64 強,South Paris Arena 4,OFFICIAL,KAO Cheng-Jui,TPE,4-1,,,勝,TTE
+TTEMSINGLES-R64-000300,2024-07-28,10:45,桌球,Men's Singles,64 強,South Paris Arena 4,OFFICIAL,ALAMIAN Nima,IRI,1-4,,,負,TTE
+TENWDOUBLES-R32-000300,2024-07-28,12:00,網球,Women's Doubles,第 1 輪,Roland-Garros Stadium,OFFICIAL,BEGU Irina-Camelia / NICULESCU Monica,ROU,0-2,,,負,TEN
+TENWDOUBLES-R32-000300,2024-07-28,12:00,網球,Women's Doubles,第 1 輪,Roland-Garros Stadium,OFFICIAL,HSIEH Su-Wei / TSAO Chia Yi,TPE,2-0,,,勝,TEN
+TTEWSINGLES-R64-000800,2024-07-28,13:00,桌球,Women's Singles,64 強,South Paris Arena 4,OFFICIAL,HANFFOU Sarah,CMR,0-4,,,負,TTE
+TTEWSINGLES-R64-000800,2024-07-28,13:00,桌球,Women's Singles,64 強,South Paris Arena 4,OFFICIAL,CHENG I-Ching,TPE,4-0,,,勝,TTE
+ARCWTEAM3-QFNL000100,2024-07-28,14:38,射箭,Women's Team,八強,Invalides,OFFICIAL,Republic of Korea,KOR,6-2,,,勝,ARC
+ARCWTEAM3-QFNL000100,2024-07-28,14:38,射箭,Women's Team,八強,Invalides,OFFICIAL,Chinese Taipei,TPE,2-6,,,負,ARC
+BDMMSINGLES-GPI-000100,2024-07-28,16:30,羽球,Men's Singles,分組賽 I 組,La Chapelle Arena,OFFICIAL,CHOU Tien Chen,TPE,"2-0（21-17, 21-13）",,,勝,BDM
+BDMMSINGLES-GPI-000100,2024-07-28,16:30,羽球,Men's Singles,分組賽 I 組,La Chapelle Arena,OFFICIAL,GARRIDO Luis Ramon,MEX,"0-2（17-21, 13-21）",,,負,BDM
+TTEXDOUBLES-QFNL000100,2024-07-28,17:00,桌球,Mixed Doubles,八強,South Paris Arena 4,OFFICIAL,WANG Chuqin / SUN Yingsha,CHN,4-2,,,勝,TTE
+TTEXDOUBLES-QFNL000100,2024-07-28,17:00,桌球,Mixed Doubles,八強,South Paris Arena 4,OFFICIAL,LIN Yun-Ju / CHEN Szu-Yu,TPE,2-4,,,負,TTE
+TTEMSINGLES-R64-002400,2024-07-28,20:00,桌球,Men's Singles,64 強,South Paris Arena 4,OFFICIAL,AFANADOR Brian,PUR,1-4,,,負,TTE
+TTEMSINGLES-R64-002400,2024-07-28,20:00,桌球,Men's Singles,64 強,South Paris Arena 4,OFFICIAL,LIN Yun-Ju,TPE,4-1,,,勝,TTE
+BDMMDOUBLES-GPD-000400,2024-07-28,20:20,羽球,Men's Doubles,分組賽 D 組,La Chapelle Arena,OFFICIAL,ASTRUP Kim / RASMUSSEN Anders Skaarup,DEN,"1-2（15-21, 21-19, 15-21）",,,負,BDM
+BDMMDOUBLES-GPD-000400,2024-07-28,20:20,羽球,Men's Doubles,分組賽 D 組,La Chapelle Arena,OFFICIAL,LEE Yang / WANG Chi-Lin,TPE,"2-1（21-15, 19-21, 21-15）",,,勝,BDM
+BDMXDOUBLES-GPC-000600,2024-07-28,21:10,羽球,Mixed Doubles,分組賽 C 組,La Chapelle Arena,OFFICIAL,WATANABE Yuta / HIGASHINO Arisa,JPN,"2-0（21-14, 21-13）",,,勝,BDM
+BDMXDOUBLES-GPC-000600,2024-07-28,21:10,羽球,Mixed Doubles,分組賽 C 組,La Chapelle Arena,OFFICIAL,YE Hong Wei / LEE Chia Hsin,TPE,"0-2（14-21, 13-21）",,,負,BDM
+BOXW66KG-R32-001000,2024-07-28,21:36,拳擊,Women's 66kg,32 強,North Paris Arena,OFFICIAL,MORONTA HERNANDEZ Maria Altagracia,DOM,1-4（點數判定）,,,負,BOX
+BOXW66KG-R32-001000,2024-07-28,21:36,拳擊,Women's 66kg,32 強,North Paris Arena,OFFICIAL,CHEN Nien Chin,TPE,4-1（點數判定）,,,勝,BOX
+FENMFOIL-R64-001000,2024-07-29,09:25,擊劍,Men's Foil Individual,64 強,Grand Palais,OFFICIAL,CHEN Yi-Tung,TPE,15-13,,,勝,FEN
+FENMFOIL-R64-001000,2024-07-29,09:25,擊劍,Men's Foil Individual,64 強,Grand Palais,OFFICIAL,WAKIM Philippe,LBN,13-15,,,負,FEN
+SHOMTRM-QUAL000100,2024-07-29,09:30,射擊,Trap Men's,資格賽第 1 天,Chateauroux Shooting Ctr,OFFICIAL,YANG Kun-Pi,TPE,72,11,,,SHO
+ARCMTEAM3-8FNL000300,2024-07-29,09:53,射箭,Men's Team,16 強,Invalides,OFFICIAL,Chinese Taipei,TPE,6-0,,,勝,ARC
+ARCMTEAM3-8FNL000300,2024-07-29,09:53,射箭,Men's Team,16 強,Invalides,OFFICIAL,Great Britain,GBR,0-6,,,負,ARC
+JUDW57KG-R32-000400,2024-07-29,10:12,柔道,Women -57 kg,32 強,Champ-de-Mars Arena,OFFICIAL,KOROMA Mariama,SLE,0-10,,,負,JUD
+JUDW57KG-R32-000400,2024-07-29,10:12,柔道,Women -57 kg,32 強,Champ-de-Mars Arena,OFFICIAL,LIEN Chen-Ling,TPE,10-0,,,勝,JUD
+JUDW57KG-8FNL000200,2024-07-29,11:18,柔道,Women -57 kg,16 強,Champ-de-Mars Arena,OFFICIAL,PERISIC Marica,SRB,1-0,,,勝,JUD
+JUDW57KG-8FNL000200,2024-07-29,11:18,柔道,Women -57 kg,16 強,Champ-de-Mars Arena,OFFICIAL,LIEN Chen-Ling,TPE,0-1,,,負,JUD
+TTEWSINGLES-R64-002300,2024-07-29,12:00,桌球,Women's Singles,64 強,South Paris Arena 4,OFFICIAL,CHIEN Tung-Chuan,TPE,0-4,,,負,TTE
+TTEWSINGLES-R64-002300,2024-07-29,12:00,桌球,Women's Singles,64 強,South Paris Arena 4,OFFICIAL,ZHU Chengzhu,HKG,4-0,,,勝,TTE
+FENMFOIL-R32-000500,2024-07-29,12:05,擊劍,Men's Foil Individual,32 強,Grand Palais,OFFICIAL,CHEN Yi-Tung,TPE,12-15,,,負,FEN
+FENMFOIL-R32-000500,2024-07-29,12:05,擊劍,Men's Foil Individual,32 強,Grand Palais,OFFICIAL,LEFORT Enzo,FRA,15-12,,,勝,FEN
+ARCMTEAM3-QFNL000200,2024-07-29,14:15,射箭,Men's Team,八強,Invalides,OFFICIAL,Chinese Taipei,TPE,1-5,,,負,ARC
+ARCMTEAM3-QFNL000200,2024-07-29,14:15,射箭,Men's Team,八強,Invalides,OFFICIAL,People's Republic of China,CHN,5-1,,,勝,ARC
+BOXW60KG-8FNL000400,2024-07-29,15:30,拳擊,Women's 60kg,16 強,North Paris Arena,OFFICIAL,WU Shih Yi,TPE,-（取消資格）,,,勝,BOX
+BOXW60KG-8FNL000400,2024-07-29,15:30,拳擊,Women's 60kg,16 強,North Paris Arena,OFFICIAL,OGUNSEMILORE Cynthia Temitayo,NGR,-（取消資格）,,,負,BOX
+TTEWSINGLES-R32-000400,2024-07-29,20:00,桌球,Women's Singles,32 強,South Paris Arena 4,OFFICIAL,SAMARA Elizabeta,ROU,2-4,,,負,TTE
+TTEWSINGLES-R32-000400,2024-07-29,20:00,桌球,Women's Singles,32 強,South Paris Arena 4,OFFICIAL,CHENG I-Ching,TPE,4-2,,,勝,TTE
+TTEMSINGLES-R32-000200,2024-07-29,21:00,桌球,Men's Singles,32 強,South Paris Arena 4,OFFICIAL,KAO Cheng-Jui,TPE,4-1,,,勝,TTE
+TTEMSINGLES-R32-000200,2024-07-29,21:00,桌球,Men's Singles,32 強,South Paris Arena 4,OFFICIAL,IONESCU Eduard,ROU,1-4,,,負,TTE
+BOXM63KG-8FNL000800,2024-07-29,21:04,拳擊,Men's 63.5kg,16 強,North Paris Arena,OFFICIAL,MUKHAMMEDSABYR Bazarbay Uulu,KAZ,3-2（點數判定）,,,勝,BOX
+BOXM63KG-8FNL000800,2024-07-29,21:04,拳擊,Men's 63.5kg,16 強,North Paris Arena,OFFICIAL,LAI Chu En,TPE,2-3（點數判定）,,,負,BOX
+SHOMTRM-QUAL000200,2024-07-30,09:00,射擊,Trap Men's,資格賽第 2 天,Chateauroux Shooting Ctr,OFFICIAL,YANG Kun-Pi,TPE,121,12,,,SHO
+SHOWTRW-QUAL000100,2024-07-30,09:00,射擊,Trap Women's,資格賽第 1 天,Chateauroux Shooting Ctr,OFFICIAL,LIU Wan-Yu,TPE,71,11,,,SHO
+SHOWTRW-QUAL000100,2024-07-30,09:00,射擊,Trap Women's,資格賽第 1 天,Chateauroux Shooting Ctr,OFFICIAL,LIN Yi Chun,TPE,65,28,,,SHO
+BDMMDOUBLES-GPD-000700,2024-07-30,11:00,羽球,Men's Doubles,分組賽 D 組,La Chapelle Arena,OFFICIAL,LEE Yang / WANG Chi-Lin,TPE,"2-0（21-12, 21-13）",,,勝,BDM
+BDMMDOUBLES-GPD-000700,2024-07-30,11:00,羽球,Men's Doubles,分組賽 D 組,La Chapelle Arena,OFFICIAL,CHIU Vinson / YUAN Joshua,USA,"0-2（12-21, 13-21）",,,負,BDM
+TTEMSINGLES-R32-001200,2024-07-30,11:00,桌球,Men's Singles,32 強,South Paris Arena 4,OFFICIAL,GACINA Andrej,CRO,0-4,,,負,TTE
+TTEMSINGLES-R32-001200,2024-07-30,11:00,桌球,Men's Singles,32 強,South Paris Arena 4,OFFICIAL,LIN Yun-Ju,TPE,4-0,,,勝,TTE
+SWMM200MBF-HEAT000200,2024-07-30,11:04,游泳,Men's 200m Butterfly,預賽第 2 組,Paris La Defense Arena,OFFICIAL,WANG Kuan-Hung,TPE,1:55.32,3,,,SWM
+ARCMINDIVID-R64-000600,2024-07-30,12:13,射箭,Men's Individual,64 強,Invalides,OFFICIAL,TEKONIEMI Antti,FIN,0-6,,,負,ARC
+ARCMINDIVID-R64-000600,2024-07-30,12:13,射箭,Men's Individual,64 強,Invalides,OFFICIAL,TAI Yu-Hsuan,TPE,6-0,,,勝,ARC
+BOXW54KG-8FNL000100,2024-07-30,12:20,拳擊,Women's 54kg,16 強,North Paris Arena,OFFICIAL,PETROVA Stanimira,BUL,4-1（點數判定）,,,勝,BOX
+BOXW54KG-8FNL000100,2024-07-30,12:20,拳擊,Women's 54kg,16 強,North Paris Arena,OFFICIAL,HUANG Hsiao Wen,TPE,1-4（點數判定）,,,負,BOX
+ARCMINDIVID-R32-000300,2024-07-30,12:52,射箭,Men's Individual,32 強,Invalides,OFFICIAL,CHIRAULT Thomas,FRA,6-5,,,勝,ARC
+ARCMINDIVID-R32-000300,2024-07-30,12:52,射箭,Men's Individual,32 強,Invalides,OFFICIAL,TAI Yu-Hsuan,TPE,5-6,,,負,ARC
+TENWDOUBLES-R32-001600,2024-07-30,13:30,網球,Women's Doubles,第 1 輪,Roland-Garros Stadium,OFFICIAL,CHAN Hao-Ching / CHAN Latisha,TPE,0-2,,,負,TEN
+TENWDOUBLES-R32-001600,2024-07-30,13:30,網球,Women's Doubles,第 1 輪,Roland-Garros Stadium,OFFICIAL,KREJCIKOVA Barbora / SINIAKOVA Katerina,CZE,2-0,,,勝,TEN
+ARCMINDIVID-R64-000200,2024-07-30,14:49,射箭,Men's Individual,64 強,Invalides,OFFICIAL,ACHA GONZALEZ Pablo,ESP,2-6,,,負,ARC
+ARCMINDIVID-R64-000200,2024-07-30,14:49,射箭,Men's Individual,64 強,Invalides,OFFICIAL,LIN Zih-Siang,TPE,6-2,,,勝,ARC
+ARCMINDIVID-R32-000100,2024-07-30,15:28,射箭,Men's Individual,32 強,Invalides,OFFICIAL,KIM Woojin,KOR,6-0,,,勝,ARC
+ARCMINDIVID-R32-000100,2024-07-30,15:28,射箭,Men's Individual,32 強,Invalides,OFFICIAL,LIN Zih-Siang,TPE,0-6,,,負,ARC
+CSLMK1-HEAT000100,2024-07-30,15:50,CSL,Men's Kayak Single,預賽第 1 趟,Nautical St - White water,OFFICIAL,WU Shao-Hsuan,TPE,101.22,20,,,CSL
+CSLMK1-HEAT000200,2024-07-30,17:30,CSL,Men's Kayak Single,預賽第 2 趟,Nautical St - White water,OFFICIAL,WU Shao-Hsuan,TPE,99.45,19,,,CSL
+ARCMINDIVID-R64-000700,2024-07-30,17:45,射箭,Men's Individual,64 強,Invalides,OFFICIAL,TANG Chih-Chun,TPE,7-1,,,勝,ARC
+ARCMINDIVID-R64-000700,2024-07-30,17:45,射箭,Men's Individual,64 強,Invalides,OFFICIAL,PANGESTU Arif,INA,1-7,,,負,ARC
+ARCMINDIVID-R32-000400,2024-07-30,18:37,射箭,Men's Individual,32 強,Invalides,OFFICIAL,TANG Chih-Chun,TPE,2-6,,,負,ARC
+ARCMINDIVID-R32-000400,2024-07-30,18:37,射箭,Men's Individual,32 強,Invalides,OFFICIAL,GAZOZ Mete,TUR,6-2,,,勝,ARC
+SWMM200MBF-SFNL000100,2024-07-30,20:44,游泳,Men's 200m Butterfly,準決賽第 1 組,Paris La Defense Arena,OFFICIAL,WANG Kuan-Hung,TPE,1:55.07,5,,,SWM
+SHOWTRW-QUAL000200,2024-07-31,09:00,射擊,Trap Women's,資格賽第 2 天,Chateauroux Shooting Ctr,OFFICIAL,LIU Wan-Yu,TPE,112,25,,,SHO
+SHOWTRW-QUAL000200,2024-07-31,09:00,射擊,Trap Women's,資格賽第 2 天,Chateauroux Shooting Ctr,OFFICIAL,LIN Yi Chun,TPE,110,26,,,SHO
+BOXM71KG-8FNL000200,2024-07-31,11:48,拳擊,Men's 71kg,16 強,North Paris Arena,OFFICIAL,JONES Omari,USA,5-0（點數判定）,,,勝,BOX
+BOXM71KG-8FNL000200,2024-07-31,11:48,拳擊,Men's 71kg,16 強,North Paris Arena,OFFICIAL,KAN Chia Wei,TPE,0-5（點數判定）,,,負,BOX
+BDMMDOUBLES-GPD-000900,2024-07-31,14:00,羽球,Men's Doubles,分組賽 D 組,La Chapelle Arena,OFFICIAL,LIU Yu Chen / OU Xuan Yi,CHN,"1-2（21-17, 17-21, 22-24）",,,負,BDM
+BDMMDOUBLES-GPD-000900,2024-07-31,14:00,羽球,Men's Doubles,分組賽 D 組,La Chapelle Arena,OFFICIAL,LEE Yang / WANG Chi-Lin,TPE,"2-1（17-21, 21-17, 24-22）",,,勝,BDM
+BDMWSINGLES-GPE-000300,2024-07-31,14:50,羽球,Women's Singles,分組賽 E 組,La Chapelle Arena,OFFICIAL,TAI Tzu Ying,TPE,"0-2（19-21, 15-21）",,,負,BDM
+BDMWSINGLES-GPE-000300,2024-07-31,14:50,羽球,Women's Singles,分組賽 E 組,La Chapelle Arena,OFFICIAL,INTANON Ratchanok,THA,"2-0（21-19, 21-15）",,,勝,BDM
+BDMMSINGLES-GPI-000300,2024-07-31,15:40,羽球,Men's Singles,分組賽 I 組,La Chapelle Arena,OFFICIAL,CHOU Tien Chen,TPE,"2-0（21-18, 21-13）",,,勝,BDM
+BDMMSINGLES-GPI-000300,2024-07-31,15:40,羽球,Men's Singles,分組賽 I 組,La Chapelle Arena,OFFICIAL,LEE Cheuk Yiu,HKG,"0-2（18-21, 13-21）",,,負,BDM
+TTEWSINGLES-8FNL000200,2024-07-31,16:00,桌球,Women's Singles,16 強,South Paris Arena 4,OFFICIAL,BAJOR Natalia,POL,0-4,,,負,TTE
+TTEWSINGLES-8FNL000200,2024-07-31,16:00,桌球,Women's Singles,16 強,South Paris Arena 4,OFFICIAL,CHENG I-Ching,TPE,4-0,,,勝,TTE
+TTEMSINGLES-8FNL000600,2024-07-31,17:00,桌球,Men's Singles,16 強,South Paris Arena 4,OFFICIAL,JORGIC Darko,SLO,0-4,,,負,TTE
+TTEMSINGLES-8FNL000600,2024-07-31,17:00,桌球,Men's Singles,16 強,South Paris Arena 4,OFFICIAL,LIN Yun-Ju,TPE,4-0,,,勝,TTE
+BOXW60KG-QFNL000200,2024-07-31,17:38,拳擊,Women's 60kg,八強,North Paris Arena,OFFICIAL,PALACIOS ESPINOZA Maria Jose,ECU,1-4（點數判定）,,,負,BOX
+BOXW60KG-QFNL000200,2024-07-31,17:38,拳擊,Women's 60kg,八強,North Paris Arena,OFFICIAL,WU Shih Yi,TPE,4-1（點數判定）,,,勝,BOX
+TTEMSINGLES-8FNL000100,2024-07-31,20:00,桌球,Men's Singles,16 強,South Paris Arena 4,OFFICIAL,MOREGARD Truls,SWE,4-1,,,勝,TTE
+TTEMSINGLES-8FNL000100,2024-07-31,20:00,桌球,Men's Singles,16 強,South Paris Arena 4,OFFICIAL,KAO Cheng-Jui,TPE,1-4,,,負,TTE
+BDMMSINGLES-8FNL000500,2024-08-01,09:40,羽球,Men's Singles,16 強,La Chapelle Arena,OFFICIAL,CHOU Tien Chen,TPE,"2-0（21-12, 21-16）",,,勝,BDM
+BDMMSINGLES-8FNL000500,2024-08-01,09:40,羽球,Men's Singles,16 強,La Chapelle Arena,OFFICIAL,NARAOKA Kodai,JPN,"0-2（12-21, 16-21）",,,負,BDM
+ARCWINDIVID-R64-000700,2024-08-01,11:14,射箭,Women's Individual,64 強,Invalides,OFFICIAL,MARCHENKO Veronika,UKR,6-4,,,勝,ARC
+ARCWINDIVID-R64-000700,2024-08-01,11:14,射箭,Women's Individual,64 強,Invalides,OFFICIAL,LI Tsai-Chi,TPE,4-6,,,負,ARC
+TENWDOUBLES-QFNL000100,2024-08-01,12:00,網球,Women's Doubles,八強,Roland-Garros Stadium,OFFICIAL,MUCHOVA Karolina / NOSKOVA Linda,CZE,2-1,,,勝,TEN
+TENWDOUBLES-QFNL000100,2024-08-01,12:00,網球,Women's Doubles,八強,Roland-Garros Stadium,OFFICIAL,HSIEH Su-Wei / TSAO Chia Yi,TPE,1-2,,,負,TEN
+ARCWINDIVID-R64-001500,2024-08-01,12:32,射箭,Women's Individual,64 強,Invalides,OFFICIAL,LEI Chien-Ying,TPE,7-1,,,勝,ARC
+ARCWINDIVID-R64-001500,2024-08-01,12:32,射箭,Women's Individual,64 強,Invalides,OFFICIAL,RENDON MARTINEZ Ana,COL,1-7,,,負,ARC
+ARCWINDIVID-R32-000800,2024-08-01,13:11,射箭,Women's Individual,32 強,Invalides,OFFICIAL,LEI Chien-Ying,TPE,7-3,,,勝,ARC
+ARCWINDIVID-R32-000800,2024-08-01,13:11,射箭,Women's Individual,32 強,Invalides,OFFICIAL,KAUFHOLD Casey,USA,3-7,,,負,ARC
+BDMMDOUBLES-QFNL000400,2024-08-01,14:10,羽球,Men's Doubles,八強,La Chapelle Arena,OFFICIAL,JOMKOH Supak / KEDREN Kittinupong,THA,"0-2（14-21, 17-21）",,,負,BDM
+BDMMDOUBLES-QFNL000400,2024-08-01,14:10,羽球,Men's Doubles,八強,La Chapelle Arena,OFFICIAL,LEE Yang / WANG Chi-Lin,TPE,"2-0（21-14, 21-17）",,,勝,BDM
+TTEMSINGLES-QFNL000300,2024-08-01,15:00,桌球,Men's Singles,八強,South Paris Arena 4,OFFICIAL,LEBRUN Felix,FRA,4-3,,,勝,TTE
+TTEMSINGLES-QFNL000300,2024-08-01,15:00,桌球,Men's Singles,八強,South Paris Arena 4,OFFICIAL,LIN Yun-Ju,TPE,3-4,,,負,TTE
+TTEWSINGLES-QFNL000100,2024-08-01,16:00,桌球,Women's Singles,八強,South Paris Arena 4,OFFICIAL,SUN Yingsha,CHN,4-0,,,勝,TTE
+TTEWSINGLES-QFNL000100,2024-08-01,16:00,桌球,Women's Singles,八強,South Paris Arena 4,OFFICIAL,CHENG I-Ching,TPE,0-4,,,負,TTE
+ARCWINDIVID-R64-001200,2024-08-01,16:09,射箭,Women's Individual,64 強,Invalides,OFFICIAL,CHIU Yi-Ching,TPE,0-6,,,負,ARC
+ARCWINDIVID-R64-001200,2024-08-01,16:09,射箭,Women's Individual,64 強,Invalides,OFFICIAL,NODA Satsuki,JPN,6-0,,,勝,ARC
+BOXW66KG-8FNL000500,2024-08-01,16:34,拳擊,Women's 66kg,16 強,North Paris Arena,OFFICIAL,dos SANTOS Barbara Maria,BRA,0-5（點數判定）,,,負,BOX
+BOXW66KG-8FNL000500,2024-08-01,16:34,拳擊,Women's 66kg,16 強,North Paris Arena,OFFICIAL,CHEN Nien Chin,TPE,5-0（點數判定）,,,勝,BOX
+SHOWSPW-QUAL000100,2024-08-02,09:00,射擊,25m Pistol Women's,資格賽（慢射）,Chateauroux Shooting Ctr,OFFICIAL,TIEN Chia Chen,TPE,290,15,,,SHO
+SHOWSPW-QUAL000100,2024-08-02,09:00,射擊,25m Pistol Women's,資格賽（慢射）,Chateauroux Shooting Ctr,OFFICIAL,WU Chia Ying,TPE,280,36,,,SHO
+SHOMSKM-QUAL000100,2024-08-02,09:30,射擊,Skeet Men's,資格賽第 1 天,Chateauroux Shooting Ctr,OFFICIAL,LEE Meng Yuan,TPE,74,3,,,SHO
+ARCXTEAM2-8FNL000100,2024-08-02,10:27,射箭,Mixed Team,16 強,Invalides,OFFICIAL,Republic of Korea,KOR,5-4,,,勝,ARC
+ARCXTEAM2-8FNL000100,2024-08-02,10:27,射箭,Mixed Team,16 強,Invalides,OFFICIAL,Chinese Taipei,TPE,4-5,,,負,ARC
+ATHW100M-PREL000200,2024-08-02,10:43,田徑,Women's 100m,資格預賽第 2 組,Stade de France,OFFICIAL,ZHANG Bo-Ya,TPE,11.99,3,,,ATH
+SWMW200MIM-HEAT000200,2024-08-02,11:21,游泳,Women's 200m Individual Medley,預賽第 2 組,Paris La Defense Arena,OFFICIAL,HAN An-Chi,TPE,DSQ,,,,SWM
+BDMMDOUBLES-SFNL000200,2024-08-02,12:00,羽球,Men's Doubles,四強,La Chapelle Arena,OFFICIAL,ASTRUP Kim / RASMUSSEN Anders Skaarup,DEN,"1-2（21-18, 17-21, 10-21）",,,負,BDM
+BDMMDOUBLES-SFNL000200,2024-08-02,12:00,羽球,Men's Doubles,四強,La Chapelle Arena,OFFICIAL,LEE Yang / WANG Chi-Lin,TPE,"2-1（18-21, 21-17, 21-10）",,,勝,BDM
+SHOWSPW-QUAL000200,2024-08-02,12:00,射擊,25m Pistol Women's,資格賽（快射）,Chateauroux Shooting Ctr,OFFICIAL,TIEN Chia Chen,TPE,581,16,,,SHO
+SHOWSPW-QUAL000200,2024-08-02,12:00,射擊,25m Pistol Women's,資格賽（快射）,Chateauroux Shooting Ctr,OFFICIAL,WU Chia Ying,TPE,572,31,,,SHO
+ATHW100M-RND1000300,2024-08-02,12:06,田徑,Women's 100m,第 1 輪第 3 組,Stade de France,OFFICIAL,ZHANG Bo-Ya,TPE,11.88,9,,,ATH
+BOXW57KG-8FNL000100,2024-08-02,15:30,拳擊,Women's 57kg,16 強,North Paris Arena,OFFICIAL,LIN Yu Ting,TPE,5-0（點數判定）,,,勝,BOX
+BOXW57KG-8FNL000100,2024-08-02,15:30,拳擊,Women's 57kg,16 強,North Paris Arena,OFFICIAL,TURDIBEKOVA Sitora,UZB,0-5（點數判定）,,,負,BOX
+CSLMX1-QUAL000100,2024-08-02,15:30,CSL,Men's Kayak Cross,計時賽,Nautical St - White water,OFFICIAL,WU Shao-Hsuan,TPE,82.73,36,,,CSL
+CSLWX1-QUAL000100,2024-08-02,16:40,CSL,Women's Kayak Cross,計時賽,Nautical St - White water,OFFICIAL,CHANG Chu-Han,TPE,76.58,23,,,CSL
+BDMMSINGLES-QFNL000300,2024-08-02,17:35,羽球,Men's Singles,八強,La Chapelle Arena,OFFICIAL,CHOU Tien Chen,TPE,"1-2（21-19, 15-21, 12-21）",,,負,BDM
+BDMMSINGLES-QFNL000300,2024-08-02,17:35,羽球,Men's Singles,八強,La Chapelle Arena,OFFICIAL,SEN Lakshya,IND,"2-1（19-21, 21-15, 21-12）",,,勝,BDM
+SHOMSKM-QUAL000200,2024-08-03,09:00,射擊,Skeet Men's,資格賽第 2 天,Chateauroux Shooting Ctr,OFFICIAL,LEE Meng Yuan,TPE,124,3,,,SHO
+ARCWINDIVID-8FNL000400,2024-08-03,09:56,射箭,Women's Individual,16 強,Invalides,OFFICIAL,JEON Hunyoung,KOR,6-4,,,勝,ARC
+ARCWINDIVID-8FNL000400,2024-08-03,09:56,射箭,Women's Individual,16 強,Invalides,OFFICIAL,LEI Chien-Ying,TPE,4-6,,,負,ARC
+SHOMSKM-FNL-000100,2024-08-03,15:30,射擊,Skeet Men's,決賽,Chateauroux Shooting Ctr,OFFICIAL,LEE Meng Yuan,TPE,45,3,銅,,SHO
+CSLWX1-RND1001100,2024-08-03,16:20,CSL,Women's Kayak Cross,第 1 輪第 11 組,Nautical St - White water,OFFICIAL,CHANG Chu-Han,TPE,,3,,,CSL
+CSLMX1-RND1000900,2024-08-03,17:20,CSL,Men's Kayak Cross,第 1 輪第 9 組,Nautical St - White water,OFFICIAL,WU Shao-Hsuan,TPE,,3,,,CSL
+BOXW60KG-SFNL000100,2024-08-03,17:38,拳擊,Women's 60kg,四強,North Paris Arena,OFFICIAL,YANG Wenlu,CHN,5-0（點數判定）,,,勝,BOX
+BOXW60KG-SFNL000100,2024-08-03,17:38,拳擊,Women's 60kg,四強,North Paris Arena,OFFICIAL,WU Shih Yi,TPE,0-5（點數判定）,,銅,負,BOX
+CSLWX1-REP-000200,2024-08-03,18:10,CSL,Women's Kayak Cross,復活賽第 2 組,Nautical St - White water,OFFICIAL,CHANG Chu-Han,TPE,,2,,,CSL
+CSLMX1-REP-000100,2024-08-03,18:45,CSL,Men's Kayak Cross,復活賽第 1 組,Nautical St - White water,OFFICIAL,WU Shao-Hsuan,TPE,,2,,,CSL
+BOXW66KG-QFNL000300,2024-08-03,21:36,拳擊,Women's 66kg,八強,North Paris Arena,OFFICIAL,CHEN Nien Chin,TPE,5-0（點數判定）,,,勝,BOX
+BOXW66KG-QFNL000300,2024-08-03,21:36,拳擊,Women's 66kg,八強,North Paris Arena,OFFICIAL,KHAMIDOVA Navbakhor,UZB,0-5（點數判定）,,,負,BOX
+ATHMLONGJUMP-QUALB00100,2024-08-04,11:00,田徑,Men's Long Jump,資格賽 B 組,Stade de France,OFFICIAL,LIN Yu-Tang,TPE,7.70,12,,,ATH
+BOXW57KG-QFNL000100,2024-08-04,11:00,拳擊,Women's 57kg,八強,North Paris Arena,OFFICIAL,LIN Yu Ting,TPE,5-0（點數判定）,,,勝,BOX
+BOXW57KG-QFNL000100,2024-08-04,11:00,拳擊,Women's 57kg,八強,North Paris Arena,OFFICIAL,STANEVA Svetlana Kamenova,BUL,0-5（點數判定）,,,負,BOX
+CSLMX1-HEAT000800,2024-08-04,16:05,CSL,Men's Kayak Cross,預賽第 8 組,Nautical St - White water,OFFICIAL,WU Shao-Hsuan,TPE,,3,,,CSL
+BDMMDOUBLES-FNL-000100,2024-08-04,16:10,羽球,Men's Doubles,金牌戰,La Chapelle Arena,OFFICIAL,LIANG Wei Keng / WANG Chang,CHN,"1-2（17-21, 21-18, 19-21）",,銀,負,BDM
+BDMMDOUBLES-FNL-000100,2024-08-04,16:10,羽球,Men's Doubles,金牌戰,La Chapelle Arena,OFFICIAL,LEE Yang / WANG Chi-Lin,TPE,"2-1（21-17, 18-21, 21-19）",,金,勝,BDM
+CSLWX1-HEAT000400,2024-08-04,17:00,CSL,Women's Kayak Cross,預賽第 4 組,Nautical St - White water,OFFICIAL,CHANG Chu-Han,TPE,FLT (R),4,,,CSL
+TTEMTEAM-8FNL00060000,2024-08-05,10:00,桌球,Men's Team,16 強,South Paris Arena 4,OFFICIAL,Egypt,EGY,0-3,,,負,TTE
+TTEMTEAM-8FNL00060000,2024-08-05,10:00,桌球,Men's Team,16 強,South Paris Arena 4,OFFICIAL,Chinese Taipei,TPE,3-0,,,勝,TTE
+ATHM400MHURD-RND1000500,2024-08-05,10:37,田徑,Men's 400m Hurdles,第 1 輪第 5 組,Stade de France,OFFICIAL,PENG Ming-Yang,TPE,DNF,,,,ATH
+ATHM200M-RND1000600,2024-08-05,20:30,田徑,Men's 200m,第 1 輪第 6 組,Stade de France,OFFICIAL,YANG Chun-Han,TPE,20.83,6,,,ATH
+TTEWTEAM-8FNL00020000,2024-08-06,10:00,桌球,Women's Team,16 強,South Paris Arena 4,OFFICIAL,Australia,AUS,0-3,,,負,TTE
+TTEWTEAM-8FNL00020000,2024-08-06,10:00,桌球,Women's Team,16 強,South Paris Arena 4,OFFICIAL,Chinese Taipei,TPE,3-0,,,勝,TTE
+ATHM200M-REP-000300,2024-08-06,12:46,田徑,Men's 200m,復活賽第 3 組,Stade de France,OFFICIAL,YANG Chun-Han,TPE,20.73,3,,,ATH
+TTEMTEAM-QFNL00030000,2024-08-06,15:00,桌球,Men's Team,八強,South Paris Arena 4,OFFICIAL,Japan,JPN,3-1,,,勝,TTE
+TTEMTEAM-QFNL00030000,2024-08-06,15:00,桌球,Men's Team,八強,South Paris Arena 4,OFFICIAL,Chinese Taipei,TPE,1-3,,,負,TTE
+BOXW66KG-SFNL000200,2024-08-06,22:50,拳擊,Women's 66kg,四強,Roland-Garros Stadium,OFFICIAL,CHEN Nien Chin,TPE,1-4（點數判定）,,銅,負,BOX
+BOXW66KG-SFNL000200,2024-08-06,22:50,拳擊,Women's 66kg,四強,Roland-Garros Stadium,OFFICIAL,YANG Liu,CHN,4-1（點數判定）,,,勝,BOX
+CSPMC1-1000M-HEAT000400,2024-08-07,12:10,輕艇競速,Men's Canoe Single 1000m,預賽第 4 組,Nautical St - Flat water,OFFICIAL,LAI Kuan-Chieh,TPE,4:01.26,4,,,CSP
+CSPMC1-1000M-QFNL000200,2024-08-07,14:50,輕艇競速,Men's Canoe Single 1000m,八強賽第 2 組,Nautical St - Flat water,OFFICIAL,LAI Kuan-Chieh,TPE,3:58.79,4,,,CSP
+TTEWTEAM-QFNL00010000,2024-08-07,15:00,桌球,Women's Team,八強,South Paris Arena 4,OFFICIAL,People's Republic of China,CHN,3-0,,,勝,TTE
+TTEWTEAM-QFNL00010000,2024-08-07,15:00,桌球,Women's Team,八強,South Paris Arena 4,OFFICIAL,Chinese Taipei,TPE,0-3,,,負,TTE
+WLFW49KG-FNL-000100,2024-08-07,19:30,舉重,Women's 49kg,決賽,South Paris Arena 6,OFFICIAL,FANG Wan-Ling,TPE,193,6,,,WLF
+BOXW57KG-SFNL000100,2024-08-07,21:30,拳擊,Women's 57kg,四強,Roland-Garros Stadium,OFFICIAL,LIN Yu Ting,TPE,5-0（點數判定）,,,勝,BOX
+BOXW57KG-SFNL000100,2024-08-07,21:30,拳擊,Women's 57kg,四強,Roland-Garros Stadium,OFFICIAL,YILDIZ KAHRAMAN Esra,TUR,0-5（點數判定）,,銅,負,BOX
+TKWW57KG-8FNL000700,2024-08-08,11:36,跆拳道,Women -57kg,16 強,Grand Palais,OFFICIAL,AOUN Laetitia,LBN,2-0（PTF）,,,勝,TKW
+TKWW57KG-8FNL000700,2024-08-08,11:36,跆拳道,Women -57kg,16 強,Grand Palais,OFFICIAL,LO Chia-Ling,TPE,0-2（PTF）,,,負,TKW
+WLFW59KG-FNL-000100,2024-08-08,15:00,舉重,Women's 59kg,決賽,South Paris Arena 6,OFFICIAL,KUO Hsing-Chun,TPE,235,3,銅,,WLF
+WLFW71KG-FNL-000100,2024-08-09,19:30,舉重,Women's 71kg,決賽,South Paris Arena 6,OFFICIAL,CHEN Wen-Huei,TPE,236,6,,,WLF
+BKGMINDIVID-GPD-000200,2024-08-10,16:41,BKG,B-Boys,循環賽 D 組,La Concorde 1,OFFICIAL,QUAKE,TPE,2,,,,BKG
+BKGMINDIVID-GPD-000400,2024-08-10,17:31,BKG,B-Boys,循環賽 D 組,La Concorde 1,OFFICIAL,QUAKE,TPE,0,,,,BKG
+BKGMINDIVID-GPD-000500,2024-08-10,18:14,BKG,B-Boys,循環賽 D 組,La Concorde 1,OFFICIAL,QUAKE,TPE,0,,,,BKG
+BOXW57KG-FNL-000100,2024-08-10,21:30,拳擊,Women's 57kg,決賽,Roland-Garros Stadium,OFFICIAL,LIN Yu Ting,TPE,5-0（點數判定）,,金,勝,BOX
+BOXW57KG-FNL-000100,2024-08-10,21:30,拳擊,Women's 57kg,決賽,Roland-Garros Stadium,OFFICIAL,SZEREMETA Julia,POL,0-5（點數判定）,,銀,負,BOX
+GLFMSTROKE-FNL-000100,2024-08-01,09:00,高爾夫,Men's Individual Stroke Play,第 1 輪,Le Golf National,OFFICIAL,PAN C.T.,TPE,69 桿（-2），累計 69 桿（-2）,21,,,GOL
+GLFMSTROKE-FNL-000100,2024-08-01,11:17,高爾夫,Men's Individual Stroke Play,第 1 輪,Le Golf National,OFFICIAL,YU Kevin,TPE,73 桿（+2），累計 73 桿（+2）,49,,,GOL
+GLFMSTROKE-FNL-000200,2024-08-02,10:55,高爾夫,Men's Individual Stroke Play,第 2 輪,Le Golf National,OFFICIAL,PAN C.T.,TPE,65 桿（-6），累計 134 桿（-8）,5,,,GOL
+GLFMSTROKE-FNL-000200,2024-08-02,09:22,高爾夫,Men's Individual Stroke Play,第 2 輪,Le Golf National,OFFICIAL,YU Kevin,TPE,69 桿（-2），累計 142 桿（E）,43,,,GOL
+GLFMSTROKE-FNL-000300,2024-08-03,12:28,高爾夫,Men's Individual Stroke Play,第 3 輪,Le Golf National,OFFICIAL,PAN C.T.,TPE,72 桿（+1），累計 206 桿（-7）,17,,,GOL
+GLFMSTROKE-FNL-000300,2024-08-03,09:55,高爾夫,Men's Individual Stroke Play,第 3 輪,Le Golf National,OFFICIAL,YU Kevin,TPE,72 桿（+1），累計 214 桿（+1）,46,,,GOL
+GLFMSTROKE-FNL-000400,2024-08-04,11:33,高爾夫,Men's Individual Stroke Play,第 4 輪,Le Golf National,OFFICIAL,PAN C.T.,TPE,70 桿（-1），累計 276 桿（-8）,18,,,GOL
+GLFMSTROKE-FNL-000400,2024-08-04,09:44,高爾夫,Men's Individual Stroke Play,第 4 輪,Le Golf National,OFFICIAL,YU Kevin,TPE,74 桿（+3），累計 288 桿（+4）,52,,,GOL
+GLFWSTROKE-FNL-000100,2024-08-07,10:55,高爾夫,Women's Individual Stroke Play,第 1 輪,Le Golf National,OFFICIAL,HSU Wei-Ling,TPE,74 桿（+2），累計 74 桿（+2）,30,,,GOL
+GLFWSTROKE-FNL-000100,2024-08-07,09:11,高爾夫,Women's Individual Stroke Play,第 1 輪,Le Golf National,OFFICIAL,CHIEN Pei-Yun,TPE,76 桿（+4），累計 76 桿（+4）,40,,,GOL
+GLFWSTROKE-FNL-000200,2024-08-08,09:00,高爾夫,Women's Individual Stroke Play,第 2 輪,Le Golf National,OFFICIAL,HSU Wei-Ling,TPE,69 桿（-3），累計 143 桿（-1）,14,,,GOL
+GLFWSTROKE-FNL-000200,2024-08-08,11:06,高爾夫,Women's Individual Stroke Play,第 2 輪,Le Golf National,OFFICIAL,CHIEN Pei-Yun,TPE,71 桿（-1），累計 147 桿（+3）,29,,,GOL
+GLFWSTROKE-FNL-000300,2024-08-09,11:55,高爾夫,Women's Individual Stroke Play,第 3 輪,Le Golf National,OFFICIAL,HSU Wei-Ling,TPE,72 桿（E），累計 215 桿（-1）,17,,,GOL
+GLFWSTROKE-FNL-000300,2024-08-09,10:44,高爾夫,Women's Individual Stroke Play,第 3 輪,Le Golf National,OFFICIAL,CHIEN Pei-Yun,TPE,71 桿（-1），累計 218 桿（+2）,24,,,GOL
+GLFWSTROKE-FNL-000400,2024-08-10,11:33,高爾夫,Women's Individual Stroke Play,第 4 輪,Le Golf National,OFFICIAL,HSU Wei-Ling,TPE,68 桿（-4），累計 283 桿（-5）,8,,,GOL
+GLFWSTROKE-FNL-000400,2024-08-10,11:06,高爾夫,Women's Individual Stroke Play,第 4 輪,Le Golf National,OFFICIAL,CHIEN Pei-Yun,TPE,68 桿（-4），累計 286 桿（-2）,18,,,GOL
+GARW1APBB-QUAL-000005,2024-07-28,21:34,競技體操,Women's Balance Beam,資格賽第 5 組,Bercy Arena,OFFICIAL,TING Hua-Tien,TPE,12.533（難度 5.000，完成 7.533）,50,,,GAR
+GARM1APHB-FNL-000001,2024-08-05,13:33,競技體操,Men's Horizontal Bar,決賽,Bercy Arena,OFFICIAL,TANG Chia-Hung,TPE,13.966（難度 6.500，完成 7.466）,3,銅,,GAR

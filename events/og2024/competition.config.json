@@ -1,0 +1,26 @@
+{
+  "name": "2024 巴黎奧運",
+  "startDate": "2024-07-24",
+  "endDate": "2024-08-11",
+  "timeZone": "Europe/Paris",
+  "timeZoneLabel": "法國",
+  "viewerTimeZone": "Asia/Taipei",
+  "viewerTimeZoneLabel": "台灣",
+  "team": {
+    "noc": "TPE",
+    "label": "中華台北",
+    "aliases": [
+      "Chinese Taipei"
+    ]
+  },
+  "source": {
+    "type": "manual",
+    "code": "OG2024",
+    "webUrl": "https://olympics.com/en/paris-2024"
+  },
+  "syncIntervalMinutes": 30,
+  "teamMedals": {
+    "source": "代表團得牌名單",
+    "updatedAt": "2026-10-08T00:30:00+08:00"
+  }
+}
