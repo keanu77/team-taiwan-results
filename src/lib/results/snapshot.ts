@@ -60,7 +60,7 @@ export function dayResponse(date: string, row: StoredDay | null, cooldown: numbe
   const expiry = resultSyncInterval(date, now) * 2;
   const archived = isArchived(row, now);
   // 手動成績沒有「排程」：有資料就是最新，不顯示延遲警告
-  const manual = CONFIG.source.type === "manual";
+  const manual = CONFIG.source.type !== "bornan";
   const stale = !row?.lastSuccessAt || Boolean(row.lastError) || (!manual && !archived && nowMs - time(row.lastSuccessAt) > expiry);
   const scheduled = !manual && (Boolean(row) || date <= shiftResultDate(defaultResultDate(now), 1));
   return {

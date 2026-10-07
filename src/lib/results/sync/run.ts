@@ -104,7 +104,7 @@ export async function runSync(options: SyncOptions): Promise<SyncSummary> {
   const { store, now = () => new Date(), budgetMs = 20 * 60 * 1000, read = readBornan, fetchDay = (date: string, previous: readonly TpeResultUnit[]) => fetchTpeDay(date, read, previous), log = console.log } = options;
   const started = now();
   const summary: SyncSummary = { changed: false, medals: "skipped", days: {} };
-  if (CONFIG.source.type !== "bornan") return { ...summary, reason: "來源不是 bornan，改用手動成績 CSV" };
+  if (CONFIG.source.type !== "bornan") return { ...summary, reason: "來源不是 bornan，改用手動成績（CSV 或試算表）" };
   // 賽前兩天才開始抓，避免空跑
   if (resultDate(started) < shiftResultDate(RESULTS_MIN_DATE, -2)) return { ...summary, reason: "賽事尚未開始" };
   const index = store.readIndex();

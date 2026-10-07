@@ -1,0 +1,97 @@
+name: 新增賽事
+description: 請維護者把一個賽事加進網站
+title: "新增賽事："
+labels: ["賽事申請"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        填好後送出，維護者確認無誤會貼上「建立賽事」標籤，系統就會自動建立賽事資料夾並開一個 PR。
+        不確定的欄位可以留空或寫在最下面的備註。
+  - type: input
+    id: id
+    attributes:
+      label: 賽事代號
+      description: 網址路徑，只能用小寫英數字與減號，例如 aimag2026
+    validations:
+      required: true
+  - type: input
+    id: name
+    attributes:
+      label: 賽事名稱
+      placeholder: 2026 利雅德亞洲室內暨武藝運動會
+    validations:
+      required: true
+  - type: input
+    id: start
+    attributes:
+      label: 開始日期
+      description: 主辦地日期，格式 YYYY-MM-DD
+    validations:
+      required: true
+  - type: input
+    id: end
+    attributes:
+      label: 結束日期
+      description: 主辦地日期，格式 YYYY-MM-DD
+    validations:
+      required: true
+  - type: input
+    id: tz
+    attributes:
+      label: 主辦地時區
+      description: IANA 時區名稱，例如 Asia/Tokyo、Asia/Riyadh、Europe/Paris
+    validations:
+      required: true
+  - type: input
+    id: tz-label
+    attributes:
+      label: 主辦地顯示名稱
+      placeholder: 日本
+    validations:
+      required: true
+  - type: input
+    id: noc
+    attributes:
+      label: 代表隊代碼
+      description: 三碼，例如 TPE
+      value: TPE
+    validations:
+      required: true
+  - type: input
+    id: label
+    attributes:
+      label: 代表隊名稱
+      value: 中華台北
+    validations:
+      required: true
+  - type: dropdown
+    id: source
+    attributes:
+      label: 成績來源
+      description: 不確定就選 manual，維護者會協助判斷
+      options:
+        - manual（手動填 CSV）
+        - sheet（Google 試算表）
+        - bornan（官方成績系統自動同步）
+    validations:
+      required: true
+  - type: input
+    id: web-url
+    attributes:
+      label: 官方成績網站
+      placeholder: https://
+    validations:
+      required: true
+  - type: input
+    id: api-base
+    attributes:
+      label: Bornan API 網址（選 bornan 才需要）
+  - type: input
+    id: csv-url
+    attributes:
+      label: Google 試算表 CSV 網址（選 sheet 才需要）
+  - type: textarea
+    id: note
+    attributes:
+      label: 備註

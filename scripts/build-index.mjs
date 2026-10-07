@@ -39,7 +39,7 @@ ${single ? `<meta http-equiv="refresh" content="0; url=./${escape(events[0].id)}
 main{max-width:720px;margin:0 auto;padding:40px 16px 64px}h1{font-size:1.75rem;margin:0 0 4px}p.lead{margin:0 0 24px;color:var(--muted)}
 ul{list-style:none;margin:0;padding:0;display:grid;gap:12px}
 .card{display:grid;gap:4px;padding:16px 18px;border:1px solid var(--line);border-radius:16px;background:var(--card);color:inherit;text-decoration:none}
-.card:hover,.card:focus-visible{border-color:var(--brand);outline:none}.card strong{font-size:1.1rem}.meta{color:var(--muted);font-size:.9rem}
+.card:hover{border-color:var(--brand)}.card:focus-visible{outline:2px solid var(--brand);outline-offset:2px}.card strong{font-size:1.1rem}.meta{color:var(--muted);font-size:.9rem}
 .status{justify-self:start;font-size:.75rem;font-weight:600;padding:2px 10px;border-radius:999px}.live{background:#e8f0ff;color:#0847c4}.soon{background:#fff1e7;color:#9a3412}.done{background:#e9eef6;color:#5b6478}
 footer{margin-top:32px;font-size:.8rem;color:var(--muted)}footer a{color:inherit}
 </style>

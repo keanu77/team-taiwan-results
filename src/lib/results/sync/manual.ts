@@ -91,11 +91,23 @@ export function parseManualResults(text: string): Map<string, TpeResultUnit[]> {
   return byDate;
 }
 
-/** 依 CSV 重寫有變動的日期；CSV 內容沒變就不動檔案，也就不會觸發重新部署 */
-export function runManualSync(store: FileStore, csvText: string, now = new Date()): SyncSummary {
+const countRows = (units: readonly TpeResultUnit[]) => units.reduce((sum, unit) => sum + unit.competitors.length, 0);
+
+/**
+ * 依 CSV 重寫有變動的日期；CSV 內容沒變就不動檔案，也就不會觸發重新部署。
+ * guardDrop：成績列比上一份少一半以上就拒收（給多人編輯的試算表用，防止誤刪整張表）。
+ */
+export function runManualSync(store: FileStore, csvText: string, now = new Date(), options: { guardDrop?: boolean } = {}): SyncSummary {
   const summary: SyncSummary = { changed: false, medals: "skipped", days: {} };
-  const byDate = parseManualResults(csvText);
   const index = store.readIndex();
+  // 剛建立的賽事還沒填成績：安靜略過。已經有資料卻變成空白檔，才交給 parseManualResults 擋下
+  if (!Object.keys(index.days).length && !csvRecords(csvText, [], "results/manual.csv").length) return { ...summary, reason: "尚未填寫成績" };
+  const byDate = parseManualResults(csvText);
+  if (options.guardDrop) {
+    const before = Object.keys(index.days).reduce((sum, date) => sum + countRows(store.readDay(date)?.units ?? []), 0);
+    const after = [...byDate.values()].reduce((sum, units) => sum + countRows(units), 0);
+    if (before >= 10 && after < before / 2) throw new Error(`試算表成績列從 ${before} 列驟減到 ${after} 列，疑似誤刪，本輪不更新；確認無誤請改用 manual 來源或分次刪除`);
+  }
   const dates = new Set([...byDate.keys(), ...Object.keys(index.days)]);
   for (const date of dates) {
     const units = byDate.get(date) ?? [];

@@ -1,0 +1,68 @@
+name: 由 issue 建立賽事
+
+# 維護者在「新增賽事」issue 貼上「建立賽事」標籤時執行。
+# 只有具備 triage 以上權限的人能貼標籤，所以一般使用者無法直接觸發。
+on:
+  issues:
+    types: [labeled]
+
+permissions: {}
+
+jobs:
+  create:
+    if: github.event.label.name == '建立賽事'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+      pull-requests: write
+      issues: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+
+      - name: 依表單建立賽事資料夾
+        id: create
+        continue-on-error: true
+        # issue 內容只透過環境變數交給程式，不直接放進指令
+        env:
+          ISSUE_BODY: ${{ github.event.issue.body }}
+        run: npx tsx scripts/issue-to-event.ts
+
+      - name: 表單有誤：回覆 issue
+        if: steps.create.outcome == 'failure'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE: ${{ github.event.issue.number }}
+          ERROR: ${{ steps.create.outputs.error }}
+        run: |
+          printf '無法建立賽事：%s\n\n請編輯 issue 修正後，移除再重新貼上「建立賽事」標籤。\n' "$ERROR" > comment.md
+          gh issue comment "$ISSUE" --repo "$GITHUB_REPOSITORY" --body-file comment.md
+          exit 1
+
+      - name: 檢查能否建置
+        env:
+          EVENT: ${{ steps.create.outputs.id }}
+        run: npm run event
+
+      - name: 開 PR
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ID: ${{ steps.create.outputs.id }}
+          ISSUE: ${{ github.event.issue.number }}
+        run: |
+          branch="new-event/${ID}"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$branch"
+          git add "events/${ID}"
+          git commit -q -m "feat: add event ${ID} (closes #${ISSUE})"
+          git push -q "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" "$branch"
+          printf '依 #%s 的表單建立 `events/%s/`。\n\n名單 CSV 目前是空白表頭，可以在這個 PR 補上；合併後 Actions 會自動同步並發布到 `/%s/`。\n' "$ISSUE" "$ID" "$ID" > body.md
+          gh pr create --repo "$GITHUB_REPOSITORY" --head "$branch" --title "新增賽事：${ID}" --body-file body.md

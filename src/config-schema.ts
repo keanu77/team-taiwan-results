@@ -21,7 +21,9 @@ export interface CompetitionConfig {
   };
   source:
     | { type: "bornan"; code: string; apiBase: string; webUrl: string }
-    | { type: "manual"; code: string; webUrl: string };
+    | { type: "manual"; code: string; webUrl: string }
+    /** Google 試算表「發布到網路」的 CSV 網址，欄位與 manual.csv 相同 */
+    | { type: "sheet"; code: string; webUrl: string; csvUrl: string };
   syncIntervalMinutes: number;
   teamMedals: { source: string; updatedAt: string };
 }
@@ -55,14 +57,24 @@ function url(value: unknown, field: string): string {
   return text.replace(/\/+$/, "");
 }
 
+/** 只接受 Google 試算表「發布到網路 → CSV」的網址，避免同步程式被拿去抓任意網站 */
+function sheetUrl(value: unknown): string {
+  const text = url(value, "source.csvUrl");
+  if (!/^https:\/\/docs\.google\.com\/spreadsheets\/d\/e\/[A-Za-z0-9_-]+\/pub\?([^#]*&)?output=csv(&|$)/.test(text)) {
+    fail("source.csvUrl（Google 試算表「檔案 → 共用 → 發布到網路」選 CSV 後的網址，開頭是 https://docs.google.com/spreadsheets/d/e/）");
+  }
+  return text;
+}
+
 export function parseConfig(value: unknown, file = "competition.config.json"): CompetitionConfig {
   FILE = file;
   if (!value || typeof value !== "object") fail("（整份檔案）");
   const c = value as Record<string, unknown>;
   const startDate = str(c.startDate, "startDate");
   const endDate = str(c.endDate, "endDate");
-  if (!DATE.test(startDate)) fail("startDate");
-  if (!DATE.test(endDate) || endDate < startDate) fail("endDate");
+  if (!DATE.test(startDate)) fail("startDate（格式 YYYY-MM-DD）");
+  if (!DATE.test(endDate)) fail("endDate（格式 YYYY-MM-DD）");
+  if (endDate < startDate) fail("endDate（不能早於 startDate）");
   const team = (c.team ?? {}) as Record<string, unknown>;
   const noc = str(team.noc, "team.noc").toUpperCase();
   if (!/^[A-Z]{3}$/.test(noc)) fail("team.noc");
@@ -73,7 +85,8 @@ export function parseConfig(value: unknown, file = "competition.config.json"): C
   const parsedSource: CompetitionConfig["source"] =
     source.type === "bornan" ? { type: "bornan", code, apiBase: url(source.apiBase, "source.apiBase"), webUrl: url(source.webUrl, "source.webUrl") }
     : source.type === "manual" ? { type: "manual", code, webUrl: url(source.webUrl, "source.webUrl") }
-    : fail("source.type（只支援 bornan 或 manual）");
+    : source.type === "sheet" ? { type: "sheet", code, webUrl: url(source.webUrl, "source.webUrl"), csvUrl: sheetUrl(source.csvUrl) }
+    : fail("source.type（只支援 bornan、manual 或 sheet）");
   const interval = Number(c.syncIntervalMinutes);
   // GitHub Actions 排程固定每 30 分鐘一輪，設得更短也不會更即時
   if (!Number.isInteger(interval) || interval < 30 || interval > 24 * 60) fail("syncIntervalMinutes（30–1440 分鐘）");

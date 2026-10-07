@@ -11,7 +11,7 @@ import { TEAM } from "@/lib/results/team";
 import { loadMedals } from "./staticData";
 
 
-const MANUAL = CONFIG.source.type === "manual";
+const MANUAL = CONFIG.source.type !== "bornan";
 const SOURCE = CONFIG.source.type === "bornan" ? `${CONFIG.source.webUrl}/#/medals/standings` : `${CONFIG.source.webUrl}/`;
 
 export function MedalStandings({ refreshKey }: { refreshKey: number }) {

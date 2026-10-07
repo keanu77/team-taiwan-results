@@ -9,6 +9,7 @@ import { fileStore } from "../src/lib/results/sync/fileStore";
 import { hostTimeToIso, parseManualResults, runManualSync } from "../src/lib/results/sync/manual";
 import { runSync, SCHEDULE_GRACE_MS } from "../src/lib/results/sync/run";
 import { isTeamLabel, replaceTeamAliases } from "../src/lib/results/team";
+import { parseIssueForm } from "../scripts/issue-to-event";
 import type { TpeResultUnit } from "../src/lib/results/types";
 
 const tmp = () => mkdtempSync(join(tmpdir(), "results-sync-"));
@@ -30,6 +31,15 @@ assert.throws(() => parseConfig({ ...base, syncIntervalMinutes: 15 }), /syncInte
 const { teamMedals: _omitted, ...withoutMedals } = base;
 assert.equal(parseConfig(withoutMedals).teamMedals.updatedAt, `${base.startDate}T00:00:00Z`, "teamMedals is optional");
 assert.equal(parseConfig({ ...base, source: { type: "manual", code: "X2027", webUrl: "https://example.org/" } }).source.webUrl, "https://example.org");
+// 試算表來源只接受 Google「發布到網路」的 CSV 網址
+const sheet = (csvUrl: string) => parseConfig({ ...base, source: { type: "sheet", code: "X2027", webUrl: "https://example.org", csvUrl } });
+assert.equal(sheet("https://docs.google.com/spreadsheets/d/e/2PACX-abc_DEF-1/pub?gid=0&single=true&output=csv").source.type, "sheet");
+assert.throws(() => sheet("https://docs.google.com/spreadsheets/d/e/2PACX-abc/pubhtml"), /source\.csvUrl/);
+assert.throws(() => sheet("https://evil.example/spreadsheets/d/e/x/pub?output=csv"), /source\.csvUrl/);
+
+// issue 表單：只取認得的欄位，_No response_ 視為未填，備註等其他內容不會進設定
+const form = parseIssueForm("### 賽事代號\n\naimag2026\n\n### 成績來源\n\nmanual（手動填 CSV）\n\n### Google 試算表 CSV 網址（選 sheet 才需要）\n\n_No response_\n\n### 備註\n\n$(whoami)\n");
+assert.deepEqual(form, { id: "aimag2026", source: "manual（手動填 CSV）" });
 
 // 代表隊別名
 assert.equal(replaceTeamAliases("Chinese  Taipei vs JPN"), "TPE vs JPN");
@@ -72,6 +82,11 @@ assert.throws(() => parseManualResults(manualCsv.replace("正式成績,SHI", "�
     assert.deepEqual(first.days, { "2026-09-20": "updated", "2026-09-21": "updated" });
     const again = runManualSync(store, manualCsv, new Date("2026-09-21T01:00:00Z"));
     assert.equal(again.changed, false, "unchanged CSV must not rewrite files or trigger a deploy");
+    // 試算表模式：成績列驟減一半以上就拒收；手動 CSV（git 管理）照常允許刪列
+    const big = [manualCsv.split("\n")[0], ...Array.from({ length: 12 }, (_, i) => `R${i},2026-09-22,10:00,田徑,男子100公尺,預賽,,正式成績,P${i},TPE,10.${i},,,`)].join("\n");
+    runManualSync(store, big, new Date("2026-09-21T01:30:00Z"), { guardDrop: true });
+    assert.throws(() => runManualSync(store, manualCsv, new Date("2026-09-21T01:40:00Z"), { guardDrop: true }), /驟減/);
+    runManualSync(store, manualCsv, new Date("2026-09-21T01:50:00Z"));
     const removed = runManualSync(store, manualCsv.split("\n").slice(0, 3).join("\n"), new Date("2026-09-21T02:00:00Z"));
     assert.deepEqual(removed.days, { "2026-09-21": "updated" }, "rows deleted from the CSV disappear from that day");
     assert.deepEqual(store.readDay("2026-09-21")!.units, []);
@@ -182,6 +197,10 @@ async function main() {
     assert.equal(medalDown.medals, "failed");
     assert.equal(medalDown.days["2026-09-20"], "updated", "a broken medal table does not stop the schedule");
 
+    // 新賽事還沒填成績：只有表頭不算錯
+    const fresh = runManualSync(fileStore(tmp()), manualCsv.split("\n")[0]);
+    assert.equal(fresh.reason, "尚未填寫成績");
+    assert.equal(fresh.changed, false);
     // 手動 CSV 只剩表頭：拒收，避免清空全部成績
     assert.throws(() => parseManualResults(manualCsv.split("\n")[0]), /沒有任何成績列/);
 
