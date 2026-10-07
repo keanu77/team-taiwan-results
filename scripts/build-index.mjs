@@ -23,6 +23,37 @@ const cards = events.map((e) => `
 // 依各賽事主辦地的「今天」標示狀態；在瀏覽器算，網站不用每天重建
 const statusScript = `document.querySelectorAll(".card").forEach(function(a){try{var t=new Intl.DateTimeFormat("en-CA",{timeZone:a.dataset.tz,year:"numeric",month:"2-digit",day:"2-digit"}).format(new Date());var s=t<a.dataset.start?["即將開始","soon"]:t>a.dataset.end?["已結束","done"]:["進行中","live"];var el=a.querySelector(".status");el.textContent=s[0];el.className="status "+s[1];el.hidden=false;}catch(e){}});`;
 
+const REPO = "https://github.com/keanu77/team-taiwan-results";
+
+// 首頁說明：這個網站是什麼、資料怎麼來、怎麼加新賽事
+const about = `
+  <section>
+    <h2>這是什麼</h2>
+    <p>綜合運動會（奧運、亞運等）中華台北代表隊的賽程與賽果整理。每個賽事一頁，把官方成績系統的英文資料整理成依運動項目分組的中文頁面，方便快速查本隊選手的比賽時間、對手、比分與獎牌。</p>
+  </section>
+  <section>
+    <h2>賽事頁可以看什麼</h2>
+    <ul class="points">
+      <li>累計獎牌與得牌選手，依代表團公布的得牌明細</li>
+      <li>依運動項目分組的每場比賽：階段、對手、比分或成績、名次、勝負</li>
+      <li>選手中文姓名、項目中文名稱，可用中英文搜尋選手</li>
+      <li>單日或整個賽期查詢，並列主辦地與台灣時間</li>
+      <li>手機版、夜間模式、字級調整</li>
+    </ul>
+  </section>
+  <section>
+    <h2>資料來源</h2>
+    <ul class="points">
+      <li><strong>即時同步的賽事</strong>（如 2026 愛知・名古屋亞運）：賽期中由 GitHub Actions 定時向官方成績系統同步（約每 30 分鐘一輪），官網暫時連不上時保留最後一次成功的資料；閉幕後再補正一次即封存。</li>
+      <li><strong>已結束的賽事</strong>（2024 巴黎、2020 東京奧運）：官網即時資料已下線，改由網際網路檔案館（Wayback Machine）保存的官方逐場成績與官方成績總冊回補；選手中文姓名與得牌依代表團公布的名單。</li>
+      <li>標示「接續前場」的場次，官方只公布接在前一場之後，沒有確切開賽時間。</li>
+    </ul>
+  </section>
+  <section>
+    <h2>想追蹤其他賽事？</h2>
+    <p>到 GitHub 用「<a href="${REPO}/issues/new?template=new-event.yml">新增賽事</a>」表單提出，或照 <a href="${REPO}#readme">README</a> 的步驟自己架一份（免費，不需要伺服器）。原始碼公開於 <a href="${REPO}">${REPO.replace("https://", "")}</a>。</p>
+  </section>`;
+
 const single = events.length === 1;
 const html = `<!doctype html>
 <html lang="zh-TW">
@@ -41,7 +72,9 @@ ul{list-style:none;margin:0;padding:0;display:grid;gap:12px}
 .card{display:grid;gap:4px;padding:16px 18px;border:1px solid var(--line);border-radius:16px;background:var(--card);color:inherit;text-decoration:none}
 .card:hover{border-color:var(--brand)}.card:focus-visible{outline:2px solid var(--brand);outline-offset:2px}.card strong{font-size:1.1rem}.meta{color:var(--muted);font-size:.9rem}
 .status{justify-self:start;font-size:.75rem;font-weight:600;padding:2px 10px;border-radius:999px}.live{background:#e8f0ff;color:#0847c4}.soon{background:#fff1e7;color:#9a3412}.done{background:#e9eef6;color:#5b6478}
-footer{margin-top:32px;font-size:.8rem;color:var(--muted)}footer a{color:inherit}
+section{margin-top:32px}h2{font-size:1.1rem;margin:0 0 8px}section p{margin:0}section a,footer a{color:var(--brand)}
+ul.points{display:block;list-style:disc;padding-left:1.25em}ul.points li{margin:4px 0}
+footer{margin-top:32px;font-size:.8rem;color:var(--muted)}
 </style>
 </head>
 <body>
@@ -49,7 +82,7 @@ footer{margin-top:32px;font-size:.8rem;color:var(--muted)}footer a{color:inherit
   <h1>賽程與賽果追蹤</h1>
   <p class="lead">${single ? "正在前往賽事頁面…" : "選擇賽事，查看代表隊的賽程、比分與獎牌。"}</p>
   <ul>${cards}
-  </ul>
+  </ul>${single ? "" : about}
   <footer>資料定時同步各賽會官方成績系統，以官方公告為準。本站與主辦單位無關。</footer>
 </main>
 <script>${statusScript}</script>
