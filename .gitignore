@@ -14,3 +14,5 @@ next-env.d.ts
 /site/
 # import-wayback 的原始檔快取
 /.cache/
+# codex 生圖原始檔（各版本），只提交壓縮後的 webp
+/site-assets/_versions/
