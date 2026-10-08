@@ -61,7 +61,7 @@ templates/                     ← 空白範本
   ```bash
   npm run new-event -- --id aimag2026 --name "2026 利雅德亞洲室內暨武藝運動會" \
     --start 2026-11-12 --end 2026-11-21 --tz Asia/Riyadh --tz-label 沙烏地 \
-    --noc TPE --label 中華台北 --source manual --web-url https://<官方成績網站>
+    --noc TPE --label 中華隊 --source manual --web-url https://<官方成績網站>
   ```
   會建立設定檔與只有表頭的空白名單，並先做格式檢查。`bornan` 另加 `--api-base`，`sheet` 另加 `--csv-url`。
 - **GitHub 網頁**：新增檔案時，檔名輸入 `events/aimag2026/competition.config.json` 就會自動建立資料夾，內容照下表填。
@@ -77,7 +77,7 @@ templates/                     ← 空白範本
 | `timeZone` / `timeZoneLabel` | 主辦地時區（[IANA 名稱](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones)）與顯示名稱 | `Asia/Tokyo`、`日本` |
 | `viewerTimeZone` / `viewerTimeZoneLabel` | 觀眾所在時區，展開場次時並列顯示 | `Asia/Taipei`、`台灣` |
 | `team.noc` | 追蹤的代表隊三碼代碼 | `TPE` |
-| `team.label` | 代表隊中文名稱 | `中華台北` |
+| `team.label` | 代表隊中文名稱（網站上顯示的名字） | `中華隊` |
 | `team.aliases` | 官方資料中代表隊可能出現的全名，顯示時換成代碼 | `["Chinese Taipei", "中華台北"]` |
 | `source.type` | `bornan`（自動同步）、`manual`（手動 CSV）或 `sheet`（Google 試算表），見下方「成績來源」 | `bornan` |
 | `source.code` | 賽事代碼，2–20 碼大寫英數字。bornan 要與官方 API 網址裡的那一段相同；其他來源自取 | `AG2026` |
@@ -235,7 +235,7 @@ npm run build:site           # 整個網站（所有賽事＋首頁）輸出到 
 - **repo 60 天沒有任何 commit，GitHub 會自動停用排程**。賽事開始前記得確認 Actions 是開啟的。
 - **請尊重官網**：同步程式每秒最多送 1 個請求，失敗會自動冷卻。`syncIntervalMinutes` 預設 30，只在賽期中確實需要時才調到 10，也請遵守各賽會成績網站的使用條款。
 - 公開版**不附國旗圖**（官方圖檔有版權疑慮），獎牌榜只顯示代碼與國名。
-- `rosters/` 內附的 2026 亞運中華台北選手中英文對照與得牌明細，取自官方公開名單與中華奧會公布的總表，作為範例格式。
+- `rosters/` 內附的 2026 亞運中華隊選手中英文對照與得牌明細，取自官方公開名單與中華奧會公布的總表，作為範例格式。
 
 ## 授權
 

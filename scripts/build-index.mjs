@@ -110,7 +110,7 @@ const hero = `
   ${hasHero ? `<picture class="hero-art"><source media="(max-width: 720px)" srcset="./assets/hero-sm.webp"><img src="./assets/hero.webp" alt="" width="1600" height="900" fetchpriority="high"></picture>` : ""}
   <div class="hero-text">
     <p class="kicker">TEAM TAIWAN・RESULTS</p>
-    <h1>中華台北<br>賽程與賽果追蹤</h1>
+    <h1>中華隊<br>賽程與賽果追蹤</h1>
     <p class="lead">${single ? "正在前往賽事頁面…" : "奧運、亞運等綜合運動會，本隊每一場比賽的對手、比分與獎牌，一頁看完。"}</p>
     <a class="cta" href="./${escape(latest.id)}/">看 ${escape(latest.name)} →</a>
   </div>
@@ -160,7 +160,7 @@ const html = `<!doctype html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>賽程與賽果追蹤</title>
-<meta name="description" content="奧運、亞運等綜合運動會中華台北代表隊的賽程、賽果與獎牌追蹤。">
+<meta name="description" content="奧運、亞運等綜合運動會中華隊的賽程、賽果與獎牌追蹤。">
 ${single ? `<meta http-equiv="refresh" content="0; url=./${escape(events[0].id)}/">` : ""}
 <style>${STYLE}</style>
 </head>

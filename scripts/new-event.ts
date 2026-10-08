@@ -1,7 +1,7 @@
 // 建立新賽事資料夾：設定檔＋只有表頭的空白名單，避免複製上一屆時夾帶舊名單。
 // 用法：npm run new-event -- --id aimag2026 --name "2026 利雅德亞洲室內暨武藝運動會" \
 //   --start 2026-11-12 --end 2026-11-21 --tz Asia/Riyadh --tz-label 沙烏地 \
-//   --noc TPE --label 中華台北 --source manual --web-url https://example.org
+//   --noc TPE --label 中華隊 --source manual --web-url https://example.org
 // bornan 另需 --api-base；sheet 另需 --csv-url。其他選項見 README。
 import { existsSync, mkdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";

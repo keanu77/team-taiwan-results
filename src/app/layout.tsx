@@ -12,7 +12,7 @@ import { CONFIG } from "@/config";
 
 export const metadata: Metadata = {
   title: `${CONFIG.team.noc} 賽程與賽果｜${CONFIG.name}`,
-  description: `${CONFIG.name} ${CONFIG.team.label}代表隊賽程、賽果與獎牌，定時同步官方成績系統。`,
+  description: `${CONFIG.name} ${CONFIG.team.label}賽程、賽果與獎牌，定時同步官方成績系統。`,
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

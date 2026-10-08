@@ -62,7 +62,7 @@ body:
     id: label
     attributes:
       label: 代表隊名稱
-      value: 中華台北
+      value: 中華隊
     validations:
       required: true
   - type: dropdown
