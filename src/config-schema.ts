@@ -88,8 +88,8 @@ export function parseConfig(value: unknown, file = "competition.config.json"): C
     : source.type === "sheet" ? { type: "sheet", code, webUrl: url(source.webUrl, "source.webUrl"), csvUrl: sheetUrl(source.csvUrl) }
     : fail("source.type（只支援 bornan、manual 或 sheet）");
   const interval = Number(c.syncIntervalMinutes);
-  // GitHub Actions 排程固定每 30 分鐘一輪，設得更短也不會更即時
-  if (!Number.isInteger(interval) || interval < 30 || interval > 24 * 60) fail("syncIntervalMinutes（30–1440 分鐘）");
+  // workflow 排程最密每 10 分鐘一輪；低於 30 分鐘要搭配外部觸發才準時（見 README）
+  if (!Number.isInteger(interval) || interval < 10 || interval > 24 * 60) fail("syncIntervalMinutes（10–1440 分鐘）");
   // 選填：沒有代表團得牌明細時可以整段省略
   const medals = (c.teamMedals ?? { source: "代表團公布的得牌明細", updatedAt: `${startDate}T00:00:00Z` }) as Record<string, unknown>;
   const updatedAt = str(medals.updatedAt, "teamMedals.updatedAt（例如 2026-09-29T23:00:00+08:00）");

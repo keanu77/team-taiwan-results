@@ -1,7 +1,7 @@
 # team-taiwan-results
 
 綜合運動會（亞運、亞室武運、南美運動會等）的**國家隊賽程與賽果追蹤頁**。
-GitHub Actions 每 30 分鐘向官方成績系統同步一次，產生純靜態網站發布到 GitHub Pages：不需要伺服器、不需要資料庫，也不用付費。
+GitHub Actions 定時向官方成績系統同步（預設每 30 分鐘，可調到 10 分鐘），產生純靜態網站發布到 GitHub Pages：不需要伺服器、不需要資料庫，也不用付費。
 
 網站：<https://keanu77.github.io/team-taiwan-results/>（首頁列出所有賽事，例如 [2026 愛知・名古屋亞運](https://keanu77.github.io/team-taiwan-results/ag2026/)）
 
@@ -17,13 +17,13 @@ GitHub Actions 每 30 分鐘向官方成績系統同步一次，產生純靜態�
 ## 運作方式
 
 ```
-GitHub Actions（每 30 分鐘）
+GitHub Actions（排程每 10 分鐘一輪，各賽事依 syncIntervalMinutes 決定實際多久抓一次）
   └─ npm run sync ── 讀官方成績 API ──▶ data 分支（JSON 快照，失敗時保留上一份）
   └─ npm run build ─ CSV 名單＋快照 ──▶ GitHub Pages（靜態網站，瀏覽器每分鐘重讀）
 ```
 
 - 只有**比賽前兩天到閉幕後三天**會真的去抓官網；其他時間排程會直接跳過。
-- 官網連線失敗時保留最後一次成功的資料，並暫停 30 分鐘再試，不會連續重試。
+- 官網連線失敗時保留最後一次成功的資料，並暫停一個同步間隔再試，不會連續重試。
 - 同步資料放在獨立的 `data` 分支（每個賽事一個資料夾），`main` 的歷史不會被洗版。
 
 ## 目錄結構
@@ -84,7 +84,7 @@ templates/                     ← 空白範本
 | `source.apiBase` | 官方成績 API 根網址（只有 bornan 需要） | `https://back.results.asiangames2026.org/s/AG2026/en` |
 | `source.csvUrl` | 試算表「發布到網路」的 CSV 網址（只有 sheet 需要） | `https://docs.google.com/spreadsheets/d/e/…/pub?output=csv` |
 | `source.webUrl` | 官方成績網站，頁面上的「官方成績網站」連結 | `https://results.asiangames2026.org` |
-| `syncIntervalMinutes` | 當日賽果多久重抓一次（30–1440）。排程固定每 30 分鐘一輪，設更短不會更快 | `30` |
+| `syncIntervalMinutes` | 當日賽果與獎牌榜多久重抓一次（10–1440）。預設 30；低於 30 要搭配下方的外部觸發才會準時 | `30` |
 | `teamMedals.source` / `updatedAt`（選填） | 代表團得牌明細的來源與更新時間，顯示在獎牌明細下方；整段可省略 | `中華奧會代表團成績公布總表`、`2026-09-29T23:00:00+08:00` |
 
 設定寫錯時，`npm run build` 與同步會直接失敗並指出是哪個欄位。
@@ -117,20 +117,20 @@ PDF 版面一改就可能解析失敗（失敗時不會寫入任何東西），�
 2. 到 **Actions** 分頁按啟用。Fork 的 repo 預設停用排程，沒啟用就不會自動更新。
 3. **Actions → 同步成績並發布 → Run workflow** 手動跑第一次。完成後網址會出現在 workflow 的 deploy 步驟。
 
-#### 賽期中要準時每 30 分鐘更新（選用）
+#### 賽期中要準時更新（選用，最快每 10 分鐘）
 
 不做任何設定時，內建排程照樣會定期同步與發布，但 GitHub 的排程只是「盡量執行」：本 repo 在 2026-10-06～07 實測，常被降到 **3–6 小時才跑一次**。賽期外或已結束的賽事不受影響，不必處理。
 
-賽期中需要準時更新，就由外部定時呼叫 workflow（等同按 Run workflow），內建排程保留當備援。任選一種，賽期結束後停用：
+賽期中需要準時更新，就由外部定時呼叫 workflow（等同按 Run workflow），內建排程保留當備援。外部觸發的間隔設成和該賽事的 `syncIntervalMinutes` 一樣（30 或 10 分鐘）；觸發比設定密只會多跑空 workflow，不會更快。任選一種，賽期結束後停用：
 
 | 做法 | 設定 | 適合 |
 |------|------|------|
-| **常開的電腦**（Mac launchd／Linux cron） | 每 30 分鐘執行 `gh workflow run sync-and-deploy.yml -R <owner>/team-taiwan-results`；`gh auth login` 一次即可，不用另建 token | 手邊有不關機的機器（電腦關機或斷網時會停） |
-| **cron-job.org** 等免費排程服務 | 每 30 分鐘 `POST https://api.github.com/repos/<owner>/team-taiwan-results/actions/workflows/sync-and-deploy.yml/dispatches`，body `{"ref":"main"}`，header `Authorization: Bearer <token>` | 沒有常開的機器 |
+| **常開的電腦**（Mac launchd／Linux cron） | 依間隔執行 `gh workflow run sync-and-deploy.yml -R <owner>/team-taiwan-results`；`gh auth login` 一次即可，不用另建 token | 手邊有不關機的機器（電腦關機或斷網時會停） |
+| **cron-job.org** 等免費排程服務 | 依間隔 `POST https://api.github.com/repos/<owner>/team-taiwan-results/actions/workflows/sync-and-deploy.yml/dispatches`，body `{"ref":"main"}`，header `Authorization: Bearer <token>` | 沒有常開的機器 |
 | **Cloudflare Workers** 排程觸發 | Worker 的 `scheduled()` 送上面同一個 POST，token 放 Worker secret | 想要雲端執行又不依賴第三方排程網站 |
 
 - 第二、三種要用 **fine-grained PAT**，只授權這個 repo、權限只給 **Actions: Read and write**，並設到期日（賽期結束後）。
-- 間隔不要短於 30 分鐘（見下方〈注意事項〉的官網負擔說明）。同步程式在賽期外會自己跳過，外部觸發忘了關也不會去打官網，只是多跑幾次空 workflow。
+- 10 分鐘是下限。改成 10 分鐘時，當天賽程與獎牌榜對官網的請求會變成 3 倍（已是正式成績的場次不重抓），請先確認該賽會成績網站的使用條款。同步程式在賽期外會自己跳過，外部觸發忘了關也不會去打官網，只是多跑幾次空 workflow。
 
 ### 5. 注意
 
@@ -173,7 +173,7 @@ PDF 版面一改就可能解析失敗（失敗時不會寫入任何東西），�
 2. **檔案 → 共用 → 發布到網路**，選要發布的工作表、格式選 **CSV**，複製產生的網址。
 3. 設定 `"source": { "type": "sheet", "code": "<自取>", "webUrl": "<官方網站>", "csvUrl": "<剛剛的網址>" }`。
 
-之後每 30 分鐘自動讀一次，有變動才重新發布。只把編輯權限給需要填成績的人。
+之後每輪排程都會讀一次（約每 10 分鐘，GitHub 排程常延遲），有變動才重新發布。只把編輯權限給需要填成績的人。
 
 ### `manual`：手動 CSV
 
@@ -230,10 +230,10 @@ npm run build:site           # 整個網站（所有賽事＋首頁）輸出到 
 
 ## 注意事項
 
-- **GitHub 排程不準時**：可能延遲或跳過，實測曾降到 3–6 小時一次。賽期中要準時更新見〈賽期中要準時每 30 分鐘更新〉；即使如此，分秒必爭的即時比分仍請看官網。
+- **GitHub 排程不準時**：可能延遲或跳過，實測曾降到 3–6 小時一次。賽期中要準時更新見〈賽期中要準時更新〉；即使如此，分秒必爭的即時比分仍請看官網。
 - **對官網的負擔**：已是正式成績的場次不會重複請求，只在閉幕後第三天的最終補正時全部重讀一次。
 - **repo 60 天沒有任何 commit，GitHub 會自動停用排程**。賽事開始前記得確認 Actions 是開啟的。
-- **請尊重官網**：同步程式每秒最多送 1 個請求、30 分鐘一輪，失敗會自動冷卻。請不要把間隔調得更短，也請遵守各賽會成績網站的使用條款。
+- **請尊重官網**：同步程式每秒最多送 1 個請求，失敗會自動冷卻。`syncIntervalMinutes` 預設 30，只在賽期中確實需要時才調到 10，也請遵守各賽會成績網站的使用條款。
 - 公開版**不附國旗圖**（官方圖檔有版權疑慮），獎牌榜只顯示代碼與國名。
 - `rosters/` 內附的 2026 亞運中華台北選手中英文對照與得牌明細，取自官方公開名單與中華奧會公布的總表，作為範例格式。
 
