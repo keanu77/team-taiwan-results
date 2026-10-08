@@ -88,6 +88,65 @@ const about = `
     </article>
   </section>`;
 
+// 專案說明：給想了解或沿用本專案的人，預設收合
+const guide = `
+  <section class="guide" aria-labelledby="guide-title">
+    <h2 class="section" id="guide-title">專案說明</h2>
+    <p class="guide-lead">本站免費、公開，程式碼以 MIT 授權開源在 <a href="${REPO}">GitHub</a>，任何人都能沿用到其他賽事或其他國家。</p>
+    <details>
+      <summary>運作方式</summary>
+      <p>不需要伺服器、資料庫，也不用付費：由 GitHub Actions 定時同步成績，產生純靜態網頁發布到 GitHub Pages。</p>
+      <ol>
+        <li><strong>定時觸發</strong>：排程每 10 分鐘一輪，各賽事依自己的設定（預設 30 分鐘）決定這輪要不要真的去抓。</li>
+        <li><strong>同步成績</strong>：只在比賽前兩天到閉幕後三天讀官方成績；已是正式成績的場次不重複請求，每秒最多 1 個請求。</li>
+        <li><strong>存成快照</strong>：結果以 JSON 存進獨立的 <code>data</code> 分支，每個賽事一個資料夾。</li>
+        <li><strong>建置網站</strong>：快照加上中文對照名單產生靜態網頁，資料有變動才發布。</li>
+        <li><strong>瀏覽器自動更新</strong>：開著的頁面每分鐘重讀一次資料。</li>
+      </ol>
+      <p>官網連線失敗時保留最後一次成功的資料並暫停一個同步間隔再試；取不到資料就不發布，網站不會被蓋成空白。閉幕後第三天做最後一次補正，之後永久保留成封存頁。</p>
+    </details>
+    <details>
+      <summary>成績來源</summary>
+      <div class="table-wrap"><table>
+        <thead><tr><th scope="col">來源</th><th scope="col">怎麼運作</th><th scope="col">適合</th><th scope="col">限制</th></tr></thead>
+        <tbody>
+          <tr><td>自動同步（bornan）</td><td>讀 Bornan 成績系統的 API（2026 亞運使用）</td><td>官方用 Bornan 系統的賽事</td><td>其他賽事是否完全相容尚未驗證</td></tr>
+          <tr><td>手動 CSV</td><td>成績填在 <code>results/manual.csv</code>，push 後發布</td><td>場次少、一兩個人維護</td><td>要有人更新，沒有即時比分</td></tr>
+          <tr><td>Google 試算表</td><td>試算表「發布到網路」成 CSV，每輪排程讀一次</td><td>多人分工、不會用 GitHub 的人</td><td>欄名被改會同步失敗；成績列驟減一半以上會拒收</td></tr>
+          <tr><td>Wayback 回補</td><td>讀網際網路檔案館保存的奧運逐場存檔，轉成手動 CSV</td><td>官方 API 已下線的已結束奧運</td><td>沒存到的場次要人工補</td></tr>
+        </tbody>
+      </table></div>
+      <p>官方資料只有英文，中文姓名與項目名來自各賽事的 CSV 對照表；中華奧會的代表團成績總表 PDF 可直接轉成得牌明細。對手的外國選手姓名維持英文。</p>
+    </details>
+    <details>
+      <summary>想追蹤新的賽事</summary>
+      <p><strong>請維護者加入</strong>（不用寫程式）：用「<a href="${REPO}/issues/new?template=new-event.yml">新增賽事</a>」表單開 issue，填賽事名稱、日期、時區與官方成績網站；確認後系統會自動建立賽事並開 PR，合併後上線。</p>
+      <p><strong>自己架一份</strong>：</p>
+      <ol>
+        <li>在 GitHub 按 <strong>Use this template</strong>（或 Fork）建立自己的 repo。</li>
+        <li>新增 <code>events/&lt;代號&gt;/competition.config.json</code>（issue 表單、<code>npm run new-event</code> 或 GitHub 網頁皆可），代號就是網址路徑。</li>
+        <li>填賽事名稱、賽期、時區、代表隊代碼與中文名、成績來源；寫錯時建置會指出是哪個欄位。</li>
+        <li>準備中文對照名單（選填但建議），用 Excel 編輯時存成 CSV UTF-8。</li>
+        <li><strong>Settings → Pages</strong> 來源選 GitHub Actions，到 Actions 分頁啟用排程並手動執行一次。</li>
+      </ol>
+      <p>完整欄位說明見 <a href="${REPO}#readme">README</a>。</p>
+    </details>
+    <details>
+      <summary>更新頻率</summary>
+      <p>預設每 30 分鐘同步一次，最快可設到 10 分鐘；這不是即時比分，分秒必爭的比分請看官網。</p>
+      <p>GitHub 的排程只是「盡量執行」，實測常被延到 3–6 小時才跑一次。賽期中要準時更新，可由常開的電腦、cron-job.org 或 Cloudflare Workers 定時觸發 workflow，內建排程留作備援。調到 10 分鐘前請先確認該賽會成績網站的使用條款。</p>
+    </details>
+    <details>
+      <summary>技術與注意事項</summary>
+      <ul class="points">
+        <li>Next.js、React、TypeScript、Tailwind CSS 匯出靜態網站；一個 repo 可放多個賽事，各有自己的網址。</li>
+        <li>本站與任何賽會主辦單位或成績系統廠商無關，資料以官方公告為準。</li>
+        <li>不繞過登入、驗證碼或任何存取限制；官網條款禁止自動讀取時改用手動 CSV 或試算表。</li>
+        <li>不附國旗圖（官方圖檔有版權疑慮），獎牌榜只顯示代碼與國名。</li>
+      </ul>
+    </details>
+  </section>`;
+
 // 製作者與追蹤連結（與運動傷害影片圖鑑 injury.sportsmedicine.tw 一致）
 const FOLLOW = [
   ["個人網站", "https://sportsmedicine.tw/"],
@@ -149,6 +208,14 @@ ul{list-style:none;margin:0;padding:0}
 .info article{padding:20px;border:1px solid var(--line);border-radius:18px;background:var(--card)}
 .info h2{font-size:1.05rem;margin:0 0 8px}.info p{margin:0 0 8px}.repo{font-size:.85rem;color:var(--muted);overflow-wrap:anywhere}
 ul.points{list-style:disc;padding-left:1.2em}ul.points li{margin:4px 0;font-size:.95rem}
+.guide{margin-top:40px}.guide-lead{margin:0 0 12px;color:var(--muted)}
+.guide details{border:1px solid var(--line);border-radius:14px;background:var(--card);margin-top:10px}
+.guide summary{cursor:pointer;padding:14px 18px;font-weight:700;min-height:44px}.guide summary:focus-visible{outline:2px solid var(--brand);outline-offset:2px;border-radius:14px}
+.guide details>:not(summary){margin:0 18px 12px}.guide details>:last-child{margin-bottom:18px}
+.guide ol{padding-left:1.4em}.guide ol li{margin:4px 0}
+.guide code{font-size:.85em;padding:1px 5px;border-radius:6px;background:var(--bg);overflow-wrap:anywhere}
+.table-wrap{overflow-x:auto}.guide table{border-collapse:collapse;width:100%;min-width:560px;font-size:.9rem}
+.guide th,.guide td{border-bottom:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}.guide th{color:var(--muted);font-weight:600}
 .credit{margin-top:40px;padding-top:24px;border-top:1px solid var(--line)}.credit p{margin:0;font-weight:600}
 ul.follow{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}ul.follow a{display:inline-block;min-height:36px;padding:6px 14px;border:1px solid var(--line);border-radius:999px;background:var(--card);color:var(--ink);text-decoration:none;font-size:.9rem}ul.follow a:hover{border-color:var(--brand);color:var(--brand)}
 footer{margin-top:24px;font-size:.8rem;color:var(--muted)}
@@ -169,7 +236,7 @@ ${hero}
 <main>
   <h2 class="section">選擇賽事</h2>
   <ul class="events">${cards}
-  </ul>${single ? "" : about}${credit}
+  </ul>${single ? "" : about}${guide}${credit}
   <footer>資料取自各賽會官方成績系統與其存檔，以官方公告為準。本站與主辦單位無關。主視覺與封面為示意插畫。</footer>
 </main>
 <script>${statusScript}</script>
