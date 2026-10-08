@@ -136,7 +136,7 @@ const guide = `
       <p><strong>請維護者加入</strong>（不用寫程式）：用「<a href="${REPO}/issues/new?template=new-event.yml">新增賽事</a>」表單開 issue，填賽事名稱、日期、時區與官方成績網站；確認後系統會自動建立賽事並開 PR，合併後上線。</p>
       <p><strong>自己架一份</strong>：</p>
       <ol>
-        <li>在 GitHub 按 <strong>Use this template</strong>（或 Fork）建立自己的 repo。</li>
+        <li>在 GitHub 按 <strong>Fork</strong> 建立自己的 repo。</li>
         <li>新增 <code>events/&lt;代號&gt;/competition.config.json</code>（issue 表單、<code>npm run new-event</code> 或 GitHub 網頁皆可），代號就是網址路徑。</li>
         <li>填賽事名稱、賽期、時區、代表隊代碼與中文名、成績來源；寫錯時建置會指出是哪個欄位。</li>
         <li>準備中文對照名單（選填但建議），用 Excel 編輯時存成 CSV UTF-8。</li>
