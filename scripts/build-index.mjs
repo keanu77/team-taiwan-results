@@ -29,12 +29,25 @@ for (const e of events) {
   }
 }
 
-// 各賽事獎牌數：讀代表團得牌明細 rosters/team-medals.csv 的第一欄（金／銀／銅）
+// 各賽事獎牌數：與賽事頁一致，有官方獎牌榜（自動同步，已複製到 site/<代號>/data/medals.json）就用官方數字；
+// 沒有（手動成績）才讀代表團得牌明細 rosters/team-medals.csv 的第一欄（金／銀／銅）
 const MEDAL_KEYS = { 金: "gold", 銀: "silver", 銅: "bronze" };
+function officialMedals(e) {
+  const file = join(siteDir, e.id, "data", "medals.json");
+  if (!existsSync(file)) return null;
+  try {
+    const row = JSON.parse(readFileSync(file, "utf8")).standings?.find((s) => s.org === e.team.noc);
+    return row && [row.gold, row.silver, row.bronze].every(Number.isInteger) ? { gold: row.gold, silver: row.silver, bronze: row.bronze } : null;
+  } catch (error) {
+    console.warn(`[index] ${e.id} 的 medals.json 無法解析，改用代表團得牌明細：${error.message}`);
+    return null;
+  }
+}
 for (const e of events) {
   const file = join(EVENTS_DIR, e.id, "rosters", "team-medals.csv");
-  e.medals = { gold: 0, silver: 0, bronze: 0 };
-  if (!existsSync(file)) continue;
+  const official = officialMedals(e);
+  e.medals = official ?? { gold: 0, silver: 0, bronze: 0 };
+  if (official || !existsSync(file)) continue;
   for (const line of readFileSync(file, "utf8").replace(/^﻿/, "").split(/\r?\n/).slice(1)) {
     const key = MEDAL_KEYS[line.split(",")[0]?.trim()];
     if (key) e.medals[key] += 1;
@@ -251,6 +264,9 @@ const base = `${(process.env.BASE_PATH ?? "").replace(/\/+$/, "")}/`;
 writeFileSync(join(siteDir, "404.html"), html.replace("<head>", `<head>\n<base href="${escape(base)}">`).replace("<title>賽程與賽果追蹤</title>", "<title>找不到頁面｜賽程與賽果追蹤</title>")
   .replace(/<meta http-equiv="refresh"[^>]*>/, "")
   .replace(/<p class="lead">[^<]*<\/p>/, '<p class="lead">找不到這個頁面，請從下面選擇賽事。</p>'));
+// Cloudflare Pages 會用離網址最近的 404.html（例如 /og2020/404.html 是 Next.js 的英文預設頁），
+// 各賽事資料夾也換成同一份；它帶 <base href>，在任何深度連結都正確
+for (const e of events) copyFileSync(join(siteDir, "404.html"), join(siteDir, e.id, "404.html"));
 // Cloudflare Pages 的快取標頭（GitHub Pages 會忽略這個檔）。
 // 帶雜湊的 JS／CSS 與帶版本號的資料檔內容不會變，可以長期快取；index.json 用分鐘當版本，只快取 1 分鐘。
 writeFileSync(join(siteDir, "_headers"), `/:event/_next/static/*
