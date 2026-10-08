@@ -95,7 +95,7 @@ const guide = `
     <p class="guide-lead">本站免費、公開，程式碼以 MIT 授權開源在 <a href="${REPO}">GitHub</a>，任何人都能沿用到其他賽事或其他國家。</p>
     <details>
       <summary>運作方式</summary>
-      <p>不需要伺服器、資料庫，也不用付費：由 GitHub Actions 定時同步成績，產生純靜態網頁發布到 GitHub Pages。</p>
+      <p>不需要伺服器、資料庫，也不用付費：由 GitHub Actions 定時同步成績，產生純靜態網頁發布到 Cloudflare Pages。</p>
       <ol>
         <li><strong>定時觸發</strong>：排程每 10 分鐘一輪，各賽事依自己的設定（預設 30 分鐘）決定這輪要不要真的去抓。</li>
         <li><strong>同步成績</strong>：只在比賽前兩天到閉幕後三天讀官方成績；已是正式成績的場次不重複請求，每秒最多 1 個請求。</li>
@@ -127,7 +127,7 @@ const guide = `
         <li>新增 <code>events/&lt;代號&gt;/competition.config.json</code>（issue 表單、<code>npm run new-event</code> 或 GitHub 網頁皆可），代號就是網址路徑。</li>
         <li>填賽事名稱、賽期、時區、代表隊代碼與中文名、成績來源；寫錯時建置會指出是哪個欄位。</li>
         <li>準備中文對照名單（選填但建議），用 Excel 編輯時存成 CSV UTF-8。</li>
-        <li><strong>Settings → Pages</strong> 來源選 GitHub Actions，到 Actions 分頁啟用排程並手動執行一次。</li>
+        <li>建立 Cloudflare Pages 專案與部署用 token，存進 repo secrets，到 Actions 分頁啟用排程並手動執行一次。</li>
       </ol>
       <p>完整欄位說明見 <a href="${REPO}#readme">README</a>。</p>
     </details>
@@ -251,4 +251,17 @@ const base = `${(process.env.BASE_PATH ?? "").replace(/\/+$/, "")}/`;
 writeFileSync(join(siteDir, "404.html"), html.replace("<head>", `<head>\n<base href="${escape(base)}">`).replace("<title>賽程與賽果追蹤</title>", "<title>找不到頁面｜賽程與賽果追蹤</title>")
   .replace(/<meta http-equiv="refresh"[^>]*>/, "")
   .replace(/<p class="lead">[^<]*<\/p>/, '<p class="lead">找不到這個頁面，請從下面選擇賽事。</p>'));
+// Cloudflare Pages 的快取標頭（GitHub Pages 會忽略這個檔）。
+// 帶雜湊的 JS／CSS 與帶版本號的資料檔內容不會變，可以長期快取；index.json 用分鐘當版本，只快取 1 分鐘。
+writeFileSync(join(siteDir, "_headers"), `/:event/_next/static/*
+  Cache-Control: public, max-age=31536000, immutable
+/:event/data/days/*
+  Cache-Control: public, max-age=86400
+/:event/data/medals.json
+  Cache-Control: public, max-age=86400
+/:event/data/index.json
+  Cache-Control: public, max-age=60
+/assets/*
+  Cache-Control: public, max-age=604800
+`);
 console.log(`[index] ${events.length} 個賽事：${events.map((e) => e.id).join("、")}`);

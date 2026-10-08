@@ -1,4 +1,4 @@
-// GitHub Pages 以 https://<帳號>.github.io/<repo>/ 提供網站，所以 build 時要帶 BASE_PATH（例如 /team-taiwan-results）。
+// 網站不在網域根目錄時（例如 GitHub Pages 的 https://<帳號>.github.io/<repo>/），build 時要帶 BASE_PATH（例如 /team-taiwan-results）。
 // GitHub Actions 由 actions/configure-pages 自動帶入；本機開發留空即可。
 const basePath = process.env.BASE_PATH ?? "";
 

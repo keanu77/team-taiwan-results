@@ -1,7 +1,7 @@
 # team-taiwan-results
 
 綜合運動會（亞運、亞室武運、南美運動會等）的**國家隊賽程與賽果追蹤頁**。
-GitHub Actions 定時向官方成績系統同步（預設每 30 分鐘，可調到 10 分鐘），產生純靜態網站發布到 GitHub Pages：不需要伺服器、不需要資料庫，也不用付費。
+GitHub Actions 定時向官方成績系統同步（預設每 30 分鐘，可調到 10 分鐘），產生純靜態網站發布到 Cloudflare Pages：不需要伺服器、不需要資料庫，也不用付費。
 
 網站：<https://tpe.sportsmedicine.tw/>（首頁列出所有賽事，例如 [2026 愛知・名古屋亞運](https://tpe.sportsmedicine.tw/ag2026/)；舊網址 keanu77.github.io/team-taiwan-results 會自動轉過來）
 
@@ -19,7 +19,7 @@ GitHub Actions 定時向官方成績系統同步（預設每 30 分鐘，可調�
 ```
 GitHub Actions（排程每 10 分鐘一輪，各賽事依 syncIntervalMinutes 決定實際多久抓一次）
   └─ npm run sync ── 讀官方成績 API ──▶ data 分支（JSON 快照，失敗時保留上一份）
-  └─ npm run build ─ CSV 名單＋快照 ──▶ GitHub Pages（靜態網站，瀏覽器每分鐘重讀）
+  └─ npm run build ─ CSV 名單＋快照 ──▶ Cloudflare Pages（靜態網站，瀏覽器每分鐘重讀）
 ```
 
 - 只有**比賽前兩天到閉幕後三天**會真的去抓官網；其他時間排程會直接跳過。
@@ -111,11 +111,25 @@ EVENT=ag2026 npm run import-medal-pdf -- 總表.pdf             # 寫入該賽�
 
 PDF 版面一改就可能解析失敗（失敗時不會寫入任何東西），那時改成手動編輯 CSV。
 
-### 4. 開啟 GitHub Pages 與 Actions
+### 4. 設定 Cloudflare Pages 與 Actions
 
-1. repo 的 **Settings → Pages → Build and deployment → Source** 選 **GitHub Actions**。
-2. 到 **Actions** 分頁按啟用。Fork 的 repo 預設停用排程，沒啟用就不會自動更新。
-3. **Actions → 同步成績並發布 → Run workflow** 手動跑第一次。完成後網址會出現在 workflow 的 deploy 步驟。
+網站放在 Cloudflare Pages（免費方案即可）。GitHub Pages 從台灣連線每個檔案要等 0.5–1.5 秒、剛發布的檔案最慢 8 秒，且所有檔案只能快取 10 分鐘，所以改用 Cloudflare。
+
+1. 建立 Pages 專案（一次即可，名稱要與 `.github/workflows/sync-and-deploy.yml` 的 `--project-name` 相同）：
+   ```bash
+   npx wrangler pages project create team-taiwan-results --production-branch main
+   ```
+2. Cloudflare 後台 **My Profile → API Tokens → Create Custom Token**，權限只給 **Account → Cloudflare Pages → Edit**，Account Resources 選你的帳號。
+3. 存成 repo secrets：`CLOUDFLARE_API_TOKEN`（上一步的 token）與 `CLOUDFLARE_ACCOUNT_ID`（Cloudflare 後台右側的 Account ID）。
+   ```bash
+   gh secret set CLOUDFLARE_API_TOKEN
+   gh secret set CLOUDFLARE_ACCOUNT_ID
+   ```
+4. 到 **Actions** 分頁按啟用。Fork 的 repo 預設停用排程，沒啟用就不會自動更新。
+5. **Actions → 同步成績並發布 → Run workflow** 手動跑第一次，網站會出現在 `https://<專案名稱>.pages.dev/`。
+6. 要用自己的網域：Pages 專案 → **Custom domains** 加上網域，DNS 的 CNAME 指到 `<專案名稱>.pages.dev`。
+
+快取規則由建置時產生的 `site/_headers` 決定：帶雜湊的 JS／CSS 快取一年、資料檔依版本號快取一天、`index.json` 只快取 1 分鐘。
 
 #### 賽期中要準時更新（選用，最快每 10 分鐘）
 
