@@ -40,7 +40,6 @@ for (const e of events) {
     if (key) e.medals[key] += 1;
   }
 }
-const totalMedals = events.reduce((sum, e) => sum + e.medals.gold + e.medals.silver + e.medals.bronze, 0);
 
 const medalChips = (m) => (m.gold + m.silver + m.bronze
   ? `<span class="medals" aria-label="金牌 ${m.gold}、銀牌 ${m.silver}、銅牌 ${m.bronze}"><span class="m gold">金 ${m.gold}</span><span class="m silver">銀 ${m.silver}</span><span class="m bronze">銅 ${m.bronze}</span></span>`
@@ -113,7 +112,6 @@ const hero = `
     <p class="kicker">TEAM TAIWAN・RESULTS</p>
     <h1>中華台北<br>賽程與賽果追蹤</h1>
     <p class="lead">${single ? "正在前往賽事頁面…" : "奧運、亞運等綜合運動會，本隊每一場比賽的對手、比分與獎牌，一頁看完。"}</p>
-    <p class="stats"><span><b>${events.length}</b> 屆賽事</span><span><b>${totalMedals}</b> 面獎牌</span></p>
     <a class="cta" href="./${escape(latest.id)}/">看 ${escape(latest.name)} →</a>
   </div>
 </header>`;
@@ -129,7 +127,6 @@ a{color:var(--brand)}a:focus-visible{outline:2px solid var(--brand);outline-offs
 .kicker{margin:0 0 8px;font-size:.75rem;letter-spacing:.2em;color:#ffb86b;font-weight:700}
 .hero h1{margin:0;font-size:clamp(1.8rem,5vw,3rem);line-height:1.2;letter-spacing:.02em}
 .hero .lead{margin:12px 0 0;color:#c9d6f2;max-width:30em}
-.stats{display:flex;gap:20px;margin:16px 0 0;color:#c9d6f2}.stats b{font-size:1.6rem;color:#fff;margin-right:4px}
 .cta{display:inline-block;margin-top:20px;padding:10px 20px;border-radius:999px;background:#ff9a3c;color:#1b1206;font-weight:700;text-decoration:none}.cta:hover{background:#ffb066}.cta:focus-visible{outline:2px solid #fff;outline-offset:3px}
 @media (min-width:721px){
 .hero.has-image{height:min(56.25vw,720px)}
