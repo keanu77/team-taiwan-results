@@ -117,6 +117,21 @@ PDF 版面一改就可能解析失敗（失敗時不會寫入任何東西），�
 2. 到 **Actions** 分頁按啟用。Fork 的 repo 預設停用排程，沒啟用就不會自動更新。
 3. **Actions → 同步成績並發布 → Run workflow** 手動跑第一次。完成後網址會出現在 workflow 的 deploy 步驟。
 
+#### 賽期中要準時每 30 分鐘更新（選用）
+
+不做任何設定時，內建排程照樣會定期同步與發布，但 GitHub 的排程只是「盡量執行」：本 repo 在 2026-10-06～07 實測，常被降到 **3–6 小時才跑一次**。賽期外或已結束的賽事不受影響，不必處理。
+
+賽期中需要準時更新，就由外部定時呼叫 workflow（等同按 Run workflow），內建排程保留當備援。任選一種，賽期結束後停用：
+
+| 做法 | 設定 | 適合 |
+|------|------|------|
+| **常開的電腦**（Mac launchd／Linux cron） | 每 30 分鐘執行 `gh workflow run sync-and-deploy.yml -R <owner>/team-taiwan-results`；`gh auth login` 一次即可，不用另建 token | 手邊有不關機的機器（電腦關機或斷網時會停） |
+| **cron-job.org** 等免費排程服務 | 每 30 分鐘 `POST https://api.github.com/repos/<owner>/team-taiwan-results/actions/workflows/sync-and-deploy.yml/dispatches`，body `{"ref":"main"}`，header `Authorization: Bearer <token>` | 沒有常開的機器 |
+| **Cloudflare Workers** 排程觸發 | Worker 的 `scheduled()` 送上面同一個 POST，token 放 Worker secret | 想要雲端執行又不依賴第三方排程網站 |
+
+- 第二、三種要用 **fine-grained PAT**，只授權這個 repo、權限只給 **Actions: Read and write**，並設到期日（賽期結束後）。
+- 間隔不要短於 30 分鐘（見下方〈注意事項〉的官網負擔說明）。同步程式在賽期外會自己跳過，外部觸發忘了關也不會去打官網，只是多跑幾次空 workflow。
+
 ### 5. 注意
 
 - 每個賽事的同步資料存在 `data` 分支的 `<代號>/` 資料夾。**不要把舊賽事的資料夾改設定成新賽事**，請另開新代號；同步程式偵測到資料夾裡是另一個賽事代碼的資料時會停下來，這時只要刪掉 `data` 分支裡那一個 `<代號>/` 資料夾，**不要刪整個分支**（其他賽事的資料也在裡面）。
@@ -215,7 +230,7 @@ npm run build:site           # 整個網站（所有賽事＋首頁）輸出到 
 
 ## 注意事項
 
-- **GitHub 排程不準時**：尖峰時可能延遲 5–15 分鐘，偶爾會跳過一輪。需要分秒必爭的即時比分請看官網。
+- **GitHub 排程不準時**：可能延遲或跳過，實測曾降到 3–6 小時一次。賽期中要準時更新見〈賽期中要準時每 30 分鐘更新〉；即使如此，分秒必爭的即時比分仍請看官網。
 - **對官網的負擔**：已是正式成績的場次不會重複請求，只在閉幕後第三天的最終補正時全部重讀一次。
 - **repo 60 天沒有任何 commit，GitHub 會自動停用排程**。賽事開始前記得確認 Actions 是開啟的。
 - **請尊重官網**：同步程式每秒最多送 1 個請求、30 分鐘一輪，失敗會自動冷卻。請不要把間隔調得更短，也請遵守各賽會成績網站的使用條款。
