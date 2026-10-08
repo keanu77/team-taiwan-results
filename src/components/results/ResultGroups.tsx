@@ -12,14 +12,15 @@ import { CONFIG } from "@/config";
 
 const RUNNING = ["RUNNING", "LIVE", "IN_PROGRESS"];
 
-export function ResultGroups({ units, autoExpand = false, expandFirst = false, period = false }: { units: TpeResultUnit[]; autoExpand?: boolean; expandFirst?: boolean; period?: boolean }) {
+export function ResultGroups({ units, autoExpand = false, period = false }: { units: TpeResultUnit[]; autoExpand?: boolean; period?: boolean }) {
   const prefix = useId();
   const groups = useMemo(() => groupResultSports(units).map((group) => ({
     ...group,
     summary: summarizeSport(group.entries),
     sections: group.sections.map((section) => ({ ...section, summary: summarizeSport(section.entries) })),
   })), [units]);
-  const [open, setOpen] = useState<Set<string>>(() => new Set(autoExpand ? groups.map((group) => group.key) : expandFirst && groups.length ? [groups[0].key] : []));
+  // 預設全部收合；有篩選或搜尋時才展開符合的項目
+  const [open, setOpen] = useState<Set<string>>(() => new Set(autoExpand ? groups.map((group) => group.key) : []));
   const allOpen = groups.every((group) => open.has(group.key));
   const anyOpen = groups.some((group) => open.has(group.key));
   const titleId = (key: string) => `${prefix}-${key}-title`;

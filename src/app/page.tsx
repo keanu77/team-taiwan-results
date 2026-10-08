@@ -108,7 +108,7 @@ function ResultsContent() {
         </div>}
         {units.length === 0 ? <p className="rounded-2xl border border-dashed border-gray-300 bg-white px-4 py-12 text-center text-gray-600">{period ? `此期間已保存的資料中，尚無 ${TEAM} 賽程。` : `官方資料中，此日沒有 ${TEAM} 賽程。`}</p> : filtered.length === 0 ? <div className="rounded-2xl border border-dashed border-gray-300 bg-white px-4 py-10 text-center"><p className="text-gray-600">{searching ? `找不到「${athleteQuery.trim()}」的場次。` : "沒有符合篩選條件的賽程。"}</p><button type="button" className="btn-secondary mt-4 min-h-11 text-sm" onClick={() => { setAthleteQuery(""); submitQuery({ ...query, sport: "", status: "" }); }}>清除篩選與搜尋</button></div> : <>
           {(selectedSport || selectedStatus || searching) && <p className="mb-3 text-xs text-gray-500" role="status">符合條件：{filtered.length} 筆</p>}
-          <ResultGroups key={`${period}:${date}:${selectedSport}:${selectedStatus}:${queryNumber}:${searching ? athleteQuery.trim() : ""}`} units={filtered} autoExpand={Boolean(selectedSport || selectedStatus || searching)} expandFirst={period} period={period} />
+          <ResultGroups key={`${period}:${date}:${selectedSport}:${selectedStatus}:${queryNumber}:${searching ? athleteQuery.trim() : ""}`} units={filtered} autoExpand={Boolean(selectedSport || selectedStatus || searching)} period={period} />
         </>}
       </section>}
       </div>
