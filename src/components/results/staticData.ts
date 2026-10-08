@@ -1,6 +1,7 @@
 import { defaultResultDate, RESULTS_MIN_DATE, shiftResultDate } from "@/lib/results/model";
 import type { MedalResponse } from "@/lib/results/medals";
 import { combineResultDays } from "@/lib/results/period";
+import { dataKey, takePrefetched } from "./dataPrefetch";
 import { dayResponse, isDataIndex, isStoredDay, isStoredMedals, medalResponse, sourceCooldown, type DataIndex, type SyncMeta } from "@/lib/results/snapshot";
 import type { TpeResultsResponse } from "@/lib/results/types";
 
@@ -12,10 +13,19 @@ const BASE = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 const cache = new Map<string, unknown>();
 
 async function getJson(path: string, version: string, signal?: AbortSignal): Promise<unknown> {
-  const key = `${path}?v=${version}`;
+  const key = dataKey(path, version);
   if (cache.has(key)) return cache.get(key);
+  // <head> 已預抓的就直接用；預抓失敗才自己抓
+  const prefetched = takePrefetched(key);
+  if (prefetched) {
+    const value = await prefetched.catch(() => undefined);
+    if (value !== undefined) {
+      if (value !== null) cache.set(key, value);
+      return value;
+    }
+  }
   // 版本號放進網址：內容沒變時網址也不變，瀏覽器與 CDN 的快取都用得上
-  const response = await fetch(`${BASE}/data/${path}?v=${encodeURIComponent(version)}`, { signal, credentials: "omit" });
+  const response = await fetch(`${BASE}/data/${key}`, { signal, credentials: "omit" });
   if (response.status === 404) return null;
   if (!response.ok) throw new Error("暫時無法讀取賽果，請稍後重試。");
   const value: unknown = await response.json();

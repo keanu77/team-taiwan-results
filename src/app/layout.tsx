@@ -8,6 +8,7 @@ import "@fontsource/ibm-plex-mono/latin-500.css";
 import "@fontsource/ibm-plex-mono/latin-600.css";
 import "./globals.css";
 import { DISPLAY_PREPAINT_SCRIPT } from "@/components/results/displayPrefs";
+import { dataPrefetchScript } from "@/components/results/dataPrefetch";
 import { CONFIG } from "@/config";
 
 export const metadata: Metadata = {
@@ -21,6 +22,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         {/* 夜間模式／字級需在首次繪製前套用，避免閃白 */}
         <script dangerouslySetInnerHTML={{ __html: DISPLAY_PREPAINT_SCRIPT }} />
+        {/* 賽果資料與 JS 同時下載，不必等 JS 跑起來才開始抓 */}
+        <script dangerouslySetInnerHTML={{ __html: dataPrefetchScript(process.env.NEXT_PUBLIC_BASE_PATH ?? "") }} />
       </head>
       <body className="antialiased min-h-screen bg-gray-50 font-sans dark:bg-night-canvas">
         <a href="#main" className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-xl focus:bg-brand-700 focus:px-4 focus:py-2 focus:text-sm focus:font-medium focus:text-white focus:outline-none">跳到主要內容</a>
