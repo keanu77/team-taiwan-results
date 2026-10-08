@@ -54,6 +54,21 @@ const about = `
     <p>到 GitHub 用「<a href="${REPO}/issues/new?template=new-event.yml">新增賽事</a>」表單提出，或照 <a href="${REPO}#readme">README</a> 的步驟自己架一份（免費，不需要伺服器）。原始碼公開於 <a href="${REPO}">${REPO.replace("https://", "")}</a>。</p>
   </section>`;
 
+// 製作者與追蹤連結（與運動傷害影片圖鑑 injury.sportsmedicine.tw 一致）
+const FOLLOW = [
+  ["個人網站", "https://sportsmedicine.tw/"],
+  ["衛教部落格", "https://blog.sportsmedicine.tw/"],
+  ["Facebook", "https://www.facebook.com/EthanWuMD/"],
+  ["Instagram", "https://www.instagram.com/ethan77wu/"],
+  ["LINE", "https://line.me/R/ti/p/@521cvffb"],
+  ["GitHub", "https://github.com/keanu77"],
+];
+const credit = `
+  <section class="credit">
+    <p>製作者：<a href="https://sportsmedicine.tw/" target="_blank" rel="noopener">運動醫學科 吳易澄醫師</a></p>
+    <nav aria-label="追蹤連結"><ul class="follow">${FOLLOW.map(([label, href]) => `<li><a href="${href}" target="_blank" rel="noopener" aria-label="${label}（在新分頁開啟）">${label}</a></li>`).join("")}</ul></nav>
+  </section>`;
+
 const single = events.length === 1;
 const html = `<!doctype html>
 <html lang="zh-TW">
@@ -74,6 +89,8 @@ ul{list-style:none;margin:0;padding:0;display:grid;gap:12px}
 .status{justify-self:start;font-size:.75rem;font-weight:600;padding:2px 10px;border-radius:999px}.live{background:#e8f0ff;color:#0847c4}.soon{background:#fff1e7;color:#9a3412}.done{background:#e9eef6;color:#5b6478}
 section{margin-top:32px}h2{font-size:1.1rem;margin:0 0 8px}section p{margin:0}section a,footer a{color:var(--brand)}
 ul.points{display:block;list-style:disc;padding-left:1.25em}ul.points li{margin:4px 0}
+.credit{padding-top:24px;border-top:1px solid var(--line)}.credit p{font-weight:600}
+ul.follow{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}ul.follow a{display:inline-block;min-height:36px;padding:6px 14px;border:1px solid var(--line);border-radius:999px;background:var(--card);color:var(--ink);text-decoration:none;font-size:.9rem}ul.follow a:hover{border-color:var(--brand);color:var(--brand)}ul.follow a:focus-visible{outline:2px solid var(--brand);outline-offset:2px}
 footer{margin-top:32px;font-size:.8rem;color:var(--muted)}
 </style>
 </head>
@@ -82,7 +99,7 @@ footer{margin-top:32px;font-size:.8rem;color:var(--muted)}
   <h1>賽程與賽果追蹤</h1>
   <p class="lead">${single ? "正在前往賽事頁面…" : "選擇賽事，查看代表隊的賽程、比分與獎牌。"}</p>
   <ul>${cards}
-  </ul>${single ? "" : about}
+  </ul>${single ? "" : about}${credit}
   <footer>資料定時同步各賽會官方成績系統，以官方公告為準。本站與主辦單位無關。</footer>
 </main>
 <script>${statusScript}</script>
