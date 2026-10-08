@@ -3,7 +3,7 @@
 綜合運動會（亞運、亞室武運、南美運動會等）的**國家隊賽程與賽果追蹤頁**。
 GitHub Actions 定時向官方成績系統同步（預設每 30 分鐘，可調到 10 分鐘），產生純靜態網站發布到 GitHub Pages：不需要伺服器、不需要資料庫，也不用付費。
 
-網站：<https://keanu77.github.io/team-taiwan-results/>（首頁列出所有賽事，例如 [2026 愛知・名古屋亞運](https://keanu77.github.io/team-taiwan-results/ag2026/)）
+網站：<https://tpe.sportsmedicine.tw/>（首頁列出所有賽事，例如 [2026 愛知・名古屋亞運](https://tpe.sportsmedicine.tw/ag2026/)；舊網址 keanu77.github.io/team-taiwan-results 會自動轉過來）
 
 一個 repo 可以同時放多個賽事，每個賽事有自己的網址。只想看賽果的人直接開連結就好，不需要複製任何東西。
 
