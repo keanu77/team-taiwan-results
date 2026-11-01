@@ -8,13 +8,16 @@ import { fileStore } from "../src/lib/results/sync/fileStore";
 import { runManualSync } from "../src/lib/results/sync/manual";
 import { fetchSheetCsv } from "../src/lib/results/sync/sheet";
 import { runSync, type SyncSummary } from "../src/lib/results/sync/run";
+import { runDakarSync } from "../src/lib/results/dakar/sync";
 
 const MANUAL_CSV = process.env.MANUAL_CSV ?? `${process.env.EVENTS_DIR ?? "events"}/${EVENT_ID}/results/manual.csv`;
 
 async function main() {
   const store = fileStore(process.env.DATA_DIR ?? `data/${EVENT_ID}`);
   let summary: SyncSummary;
-  if (CONFIG.source.type === "sheet") {
+  if (CONFIG.source.type === "dakar") {
+    summary = await runDakarSync({ dir: process.env.DATA_DIR ?? `data/${EVENT_ID}`, budgetMs: Number(process.env.SYNC_BUDGET_MINUTES ?? 20) * 60_000 });
+  } else if (CONFIG.source.type === "sheet") {
     summary = runManualSync(store, await fetchSheetCsv(CONFIG.source.csvUrl), new Date(), { guardDrop: true });
   } else if (CONFIG.source.type === "manual") {
     if (!existsSync(MANUAL_CSV)) throw new Error(`來源設定為 manual，但找不到 ${MANUAL_CSV}`);

@@ -2,6 +2,7 @@
 
 import { useRouter, useSearchParams } from "next/navigation";
 import { Suspense, useEffect, useMemo, useRef, useState } from "react";
+import { DakarResults } from "@/components/results/DakarResults";
 import { DisplaySettings } from "@/components/results/DisplaySettings";
 import { MedalStandings } from "@/components/results/MedalStandings";
 import {
@@ -118,5 +119,5 @@ function ResultsContent() {
 }
 
 export default function ResultsPage() {
-  return <div className="results-theme min-h-screen"><ResultsNavigation /><main id="main" tabIndex={-1} className="page-container min-w-0"><Suspense fallback={<p className="text-gray-500">正在載入賽果頁…</p>}><ResultsContent /></Suspense></main></div>;
+  return <div className="results-theme min-h-screen"><ResultsNavigation controls={CONFIG.source.type === "dakar" ? <DisplaySettings /> : undefined} /><main id="main" tabIndex={-1} className="page-container min-w-0"><Suspense fallback={<p className="text-gray-500">正在載入賽果頁…</p>}>{CONFIG.source.type === "dakar" ? <DakarResults /> : <ResultsContent />}</Suspense></main></div>;
 }

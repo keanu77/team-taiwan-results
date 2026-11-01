@@ -1,0 +1,25 @@
+{
+  "name": "2026 達卡青奧",
+  "startDate": "2026-10-30",
+  "endDate": "2026-11-13",
+  "timeZone": "Africa/Dakar",
+  "timeZoneLabel": "達卡",
+  "viewerTimeZone": "Asia/Taipei",
+  "viewerTimeZoneLabel": "臺灣",
+  "team": {
+    "noc": "TPE",
+    "label": "中華隊",
+    "aliases": [
+      "Chinese Taipei",
+      "中華台北",
+      "中華臺北",
+      "中華隊"
+    ]
+  },
+  "source": {
+    "type": "dakar",
+    "code": "DAKAR2026",
+    "webUrl": "https://webresult.apps.dakar2026.org"
+  },
+  "syncIntervalMinutes": 15
+}

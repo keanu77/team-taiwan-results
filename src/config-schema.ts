@@ -22,6 +22,7 @@ export interface CompetitionConfig {
   source:
     | { type: "bornan"; code: string; apiBase: string; webUrl: string }
     | { type: "manual"; code: string; webUrl: string }
+    | { type: "dakar"; code: string; webUrl: string }
     /** Google 試算表「發布到網路」的 CSV 網址，欄位與 manual.csv 相同 */
     | { type: "sheet"; code: string; webUrl: string; csvUrl: string };
   syncIntervalMinutes: number;
@@ -85,8 +86,12 @@ export function parseConfig(value: unknown, file = "competition.config.json"): C
   const parsedSource: CompetitionConfig["source"] =
     source.type === "bornan" ? { type: "bornan", code, apiBase: url(source.apiBase, "source.apiBase"), webUrl: url(source.webUrl, "source.webUrl") }
     : source.type === "manual" ? { type: "manual", code, webUrl: url(source.webUrl, "source.webUrl") }
+    : source.type === "dakar" ? { type: "dakar", code, webUrl: url(source.webUrl, "source.webUrl") }
     : source.type === "sheet" ? { type: "sheet", code, webUrl: url(source.webUrl, "source.webUrl"), csvUrl: sheetUrl(source.csvUrl) }
-    : fail("source.type（只支援 bornan、manual 或 sheet）");
+    : fail("source.type（只支援 bornan、dakar、manual 或 sheet）");
+  if (source.type === "dakar" && (code !== "DAKAR2026" || noc !== "TPE" || startDate !== "2026-10-30" || endDate !== "2026-11-13" || c.timeZone !== "Africa/Dakar" || source.webUrl !== "https://webresult.apps.dakar2026.org" || c.syncIntervalMinutes !== 15)) {
+    fail("source.type=dakar（僅支援 2026 達卡青奧 TPE，固定賽期、時區、官方來源與 15 分鐘同步間隔）");
+  }
   const interval = Number(c.syncIntervalMinutes);
   // workflow 排程最密每 10 分鐘一輪；低於 30 分鐘要搭配外部觸發才準時（見 README）
   if (!Number.isInteger(interval) || interval < 10 || interval > 24 * 60) fail("syncIntervalMinutes（10–1440 分鐘）");

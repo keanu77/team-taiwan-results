@@ -3,7 +3,7 @@
 綜合運動會（亞運、亞室武運、南美運動會等）的**國家隊賽程與賽果追蹤頁**。
 GitHub Actions 定時向官方成績系統同步（預設每 30 分鐘，可調到 10 分鐘），產生純靜態網站發布到 Cloudflare Pages：不需要伺服器、不需要資料庫，也不用付費。
 
-網站：<https://tpe.sportsmedicine.tw/>（首頁列出所有賽事，例如 [2026 愛知・名古屋亞運](https://tpe.sportsmedicine.tw/ag2026/)；舊網址 keanu77.github.io/team-taiwan-results 會自動轉過來）
+網站：<https://tpe.sportsmedicine.tw/>（首頁列出所有賽事，例如 [2026 達卡青奧](https://tpe.sportsmedicine.tw/dakar2026/) 與 [2026 愛知・名古屋亞運](https://tpe.sportsmedicine.tw/ag2026/)；舊網址 keanu77.github.io/team-taiwan-results 會自動轉過來）
 
 一個 repo 可以同時放多個賽事，每個賽事有自己的網址。只想看賽果的人直接開連結就好，不需要複製任何東西。
 
@@ -79,7 +79,7 @@ templates/                     ← 空白範本
 | `team.noc` | 追蹤的代表隊三碼代碼 | `TPE` |
 | `team.label` | 代表隊中文名稱（網站上顯示的名字） | `中華隊` |
 | `team.aliases` | 官方資料中代表隊可能出現的全名，顯示時換成代碼 | `["Chinese Taipei", "中華台北"]` |
-| `source.type` | `bornan`（自動同步）、`manual`（手動 CSV）或 `sheet`（Google 試算表），見下方「成績來源」 | `bornan` |
+| `source.type` | `bornan`（自動同步）、`manual`（手動 CSV）、`sheet`（Google 試算表）或本 repo 固定設定的 `dakar`（2026 達卡青奧 TPE），見下方「成績來源」 | `bornan` |
 | `source.code` | 賽事代碼，2–20 碼大寫英數字。bornan 要與官方 API 網址裡的那一段相同；其他來源自取 | `AG2026` |
 | `source.apiBase` | 官方成績 API 根網址（只有 bornan 需要） | `https://back.results.asiangames2026.org/s/AG2026/en` |
 | `source.csvUrl` | 試算表「發布到網路」的 CSV 網址（只有 sheet 需要） | `https://docs.google.com/spreadsheets/d/e/…/pub?output=csv` |
@@ -254,3 +254,17 @@ npm run build:site           # 整個網站（所有賽事＋首頁）輸出到 
 ## 授權
 
 程式碼採 [MIT License](LICENSE)。成績資料的權利屬於各賽會與官方成績系統。
+
+## 2026 達卡青奧
+
+公開頁：<https://tpe.sportsmedicine.tw/dakar2026/>。以 `EVENT=dakar2026` 建置或同步，與 `ag2026`、`og2020`、`og2024` 各自保存資料。
+
+- `dakar` 來源直接讀取 <https://webresult.apps.dakar2026.org> 的公開 HTML；不依賴 TeamDr 的伺服器、登入、API 或資料庫。
+- 只列官方已確認的 TPE 場次；尚未公布的出賽名單以每日覆蓋狀態提醒，不能推論為沒有賽程。正式、暫定、已結束待確認等狀態分開顯示；總比分、各局比分與該輪名次各自呈現，不推算獎牌。
+- 37 位選手的官方 UUID／英文姓名與 TPE 團員手冊中文對照位於 `src/lib/results/dakar/roster.ts`，並附 `events/dakar2026/rosters/athletes.csv` 供查核；測試確保兩份一致。只有公開姓名與運動項目，不含生日、電話或完整手冊。代表隊名冊不等於該場先發名單。
+- 手機提供五種檢視、可收合的日期／項目／姓名篩選、大字比分與臺灣／達卡雙日期時間；沿用夜間模式與字級設定。
+- GitHub Actions 在 10/29–11/20 同步：當日約 15 分鐘、相鄰日 30 分鐘、其他日期 6 小時。每次官方請求至少間隔 1 秒，有逾時、大小、每日請求上限及整輪時間預算。GitHub 排程及整站建置可能延遲，不保證即時比分。
+- `data` 分支的 `dakar2026/state.json` 保存同步狀態，`index.json` 為公開快照；部署只複製公開快照。未知／失敗格式保留舊結果，遺漏場次保留並標示，改期以逐場確認時間去重。格式損壞時停止覆寫，不自動重建資料。
+- 前端每分鐘讀取本站靜態快照，並重新計算資料是否過期；按重新讀取不會直接抓官方。獎牌未知與官方明示零面分開顯示。各運動的新結果格式仍需持續以真實官方樣本補充測試。
+
+本次達卡解析與介面沿用 TeamDr `79ad500` 的已驗證公開賽果實作；另實作適合此 repo 的檔案儲存與排程，無資料庫變更。回滾只回復程式版本，保留 `data` 分支所有賽事快照。

@@ -33,6 +33,12 @@ for (const e of events) {
 // 沒有（手動成績）才讀代表團得牌明細 rosters/team-medals.csv 的第一欄（金／銀／銅）
 const MEDAL_KEYS = { 金: "gold", 銀: "silver", 銅: "bronze" };
 function officialMedals(e) {
+  if (e.source.type === "dakar") {
+    const file = join(siteDir, e.id, "data", "index.json");
+    if (!existsSync(file)) return null;
+    const row = JSON.parse(readFileSync(file, "utf8")).medals;
+    return row && [row.gold, row.silver, row.bronze].every(Number.isInteger) ? row : null;
+  }
   const file = join(siteDir, e.id, "data", "medals.json");
   if (!existsSync(file)) return null;
   try {
@@ -89,7 +95,7 @@ const about = `
     <article>
       <h2>資料來源</h2>
       <ul class="points">
-        <li><strong>即時同步</strong>（如 2026 亞運）：賽期中約每 30 分鐘向官方成績系統同步，連不上時保留最後一次成功的資料，閉幕後補正一次即封存。</li>
+        <li><strong>定時同步</strong>：達卡青奧當日約每 15 分鐘、相鄰日約每 30 分鐘、其他日期約每 6 小時查詢官方成績；2026 亞運約每 30 分鐘。GitHub 排程可能延遲，連不上時保留最後一次成功的資料。</li>
         <li><strong>賽後回補</strong>（2024 巴黎、2020 東京奧運）：取自網際網路檔案館（Wayback Machine）保存的官方逐場成績與官方成績總冊；中文姓名與得牌依代表團公布的名單。</li>
         <li>「接續前場」表示官方只公布接在前一場之後，沒有確切開賽時間。</li>
       </ul>
@@ -124,6 +130,7 @@ const guide = `
         <thead><tr><th scope="col">來源</th><th scope="col">怎麼運作</th><th scope="col">適合</th><th scope="col">限制</th></tr></thead>
         <tbody>
           <tr><td>自動同步（bornan）</td><td>讀 Bornan 成績系統的 API（2026 亞運使用）</td><td>官方用 Bornan 系統的賽事</td><td>其他賽事是否完全相容尚未驗證</td></tr>
+          <tr><td>達卡青奧（dakar）</td><td>讀官方公開賽程、出賽名單與結果頁，保存獨立 JSON 快照</td><td>2026 達卡青奧 TPE</td><td>只列已確認場次；未知格式保留舊資料並提示延遲</td></tr>
           <tr><td>手動 CSV</td><td>成績填在 <code>results/manual.csv</code>，push 後發布</td><td>場次少、一兩個人維護</td><td>要有人更新，沒有即時比分</td></tr>
           <tr><td>Google 試算表</td><td>試算表「發布到網路」成 CSV，每輪排程讀一次</td><td>多人分工、不會用 GitHub 的人</td><td>欄名被改會同步失敗；成績列驟減一半以上會拒收</td></tr>
           <tr><td>Wayback 回補</td><td>讀網際網路檔案館保存的奧運逐場存檔，轉成手動 CSV</td><td>官方 API 已下線的已結束奧運</td><td>沒存到的場次要人工補</td></tr>
