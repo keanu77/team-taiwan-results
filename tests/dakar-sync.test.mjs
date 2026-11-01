@@ -54,7 +54,7 @@ test('Source failure preserves successful records, reports stale, cools down, an
   const snapshot = JSON.parse(fs.readFileSync(path.join(dir, 'index.json'), 'utf8'));
   assert.deepEqual(snapshot.medals, zero); assert.equal(snapshot.medalsStale, true); assert.equal(snapshot.units.length, 1);
   assert.equal((await runDakarSync({ ...options(dir), now })).reason, 'source cooldown');
-  const next = await runDakarSync({ ...options(dir), now: () => new Date('2026-11-01T17:16:00Z'), fetchMedals: async () => { throw Error('still unavailable'); } });
+  const next = await runDakarSync({ ...options(dir), now: () => new Date('2026-11-01T18:00:00Z'), fetchMedals: async () => { throw Error('still unavailable'); } });
   assert.equal(Object.keys(next.days).length, 15); assert.equal(next.medals, 'failed');
 });
 test('Missing units survive rescans and a moved match cannot be revived by an old-date refresh', () => {
@@ -86,4 +86,23 @@ test('Outside sync window and exhausted budget do not read upstream or alter arc
   assert.equal((await runDakarSync({ ...options(dir), now: () => new Date('2026-12-01'), fetchMedals: forbidden, fetchDay: forbidden })).changed, false);
   assert.equal((await runDakarSync({ ...options(dir), now: () => new Date('2026-11-02'), budgetMs: 0, fetchMedals: forbidden, fetchDay: forbidden })).changed, false);
   assert.equal(fs.readFileSync(path.join(dir, 'state.json'), 'utf8'), before);
+});
+
+test('Hourly schedule tolerates a slow previous scan and suppresses duplicate triggers in the same hour',()=>{
+  const {dakarSyncDue,dakarSyncInterval,DAKAR_INTERVAL_MS}=require('../src/lib/results/dakar/config.ts');
+  const now=new Date('2026-11-01T11:13:00Z');
+  const saved={lastAttemptAt:new Date('2026-11-01T10:13:00Z'),lastSuccessAt:new Date('2026-11-01T10:33:00Z')};
+  assert.equal(DAKAR_INTERVAL_MS,60*60_000);
+  for(const date of ['2026-10-31','2026-11-01','2026-11-02'])assert.equal(dakarSyncInterval(date,now),DAKAR_INTERVAL_MS);
+  assert.equal(dakarSyncDue(saved,DAKAR_INTERVAL_MS,now),true,'40 minutes since scan completion must not skip next hourly slot');
+  assert.equal(dakarSyncDue({...saved,lastAttemptAt:now,lastSuccessAt:now},DAKAR_INTERVAL_MS,new Date('2026-11-01T11:59:00Z')),false);
+  assert.equal(dakarSyncDue(saved,6*DAKAR_INTERVAL_MS,now),false);
+});
+test('Changing the public interval preserves all stored results and timestamps without forcing a source fetch',async t=>{
+  const dir=temporary(t);await runDakarSync(options(dir));
+  const stateFile=path.join(dir,'state.json'),indexFile=path.join(dir,'index.json');
+  const original=fs.readFileSync(stateFile,'utf8');const old=JSON.parse(fs.readFileSync(indexFile,'utf8'));old.syncIntervalMinutes=15;fs.writeFileSync(indexFile,JSON.stringify(old));
+  const result=await runDakarSync({...options(dir),fetchDay:async()=>assert.fail('not due'),fetchMedals:async()=>assert.fail('not due')});
+  assert.equal(result.changed,true);assert.equal(fs.readFileSync(stateFile,'utf8'),original);
+  const updated=JSON.parse(fs.readFileSync(indexFile,'utf8'));assert.equal(updated.syncIntervalMinutes,60);assert.deepEqual(updated.units,old.units);assert.equal(updated.medalsFetchedAt,old.medalsFetchedAt);
 });

@@ -1,6 +1,6 @@
 import { existsSync, mkdirSync, readFileSync, renameSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
-import { DAKAR_INTERVAL_MS, DAKAR_MAX_DATE, DAKAR_MIN_DATE, DAKAR_SOURCE, dakarDates, dakarSyncDue, dakarSyncInterval, dakarSyncWindow, dakarToday } from "./config";
+import { DAKAR_INTERVAL_MS, DAKAR_MAX_DATE, DAKAR_MIN_DATE, DAKAR_SOURCE, dakarAttemptedThisHour, dakarDates, dakarSyncDue, dakarSyncInterval, dakarSyncWindow, dakarToday } from "./config";
 import { fetchDakarDay, fetchDakarMedals, readDakar } from "./source";
 import { isDay, isMedals, isTimestamp, type ValidatedDakarDay } from "./validation";
 import type { DakarDay, DakarMedals, DakarResponse, DakarUnit } from "./types";
@@ -62,7 +62,7 @@ export function dakarSnapshot(state: DakarState, now = new Date()): DakarRespons
   const medal = state.medals;
   const archived = medal.lastSuccessAt && medal.lastSuccessAt.slice(0, 10) >= "2026-11-20" && dakarToday(now) > "2026-11-20";
   return { success: true, source: DAKAR_SOURCE, minDate: DAKAR_MIN_DATE, maxDate: DAKAR_MAX_DATE, today: dakarToday(now), units: [...chosen.values()].map(entry => entry.unit), coverage,
-    medals: medal.value, medalsFetchedAt: medal.lastSuccessAt, medalsStale: !medal.value || Boolean(medal.lastError) || (!archived && now.getTime() - epoch(medal.lastSuccessAt) > DAKAR_INTERVAL_MS * 2), syncEnabled: dakarSyncWindow(now), syncIntervalMinutes: 15 };
+    medals: medal.value, medalsFetchedAt: medal.lastSuccessAt, medalsStale: !medal.value || Boolean(medal.lastError) || (!archived && now.getTime() - epoch(medal.lastSuccessAt) > DAKAR_INTERVAL_MS * 2), syncEnabled: dakarSyncWindow(now), syncIntervalMinutes: 60 };
 }
 
 export async function runDakarSync(options: { dir: string; now?: () => Date; budgetMs?: number; fetchDay?: typeof fetchDakarDay; fetchMedals?: typeof fetchDakarMedals; log?: (message: string) => void }) {
@@ -70,6 +70,12 @@ export async function runDakarSync(options: { dir: string; now?: () => Date; bud
   const summary: { changed: boolean; medals: "updated" | "failed" | "skipped"; days: Record<string, "updated" | "failed">; reason?: string } = { changed: false, medals: "skipped", days: {} };
   if (!dakarSyncWindow(start)) return { ...summary, reason: "outside Dakar sync window" };
   const state = readState(options.dir);
+  const indexPath = join(options.dir, "index.json");
+  // Publish a policy change even if the source is not due; keep every saved result and timestamp.
+  if (existsSync(join(options.dir, "state.json")) && (!existsSync(indexPath) || JSON.parse(readFileSync(indexPath, "utf8")).syncIntervalMinutes !== 60)) {
+    writeJson(indexPath, dakarSnapshot(state, start));
+    summary.changed = true;
+  }
   const deadline = start.getTime() + (options.budgetMs ?? 20 * 60_000);
   class BudgetExpired extends Error {}
   const read = async (path: string) => {
@@ -77,7 +83,7 @@ export async function runDakarSync(options: { dir: string; now?: () => Date; bud
     return readDakar(path);
   };
   const rows = [...Object.values(state.days), state.medals];
-  if (rows.some(row => row.lastError && start.getTime() - epoch(row.lastAttemptAt) < DAKAR_INTERVAL_MS)) return { ...summary, reason: "source cooldown" };
+  if (rows.some(row => row.lastError && dakarAttemptedThisHour(row.lastAttemptAt ? new Date(row.lastAttemptAt) : null, start))) return { ...summary, reason: "source cooldown" };
   const tasks = [...dakarDates(), "medals"].filter(key => {
     const row = key === "medals" ? state.medals : state.days[key];
     return dakarSyncDue(row ? { ...row, lastSuccessAt: row.lastSuccessAt ? new Date(row.lastSuccessAt) : null, lastAttemptAt: row.lastAttemptAt ? new Date(row.lastAttemptAt) : null } : null, key === "medals" ? DAKAR_INTERVAL_MS : dakarSyncInterval(key, start), start);

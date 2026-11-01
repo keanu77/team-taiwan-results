@@ -1,7 +1,7 @@
 # team-taiwan-results
 
 綜合運動會（亞運、亞室武運、南美運動會等）的**國家隊賽程與賽果追蹤頁**。
-GitHub Actions 定時向官方成績系統同步（預設每 30 分鐘，可調到 10 分鐘），產生純靜態網站發布到 Cloudflare Pages：不需要伺服器、不需要資料庫，也不用付費。
+GitHub Actions 定時向官方成績系統同步（目前每小時一輪），產生純靜態網站發布到 Cloudflare Pages：不需要伺服器、不需要資料庫，也不用付費。
 
 網站：<https://tpe.sportsmedicine.tw/>（首頁列出所有賽事，例如 [2026 達卡青奧](https://tpe.sportsmedicine.tw/dakar2026/) 與 [2026 愛知・名古屋亞運](https://tpe.sportsmedicine.tw/ag2026/)；舊網址 keanu77.github.io/team-taiwan-results 會自動轉過來）
 
@@ -17,7 +17,7 @@ GitHub Actions 定時向官方成績系統同步（預設每 30 分鐘，可調�
 ## 運作方式
 
 ```
-GitHub Actions（排程每 10 分鐘一輪，各賽事依 syncIntervalMinutes 決定實際多久抓一次）
+GitHub Actions（排程每小時一輪，各賽事依 syncIntervalMinutes 決定實際多久抓一次）
   └─ npm run sync ── 讀官方成績 API ──▶ data 分支（JSON 快照，失敗時保留上一份）
   └─ npm run build ─ CSV 名單＋快照 ──▶ Cloudflare Pages（靜態網站，瀏覽器每分鐘重讀）
 ```
@@ -84,7 +84,7 @@ templates/                     ← 空白範本
 | `source.apiBase` | 官方成績 API 根網址（只有 bornan 需要） | `https://back.results.asiangames2026.org/s/AG2026/en` |
 | `source.csvUrl` | 試算表「發布到網路」的 CSV 網址（只有 sheet 需要） | `https://docs.google.com/spreadsheets/d/e/…/pub?output=csv` |
 | `source.webUrl` | 官方成績網站，頁面上的「官方成績網站」連結 | `https://results.asiangames2026.org` |
-| `syncIntervalMinutes` | 當日賽果與獎牌榜多久重抓一次（10–1440）。預設 30；低於 30 要搭配下方的外部觸發才會準時 | `30` |
+| `syncIntervalMinutes` | 當日賽果與獎牌榜的同步間隔（10–1440）。達卡固定 60；實際頻率也受 workflow 與外部觸發頻率影響 | `30` |
 | `teamMedals.source` / `updatedAt`（選填） | 代表團得牌明細的來源與更新時間，顯示在獎牌明細下方；整段可省略 | `中華奧會代表團成績公布總表`、`2026-09-29T23:00:00+08:00` |
 
 設定寫錯時，`npm run build` 與同步會直接失敗並指出是哪個欄位。
@@ -135,7 +135,7 @@ PDF 版面一改就可能解析失敗（失敗時不會寫入任何東西），�
 
 不做任何設定時，內建排程照樣會定期同步與發布，但 GitHub 的排程只是「盡量執行」：本 repo 在 2026-10-06～07 實測，常被降到 **3–6 小時才跑一次**。賽期外或已結束的賽事不受影響，不必處理。
 
-賽期中需要準時更新，就由外部定時呼叫 workflow（等同按 Run workflow），內建排程保留當備援。外部觸發的間隔設成和該賽事的 `syncIntervalMinutes` 一樣（30 或 10 分鐘）；觸發比設定密只會多跑空 workflow，不會更快。任選一種，賽期結束後停用：
+賽期中需要準時更新，就由外部定時呼叫 workflow（等同按 Run workflow），內建排程保留當備援。外部觸發的間隔設成和該賽事的 `syncIntervalMinutes` 一樣（達卡為 60 分鐘）；觸發比設定密只會多跑空 workflow，不會更快。任選一種，賽期結束後停用：
 
 | 做法 | 設定 | 適合 |
 |------|------|------|
@@ -187,7 +187,7 @@ PDF 版面一改就可能解析失敗（失敗時不會寫入任何東西），�
 2. **檔案 → 共用 → 發布到網路**，選要發布的工作表、格式選 **CSV**，複製產生的網址。
 3. 設定 `"source": { "type": "sheet", "code": "<自取>", "webUrl": "<官方網站>", "csvUrl": "<剛剛的網址>" }`。
 
-之後每輪排程都會讀一次（約每 10 分鐘，GitHub 排程常延遲），有變動才重新發布。只把編輯權限給需要填成績的人。
+之後每輪排程都會讀一次（本站目前每小時一輪，GitHub 排程常延遲），有變動才重新發布。只把編輯權限給需要填成績的人。
 
 ### `manual`：手動 CSV
 
@@ -263,8 +263,16 @@ npm run build:site           # 整個網站（所有賽事＋首頁）輸出到 
 - 只列官方已確認的 TPE 場次；尚未公布的出賽名單以每日覆蓋狀態提醒，不能推論為沒有賽程。正式、暫定、已結束待確認等狀態分開顯示；總比分、各局比分與該輪名次各自呈現，不推算獎牌。
 - 37 位選手的官方 UUID／英文姓名與 TPE 團員手冊中文對照位於 `src/lib/results/dakar/roster.ts`，並附 `events/dakar2026/rosters/athletes.csv` 供查核；測試確保兩份一致。只有公開姓名與運動項目，不含生日、電話或完整手冊。代表隊名冊不等於該場先發名單。
 - 手機提供五種檢視、可收合的日期／項目／姓名篩選、大字比分與臺灣／達卡雙日期時間；沿用夜間模式與字級設定。
-- GitHub Actions 在 10/29–11/20 同步：當日約 15 分鐘、相鄰日 30 分鐘、其他日期 6 小時。每次官方請求至少間隔 1 秒，有逾時、大小、每日請求上限及整輪時間預算。GitHub 排程及整站建置可能延遲，不保證即時比分。
+- GitHub Actions 在 10/29–11/20 同步：當日與相鄰日每小時、其他日期 6 小時。每次官方請求至少間隔 1 秒，有逾時、大小、每日請求上限及整輪時間預算。GitHub 排程及整站建置可能延遲，不保證即時比分。
 - `data` 分支的 `dakar2026/state.json` 保存同步狀態，`index.json` 為公開快照；部署只複製公開快照。未知／失敗格式保留舊結果，遺漏場次保留並標示，改期以逐場確認時間去重。格式損壞時停止覆寫，不自動重建資料。
 - 前端每分鐘讀取本站靜態快照，並重新計算資料是否過期；按重新讀取不會直接抓官方。獎牌未知與官方明示零面分開顯示。各運動的新結果格式仍需持續以真實官方樣本補充測試。
 
 本次達卡解析與介面沿用 TeamDr `79ad500` 的已驗證公開賽果實作；另實作適合此 repo 的檔案儲存與排程，無資料庫變更。回滾只回復程式版本，保留 `data` 分支所有賽事快照。
+
+### 每小時觸發（2026-11-01）
+
+達卡當日、相鄰日與獎牌改為每小時一輪；每個整點時段只查一次，避免本輪讀取花幾分鐘就跳過下一小時。其他日期仍每 6 小時補查。GitHub cron 設為每小時第 13 分鐘，另由常開 Mac 的 launchd 於同一分鐘呼叫 `scripts/trigger-hourly.py`，重用既有 `gh` 登入，不建立或複製 token。
+
+腳本會跳過仍在執行／排隊的 workflow、防止同一小時重複觸發，並於達卡日期 11/20 後停止送出請求。Mac 須保持開機、登入及連網；關機時只剩 GitHub 備援，仍可能延遲。同步與整站建置需要時間，頁面以實際成功更新時間為準。
+
+安裝位置為 Mac 的 `~/services/team-taiwan-results-hourly/`，launchd 標籤 `com.ethanstudio.team-taiwan-results-hourly`。檢查：`launchctl print gui/$(id -u)/com.ethanstudio.team-taiwan-results-hourly`；停用：`launchctl bootout gui/$(id -u)/com.ethanstudio.team-taiwan-results-hourly`。測試用 `python3 scripts/trigger-hourly.py --state-dir /tmp/taiwan-hourly-test --dry-run`，不會呼叫 GitHub。

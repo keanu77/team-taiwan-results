@@ -146,7 +146,7 @@ export function DakarResults({ compact = false }: { compact?: boolean }) {
     <details className="mt-4 text-xs leading-relaxed text-gray-500">
       <summary className="min-h-11 cursor-pointer py-3 font-medium text-gray-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-600">資料來源與更新方式</summary>
       <p>此頁公開查詢，無須登入。日期篩選以達卡（UTC+0）比賽日為準；卡片同時列出臺灣（UTC+8）與達卡日期、時間。所有名次均為該場次／輪次的名次，不代表最終排名或獎牌。</p>
-      <p className="mt-2">背景同步：達卡當日約每 15 分鐘、前後相鄰日約每 30 分鐘、其他日期約每 6 小時。由 GitHub Actions 排程同步後發布靜態快照，排程可能延遲；實際更新請查看每場資料時間。頁面顯示時每 60 秒讀取本站快取，「重新讀取」也只讀取本站已保存資料，不會立即向官方抓取。</p>
+      <p className="mt-2">背景同步：達卡當日與前後相鄰日每小時更新，其他日期約每 6 小時補查。由 GitHub Actions 排程同步後發布靜態快照，排程可能延遲；實際更新請查看每場資料時間。頁面顯示時每 60 秒讀取本站快取，「重新讀取」也只讀取本站已保存資料，不會立即向官方抓取。</p>
       <p className="mt-2">暫定成績與未完成的場次仍可能變更。正式結果以各場次官方原始資料為準。</p>
       <a href={`${DAKAR_BASE}/`} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-11 items-center text-brand-700 underline underline-offset-4">達卡官方賽程與賽果<span className="sr-only">（另開視窗）</span> <span aria-hidden="true">↗</span></a>
     </details>

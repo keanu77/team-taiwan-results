@@ -21,5 +21,5 @@
     "code": "DAKAR2026",
     "webUrl": "https://webresult.apps.dakar2026.org"
   },
-  "syncIntervalMinutes": 15
+  "syncIntervalMinutes": 60
 }

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key><string>com.ethanstudio.team-taiwan-results-hourly</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/opt/homebrew/bin/python3</string><string>-B</string>
+    <string>__HOME__/services/team-taiwan-results-hourly/trigger-hourly.py</string>
+    <string>--state-dir</string><string>__HOME__/services/team-taiwan-results-hourly/state</string>
+  </array>
+  <key>StartCalendarInterval</key><dict><key>Minute</key><integer>13</integer></dict>
+  <key>RunAtLoad</key><true/>
+  <key>ProcessType</key><string>Background</string>
+  <key>EnvironmentVariables</key><dict><key>PATH</key><string>/opt/homebrew/bin:/usr/bin:/bin</string></dict>
+  <key>StandardOutPath</key><string>__HOME__/services/team-taiwan-results-hourly/hourly.log</string>
+  <key>StandardErrorPath</key><string>__HOME__/services/team-taiwan-results-hourly/hourly-error.log</string>
+</dict>
+</plist>

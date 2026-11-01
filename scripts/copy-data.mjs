@@ -13,7 +13,7 @@ if (existsSync(`${DATA_DIR}/index.json`)) {
   mkdirSync("public/data", { recursive: true });
   const empty = config.source.type === "dakar" ? {
     success: true, source: "DAKAR2026", today: new Date().toISOString().slice(0, 10), minDate: config.startDate, maxDate: config.endDate,
-    units: [], medals: null, medalsFetchedAt: null, medalsStale: true, syncEnabled: true, syncIntervalMinutes: 15,
+    units: [], medals: null, medalsFetchedAt: null, medalsStale: true, syncEnabled: true, syncIntervalMinutes: 60,
     coverage: Array.from({ length: 15 }, (_, i) => ({ date: new Date(Date.UTC(2026, 9, 30 + i)).toISOString().slice(0, 10), totalUnits: 0, unconfirmedUnits: 0, fetchedAt: null, lastAttemptAt: null, stale: true, warning: "此日期尚未取得完整資料。" })),
   } : { source: config.source.code, generatedAt: new Date(0).toISOString(), days: {}, medals: null };
   writeFileSync("public/data/index.json", JSON.stringify(empty));

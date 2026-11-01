@@ -83,7 +83,7 @@ function officialLink(value: unknown): boolean {
 /** Reject malformed cached responses before rendering nested values or source links. */
 export function isDakarResponse(value: unknown): value is DakarResponse {
   if (!object(value) || value.success !== true || value.source !== "DAKAR2026" || value.minDate !== DAKAR_MIN_DATE || value.maxDate !== DAKAR_MAX_DATE || !text(value.today) || !/^\d{4}-\d{2}-\d{2}$/.test(value.today)) return false;
-  if (typeof value.syncEnabled !== "boolean" || value.syncIntervalMinutes !== 15 || typeof value.medalsStale !== "boolean" || !timestamp(value.medalsFetchedAt)) return false;
+  if (typeof value.syncEnabled !== "boolean" || typeof value.syncIntervalMinutes !== "number" || ![15, 60].includes(Number(value.syncIntervalMinutes)) || typeof value.medalsStale !== "boolean" || !timestamp(value.medalsFetchedAt)) return false;
   if (!list(value.coverage) || !value.coverage.every((day) => object(day) && isDakarDate(day.date) && count(day.totalUnits) && count(day.unconfirmedUnits) && timestamp(day.fetchedAt) && timestamp(day.lastAttemptAt) && typeof day.stale === "boolean" && (day.warning === null || text(day.warning)))) return false;
   const coverageDays = new Set(value.coverage.map((day) => (day as Record<string, unknown>).date));
   if (value.coverage.length !== 15 || coverageDays.size !== 15) return false;

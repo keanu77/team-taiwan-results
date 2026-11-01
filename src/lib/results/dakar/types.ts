@@ -13,5 +13,5 @@ export interface DakarMedals { gold: number; silver: number; bronze: number; ent
 export interface DakarResponse {
   success: true; source: "DAKAR2026"; today: string; minDate: string; maxDate: string;
   units: DakarUnit[]; coverage: DakarCoverage[]; medals: DakarMedals | null;
-  medalsFetchedAt: string | null; medalsStale: boolean; syncEnabled: boolean; syncIntervalMinutes: 15;
+  medalsFetchedAt: string | null; medalsStale: boolean; syncEnabled: boolean; syncIntervalMinutes: 15 | 60; // 15 remains readable during a static deployment transition.
 }

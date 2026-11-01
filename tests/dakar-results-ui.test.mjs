@@ -13,7 +13,7 @@ const athlete = { id:'athlete-1', name:'HSU Tzuyi', nameZh:'許梓奕', sportCod
 const side = (country,name,score,extra={}) => ({ id:country,name,nameZh:country==='TPE'?'TPE':'',country,score,rank:'',qualification:'',irm:'',winner:false,...extra });
 const unit = (extra={}) => ({ id:'BS5-test',date:'2026-10-30',sportCode:'BS5',sport:'五人制棒球',event:'Mixed Opening Round Group A Game #2',startsAt:'2026-10-30T19:30:00Z',venue:'Dakar Court',status:'OFFICIAL',statusLabel:'正式成績',official:true,headToHead:true,competitors:[side('SEN','Senegal','0'),side('TPE','Chinese Taipei','2',{winner:true})],athletes:[athlete],sets:[{label:'1st Set - Official',scores:[{country:'SEN',score:'1'},{country:'TPE',score:'11'}]}],sourceUrl:`${base}/nh/en/Info/ResultList/BS5-test`,detailAvailable:true,...extra });
 const coverage = (extra={}) => ({date:'2026-10-30',totalUnits:4,unconfirmedUnits:0,fetchedAt:'2026-10-30T20:00:00Z',lastAttemptAt:'2026-10-30T20:00:00Z',stale:false,warning:null,...extra});
-const response = (extra={}) => ({success:true,source:'DAKAR2026',today:'2026-10-30',minDate:'2026-10-30',maxDate:'2026-11-13',units:[unit()],coverage:Array.from({length:15},(_,i)=>coverage({date:new Date(Date.UTC(2026,9,30+i)).toISOString().slice(0,10)})),medals:null,medalsFetchedAt:null,medalsStale:true,syncEnabled:true,syncIntervalMinutes:15,...extra});
+const response = (extra={}) => ({success:true,source:'DAKAR2026',today:'2026-10-30',minDate:'2026-10-30',maxDate:'2026-11-13',units:[unit()],coverage:Array.from({length:15},(_,i)=>coverage({date:new Date(Date.UTC(2026,9,30+i)).toISOString().slice(0,10)})),medals:null,medalsFetchedAt:null,medalsStale:true,syncEnabled:true,syncIntervalMinutes:60,...extra});
 function load(file, overrides={}, cache=new Map()) {
   const absolute=path.resolve(file);
   if (cache.has(absolute)) return cache.get(absolute);
@@ -213,8 +213,12 @@ test('Dakar hung cache request times out, preserves saved results and permits a 
 test('Static snapshots become stale even when no new deployment or successful poll occurs',()=>{
   const {withDakarFreshness}=display();
   const saved=response({medals:{gold:0,silver:0,bronze:0,entries:[]},medalsFetchedAt:'2026-10-30T20:00:00Z',medalsStale:false});
-  const aged=withDakarFreshness(saved,new Date('2026-10-30T20:31:00Z'));
+  const aged=withDakarFreshness(saved,new Date('2026-10-30T22:01:00Z'));
   assert.equal(aged.coverage[0].stale,true);assert.equal(aged.medalsStale,true);
   assert.equal(saved.coverage[0].stale,false,'must not mutate the cached snapshot');
   assert.equal(withDakarFreshness(saved,new Date('2026-12-01')).syncEnabled,false);
+});
+
+test('Hourly UI accepts a previously published 15-minute snapshot during deployment transition',()=>{
+  const {isDakarResponse}=display();assert.equal(isDakarResponse(response({syncIntervalMinutes:15})),true);assert.equal(isDakarResponse(response()),true);assert.equal(isDakarResponse(response({syncIntervalMinutes:'60'})),false);
 });

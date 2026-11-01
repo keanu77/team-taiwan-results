@@ -89,11 +89,11 @@ export function parseConfig(value: unknown, file = "competition.config.json"): C
     : source.type === "dakar" ? { type: "dakar", code, webUrl: url(source.webUrl, "source.webUrl") }
     : source.type === "sheet" ? { type: "sheet", code, webUrl: url(source.webUrl, "source.webUrl"), csvUrl: sheetUrl(source.csvUrl) }
     : fail("source.type（只支援 bornan、dakar、manual 或 sheet）");
-  if (source.type === "dakar" && (code !== "DAKAR2026" || noc !== "TPE" || startDate !== "2026-10-30" || endDate !== "2026-11-13" || c.timeZone !== "Africa/Dakar" || source.webUrl !== "https://webresult.apps.dakar2026.org" || c.syncIntervalMinutes !== 15)) {
-    fail("source.type=dakar（僅支援 2026 達卡青奧 TPE，固定賽期、時區、官方來源與 15 分鐘同步間隔）");
+  if (source.type === "dakar" && (code !== "DAKAR2026" || noc !== "TPE" || startDate !== "2026-10-30" || endDate !== "2026-11-13" || c.timeZone !== "Africa/Dakar" || source.webUrl !== "https://webresult.apps.dakar2026.org" || c.syncIntervalMinutes !== 60)) {
+    fail("source.type=dakar（僅支援 2026 達卡青奧 TPE，固定賽期、時區、官方來源與 60 分鐘同步間隔）");
   }
   const interval = Number(c.syncIntervalMinutes);
-  // workflow 排程最密每 10 分鐘一輪；低於 30 分鐘要搭配外部觸發才準時（見 README）
+  // 目前 workflow 每小時一輪；要更密集更新需另調整觸發頻率（見 README）
   if (!Number.isInteger(interval) || interval < 10 || interval > 24 * 60) fail("syncIntervalMinutes（10–1440 分鐘）");
   // 選填：沒有代表團得牌明細時可以整段省略
   const medals = (c.teamMedals ?? { source: "代表團公布的得牌明細", updatedAt: `${startDate}T00:00:00Z` }) as Record<string, unknown>;

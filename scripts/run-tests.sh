@@ -28,5 +28,6 @@ for test_file in "$TEST_BUILD_DIR"/tests/*.check.js; do
 done
 
 node --test tests/*.test.mjs || status=1
+python3 -B -m unittest discover -s tests -p 'test_hourly_trigger.py' || status=1
 
 exit "$status"
