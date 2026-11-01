@@ -30,4 +30,3 @@ export function isDay(value: unknown, date: string): value is ValidatedDakarDay 
 export function isMedals(value: unknown): value is DakarMedals {
   return record(value) && ["gold", "silver", "bronze"].every((key) => count(value[key])) && list(value.entries) && value.entries.every((entry) => record(entry) && ["medal", "event", "name"].every((key) => text(entry[key], true)) && text(entry.nameZh) && officialUrl(entry.sourceUrl));
 }
-
